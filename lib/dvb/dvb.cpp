@@ -100,6 +100,24 @@ eDVBResourceManager::eDVBResourceManager()
 		m_boxtype = DM800SE;
 	else if (!strncmp(tmp, "dm7020hd\n", rd))
 		m_boxtype = DM7020HD;
+#if defined(__sh__)
+	else if (!strncmp(tmp, "cuberevo\n", rd))
+		m_boxtype = CUBEREVO;
+	else if (!strncmp(tmp, "cuberevo-9500hd\n", rd))
+		m_boxtype = CUBEREVO_9500HD;
+	else if (!strncmp(tmp, "cuberevo-mini\n", rd))
+		m_boxtype = CUBEREVO_MINI;
+	else if (!strncmp(tmp, "cuberevo-mini2\n", rd))
+		m_boxtype = CUBEREVO_MINI2;
+	else if (!strncmp(tmp, "cuberevo-2000hd\n", rd))
+		m_boxtype = CUBEREVO_2000HD;
+	else if (!strncmp(tmp, "cuberevo-250hd\n", rd))
+		m_boxtype = CUBEREVO_250HD;
+	else if (!strncmp(tmp, "cuberevo-mini-fta\n", rd))
+		m_boxtype = CUBEREVO_MINI_FTA;
+	else if (!strncmp(tmp, "cuberevo-100hd\n", rd))
+		m_boxtype = CUBEREVO_100HD;
+#endif
 	else {
 		eDebug("boxtype detection via /proc/stb/info not possible... use fallback via demux count!\n");
 		if (m_demux.size() == 3)
@@ -145,20 +163,19 @@ eDVBAdapterLinux::eDVBAdapterLinux(int nr): m_nr(nr)
 #endif
 		if (stat(filename, &s))
 			break;
-		eDVBFrontend *fe;
+		ePtr<eDVBFrontend> fe;
 
+		{
+			int ok = 0;
+			fe = new eDVBFrontend(m_nr, num_fe, ok);
+			if (ok)
+				m_frontend.push_back(fe);
+		}
 		{
 			int ok = 0;
 			fe = new eDVBFrontend(m_nr, num_fe, ok, true);
 			if (ok)
-				m_simulate_frontend.push_back(ePtr<eDVBFrontend>(fe));
-		}
-
-		{
-			int ok = 0;
-			fe = new eDVBFrontend(m_nr, num_fe, ok, false, fe);
-			if (ok)
-				m_frontend.push_back(ePtr<eDVBFrontend>(fe));
+				m_simulate_frontend.push_back(fe);
 		}
 		++num_fe;
 	}
@@ -552,7 +569,57 @@ RESULT eDVBResourceManager::allocateDemux(eDVBRegisteredFrontend *fe, ePtr<eDVBA
 			}
 		}
 	}
+#if defined(__sh__) // we use our own algo for demux detection
+	else if (m_boxtype == CUBEREVO || m_boxtype == CUBEREVO_MINI || m_boxtype == CUBEREVO_MINI2 ||
+		m_boxtype == CUBEREVO_MINI_FTA || m_boxtype == CUBEREVO_250HD || m_boxtype == CUBEREVO_2000HD || m_boxtype == CUBEREVO_9500HD || m_boxtype == CUBEREVO_100HD)
+	{
+		for (; i != m_demux.end(); ++i, ++n)
+		{
+			if(fe)
+			{
+				if (!i->m_inuse)
+				{
+					if (!unused)
+					{
+						// take the first unused
+						//eDebug("\nallocate demux b = %d\n",n);
+						unused = i;
+					}
+				}
+				else if (i->m_adapter == fe->m_adapter &&
+				    i->m_demux->getSource() == fe->m_frontend->getDVBID())
+				{
+					// take the demux allocated to the same
+					// frontend,  just create a new reference
+					demux = new eDVBAllocatedDemux(i);
+					//eDebug("\nallocate demux b = %d\n",n);
+					return 0;
+				}
+			}
+			else if(n == (m_demux.size() - 1))
+			{
+				// Always use the last demux for PVR
+				// it is assumed that the last demux is not
+				// attached to a frontend. That is, there
+				// should be one instance of dvr & demux
+				// devices more than of frontend devices.
+				// Otherwise, playback and timeshift might
+				// interfere recording.
+				if (i->m_inuse)
+				{
+					// just create a new reference
+					demux = new eDVBAllocatedDemux(i);
+					//eDebug("\nallocate demux c = %d\n",n);
+					return 0;
+				}
 
+				unused = i;
+				//eDebug("\nallocate demux d = %d\n", n);
+				break;
+			}
+		}
+	}
+#endif
 	if (unused)
 	{
 		demux = new eDVBAllocatedDemux(unused);
@@ -1799,6 +1866,12 @@ RESULT eDVBChannel::playSource(ePtr<iTsSource> &source, const char *streaminfo_f
 			return -ENODEV;
 		}
 #else
+#if defined(__sh__) // our pvr device is called dvr
+		char dvrDev[128];
+		int dvrIndex = m_mgr->m_adapter.begin()->getNumDemux() - 1;
+		sprintf(dvrDev, "/dev/dvb/adapter0/dvr%d", dvrIndex);
+		m_pvr_fd_dst = open(dvrDev, O_WRONLY);
+#else
 		ePtr<eDVBAllocatedDemux> &demux = m_demux ? m_demux : m_decoder_demux;
 		if (demux)
 		{
@@ -1814,6 +1887,7 @@ RESULT eDVBChannel::playSource(ePtr<iTsSource> &source, const char *streaminfo_f
 			eDebug("no demux allocated yet.. so its not possible to open the dvr device!!");
 			return -ENODEV;
 		}
+#endif
 #endif
 	}
 

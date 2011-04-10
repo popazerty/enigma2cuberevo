@@ -41,6 +41,15 @@ struct eDVBFrontendParametersSatellite
 		Pilot_Off, Pilot_On, Pilot_Unknown
 	};
 
+	// blind
+	enum {
+		BlindPolarisation_Horizontal, BlindPolarisation_Vertical, BlindPolarisation_All
+	};
+
+	enum {
+		BlindSymbolRate_All, BlindSymbolRate_13under, BlindSymbolRate_7_5under, BlindSymbolRate_3_7under
+	};
+
 	bool no_rotor_command_on_tune;
 	unsigned int frequency, symbol_rate;
 	int polarisation, fec, inversion, orbital_position, system, modulation, rolloff, pilot;

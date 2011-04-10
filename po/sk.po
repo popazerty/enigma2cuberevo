@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: tuxbox-enigma 0.0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-04-01 08:09+0000\n"
+"POT-Creation-Date: 2011-01-27 12:42+0000\n"
 "PO-Revision-Date: 2010-05-12 13:09+0200\n"
 "Last-Translator: acid-burn <>\n"
 "Language-Team: none\n"
@@ -39,10 +39,10 @@ msgstr ""
 #
 msgid ""
 "\n"
-"Backup your Dreambox settings."
+"Backup your Cuberevo settings."
 msgstr ""
 "\n"
-"Zálohovať nastavenia Dreamboxa."
+"Zálohovať nastavenia Cuberevoa."
 
 #
 msgid ""
@@ -54,17 +54,17 @@ msgstr ""
 
 msgid ""
 "\n"
-"Manage extensions or plugins for your Dreambox"
+"Manage extensions or plugins for your Cuberevo"
 msgstr ""
 "\n"
-"Správa rozšírení a modulov pre Dreambox"
+"Správa rozšírení a modulov pre Cuberevo"
 
 msgid ""
 "\n"
-"Online update of your Dreambox software."
+"Online update of your Cuberevo software."
 msgstr ""
 "\n"
-"Online aktualizácia softvéru pre Dreambox."
+"Online aktualizácia softvéru pre Cuberevo."
 
 #
 msgid ""
@@ -77,18 +77,18 @@ msgstr ""
 #
 msgid ""
 "\n"
-"Restore your Dreambox settings."
+"Restore your Cuberevo settings."
 msgstr ""
 "\n"
-"Obnoviť nastavenia Dreamboxa."
+"Obnoviť nastavenia Cuberevoa."
 
 #
 msgid ""
 "\n"
-"Restore your Dreambox with a new firmware."
+"Restore your Cuberevo with a new firmware."
 msgstr ""
 "\n"
-"Obnoviť Dreambox novým firmvérom."
+"Obnoviť Cuberevo novým firmvérom."
 
 #
 msgid ""
@@ -186,12 +186,6 @@ msgid "%H:%M"
 msgstr "%H:%M"
 
 #, python-format
-msgid ""
-"%d conflict(s) encountered when trying to add new timers:\n"
-"%s"
-msgstr ""
-
-#, python-format
 msgid "%d jobs are running in the background!"
 msgstr "%d úloh beží na pozadí!"
 
@@ -221,10 +215,6 @@ msgstr ""
 #, python-format
 msgid "%s (%s)\n"
 msgstr "%s (%s)\n"
-
-#, python-format
-msgid "%s: %s at %s"
-msgstr ""
 
 msgid "(ZAP)"
 msgstr "(Prepnúť)"
@@ -343,11 +333,11 @@ msgstr "??"
 msgid "A"
 msgstr "A"
 
-msgid "A BackToTheRoots-Skin .. but with Warp-8 speed."
-msgstr ""
-
 msgid "A BackToTheRoots-Skin .. or good old times."
 msgstr "Vzhľad Späť ku koreňom ... alebo zlaté staré časy."
+
+msgid "A BackToTheRoots-Skin ... or good old times."
+msgstr "Vzhľad Späť ku koreňom ... alebo zlaté staré časy"
 
 msgid "A basic ftp client"
 msgstr "Základný klient FTP"
@@ -366,31 +356,25 @@ msgstr ""
 msgid "A demo plugin for TPM usage."
 msgstr "Ukážkový modul pre TPM."
 
-msgid "A dreambox simulation from SG-Atlantis displays."
-msgstr ""
-
 msgid ""
 "A finished record timer wants to set your\n"
-"Dreambox to standby. Do that now?"
+"Cuberevo to standby. Do that now?"
 msgstr ""
-"Ukončený časovač nahrávania chce prepnúť Dreambox\n"
+"Ukončený časovač nahrávania chce prepnúť Cuberevo\n"
 "do pohotovostného režimu. Prepnúť teraz?"
 
 msgid ""
 "A finished record timer wants to shut down\n"
-"your Dreambox. Shutdown now?"
+"your Cuberevo. Shutdown now?"
 msgstr ""
 "Ukončený časovač nahrávania chce vypnúť\n"
-"Dreambox. Vypnúť teraz?"
+"Cuberevo. Vypnúť teraz?"
 
 msgid "A graphical EPG for all services of an specific bouquet"
 msgstr "Grafické EPG pre všetky stanice určitého buketu"
 
 msgid "A graphical EPG interface"
 msgstr "Grafické rozhranie EPG"
-
-msgid "A graphical EPG interface and EPG tools manager"
-msgstr ""
 
 msgid "A graphical EPG interface."
 msgstr "Grafické rozhranie EPG"
@@ -455,16 +439,16 @@ msgstr "Jednoduchá aplikácia na sťahovanie iných modulov"
 
 msgid ""
 "A sleep timer wants to set your\n"
-"Dreambox to standby. Do that now?"
+"Cuberevo to standby. Do that now?"
 msgstr ""
-"Zaspávací časovač chce prepnúť Dreambox\n"
+"Zaspávací časovač chce prepnúť Cuberevo\n"
 "do pohotovostného režimu. Prepnúť teraz?"
 
 msgid ""
 "A sleep timer wants to shut down\n"
-"your Dreambox. Shutdown now?"
+"your Cuberevo. Shutdown now?"
 msgstr ""
-"Zaspávací časovač chce vypnúť Dreambox.\n"
+"Zaspávací časovač chce vypnúť Cuberevo.\n"
 "Vypnúť teraz?"
 
 msgid "A small overview of the available icon states and actions."
@@ -499,10 +483,10 @@ msgid "Abort this Wizard."
 msgstr "Skončiť tohto sprievodcu."
 
 msgid "About"
-msgstr "O Dreamboxe"
+msgstr "O Cuberevoe"
 
 msgid "About..."
-msgstr "O Dreamboxe..."
+msgstr "O Cuberevoe..."
 
 msgid "Access to the ARD-Mediathek"
 msgstr "Prístup k Médiatéke ARD"
@@ -553,8 +537,8 @@ msgstr "Pridať nastavenie WLAN?"
 msgid "Add a mark"
 msgstr "Pridať značku"
 
-msgid "Add a new NFS or CIFS mount point to your Dreambox."
-msgstr "Pridanie nového prístupu NFS alebo CIFS do Dreamboxa."
+msgid "Add a new NFS or CIFS mount point to your Cuberevo."
+msgstr "Pridanie nového prístupu NFS alebo CIFS do Cuberevoa."
 
 msgid "Add a new title"
 msgstr "Pridať nový titul"
@@ -590,10 +574,10 @@ msgid "Added: "
 msgstr "Pridané:"
 
 msgid ""
-"Adds enigma2 settings and dreambox model informations like SN, rev... if "
+"Adds enigma2 settings and cuberevo model informations like SN, rev... if "
 "enabled."
 msgstr ""
-"Ak je zapnuté, pridá nastavenia enigma2 a informácie o dreamboxe (výr. "
+"Ak je zapnuté, pridá nastavenia enigma2 a informácie o cuberevoe (výr. "
 "číslo, revízia, ...)."
 
 msgid "Adds network configuration if enabled."
@@ -638,10 +622,10 @@ msgid "Advanced restore"
 msgstr "Rozšírené obnovenie"
 
 msgid ""
-"After a reboot or power outage, StartupToStandby will bring your Dreambox to "
+"After a reboot or power outage, StartupToStandby will bring your Cuberevo to "
 "standby-mode."
 msgstr ""
-"Po reštarte alebo výpadku elektriny uvedie StartupToStandby Dreamboxa do "
+"Po reštarte alebo výpadku elektriny uvedie StartupToStandby Cuberevoa do "
 "pohotovostného režimu."
 
 msgid "After event"
@@ -649,10 +633,10 @@ msgstr "Po udalosti"
 
 msgid ""
 "After the start wizard is completed, you need to protect single services. "
-"Refer to your dreambox's manual on how to do that."
+"Refer to your cuberevo's manual on how to do that."
 msgstr ""
 "Po skončení úvodného sprievodcu si musíte ochrániť jednotlivé programy. V "
-"návode k Dreamboxu nájdete, ako sa to robí."
+"návode k Cuberevou nájdete, ako sa to robí."
 
 msgid "Ai.HD skin-style control plugin"
 msgstr "Ovládací modul v štýle vzhľadu Ai.HD"
@@ -774,9 +758,6 @@ msgstr "opýtať sa"
 msgid "Aspect Ratio"
 msgstr "Pomer strán"
 
-msgid "Aspect ratio"
-msgstr ""
-
 msgid "Assigning providers/services/caids to a CI module"
 msgstr "Priradenie poskytovateľov. staníc alebo CAID modulu CI"
 
@@ -788,9 +769,6 @@ msgstr "Zvuk"
 
 msgid "Audio Options..."
 msgstr "Voľby zvuku ..."
-
-msgid "Audio PID"
-msgstr ""
 
 msgid "Audio Sync"
 msgstr ""
@@ -848,15 +826,6 @@ msgstr ""
 "AutoTimer prehľadá EPG a vytvorí časovače podľa užívateľom určených kritérií "
 "vyhľadávania."
 
-msgid "AutoTimer was added successfully"
-msgstr ""
-
-msgid "AutoTimer was changed successfully"
-msgstr ""
-
-msgid "AutoTimer was removed"
-msgstr ""
-
 msgid "Automatic"
 msgstr "Automaticky"
 
@@ -890,24 +859,6 @@ msgstr "Automatická obnova EPG"
 msgid "Automatically send crashlogs to Dream Multimedia"
 msgstr "Auitomatické posielanie správ o zrútení do Dream Multimedia"
 
-#, python-format
-msgid ""
-"Autoresolution Plugin Testmode:\n"
-"Is %s ok?"
-msgstr ""
-
-msgid "Autoresolution Switch"
-msgstr ""
-
-msgid "Autoresolution is not working in Scart/DVI-PC Mode"
-msgstr ""
-
-msgid "Autoresolution settings"
-msgstr ""
-
-msgid "Autoresolution videomode setup"
-msgstr ""
-
 msgid "Autos & Vehicles"
 msgstr "Autá a doprava"
 
@@ -926,8 +877,8 @@ msgstr "BA"
 msgid "BASIC-HD Skin by Ismail Demir"
 msgstr "Základný vzhľad HD, autor Ismail Demir"
 
-msgid "BASIC-HD Skin for Dreambox Images created from Ismail Demir"
-msgstr "Základný vzhľad HD pre image Dreamboxa, autor Ismail Demir"
+msgid "BASIC-HD Skin for Cuberevo Images created from Ismail Demir"
+msgstr "Základný vzhľad HD pre image Cuberevoa, autor Ismail Demir"
 
 msgid "BB"
 msgstr "BB"
@@ -940,12 +891,6 @@ msgstr "BER:"
 
 msgid "Back"
 msgstr "Späť"
-
-msgid "Back, lower USB Slot"
-msgstr ""
-
-msgid "Back, upper USB Slot"
-msgstr ""
 
 msgid "Background"
 msgstr "Pozadie"
@@ -1019,11 +964,6 @@ msgstr "Brazília"
 msgid "Brightness"
 msgstr "Jas"
 
-msgid ""
-"Browse ORF and SAT1 Teletext independent from channel. This need I-net "
-"conection."
-msgstr ""
-
 msgid "Browse for and connect to network shares"
 msgstr ""
 
@@ -1047,17 +987,6 @@ msgstr "Napáľte si nahrávky na DVD"
 
 msgid "Bus: "
 msgstr "Zbernica:"
-
-msgid ""
-"By enabling this events will not be matched if they don't occur on certain "
-"dates."
-msgstr ""
-
-msgid ""
-"By enabling this you will be notified about timer conflicts found during "
-"automated polling. There is no intelligence involved, so it might bother you "
-"about the same conflict over and over."
-msgstr ""
 
 msgid ""
 "By pressing the OK Button on your remote control, the info bar is being "
@@ -1152,8 +1081,8 @@ msgstr "Zmeniť PIN nastavení"
 msgid "Change step size"
 msgstr "Zmeniť veľkosť kroku"
 
-msgid "Change the hostname of your Dreambox."
-msgstr "Zmeňte názov hostiteľa Dreamboxa."
+msgid "Change the hostname of your Cuberevo."
+msgstr "Zmeňte názov hostiteľa Cuberevoa."
 
 msgid "Changelog"
 msgstr "Protokol zmien"
@@ -1268,12 +1197,6 @@ msgstr "Zatvoriť a uložiť zmeny"
 
 msgid "Close title selection"
 msgstr "Zatvoriť výber titulkov"
-
-msgid "Code rate HP"
-msgstr ""
-
-msgid "Code rate LP"
-msgstr ""
 
 msgid "Code rate high"
 msgstr "Vysoká kódová rýchlosť"
@@ -1395,17 +1318,17 @@ msgstr "Pokračovať v prehrávaní"
 msgid "Contrast"
 msgstr "Kontrast"
 
-msgid "Control your Dreambox with your Web browser."
-msgstr "Ovládajte Dreamboxa cez webový prehliadač."
+msgid "Control your Cuberevo with your Web browser."
+msgstr "Ovládajte Cuberevoa cez webový prehliadač."
 
-msgid "Control your Dreambox with your browser"
-msgstr "Ovládajte Dreamboxa cez webový prehliadač"
+msgid "Control your Cuberevo with your browser"
+msgstr "Ovládajte Cuberevoa cez webový prehliadač"
 
-msgid "Control your dreambox with only the MUTE button"
-msgstr "Ovládajte Dreamboxa len tlačidlom MUTE"
+msgid "Control your cuberevo with only the MUTE button"
+msgstr "Ovládajte Cuberevoa len tlačidlom MUTE"
 
-msgid "Control your dreambox with only the MUTE button."
-msgstr "Ovládajte Dreamboxa len tlačidlom MUTE."
+msgid "Control your cuberevo with only the MUTE button."
+msgstr "Ovládajte Cuberevoa len tlačidlom MUTE."
 
 msgid "Control your internal system fan."
 msgstr "Ovládajte vnútorný systémový ventilátor."
@@ -1416,11 +1339,11 @@ msgstr "Ovládajte používanie televízora deťmi"
 msgid "Control your system fan"
 msgstr "Ovládajte systémový ventilátor"
 
-msgid "Copy, rename, delete, move local files on your Dreambox."
-msgstr "Kopírujte, premenujte, vymažte a premiestnite súbory v Dreamboxe."
+msgid "Copy, rename, delete, move local files on your Cuberevo."
+msgstr "Kopírujte, premenujte, vymažte a premiestnite súbory v Cuberevoe."
 
-msgid "Could not connect to Dreambox .NFI Image Feed Server:"
-msgstr "Nemôžem sa pripojiť k serveru so súbormi Dreambox .NFI:"
+msgid "Could not connect to Cuberevo .NFI Image Feed Server:"
+msgstr "Nemôžem sa pripojiť k serveru so súbormi Cuberevo .NFI:"
 
 msgid "Could not load Medium! No disc inserted?"
 msgstr "Nemôžem použiť médium. Je vložený disk?"
@@ -1431,10 +1354,6 @@ msgstr "Nedá sa otvoriť obraz v obraze"
 #, python-format
 msgid "Couldn't record due to conflicting timer %s"
 msgstr "Nedalo sa nahrávať - prekrýva sa časovanie %s"
-
-#, python-format
-msgid "Couldn't record due to invalid service %s"
-msgstr ""
 
 msgid "Crashlog settings"
 msgstr "Nastavenia správ o zrútení"
@@ -1458,8 +1377,8 @@ msgstr ""
 msgid "Create DVD-ISO"
 msgstr "Vytvoriť disk DVD-ISO"
 
-msgid "Create a backup of your Video DVD on your DreamBox hard drive."
-msgstr "Vytvorte si zálohu Video DVD na pevnom disku Dreamboxa."
+msgid "Create a backup of your Video DVD on your Cuberevo hard drive."
+msgstr "Vytvorte si zálohu Video DVD na pevnom disku Cuberevoa."
 
 msgid "Create a backup of your Video-DVD"
 msgstr "Vytvoriť zálohu Video DVD"
@@ -1482,8 +1401,8 @@ msgstr "Vytvorte si náhľadové snímky z filmov"
 msgid "Create remote timers"
 msgstr "Vytvoriť časovač na diaľku"
 
-msgid "Create timers on remote Dreamboxes."
-msgstr "Vytvorte časovače na vzdialených Dreamboxoch"
+msgid "Create timers on remote Cuberevoes."
+msgstr "Vytvorte časovače na vzdialených Cuberevooch"
 
 #, python-format
 msgid "Creating directory %s failed."
@@ -1591,9 +1510,6 @@ msgstr "DVB-S"
 msgid "DVB-S2"
 msgstr "DVB-S2"
 
-msgid "DVD Drive"
-msgstr ""
-
 msgid "DVD File Browser"
 msgstr "Prehliadač súborov DVD"
 
@@ -1606,16 +1522,16 @@ msgstr "Zoznam titulov DVD"
 msgid "DVD media toolbox"
 msgstr "Nástroje pre DVD"
 
-msgid "DVDPlayer plays your DVDs on your Dreambox"
-msgstr "Prehrávač DVD prehrá DVD na Dreamboxe"
+msgid "DVDPlayer plays your DVDs on your Cuberevo"
+msgstr "Prehrávač DVD prehrá DVD na Cuberevoe"
 
 msgid ""
-"DVDPlayer plays your DVDs on your Dreambox.\n"
-"With the DVDPlayer you can play your DVDs on your Dreambox from a DVD or "
+"DVDPlayer plays your DVDs on your Cuberevo.\n"
+"With the DVDPlayer you can play your DVDs on your Cuberevo from a DVD or "
 "even from an iso file or video_ts folder on your harddisc or network."
 msgstr ""
-"Prehrávač DVD prehrá disky DVD na Dreamboxe.\n"
-"S Prehrávačom DVD si na Dreamboxe prehráte DVD, súbor ISO alebo priečinok "
+"Prehrávač DVD prehrá disky DVD na Cuberevoe.\n"
+"S Prehrávačom DVD si na Cuberevoe prehráte DVD, súbor ISO alebo priečinok "
 "video_ts folder na pevnom disku alebo v sieti."
 
 msgid "Danish"
@@ -1661,20 +1577,11 @@ msgstr "Predvolené hodnoty"
 msgid "Define a startup service"
 msgstr "Určiť úvodnú stanicu"
 
-msgid "Define a startup service for your Dreambox."
-msgstr "Určte úvodnú (počiatočnú) stanicu na Dreamboxe."
-
-msgid "Deinterlacer mode for interlaced content"
-msgstr ""
-
-msgid "Deinterlacer mode for progressive content"
-msgstr ""
+msgid "Define a startup service for your Cuberevo."
+msgstr "Určte úvodnú (počiatočnú) stanicu na Cuberevoe."
 
 msgid "Delay"
 msgstr "Oneskorenie"
-
-msgid "Delay x seconds after service started"
-msgstr ""
 
 msgid "Delete"
 msgstr "Vymazať"
@@ -1824,12 +1731,6 @@ msgstr ""
 "Môže to trvať dosť dlho!"
 
 #, python-format
-msgid ""
-"Do you really want to delete %s\n"
-"%s?"
-msgstr ""
-
-#, python-format
 msgid "Do you really want to delete %s?"
 msgstr "Naozaj chcete zmazať %s?"
 
@@ -1872,8 +1773,8 @@ msgstr "Chcete urobiť ďalšie ručné vyhľadávanie staníc?"
 msgid "Do you want to download the image to %s ?"
 msgstr "Chcete stiahnuť image na %s?"
 
-msgid "Do you want to enable the parental control feature on your dreambox?"
-msgstr "Chcete na Dreamboxe zapnúť rodičovskú zámku?"
+msgid "Do you want to enable the parental control feature on your cuberevo?"
+msgstr "Chcete na Cuberevoe zapnúť rodičovskú zámku?"
 
 msgid "Do you want to enter a username and password for this host?\n"
 msgstr "Chcete zadať užívateľské meno a heslo pre tohto hostiteľa?\n"
@@ -1890,8 +1791,8 @@ msgstr "Chcete prehrať DVD v mechanike?"
 msgid "Do you want to preview this DVD before burning?"
 msgstr "Chcete si toto DVD prezrieť pred napálením?"
 
-msgid "Do you want to reboot your Dreambox?"
-msgstr "Chcete reštartovať Dreambox?"
+msgid "Do you want to reboot your Cuberevo?"
+msgstr "Chcete reštartovať Cuberevo?"
 
 msgid "Do you want to remove the package:\n"
 msgstr "Chcete odstrániť balíček:\n"
@@ -1912,14 +1813,14 @@ msgstr ""
 "Chcete poslať svojju e-mailovú adresu a meno, aby sme vás mohli kontaktovať, "
 "ak treba?"
 
-msgid "Do you want to update your Dreambox?"
-msgstr "Chcete aktualizovať Dreambox?"
+msgid "Do you want to update your Cuberevo?"
+msgstr "Chcete aktualizovať Cuberevo?"
 
 msgid ""
-"Do you want to update your Dreambox?\n"
+"Do you want to update your Cuberevo?\n"
 "After pressing OK, please wait!"
 msgstr ""
-"Chcete aktualizovať Dreamboxx?\n"
+"Chcete aktualizovať Cuberevox?\n"
 "Po stlačení tlačidla OK vyčkajte!"
 
 msgid "Do you want to upgrade the package:\n"
@@ -1981,11 +1882,11 @@ msgstr "Sťahujem informácie o moduloch. Čakajte..."
 msgid "Downloading screenshots. Please wait..."
 msgstr "Sťahujem zábery. Čakajte..."
 
-msgid "Dreambox format data DVD (HDTV compatible)"
-msgstr "Dátové DVD vo formáte Dreambox (vyhovuje HDTV)"
+msgid "Cuberevo format data DVD (HDTV compatible)"
+msgstr "Dátové DVD vo formáte Cuberevo (vyhovuje HDTV)"
 
-msgid "Dreambox software because updates are available."
-msgstr "Softvér Dreamboxa, lebo sú k dispozícii aktualizácie."
+msgid "Cuberevo software because updates are available."
+msgstr "Softvér Cuberevoa, lebo sú k dispozícii aktualizácie."
 
 msgid "Duration: "
 msgstr "Trvanie:"
@@ -2012,7 +1913,7 @@ msgid ""
 "epg information on these channels."
 msgstr ""
 "Obnovovač EPG automaticky prepne na užívateľom určené stanice počas "
-"nečinnosti Dreamboxa\n"
+"nečinnosti Cuberevoa\n"
 "(v pohotovostnom režime bez nahrávania), aby sa aktualizovali ich informácie "
 "o EPG."
 
@@ -2068,11 +1969,11 @@ msgstr "Upraviť značky nahraných filmov"
 msgid "Edit tags of recorded movies."
 msgstr "Upraviť značky nahraných filmov."
 
-msgid "Edit the Nameserver configuration of your Dreambox.\n"
-msgstr "Upraviť nastavenie DNS v Dreamboxe.\n"
+msgid "Edit the Nameserver configuration of your Cuberevo.\n"
+msgstr "Upraviť nastavenie DNS v Cuberevoe.\n"
 
-msgid "Edit the network configuration of your Dreambox.\n"
-msgstr "Upraviť nastavenie siete v Dreamboxe.\n"
+msgid "Edit the network configuration of your Cuberevo.\n"
+msgstr "Upraviť nastavenie siete v Cuberevoe.\n"
 
 msgid "Edit title"
 msgstr "Upraviť titul"
@@ -2092,8 +1993,8 @@ msgstr "Vzdelávanie"
 msgid "Electronic Program Guide"
 msgstr "Elektronický programový sprievodca"
 
-msgid "Emailclient is an IMAP4 e-mail viewer for the Dreambox."
-msgstr "Klient e-mailov je prezerač e-mailov IMAP4 pre Dreambox."
+msgid "Emailclient is an IMAP4 e-mail viewer for the Cuberevo."
+msgstr "Klient e-mailov je prezerač e-mailov IMAP4 pre Cuberevo."
 
 msgid "Enable"
 msgstr "Zapnúť"
@@ -2101,23 +2002,8 @@ msgstr "Zapnúť"
 msgid "Enable /media"
 msgstr "Aktivovať /médium"
 
-msgid "Enable 1080p24 Mode"
-msgstr ""
-
-msgid "Enable 1080p25 Mode"
-msgstr ""
-
-msgid "Enable 1080p30 Mode"
-msgstr ""
-
 msgid "Enable 5V for active antenna"
 msgstr "Zapnúť 5 V pre aktívnu anténu"
-
-msgid "Enable 720p24 Mode"
-msgstr ""
-
-msgid "Enable Autoresolution"
-msgstr ""
 
 msgid "Enable Cleanup Wizard?"
 msgstr "Zapnúť sprievodcu vyčistením?"
@@ -2203,11 +2089,11 @@ msgid "English"
 msgstr "Angličtina"
 
 msgid ""
-"Enigma2 Plugin to play AVI/DIVX/WMV/etc. videos from PC on your Dreambox. "
+"Enigma2 Plugin to play AVI/DIVX/WMV/etc. videos from PC on your Cuberevo. "
 "Needs a running VLC from www.videolan.org on your pc."
 msgstr ""
 "Modul Enigma2 na prehrávanie videí AVI, DIVX, WMV a pod. z počítača na "
-"Dreamboxe. Vyžaduje bežiaci program VLC (z www.videolan.org) na počítači."
+"Cuberevoe. Vyžaduje bežiaci program VLC (z www.videolan.org) na počítači."
 
 msgid ""
 "Enigma2 Skinselector\n"
@@ -2224,14 +2110,20 @@ msgstr ""
 "\n"
 "© 2006 - Stephan Reichholf"
 
+msgid "Enter Fast Forward at speed"
+msgstr "Počiatočná rýchlosť prevíjania vpred"
+
 msgid "Enter IP to scan..."
 msgstr "Zadajte IP na prehľadávanie..."
+
+msgid "Enter Rewind at speed"
+msgstr "Počiatočná rýchlosť prevíjania vzad"
 
 msgid "Enter main menu..."
 msgstr "Otvoriť hlavné menu..."
 
-msgid "Enter new hostname for your Dreambox"
-msgstr "Zadajte nový názov hostiteľa pre Dreambox"
+msgid "Enter new hostname for your Cuberevo"
+msgstr "Zadajte nový názov hostiteľa pre Cuberevo"
 
 msgid "Enter options:"
 msgstr "Zadajte voľby:"
@@ -2360,10 +2252,10 @@ msgid "FEC"
 msgstr "FEC"
 
 msgid ""
-"FTPBrowser allows uploading and downloading files between your Dreambox and "
+"FTPBrowser allows uploading and downloading files between your Cuberevo and "
 "a server using the file transfer protocol."
 msgstr ""
-"Prehliadač FTP umožäuje posielanie a sťahovanie súborov medzi Dreamboxom a "
+"Prehliadač FTP umožäuje posielanie a sťahovanie súborov medzi Cuberevoom a "
 "serverom pomocou protokolu FTP."
 
 msgid "Factory reset"
@@ -2444,11 +2336,6 @@ msgstr "Reštartovanie siete je skončené"
 msgid "Finnish"
 msgstr "Fínčina"
 
-msgid ""
-"First day to match events. No event that begins before this date will be "
-"matched."
-msgstr ""
-
 msgid "First generate your skin-style with the Ai.HD-Control plugin."
 msgstr "Najprv vytvorte štýl vzhľadu ovládacím modulom Ai.HD."
 
@@ -2467,16 +2354,13 @@ msgstr "Formát"
 #, python-format
 msgid ""
 "Found a total of %d matching Events.\n"
-"%d Timer were added and %d modified, %d conflicts encountered."
-msgstr ""
-
-#, python-format
-msgid ""
-"Found a total of %d matching Events.\n"
 "%d Timer were added and %d modified."
 msgstr ""
 "Nájdených celkom %d programov.\n"
 "%d nastavení časovača pridaných a %d zmenených."
+
+msgid "Frame repeat count during non-smooth winding"
+msgstr "Počet opakovaní obrázka počas skokového prevíjania"
 
 msgid "Frame size in full view"
 msgstr "Veľkosť obrazu pri plnom zobrazení"
@@ -2508,11 +2392,8 @@ msgstr "Piatok"
 msgid "Frisian"
 msgstr "Frízština"
 
-msgid "FritzCall shows incoming calls to your Fritz!Box on your Dreambox."
-msgstr "FritzCall zobrazuje volania prichádzajúce do Fritz!Boxa na Dreamboxe."
-
-msgid "Front USB Slot"
-msgstr ""
+msgid "FritzCall shows incoming calls to your Fritz!Box on your Cuberevo."
+msgstr "FritzCall zobrazuje volania prichádzajúce do Fritz!Boxa na Cuberevoe."
 
 msgid "Frontend for /tmp/mmi.socket"
 msgstr ""
@@ -2535,8 +2416,8 @@ msgid "GUI that allows user to change the ftp- / telnet password."
 msgstr "GUI, ktoré umožňuje zmenu hesla pre FTP a Telnet."
 
 msgid ""
-"GUI that allows user to change the ftp-/telnet-password of the Dreambox."
-msgstr "GUI, ktoré umožňuje zmenu hesla v Dreamboxe pre FTP a Telnet"
+"GUI that allows user to change the ftp-/telnet-password of the Cuberevo."
+msgstr "GUI, ktoré umožňuje zmenu hesla v Cuberevoe pre FTP a Telnet"
 
 msgid "GUI to change the ftp and telnet-password"
 msgstr "GUI na zmenu hesla pre FTP a Telnet"
@@ -2559,20 +2440,17 @@ msgstr "Oneskorenie PCM"
 msgid "General PCM delay (ms)"
 msgstr "Oneskorenie PCM [ms]"
 
-msgid "Generates and Shows TV Charts of all users having this plugin installed"
-msgstr ""
-
 msgid "Genre"
 msgstr "Žáner"
 
-msgid "Genuine Dreambox"
-msgstr "Pravý Dreambox"
+msgid "Genuine Cuberevo"
+msgstr "Pravý Cuberevo"
 
-msgid "Genuine Dreambox validation failed!"
-msgstr "Overenie pravosti Dreamboxa zlyhalo!"
+msgid "Genuine Cuberevo validation failed!"
+msgstr "Overenie pravosti Cuberevoa zlyhalo!"
 
-msgid "Genuine Dreambox verification"
-msgstr "Overenie pravosti Dreamboxa"
+msgid "Genuine Cuberevo verification"
+msgstr "Overenie pravosti Cuberevoa"
 
 msgid "German"
 msgstr "Nemčina"
@@ -2630,28 +2508,22 @@ msgid "Green boost"
 msgstr "Zosilniť zelenú"
 
 msgid ""
-"Growlee allows your Dreambox to forward notifications like 'Record started' "
-"to a PC running a growl, snarl or syslog compatible client or directly to an "
-"iPhone using prowl."
+"Growlee allows your Cuberevo to send short messages using the growl "
+"protocol\n"
+"like Recording started notifications to a PC running a growl client"
 msgstr ""
+"Growlee umožňuje posielať z Cuberevoa krátke správy pomocou protokolu "
+"growl,\n"
+"napríklad oznam „Začalo nahrávanie“ do počítača, na ktorom beží klient growl."
 
 msgid "Guard Interval"
 msgstr "Ochranný interval"
-
-msgid "Guard interval"
-msgstr ""
 
 msgid "Guard interval mode"
 msgstr "Režim ochranného intervalu"
 
 msgid "Guess existing timer based on begin/end"
 msgstr "Určiť existujúci časovač podľa začiatku a konca."
-
-msgid "HD Interlace Mode"
-msgstr ""
-
-msgid "HD Progressive Mode"
-msgstr ""
 
 msgid "HD videos"
 msgstr "Videá HD"
@@ -2682,9 +2554,6 @@ msgstr "Skrytý názov siete"
 
 msgid "Hierarchy Information"
 msgstr "Hierarchické informácie"
-
-msgid "Hierarchy info"
-msgstr ""
 
 msgid "Hierarchy mode"
 msgstr "Hierarchický režim"
@@ -2722,8 +2591,8 @@ msgstr "Odtieň"
 msgid "Hungarian"
 msgstr "Maďarčina"
 
-msgid "IMAP4 e-mail viewer for the Dreambox"
-msgstr "Prezerač e-mailov IMAP4 pre Dreambox"
+msgid "IMAP4 e-mail viewer for the Cuberevo"
+msgstr "Prezerač e-mailov IMAP4 pre Cuberevo"
 
 msgid "IP Address"
 msgstr "Adresa IP"
@@ -2833,12 +2702,6 @@ msgstr "Informácie"
 msgid "Init"
 msgstr "Inic."
 
-msgid "Initial Fast Forward speed"
-msgstr ""
-
-msgid "Initial Rewind speed"
-msgstr ""
-
 msgid "Initial location in new timers"
 msgstr "Úvodné umiestnenie nových časových nahrávok"
 
@@ -2917,9 +2780,6 @@ msgstr "Interná pamäť flash"
 msgid "Internal LAN adapter."
 msgstr "Adaptér internej LAN"
 
-msgid "Internal USB Slot"
-msgstr ""
-
 msgid "Internal firmware updater"
 msgstr "Interný aktualizátor firmvéru"
 
@@ -2975,11 +2835,11 @@ msgstr ""
 msgid "Italian"
 msgstr "Taliančina"
 
-msgid "Italian Weather forecast on Dreambox"
-msgstr "Talianska predpoveď počasia na Dreamboxe"
+msgid "Italian Weather forecast on Cuberevo"
+msgstr "Talianska predpoveď počasia na Cuberevoe"
 
-msgid "Italian Weather forecast on Dreambox from www.google.it."
-msgstr "Talianska predpoveď počasia na Dreamboxe z www.google.it."
+msgid "Italian Weather forecast on Cuberevo from www.google.it."
+msgstr "Talianska predpoveď počasia na Cuberevoe z www.google.it."
 
 msgid "Italy"
 msgstr "Taliansko"
@@ -3089,11 +2949,6 @@ msgstr "Voľba jazyka"
 msgid "Last config"
 msgstr "Posledné nastavenie"
 
-msgid ""
-"Last day to match events. Events have to begin before this date to be "
-"matched."
-msgstr ""
-
 msgid "Last speed"
 msgstr "Posledná rýchlosť"
 
@@ -3143,8 +2998,8 @@ msgstr "Zoznam záznamových zariadení"
 msgid "Listen and record internet radio"
 msgstr "Počúvať a nahrávať internetové rádio"
 
-msgid "Listen and record shoutcast internet radio on your Dreambox."
-msgstr "Počúvať a nahrávať internetové rádio na Dreamboxe"
+msgid "Listen and record shoutcast internet radio on your Cuberevo."
+msgstr "Počúvať a nahrávať internetové rádio na Cuberevoe"
 
 msgid "Lithuanian"
 msgstr "Litovčina"
@@ -3484,17 +3339,11 @@ msgstr "Menu filmov"
 msgid "Multi EPG"
 msgstr "Multi EPG"
 
-msgid "Multi-EPG bouquet selection"
-msgstr ""
-
 msgid "Multimedia"
 msgstr "Multimédiá"
 
 msgid "Multiple service support"
 msgstr "Dekóduje viac staníc"
-
-msgid "Multiplex"
-msgstr ""
 
 msgid "Multisat"
 msgstr "viac satelitov"
@@ -3534,9 +3383,9 @@ msgstr "Nie je k dispozícii"
 
 msgid ""
 "NCID Client shows incoming voice calls promoted by any NCID server (e.g. "
-"Vodafone Easybox) on your Dreambox."
+"Vodafone Easybox) on your Cuberevo."
 msgstr ""
-"Klient NCID zobrazí na Dreamboxe prichádzajúce volania zo servera NCID "
+"Klient NCID zobrazí na Cuberevoe prichádzajúce volania zo servera NCID "
 "(napr. Vodafone Easybox)"
 
 msgid "NEXT"
@@ -3550,9 +3399,6 @@ msgstr "Flešovanie image .NFI skončené. Stlačením žltého tlačidla rešta
 
 msgid "NFS share"
 msgstr "Zdieľanie NFS"
-
-msgid "NIM"
-msgstr ""
 
 msgid "NOW"
 msgstr "TERAZ"
@@ -3576,104 +3422,101 @@ msgstr "Nastavenie DNS"
 msgid "Nameserver settings"
 msgstr "Nastavenie DNS"
 
-msgid "Namespace"
-msgstr ""
-
 msgid "Nemesis BlackBox Skin"
 msgstr "Vzhľad Nemesis BlackBox"
 
-msgid "Nemesis BlackBox Skin for the Dreambox"
-msgstr "Vzhľad Nemesis BlackBox pre Dreambox"
+msgid "Nemesis BlackBox Skin for the Cuberevo"
+msgstr "Vzhľad Nemesis BlackBox pre Cuberevo"
 
 msgid "Nemesis Blueline Single Skin"
 msgstr "Vzhľad Nemesis Blueline Single"
 
-msgid "Nemesis Blueline Single Skin for the Dreambox"
-msgstr "Vzhľad Nemesis Blueline Single pre Dreambox"
+msgid "Nemesis Blueline Single Skin for the Cuberevo"
+msgstr "Vzhľad Nemesis Blueline Single pre Cuberevo"
 
 msgid "Nemesis Blueline Skin"
 msgstr "Vzhľad Nemesis Blueline"
 
-msgid "Nemesis Blueline Skin for the Dreambox"
-msgstr "Vzhľad Nemesis Blueline pre Dreambox"
+msgid "Nemesis Blueline Skin for the Cuberevo"
+msgstr "Vzhľad Nemesis Blueline pre Cuberevo"
 
 msgid "Nemesis Blueline.Extended Skin"
 msgstr "Vzhľad Nemesis Blueline.Extended"
 
-msgid "Nemesis Blueline.Extended Skin for the Dreambox"
-msgstr "Vzhľad Nemesis Blueline.Extended pre Dreambox"
+msgid "Nemesis Blueline.Extended Skin for the Cuberevo"
+msgstr "Vzhľad Nemesis Blueline.Extended pre Cuberevo"
 
 msgid "Nemesis ChromeLine Cobolt Skin"
 msgstr "Vzhľad Nemesis ChromeLine Cobolt"
 
-msgid "Nemesis ChromeLine Cobolt Skin for the Dreambox"
-msgstr "Vzhľad Nemesis ChromeLine Cobolt pre Dreambox"
+msgid "Nemesis ChromeLine Cobolt Skin for the Cuberevo"
+msgstr "Vzhľad Nemesis ChromeLine Cobolt pre Cuberevo"
 
 msgid "Nemesis ChromeLine Skin"
 msgstr "Vzhľad Nemesis ChromeLine"
 
-msgid "Nemesis ChromeLine Skin for the Dreambox"
-msgstr "Vzhľad Nemesis ChromeLine pre Dreambox"
+msgid "Nemesis ChromeLine Skin for the Cuberevo"
+msgstr "Vzhľad Nemesis ChromeLine pre Cuberevo"
 
 msgid "Nemesis Flatline Blue Skin"
 msgstr "Vzhľad Nemesis Flatline Blue"
 
-msgid "Nemesis Flatline Blue Skin for the Dreambox"
-msgstr "Vzhľad Nemesis Flatline Blue pre Dreambox"
+msgid "Nemesis Flatline Blue Skin for the Cuberevo"
+msgstr "Vzhľad Nemesis Flatline Blue pre Cuberevo"
 
 msgid "Nemesis Flatline Skin"
 msgstr "Vzhľad Nemesis Flatline"
 
-msgid "Nemesis Flatline Skin for the Dreambox"
-msgstr "Vzhľad Nemesis Flatline pre Dreambox"
+msgid "Nemesis Flatline Skin for the Cuberevo"
+msgstr "Vzhľad Nemesis Flatline pre Cuberevo"
 
 msgid "Nemesis GlassLine Skin"
 msgstr "Vzhľad Nemesis GlassLine"
 
-msgid "Nemesis GlassLine Skin for the Dreambox"
-msgstr "Vzhľad Nemesis GlassLine pre Dreambox"
+msgid "Nemesis GlassLine Skin for the Cuberevo"
+msgstr "Vzhľad Nemesis GlassLine pre Cuberevo"
 
 msgid "Nemesis Greenline Extended Skin"
 msgstr "Vzhľad Nemesis Greenline Extended"
 
-msgid "Nemesis Greenline Extended Skin for the Dreambox"
-msgstr "Vzhľad Nemesis Greenline Extended pre Dreambox"
+msgid "Nemesis Greenline Extended Skin for the Cuberevo"
+msgstr "Vzhľad Nemesis Greenline Extended pre Cuberevo"
 
 msgid "Nemesis Greenline Single Skin"
 msgstr "Vzhľad Nemesis Greenline Single"
 
-msgid "Nemesis Greenline Single Skin for the Dreambox"
-msgstr "Vzhľad Nemesis Greenline Single pre Dreambox"
+msgid "Nemesis Greenline Single Skin for the Cuberevo"
+msgstr "Vzhľad Nemesis Greenline Single pre Cuberevo"
 
 msgid "Nemesis Greenline Skin"
 msgstr "Vzhľad Nemesis Greenline"
 
-msgid "Nemesis Greenline Skin for the Dreambox"
-msgstr "Vzhľad Nemesis Greenline pre Dreambox"
+msgid "Nemesis Greenline Skin for the Cuberevo"
+msgstr "Vzhľad Nemesis Greenline pre Cuberevo"
 
 msgid "Nemesis Greyline Extended Skin"
 msgstr "Vzhľad Nemesis Greyline Extended"
 
-msgid "Nemesis Greyline Extended Skin for the Dreambox"
-msgstr "Vzhľad Nemesis Greyline Extended pre Dreambox"
+msgid "Nemesis Greyline Extended Skin for the Cuberevo"
+msgstr "Vzhľad Nemesis Greyline Extended pre Cuberevo"
 
 msgid "Nemesis Greyline Single Skin"
 msgstr "Vzhľad Nemesis Greyline Single"
 
-msgid "Nemesis Greyline Single Skin for the Dreambox"
-msgstr "Vzhľad Nemesis Greyline Single pre Dreambox"
+msgid "Nemesis Greyline Single Skin for the Cuberevo"
+msgstr "Vzhľad Nemesis Greyline Single pre Cuberevo"
 
 msgid "Nemesis Greyline Skin"
 msgstr "Vzhľad Nemesis Greyline"
 
-msgid "Nemesis Greyline Skin for the Dreambox"
-msgstr "Vzhľad Nemesis Greyline pre Dreambox"
+msgid "Nemesis Greyline Skin for the Cuberevo"
+msgstr "Vzhľad Nemesis Greyline pre Cuberevo"
 
 msgid "Nemesis ShadowLine Skin"
 msgstr "Vzhľad Nemesis ShadowLine"
 
-msgid "Nemesis ShadowLine Skin for the Dreambox"
-msgstr "Vzhľad Nemesis ShadowLine pre Dreambox"
+msgid "Nemesis ShadowLine Skin for the Cuberevo"
+msgstr "Vzhľad Nemesis ShadowLine pre Cuberevo"
 
 msgid "Netmask"
 msgstr "Maska siete"
@@ -3896,8 +3739,8 @@ msgstr "Nie, ale prepnúť na hľadanie videa."
 msgid "No, do nothing."
 msgstr "Nie, nič neurobiť."
 
-msgid "No, just start my dreambox"
-msgstr "Nie, len zapnúť Dreambox."
+msgid "No, just start my cuberevo"
+msgstr "Nie, len zapnúť Cuberevo."
 
 msgid "No, never"
 msgstr "Nie, nikdy"
@@ -3929,12 +3772,6 @@ msgstr "severne"
 
 msgid "Norwegian"
 msgstr "Nórčina"
-
-msgid "Not after"
-msgstr ""
-
-msgid "Not before"
-msgstr ""
 
 #, python-format
 msgid ""
@@ -3979,9 +3816,6 @@ msgstr "OK, odstrániť iné rozšírenia"
 
 msgid "OK, remove some extensions"
 msgstr "OK, odstrániť niektoré rozšírenia"
-
-msgid "ONID"
-msgstr ""
 
 msgid "OSD Settings"
 msgstr "Nastavenia OSD"
@@ -4038,9 +3872,6 @@ msgstr "Prípadne zadajte svoje meno, ak chcete."
 msgid "Orbital Position"
 msgstr "Orbitálna pozícia"
 
-msgid "Orbital position"
-msgstr ""
-
 msgid "Outer Bound (+/-)"
 msgstr "Hranice (+/-)"
 
@@ -4059,14 +3890,8 @@ msgstr "Prepísať konfiguračné súbory pri aktualizácii softvéru? "
 msgid "PAL"
 msgstr "PAL"
 
-msgid "PCR PID"
-msgstr ""
-
 msgid "PIDs"
 msgstr "PIDy"
-
-msgid "PMT PID"
-msgstr ""
 
 msgid "Package list update"
 msgstr "Aktualizovať zoznam balíčkov"
@@ -4103,10 +3928,10 @@ msgid "Parental control type"
 msgstr "Typ rodičovskej zámky"
 
 msgid ""
-"Partnerbox allows editing a remote Dreambox's record timers and stream its "
+"Partnerbox allows editing a remote Cuberevo's record timers and stream its "
 "TV  program."
 msgstr ""
-"Partnerbox umožňuje upravovať časovače vzdialených Dreamboxov a streamovať "
+"Partnerbox umožňuje upravovať časovače vzdialených Cuberevoov a streamovať "
 "ich TV program."
 
 msgid "Password"
@@ -4176,8 +4001,8 @@ msgstr "Prehrať nahrané filmy..."
 msgid "Play video again"
 msgstr "Znova prehrať video"
 
-msgid "Play videos from PC on your Dreambox"
-msgstr "Prehrať videá z počítača na Dreamboxe"
+msgid "Play videos from PC on your Cuberevo"
+msgstr "Prehrať videá z počítača na Cuberevoe"
 
 msgid "Playback of Youtube through a PC"
 msgstr "Prehrávanie z YouTube cez počítač"
@@ -4423,7 +4248,7 @@ msgstr "Modul: %(modul)s , Verzia: %(verzia)s"
 msgid "Plugins"
 msgstr "Moduly"
 
-msgid "PodCast streams podcasts to your Dreambox."
+msgid "PodCast streams podcasts to your Cuberevo."
 msgstr "PodCast streamuje podcasty do Dreeamboxa."
 
 msgid "Poland"
@@ -4458,9 +4283,6 @@ msgstr "Port D"
 
 msgid "Portuguese"
 msgstr "Portugalčina"
-
-msgid "Position of finished Timers in Timerlist"
-msgstr ""
 
 msgid "Positioner"
 msgstr "motor"
@@ -4717,9 +4539,6 @@ msgstr "Nahrávky"
 msgid "Recordings always have priority"
 msgstr "Nahrávanie má vždy prednosť"
 
-msgid "Redirect notifications to Growl, Snarl, Prowl or Syslog"
-msgstr ""
-
 msgid "Reenter new PIN"
 msgstr "Znova zadajte nový PIN."
 
@@ -4886,14 +4705,11 @@ msgstr "Prebieha obnova"
 msgid "Restore system settings"
 msgstr "Obnoviť systémové nastavenia"
 
-msgid "Restore your Dreambox with a USB stick"
-msgstr "Obnoviť Dreamboxa z kľúča USB"
+msgid "Restore your Cuberevo with a USB stick"
+msgstr "Obnoviť Cuberevoa z kľúča USB"
 
 msgid "Restrict \"after event\" to a certain timespan?"
 msgstr "Obmedziť \"po udalosti\" na určité časové obdobie?"
-
-msgid "Restrict to events on certain dates"
-msgstr ""
 
 msgid "Resume from last position"
 msgstr "Pokračovať od poslednej pozície"
@@ -4927,9 +4743,6 @@ msgstr "Rýchlosti prevíjania vzad"
 msgid "Right"
 msgstr "Doprava"
 
-msgid "Roll-off"
-msgstr ""
-
 msgid "Rolloff"
 msgstr ""
 
@@ -4939,9 +4752,6 @@ msgstr "Rýchlosť otáčania motora"
 msgid "Running"
 msgstr "Aktivované"
 
-msgid "Running in testmode"
-msgstr ""
-
 msgid "Russia"
 msgstr "Rusko"
 
@@ -4950,21 +4760,6 @@ msgstr "Ruština"
 
 msgid "S-Video"
 msgstr "S-Video"
-
-msgid "SD 25/50HZ Interlace Mode"
-msgstr ""
-
-msgid "SD 25/50HZ Progressive Mode"
-msgstr ""
-
-msgid "SD 30/60HZ Interlace Mode"
-msgstr ""
-
-msgid "SD 30/60HZ Progressive Mode"
-msgstr ""
-
-msgid "SID"
-msgstr ""
 
 msgid "SINGLE LAYER DVD"
 msgstr "JEDNOVRSTVOVÉ DVD"
@@ -4977,19 +4772,6 @@ msgstr "SNR:"
 
 msgid "SSID:"
 msgstr "SSID:"
-
-msgid ""
-"SVDRP is a protocol developed for the VDR software to control a set-top box "
-"remotely.\n"
-"This plugin only supports a subset of SVDRP and starts automatically using "
-"default settings.\n"
-"\n"
-"You probably don't need this plugin and should use the regular Web Interface "
-"for Enigma2 instead."
-msgstr ""
-
-msgid "SVDRP server for Enigma2"
-msgstr ""
 
 msgid "Sat"
 msgstr "So"
@@ -5353,9 +5135,6 @@ msgstr ""
 "Stanica nebola nájdená!\n"
 "(SID nenájdený v PAT)"
 
-msgid "Service reference"
-msgstr ""
-
 msgid "Service scan"
 msgstr "Vyhľadávanie staníc"
 
@@ -5400,8 +5179,8 @@ msgstr "Nastaviť maximálne trvanie"
 msgid "Set this NO to disable this AutoTimer."
 msgstr "Nastavením na NIE vypnete tento automatický časovač."
 
-msgid "Sets your Dreambox into Deep-Standby"
-msgstr "Vypne Dreambox"
+msgid "Sets your Cuberevo into Deep-Standby"
+msgstr "Vypne Cuberevo"
 
 msgid "Setting key canceled"
 msgstr "Nastavovanie tlačidla zrušené"
@@ -5465,9 +5244,6 @@ msgstr "Vo výbere staníc zobraziť priebeh programu"
 msgid "Show in extension menu"
 msgstr "Zobraziť v menu rozšírenia"
 
-msgid "Show info screen"
-msgstr ""
-
 msgid "Show infobar on channel change"
 msgstr "Zobraziť informácie pri zmene stanice"
 
@@ -5476,9 +5252,6 @@ msgstr "Zobraziť informácie pri zmene programu"
 
 msgid "Show infobar on skip forward/backward"
 msgstr "Zobraziť informácie pri skoku vpred, vzad"
-
-msgid "Show notification on conflicts"
-msgstr ""
 
 msgid "Show positioner movement"
 msgstr "Zobraziť otáčanie motora"
@@ -5520,8 +5293,8 @@ msgstr "Zobrazuje stav pripojenia bezdrôtovej LAN.\n"
 msgid "Shutdown"
 msgstr "Vypnúť"
 
-msgid "Shutdown Dreambox after"
-msgstr "Vypnúť Dreambox o"
+msgid "Shutdown Cuberevo after"
+msgstr "Vypnúť Cuberevo o"
 
 msgid "Signal Strength:"
 msgstr "Sila signálu:"
@@ -5544,8 +5317,8 @@ msgstr "Jednoduchý klient IRC GroupChat pre kanál e2 #dm8000-vip"
 msgid "Simple titleset (compatibility for legacy players)"
 msgstr "Jednoduchá sada titulov (kompatibilita so staršími prehrávačmi)"
 
-msgid "SimpleRSS allows reading RSS newsfeeds on your Dreambox."
-msgstr "SimpleRSS umožňuje čítať novinky RSS na Dreamboxe."
+msgid "SimpleRSS allows reading RSS newsfeeds on your Cuberevo."
+msgstr "SimpleRSS umožňuje čítať novinky RSS na Cuberevoe."
 
 msgid "Single"
 msgstr "Jeden"
@@ -5611,8 +5384,8 @@ msgstr "Obnoviť softvér"
 msgid "Software update"
 msgstr "Aktualizovať softvér"
 
-msgid "SoftwareManager manages your Dreambox software"
-msgstr "Správca softvéru spravuje softvér v Dreamboxe"
+msgid "SoftwareManager manages your Cuberevo software"
+msgstr "Správca softvéru spravuje softvér v Cuberevoe"
 
 msgid "Softwaremanager information"
 msgstr "Informácie správcu softvéru"
@@ -5699,9 +5472,6 @@ msgstr "Pohotovosť, napätie ventilátora %d"
 
 msgid "Start Webinterface"
 msgstr "Spustiť webové rozhranie"
-
-msgid "Start easy your multimedia plugins with the PVR-button."
-msgstr ""
 
 msgid "Start from the beginning"
 msgstr "Spustiť od začiatku"
@@ -5798,9 +5568,6 @@ msgstr "Ne"
 msgid "Sunday"
 msgstr "Nedeľa"
 
-msgid "Support \"Fast Scan\"?"
-msgstr ""
-
 msgid "Swap Services"
 msgstr "Vymeniť stanice"
 
@@ -5822,9 +5589,6 @@ msgstr "Prepínateľné typy tunerov:"
 msgid "Symbol Rate"
 msgstr "Symbolová rýchlosť"
 
-msgid "Symbol rate"
-msgstr ""
-
 msgid "Symbolrate"
 msgstr "Symb. rých."
 
@@ -5838,17 +5602,8 @@ msgstr "PREKLADATEĽ"
 msgid "TS file is too large for ISO9660 level 1!"
 msgstr "Súbor TS je príliš veľký pre úroveň 1 ISO9660!"
 
-msgid "TSID"
-msgstr ""
-
-msgid "TV Charts of all users"
-msgstr ""
-
 msgid "TV System"
 msgstr "TV norma"
-
-msgid "TXT PID"
-msgstr ""
 
 msgid "Table of content for collection"
 msgstr "Obsah zostavy"
@@ -5874,9 +5629,6 @@ msgstr "Taiwan"
 msgid "Temperature and Fan control"
 msgstr "Teplota a ventilátor"
 
-msgid "Temperature-dependent fan control."
-msgstr ""
-
 msgid "Terrestrial"
 msgstr "Pozemné"
 
@@ -5895,8 +5647,8 @@ msgstr "Test siete"
 msgid "Test mode"
 msgstr "Testovací režim"
 
-msgid "Test the network configuration of your Dreambox.\n"
-msgstr "Otestovať sieťovú konfiguráciu Dreamboxa.\n"
+msgid "Test the network configuration of your Cuberevo.\n"
+msgstr "Otestovať sieťovú konfiguráciu Cuberevoa.\n"
 
 msgid "Test your DiSEqC equipment"
 msgstr "Vyskúšať zariadenie DiSEqC"
@@ -5913,10 +5665,10 @@ msgstr ""
 
 msgid ""
 "Thank you for using the wizard. Your box is now ready to use.\n"
-"Please press OK to start using your Dreambox."
+"Please press OK to start using your Cuberevo."
 msgstr ""
 "Ďakujeme za využitie pomocníka. Teraz je prijímač pripravený na používanie.\n"
-"Stlačením tlačidla OK môžete začať používať Dreambox."
+"Stlačením tlačidla OK môžete začať používať Cuberevo."
 
 msgid ""
 "Thank you for using the wizard. Your new AutoTimer has been added to the "
@@ -5928,7 +5680,7 @@ msgstr ""
 "Stlačte OK a pokračujte."
 
 msgid ""
-"The CleanupWizard informs you when the internal free memory of your dreambox "
+"The CleanupWizard informs you when the internal free memory of your cuberevo "
 "has dropped below a definable threshold.You can use this wizard to remove "
 "some plugins."
 msgstr ""
@@ -5937,11 +5689,11 @@ msgstr ""
 
 msgid ""
 "The DVD standard doesn't support H.264 (HDTV) video streams. Do you want to "
-"create a Dreambox format data DVD (which will not play in stand-alone DVD "
+"create a Cuberevo format data DVD (which will not play in stand-alone DVD "
 "players) instead?"
 msgstr ""
 "DVD norma nepodporuje video H.264 (HDTV). Chcete namiesto toho vytvoriť "
-"dátové DVD vo formáte Dreambox (nedá sa prehrať na samostatných DVD "
+"dátové DVD vo formáte Cuberevo (nedá sa prehrať na samostatných DVD "
 "prehrávačoch)?"
 
 msgid ""
@@ -5952,7 +5704,7 @@ msgid ""
 "The box automatically wakes up for recordings or at the end of the sleep "
 "time. You therefore don't have to wait until it is on again."
 msgstr ""
-"Modul Šetriča energie (Energy Power Save) v stanovenom čase prepne Dreambox "
+"Modul Šetriča energie (Energy Power Save) v stanovenom čase prepne Cuberevo "
 "z pohotovostného režimu do vypnutia (Deep Standby).\n"
 "Stane sa to len v prípade, že je DB v pohotovostnom režime, nenahráva sa, "
 "ani sa nemá v priebehu 20 minút nahrávať.\n"
@@ -5993,17 +5745,17 @@ msgstr ""
 
 msgid ""
 "The SkinSelector shows a menu with selectable skins.\n"
-"It's now easy to change the look and feel of your Dreambox."
+"It's now easy to change the look and feel of your Cuberevo."
 msgstr ""
 "Volič vzhľadov zobrazí menu s voliteľnými vzhľadmi.\n"
-"Teraz môžete zmeniť vzhľad a dojem z Dreamboxa."
+"Teraz môžete zmeniť vzhľad a dojem z Cuberevoa."
 
 msgid ""
-"The SoftwareManager manages your Dreambox software.\n"
+"The SoftwareManager manages your Cuberevo software.\n"
 "It's easy to update your receiver's software, install or remove plugins or "
 "even backup and restore your system settings."
 msgstr ""
-"Správca softvéru spravuje softvér v Dreamboxe.\n"
+"Správca softvéru spravuje softvér v Cuberevoe.\n"
 "Jednoducho aktualizujete softvér prijímača, nainštalujete alebo odstránite "
 "moduly a obnovíte systémové nastavenia."
 
@@ -6110,9 +5862,9 @@ msgstr "Inštalácia zoznamov predvolených staníc je ukončená."
 
 msgid ""
 "The installation of the default settings is finished. You can now continue "
-"configuring your Dreambox by pressing the OK button on the remote control."
+"configuring your Cuberevo by pressing the OK button on the remote control."
 msgstr ""
-"Inštalácia predvolených nastavení je ukončená. V konfigurácii Dreamboxa "
+"Inštalácia predvolených nastavení je ukončená. V konfigurácii Cuberevoa "
 "môžete pokračovať po stlačení tlačidla OK na diaľkovom ovládači."
 
 msgid "The match attribute is mandatory."
@@ -6213,10 +5965,10 @@ msgid "There was an error. The package:"
 msgstr "Vyskytla sa chyba. Balíček:"
 
 msgid ""
-"There's a certificate update available for your dreambox. Would you like to "
+"There's a certificate update available for your cuberevo. Would you like to "
 "apply this update now?"
 msgstr ""
-"K dispozícii je aktualizácia certifikátu pre Dreambox. Chcete ju teraz "
+"K dispozícii je aktualizácia certifikátu pre Cuberevo. Chcete ju teraz "
 "použiť?"
 
 msgid ""
@@ -6227,8 +5979,8 @@ msgstr ""
 "celý obsah disku."
 
 #, python-format
-msgid "This Dreambox can't decode %s streams!"
-msgstr "Tento Dreambox nedokáže dekódovať toky typu %s!"
+msgid "This Cuberevo can't decode %s streams!"
+msgstr "Tento Cuberevo nedokáže dekódovať toky typu %s!"
 
 msgid "This Month"
 msgstr "Tento mesiac"
@@ -6267,7 +6019,7 @@ msgstr ""
 
 msgid ""
 "This plugin creates a USB stick which can be used to update the firmware of "
-"your Dreambox without the need for a network or WLAN connection.\n"
+"your Cuberevo without the need for a network or WLAN connection.\n"
 "First, a USB stick needs to be prepared so that it becomes bootable.\n"
 "In the next step, an NFI image file can be downloaded from the update server "
 "and saved on the USB stick.\n"
@@ -6275,7 +6027,7 @@ msgid ""
 "Otherwise plug in a USB stick with a minimum size of 64 MB!"
 msgstr ""
 "Tento zásuvný modul vytvorí kľúč USB, ktorý sa dá použiť na aktualizáciu "
-"firmvéru Dreamboxa bez pripojenia LAN alebo WLAN.\n"
+"firmvéru Cuberevoa bez pripojenia LAN alebo WLAN.\n"
 "Najprv treba kľúč USB pripraviť tak, aby bol bootovateľný.\n"
 "Potom stiahnete súbor NFI zo servera a uložíte na kľúč USB.\n"
 "Ak ste si už pripravili bootovateľný kľúč USB, vložte ho. Ak nie, vložte "
@@ -6461,7 +6213,7 @@ msgid "To be used as simple downloading application by other Plugins."
 msgstr "Používa sa na jednoduché sťahovanie inými modulmi."
 
 msgid ""
-"To update your Dreambox firmware, please follow these steps:\n"
+"To update your Cuberevo firmware, please follow these steps:\n"
 "1) Turn off your box with the rear power switch and make sure the bootable "
 "USB stick is plugged in.\n"
 "2) Turn mains back on and hold the DOWN button on the front panel pressed "
@@ -6469,7 +6221,7 @@ msgid ""
 "3) Wait for bootup and follow instructions of the wizard."
 msgstr ""
 "Ak chcete altualizovať firmvér Drreamboxa, postupujte takto:\n"
-"1) Vypnite Dreambox vypínačom na zadnej stene a overte si, či máte zasunutý "
+"1) Vypnite Cuberevo vypínačom na zadnej stene a overte si, či máte zasunutý "
 "bootovateľný kľúr USB.\n"
 "2) Zapnite vypínač na zadnej stene a podržte tlačidlo DOWN na prednej stene "
 "10 sekúnd stlačené.\n"
@@ -6666,10 +6418,10 @@ msgid "Update done..."
 msgstr "Aktualizácia skončila."
 
 msgid ""
-"Update done... The genuine dreambox test will now be rerun and should not "
+"Update done... The genuine cuberevo test will now be rerun and should not "
 "ask you to update again."
 msgstr ""
-"Aktualizácia je hotová. Test pravosti Dreamboxa sa teraz zopakuje bez ďalšej "
+"Aktualizácia je hotová. Test pravosti Cuberevoa sa teraz zopakuje bez ďalšej "
 "žiadosti o aktualizáciu."
 
 msgid "Updatefeed not available."
@@ -6699,8 +6451,8 @@ msgstr "Aktualizácia je skončená."
 msgid "Upgrading"
 msgstr "Aktualizujem"
 
-msgid "Upgrading Dreambox... Please wait"
-msgstr "Aktualizujem Dreambox... Čakajte"
+msgid "Upgrading Cuberevo... Please wait"
+msgstr "Aktualizujem Cuberevo... Čakajte"
 
 msgid "Upper bound of timespan."
 msgstr "Horná hranica časového obdobia."
@@ -6730,8 +6482,11 @@ msgstr "Použiť vlastné umiestnenie"
 msgid "Use a gateway"
 msgstr "Použiť bránu"
 
-msgid "Use and control multiple Dreamboxes with different RCs."
-msgstr "Na riadenie viacerých Dreamboxov s rôznymi RC."
+msgid "Use and control multiple Cuberevoes with different RCs."
+msgstr "Na riadenie viacerých Cuberevoov s rôznymi RC."
+
+msgid "Use non-smooth winding at speeds above"
+msgstr "Použiť skokové prehrávanie pri rýchlostiach nad"
 
 msgid "Use power measurement"
 msgstr "Použiť meranie spotreby"
@@ -6801,22 +6556,13 @@ msgstr ""
 msgid "Vali-XD skin"
 msgstr "Vzhľad Vali-XD"
 
-msgid "Vali.HD.atlantis skin"
-msgstr ""
-
 msgid "Vali.HD.nano skin"
 msgstr "Vzhľad Vali.HD.nano"
 
-msgid "Vali.HD.warp skin"
-msgstr ""
-
 msgid ""
-"Verify your Dreambox authenticity by running the genuine dreambox plugin!"
+"Verify your Cuberevo authenticity by running the genuine cuberevo plugin!"
 msgstr ""
-"Skontrolujte pravosť Dreamboxa spustením modulu ne overenie jeho pravosti."
-
-msgid "Verifying your internet connection..."
-msgstr ""
+"Skontrolujte pravosť Cuberevoa spustením modulu ne overenie jeho pravosti."
 
 msgid "Vertical"
 msgstr "Zvislá"
@@ -6829,9 +6575,6 @@ msgstr "Sprievodca jemným nastavením obrazu"
 
 msgid "Video Output"
 msgstr "Výstup obrazu"
-
-msgid "Video PID"
-msgstr ""
 
 msgid "Video Setup"
 msgstr "Nastavenie obrazu"
@@ -6893,8 +6636,8 @@ msgstr "Zobraziť počet"
 msgid "View Google maps"
 msgstr "Zobraziť mapy Google"
 
-msgid "View Google maps with your Dreambox."
-msgstr "Zobraziť mapy Google cez Dreamboxa"
+msgid "View Google maps with your Cuberevo."
+msgstr "Zobraziť mapy Google cez Cuberevoa"
 
 msgid "View Movies..."
 msgstr "Zobraziť filmy..."
@@ -6963,8 +6706,8 @@ msgstr ""
 msgid "View teletext..."
 msgstr "Zobraziť teletext..."
 
-msgid "View, edit or delete mountpoints on your Dreambox."
-msgstr "Zobraziť, upraviť alebo odstrániť body pripojenia k Dreamboxu."
+msgid "View, edit or delete mountpoints on your Cuberevo."
+msgstr "Zobraziť, upraviť alebo odstrániť body pripojenia k Cuberevou."
 
 msgid "View, edit or delete usernames and passwords for your network."
 msgstr "Zobraziť, upraviť alebo vymazať prístupové mená a heslá do siete."
@@ -7027,14 +6770,11 @@ msgstr "Varovať, ak voľné miesto poklesne pod (kB):"
 msgid "Watch streams from ZDF Mediathek"
 msgstr "Sledovať streamy z Mediatéky ZDF"
 
-msgid "WeatherPlugin shows weatherforecasts on your Dreambox."
-msgstr "Modul počasia zobrazuje predpovede počasia na Dreamboxe."
+msgid "WeatherPlugin shows weatherforecasts on your Cuberevo."
+msgstr "Modul počasia zobrazuje predpovede počasia na Cuberevoe."
 
-msgid "Weatherforecast on your Dreambox"
-msgstr "Predpoveď počasia na Dreamboxe"
-
-msgid "Web-Bouquet-Editor for PC"
-msgstr ""
+msgid "Weatherforecast on your Cuberevo"
+msgstr "Predpoveď počasia na Cuberevoe"
 
 msgid "Webinterface"
 msgstr "Webové rozhranie"
@@ -7077,11 +6817,11 @@ msgstr ""
 
 msgid ""
 "Welcome to the Image upgrade wizard. The wizard will assist you in upgrading "
-"the firmware of your Dreambox by providing a backup facility for your "
+"the firmware of your Cuberevo by providing a backup facility for your "
 "current settings and a short explanation of how to upgrade your firmware."
 msgstr ""
 "Víta vás sprievodca aktualizáciou image. Pomôže vám pri aktualizácii "
-"firmvéru v Dreamboxe umožnením zálohovania aktuálnych nastavení a stručným "
+"firmvéru v Cuberevoe umožnením zálohovania aktuálnych nastavení a stručným "
 "vysvetlením, ako aktualizovať firmvér."
 
 msgid ""
@@ -7135,27 +6875,27 @@ msgid ""
 "Welcome to the cleanup wizard.\n"
 "\n"
 "We have detected that your available internal memory has dropped below 2MB.\n"
-"To ensure stable operation of your Dreambox, the internal memory should be "
+"To ensure stable operation of your Cuberevo, the internal memory should be "
 "cleaned up.\n"
 "You can use this wizard to remove some extensions.\n"
 msgstr ""
 "Víta vás Sprievodca čistením.\n"
 "\n"
 "Zistil som, že dostupná vnútorná pamäť poklesla pod 2 MB.\n"
-"Pre zabezpečenie stabilného chodu Dreamboxa treba vnútornú pamäť vyčistiť.\n"
+"Pre zabezpečenie stabilného chodu Cuberevoa treba vnútornú pamäť vyčistiť.\n"
 "Tohto sprievodcu môžete použiť na odstránenie niektorých rozšírení.\n"
 
 msgid ""
 "Welcome.\n"
 "\n"
-"If you want to connect your Dreambox to the Internet, this wizard will guide "
-"you through the basic network setup of your Dreambox.\n"
+"If you want to connect your Cuberevo to the Internet, this wizard will guide "
+"you through the basic network setup of your Cuberevo.\n"
 "\n"
 "Press OK to start configuring your network"
 msgstr ""
 "Vitajte.\n"
 "\n"
-"Ak chcete pripojiť Dreambox k internetu, tento sprievodca vás povedie "
+"Ak chcete pripojiť Cuberevo k internetu, tento sprievodca vás povedie "
 "základnými nastaveniami siete.\n"
 "\n"
 "Po stlačení OK začnite konfigurovať sieť"
@@ -7174,12 +6914,12 @@ msgstr ""
 msgid ""
 "Welcome.\n"
 "\n"
-"This start wizard will guide you through the basic setup of your Dreambox.\n"
+"This start wizard will guide you through the basic setup of your Cuberevo.\n"
 "Press the OK button on your remote control to move to the next step."
 msgstr ""
 "Vitajte.\n"
 "\n"
-"Tento úvodný sprievodca vám pomôže so základnými nastaveniami Dreamboxa.\n"
+"Tento úvodný sprievodca vám pomôže so základnými nastaveniami Cuberevoa.\n"
 "Stlačením tlačidla OK na diaľkovom ovládači prejdite do ďalšieho kroku."
 
 msgid "Welcome..."
@@ -7193,11 +6933,6 @@ msgstr "Čo chcete vyhľadať?"
 
 msgid "What to do with submitted crashlogs?"
 msgstr "Čo urobiť s odoslanými správami o zrútení?"
-
-msgid ""
-"When supporting \"Fast Scan\" the service type is ignored. You don't need to "
-"enable this unless your Image supports \"Fast Scan\" and you are using it."
-msgstr ""
 
 msgid ""
 "When this option is enabled the AutoTimer won't match events where another "
@@ -7244,26 +6979,26 @@ msgstr ""
 "na spravodajských staniciach)."
 
 msgid ""
-"With DVDBurn you can make compilations of records from your Dreambox hard "
+"With DVDBurn you can make compilations of records from your Cuberevo hard "
 "drive.\n"
 "Optionally you can add customizable menus. You can record the compilation to "
 "a standard-compliant DVD that can be played on conventinal DVD players.\n"
-"HDTV recordings can only be burned in proprietary dreambox format."
+"HDTV recordings can only be burned in proprietary cuberevo format."
 msgstr ""
 "S Napaľovačkou DVD (DVDBurn) si môžete urobiť kompilácie nahrávok z pevného "
 "disku DB.\n"
 "Alebo si môžete pridať upraviteľné menu. KOmpiláciu môžete napáliť na bežný "
 "disk DVD, ktorý sa dá prehrať v bežných DVD prehrávačoch.\n"
-"Nahrávky HDTV sa dajú napáliť len vo vlastnom formáte Dreamboxa."
+"Nahrávky HDTV sa dajú napáliť len vo vlastnom formáte Cuberevoa."
 
 msgid "With EPGSearch you can search through the EPG and create timers."
 msgstr ""
 "S modulom Prehľadávanie EPG (EPGSearch) môžete prehľadávať EPG a vytvárať "
 "časovače."
 
-msgid "With Genuine Dreambox you can verify the authenticity of your Dreambox."
+msgid "With Genuine Cuberevo you can verify the authenticity of your Cuberevo."
 msgstr ""
-"Pomocou modulu Originálny Dreambox (Genuine Dreambox) si môžete overiť "
+"Pomocou modulu Originálny Cuberevo (Genuine Cuberevo) si môžete overiť "
 "pravosť svojho Dereamboxa."
 
 msgid ""
@@ -7296,20 +7031,20 @@ msgstr ""
 "(od 1 do 9 minút), ktoré po uplynutí prepnú späť na pôvodnú stanicu."
 
 msgid ""
-"With YouTubePlayer you can watch YouTube-Videos on the Dreambox.\n"
+"With YouTubePlayer you can watch YouTube-Videos on the Cuberevo.\n"
 "This plugin requires a PC with the VLC program running."
 msgstr ""
 "S prehrávačom YouTube (YouTubePlayer) môžete sledovať videá YouTube na "
-"Dreamboxe.\n"
+"Cuberevoe.\n"
 "Tento modul si vyžaduje počítač s bežiacim programom VLC."
 
 msgid ""
 "With the CommonInterfaceAssignment plugin it is possible to use differentCI "
-"modules in your Dreambox and assign dedicated providers/services or caids to "
+"modules in your Cuberevo and assign dedicated providers/services or caids to "
 "each of them.\n"
 "This allows watching a scrambled service while recording another one."
 msgstr ""
-"Modul Priradenia CI (CommonInterfaceAssignment) umožäuje použiť v Dreamboxe "
+"Modul Priradenia CI (CommonInterfaceAssignment) umožäuje použiť v Cuberevoe "
 "rôzne moduly CI a priradiť ich určitým poskytovateľom, staniciam alebo "
 "CAID.\n"
 "To umožuje sledovať kódovanú stanicu pri nahrávaní inej."
@@ -7337,11 +7072,11 @@ msgstr ""
 
 msgid ""
 "With the NFIFlash plugin it is possible to prepare a USB stick with an "
-"Dreambox image.\n"
-"It is then possible to flash your Dreambox with the image on that stick."
+"Cuberevo image.\n"
+"It is then possible to flash your Cuberevo with the image on that stick."
 msgstr ""
-"Modul NFIFlash vám umožní pripraviť kľúč USB s imageom pre Dreambox.\n"
-"Potom môžete flashovať Dreambox imageom z kľúča."
+"Modul NFIFlash vám umožní pripraviť kľúč USB s imageom pre Cuberevo.\n"
+"Potom môžete flashovať Cuberevo imageom z kľúča."
 
 msgid ""
 "With the NetworkWizard you can easily configure your network step by step."
@@ -7459,8 +7194,8 @@ msgstr "Môžete si vybrať, čo chcete nainštalovať..."
 msgid "You can install this plugin."
 msgstr "Môžete nainštalovať tento modul."
 
-msgid "You can only burn Dreambox recordings!"
-msgstr "Napáliť môžete len nahrávky Dreamboxa."
+msgid "You can only burn Cuberevo recordings!"
+msgstr "Napáliť môžete len nahrávky Cuberevoa."
 
 msgid "You can remove this plugin."
 msgstr "Tento modul môžete odstrániť!"
@@ -7473,12 +7208,6 @@ msgstr ""
 "Tu môžete urobiť základné nastavenia automatického časovača.\n"
 "Zatiaľčo „Názov“ je len čitateľný názov v prehľade,  „Hľadať titul“ je to, "
 "čo sa bude hľadať v EPG."
-
-msgid ""
-"You can use the EasyInfo for manage your EPG plugins from info button. You "
-"have also a new now-next event viewer. Easy-PG, the own graphical EPG bowser "
-"is also included."
-msgstr ""
 
 msgid "You cannot delete this!"
 msgstr "Toto nemôžete zmazať!"
@@ -7545,15 +7274,15 @@ msgid "You have to wait %s!"
 msgstr "Musíte čakať %s!"
 
 msgid ""
-"You need a PC connected to your dreambox. If you need further instructions, "
+"You need a PC connected to your cuberevo. If you need further instructions, "
 "please visit the website http://www.dm7025.de.\n"
-"Your dreambox will now be halted. After you have performed the update "
+"Your cuberevo will now be halted. After you have performed the update "
 "instructions from the website, your new firmware will ask you to restore "
 "your settings."
 msgstr ""
-"Musíte mať počítač pripojený k Dreamboxu. Ak potrebujete ďalšie pokyny, "
+"Musíte mať počítač pripojený k Cuberevou. Ak potrebujete ďalšie pokyny, "
 "navštívte webovú stránku http://www.dm7025.de.\n"
-"Dreambox sa teraz zastaví. Po splnení aktualizačných pokynov z webovej "
+"Cuberevo sa teraz zastaví. Po splnení aktualizačných pokynov z webovej "
 "stránky vás nový firmvér požiada o obnovu nastavení."
 
 msgid ""
@@ -7583,32 +7312,32 @@ msgstr ""
 "Potvrďte, že ide o zámer, inak bude odstránená."
 
 msgid ""
-"Your Dreambox is now ready to use.\n"
+"Your Cuberevo is now ready to use.\n"
 "\n"
 "Your internet connection is working now.\n"
 "\n"
 msgstr ""
-"Váš Dreambox je teraz pripravený na používanie.\n"
+"Váš Cuberevo je teraz pripravený na používanie.\n"
 "\n"
 "Internetové pripojenie funguje.\n"
 "\n"
 
 msgid ""
-"Your Dreambox is now ready to use.\n"
+"Your Cuberevo is now ready to use.\n"
 "\n"
 "Your internet connection is working now.\n"
 "\n"
 "Please press OK to continue."
 msgstr ""
-"Váš Dreambox je teraz pripravený na používanie.\n"
+"Váš Cuberevo je teraz pripravený na používanie.\n"
 "\n"
 "Internetové pripojenie funguje.\n"
 "\n"
 "Pokračujte stlačením OK."
 
-msgid "Your Dreambox will restart after pressing OK on your remote control."
+msgid "Your Cuberevo will restart after pressing OK on your remote control."
 msgstr ""
-"Dreambox sa reštartuje, keď stlačíte tlačidlo OK na diaľkovom ovládači."
+"Cuberevo sa reštartuje, keď stlačíte tlačidlo OK na diaľkovom ovládači."
 
 msgid ""
 "Your backup succeeded. We will now continue to explain the further upgrade "
@@ -7634,14 +7363,14 @@ msgstr ""
 msgid "Your current collection will get lost!"
 msgstr "Vaša aktuálna zostava sa stratí."
 
-msgid "Your dreambox is shutting down. Please stand by..."
-msgstr "Dreambox sa vypína. Vyčkajte..."
+msgid "Your cuberevo is shutting down. Please stand by..."
+msgstr "Cuberevo sa vypína. Vyčkajte..."
 
 msgid ""
-"Your dreambox isn't connected to the internet properly. Please check it and "
+"Your cuberevo isn't connected to the internet properly. Please check it and "
 "try again."
 msgstr ""
-"Dreambox nie je správne pripojený do internetu. Skontrolujte a skúste znova."
+"Cuberevo nie je správne pripojený do internetu. Skontrolujte a skúste znova."
 
 msgid "Your email address:"
 msgstr "Vaša e-mailová adresa:"
@@ -7665,9 +7394,6 @@ msgstr "Vaše meno (voliteľne):"
 
 msgid "Your network configuration has been activated."
 msgstr "Nastavenie siete bolo aktivované."
-
-msgid "Your network is not working. Please try again."
-msgstr ""
 
 msgid "Your network mount has been activated."
 msgstr "Sieťový prístup bol aktivovaný."
@@ -7851,12 +7577,6 @@ msgstr "Priradené CAIdy:"
 msgid "assigned Services/Provider:"
 msgstr "Priradené služby a poskytovatelia:"
 
-msgid "at beginning"
-msgstr ""
-
-msgid "at end"
-msgstr ""
-
 #, python-format
 msgid "audio track (%s) format"
 msgstr "formát zvukovej stopy (%s)"
@@ -7870,9 +7590,6 @@ msgstr "zvukové stopy"
 
 msgid "auto"
 msgstr "auto"
-
-msgid "autotimers need a match attribute"
-msgstr ""
 
 msgid "available"
 msgstr "dostupné"
@@ -7897,9 +7614,6 @@ msgstr "čierna listina"
 
 msgid "blue"
 msgstr "modrá"
-
-msgid "bob"
-msgstr ""
 
 #, python-format
 msgid "burn audio track (%s)"
@@ -7932,9 +7646,6 @@ msgstr "vymazať zoznam prehrávok"
 msgid "complex"
 msgstr "komplexné"
 
-msgid "config changed."
-msgstr ""
-
 msgid "config menu"
 msgstr "menu nast."
 
@@ -7947,8 +7658,8 @@ msgstr "pripojené"
 msgid "continue"
 msgstr "pokrač."
 
-msgid "control multiple Dreamboxes with different RCs"
-msgstr "Riadiť viacero Dreamboxov s rôznymi RC"
+msgid "control multiple Cuberevoes with different RCs"
+msgstr "Riadiť viacero Cuberevoov s rôznymi RC"
 
 msgid "copy to bouquets"
 msgstr "skopírovať do buketov"
@@ -7959,12 +7670,6 @@ msgstr "nedá sa odstrániť"
 msgid "create directory"
 msgstr "vytvoriť adresár"
 
-msgid "creates virtual series folders from episodes"
-msgstr ""
-
-msgid "creates virtual series folders from sets of recorded episodes"
-msgstr ""
-
 #, python-format
 msgid "currently installed image: %s"
 msgstr "Aktuálne nainštalovaný image: %s"
@@ -7974,9 +7679,6 @@ msgstr "denne"
 
 msgid "day"
 msgstr "deň"
-
-msgid "default"
-msgstr ""
 
 msgid "delete"
 msgstr "Zmazať"
@@ -8233,9 +7935,6 @@ msgstr "minúta"
 msgid "minutes"
 msgstr "minút"
 
-msgid "missing parameter \"id\""
-msgstr ""
-
 msgid "month"
 msgstr "mesiac"
 
@@ -8385,6 +8084,9 @@ msgstr "červená"
 
 msgid "redesigned Kerni-HD1 skin"
 msgstr "Upravený vzhľad Kerni-HD1"
+
+msgid "redirect notifications to Growl"
+msgstr "Presmerovať oznámenia na Growl"
 
 msgid "remove a nameserver entry"
 msgstr "Odstrániť DNS"
@@ -8642,10 +8344,6 @@ msgstr "prepnúť informácie o čase, kapitole, zvuku a podtitulkoch"
 msgid "tuner is not supported"
 msgstr "tuner nie je podporovaný"
 
-#, python-format
-msgid "unable to find timer with id %i"
-msgstr ""
-
 msgid "unavailable"
 msgstr "nedostupné"
 
@@ -8664,11 +8362,11 @@ msgstr "do vypnutia alebo reštartu"
 msgid "use as HDD replacement"
 msgstr "použiť ako náhradu HDD"
 
-msgid "use your Dreambox as Web proxy"
-msgstr "Použiť Dreambox ako webový proxy"
+msgid "use your Cuberevo as Web proxy"
+msgstr "Použiť Cuberevo ako webový proxy"
 
-msgid "use your Dreambox as Web proxy."
-msgstr "Použiť Dreambox ako webový proxy."
+msgid "use your Cuberevo as Web proxy."
+msgstr "Použiť Cuberevo ako webový proxy."
 
 msgid "user defined"
 msgstr "užívateľsky definované"
@@ -8713,10 +8411,10 @@ msgid "yes (keep feeds)"
 msgstr "áno (zachovať feedy)"
 
 msgid ""
-"your dreambox might be unusable now. Please consult the manual for further "
-"assistance before rebooting your dreambox."
+"your cuberevo might be unusable now. Please consult the manual for further "
+"assistance before rebooting your cuberevo."
 msgstr ""
-"Dreambox teraz môže byť nepoužiteľný. Pred jeho reštartovaním vyhľadajte "
+"Cuberevo teraz môže byť nepoužiteľný. Pred jeho reštartovaním vyhľadajte "
 "pomoc v návode na používanie."
 
 msgid "zap"
@@ -8732,9 +8430,6 @@ msgstr "prepnuté"
 #~ ".NFI file passed md5sum signature check. You can safely flash this image!"
 #~ msgstr ""
 #~ "Súbor .NFI prešiel kontrolou md5sum. Tento image môžete bezpečne použiť!"
-
-#~ msgid "A BackToTheRoots-Skin ... or good old times."
-#~ msgstr "Vzhľad Späť ku koreňom ... alebo zlaté staré časy"
 
 #~ msgid "Cannot parse feed directory"
 #~ msgstr "Nemôžem prečítať adresár s feedmi"
@@ -8763,29 +8458,10 @@ msgstr "prepnuté"
 #~ msgid "Download of USB flasher boot image failed: "
 #~ msgstr "Sťahovanie súboru USB flasher boot image zlyhalo: "
 
-#~ msgid "Enter Fast Forward at speed"
-#~ msgstr "Počiatočná rýchlosť prevíjania vpred"
-
-#~ msgid "Enter Rewind at speed"
-#~ msgstr "Počiatočná rýchlosť prevíjania vzad"
-
 #~ msgid ""
 #~ "First we need to download the latest boot environment for the USB flasher."
 #~ msgstr ""
 #~ "Najprv sa musí stiahnuť najnovšie bootovacie prostredie pre USB flasher."
-
-#~ msgid "Frame repeat count during non-smooth winding"
-#~ msgstr "Počet opakovaní obrázka počas skokového prevíjania"
-
-#~ msgid ""
-#~ "Growlee allows your Dreambox to send short messages using the growl "
-#~ "protocol\n"
-#~ "like Recording started notifications to a PC running a growl client"
-#~ msgstr ""
-#~ "Growlee umožňuje posielať z Dreamboxa krátke správy pomocou protokolu "
-#~ "growl,\n"
-#~ "napríklad oznam „Začalo nahrávanie“ do počítača, na ktorom beží klient "
-#~ "growl."
 
 #~ msgid "Image flash utility"
 #~ msgstr "Pomôcka na flešovanie image."
@@ -8809,10 +8485,10 @@ msgstr "prepnuté"
 #~ msgstr "Zvoľte súbor .NFI na stiahnutie zo servera"
 
 #~ msgid ""
-#~ "Please disconnect all USB devices from your Dreambox and (re-)attach the "
+#~ "Please disconnect all USB devices from your Cuberevo and (re-)attach the "
 #~ "target USB stick (minimum size is 64 MB) now!"
 #~ msgstr ""
-#~ "Odpojte od Dreamboxa všetky zariadenia USB a potom (znova) pripojte "
+#~ "Odpojte od Cuberevoa všetky zariadenia USB a potom (znova) pripojte "
 #~ "cieľový kľúč USB (minimálna kapacita je 64 MB)!"
 
 #~ msgid "Please enter the old pin code"
@@ -8910,14 +8586,14 @@ msgstr "prepnuté"
 #~ "do pamäte flash?"
 
 #~ msgid ""
-#~ "To update your Dreambox firmware, please follow these steps:\n"
+#~ "To update your Cuberevo firmware, please follow these steps:\n"
 #~ "1) Turn off your box with the rear power switch and plug in the bootable "
 #~ "USB stick.\n"
 #~ "2) Turn mains back on and hold the DOWN button on the front panel pressed "
 #~ "for 10 seconds.\n"
 #~ "3) Wait for bootup and follow instructions of the wizard."
 #~ msgstr ""
-#~ "Ak chcete aktualizovať firmvér Dreamboxu, riaďte sa týmto postupom:\n"
+#~ "Ak chcete aktualizovať firmvér Cuberevou, riaďte sa týmto postupom:\n"
 #~ "1) Vypnite prijímač vypínačom na zadnej strane a zasuňte bootovateľný "
 #~ "kľúč USB.\n"
 #~ "2) Znova zapnite sieť a podržte tlačidlo NADOL na prednom paneli stlačené "
@@ -8925,13 +8601,10 @@ msgstr "prepnuté"
 #~ "3) Vyčkajte na nabootovanie a riaďte sa pokynmi sprievodcu."
 
 #~ msgid ""
-#~ "USB stick wizard finished. Your dreambox will now restart with your new "
+#~ "USB stick wizard finished. Your cuberevo will now restart with your new "
 #~ "image!"
 #~ msgstr ""
-#~ "Sprievodca kľúčom USB skončil. Dreambox sa teraz reštartuje s novým image."
-
-#~ msgid "Use non-smooth winding at speeds above"
-#~ msgstr "Použiť skokové prehrávanie pri rýchlostiach nad"
+#~ "Sprievodca kľúčom USB skončil. Cuberevo sa teraz reštartuje s novým image."
 
 #~ msgid "Wireless"
 #~ msgstr "Bezdrôtovo"
@@ -8953,9 +8626,6 @@ msgstr "prepnuté"
 
 #~ msgid "failed"
 #~ msgstr "zlyhalo"
-
-#~ msgid "redirect notifications to Growl"
-#~ msgstr "Presmerovať oznámenia na Growl"
 
 #~ msgid "select .NFI flash file"
 #~ msgstr "zvoliť súbor .NFI"

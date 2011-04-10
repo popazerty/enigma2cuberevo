@@ -48,7 +48,8 @@ enigma2_LDADD = \
 	@LIBXINE_LIBS@ \
 	@LIBXMLCCWRAP_LIBS@ \
 	@PTHREAD_LIBS@ \
-	@PYTHON_LDFLAGS@
+	@PYTHON_LDFLAGS@ \
+	-ldl -lpthread -lcrypt -lresolv -lrt -leplayer3 -lmmeimage
 
 enigma2_LDFLAGS = -Wl,--export-dynamic
 

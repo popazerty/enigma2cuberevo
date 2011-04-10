@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ENIGMA 1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-04-01 08:09+0000\n"
+"POT-Creation-Date: 2011-01-27 12:42+0000\n"
 "PO-Revision-Date: 2009-01-25 13:59+0100\n"
 "Last-Translator: Gregor <greg.domajnko@gmail.com>\n"
 "Language-Team: \n"
@@ -27,7 +27,7 @@ msgstr ""
 #
 msgid ""
 "\n"
-"Backup your Dreambox settings."
+"Backup your Cuberevo settings."
 msgstr ""
 
 #
@@ -39,13 +39,13 @@ msgstr ""
 #
 msgid ""
 "\n"
-"Manage extensions or plugins for your Dreambox"
+"Manage extensions or plugins for your Cuberevo"
 msgstr ""
 
 #
 msgid ""
 "\n"
-"Online update of your Dreambox software."
+"Online update of your Cuberevo software."
 msgstr ""
 
 #
@@ -57,13 +57,13 @@ msgstr ""
 #
 msgid ""
 "\n"
-"Restore your Dreambox settings."
+"Restore your Cuberevo settings."
 msgstr ""
 
 #
 msgid ""
 "\n"
-"Restore your Dreambox with a new firmware."
+"Restore your Cuberevo with a new firmware."
 msgstr ""
 
 #
@@ -168,12 +168,6 @@ msgstr "#ffffffff"
 msgid "%H:%M"
 msgstr "%S:%M"
 
-#, python-format
-msgid ""
-"%d conflict(s) encountered when trying to add new timers:\n"
-"%s"
-msgstr ""
-
 #
 #, python-format
 msgid "%d jobs are running in the background!"
@@ -211,10 +205,6 @@ msgstr ""
 #, python-format
 msgid "%s (%s)\n"
 msgstr "%s (%s)\n"
-
-#, python-format
-msgid "%s: %s at %s"
-msgstr ""
 
 #
 msgid "(ZAP)"
@@ -372,10 +362,10 @@ msgstr "??"
 msgid "A"
 msgstr "A"
 
-msgid "A BackToTheRoots-Skin .. but with Warp-8 speed."
+msgid "A BackToTheRoots-Skin .. or good old times."
 msgstr ""
 
-msgid "A BackToTheRoots-Skin .. or good old times."
+msgid "A BackToTheRoots-Skin ... or good old times."
 msgstr ""
 
 msgid "A basic ftp client"
@@ -396,33 +386,27 @@ msgstr ""
 msgid "A demo plugin for TPM usage."
 msgstr ""
 
-msgid "A dreambox simulation from SG-Atlantis displays."
-msgstr ""
-
 #
 msgid ""
 "A finished record timer wants to set your\n"
-"Dreambox to standby. Do that now?"
+"Cuberevo to standby. Do that now?"
 msgstr ""
 "Zaključen časovnik snemanja želi stanje vašega\n"
-"Dreambox-a spremeniti v stanje pripravljenosti. Želite to storiti sedaj?"
+"Cuberevo-a spremeniti v stanje pripravljenosti. Želite to storiti sedaj?"
 
 #
 msgid ""
 "A finished record timer wants to shut down\n"
-"your Dreambox. Shutdown now?"
+"your Cuberevo. Shutdown now?"
 msgstr ""
 "Zaključen časovnik snemanja želi izklopiti vaš\n"
-"Dreambox. Želite to storiti sedaj?"
+"Cuberevo. Želite to storiti sedaj?"
 
 #
 msgid "A graphical EPG for all services of an specific bouquet"
 msgstr "Grafični EPG za vse storitve izbranega paketa"
 
 msgid "A graphical EPG interface"
-msgstr ""
-
-msgid "A graphical EPG interface and EPG tools manager"
 msgstr ""
 
 msgid "A graphical EPG interface."
@@ -497,18 +481,18 @@ msgstr ""
 #
 msgid ""
 "A sleep timer wants to set your\n"
-"Dreambox to standby. Do that now?"
+"Cuberevo to standby. Do that now?"
 msgstr ""
 "Časovnik mirovanja želi spremeniti stanje\n"
-"vašega Dreambox-a v stanje mirovanja. Želite to storiti sedaj?"
+"vašega Cuberevo-a v stanje mirovanja. Želite to storiti sedaj?"
 
 #
 msgid ""
 "A sleep timer wants to shut down\n"
-"your Dreambox. Shutdown now?"
+"your Cuberevo. Shutdown now?"
 msgstr ""
 "Časovnik mirovanja želi izklopiti vaš\n"
-"Dreambox. Želite to storiti sedaj?"
+"Cuberevo. Želite to storiti sedaj?"
 
 #
 msgid "A small overview of the available icon states and actions."
@@ -619,7 +603,7 @@ msgid "Add a mark"
 msgstr "Dodaj zaznamek"
 
 #
-msgid "Add a new NFS or CIFS mount point to your Dreambox."
+msgid "Add a new NFS or CIFS mount point to your Cuberevo."
 msgstr ""
 
 #
@@ -668,7 +652,7 @@ msgstr ""
 
 #
 msgid ""
-"Adds enigma2 settings and dreambox model informations like SN, rev... if "
+"Adds enigma2 settings and cuberevo model informations like SN, rev... if "
 "enabled."
 msgstr ""
 
@@ -723,7 +707,7 @@ msgid "Advanced restore"
 msgstr ""
 
 msgid ""
-"After a reboot or power outage, StartupToStandby will bring your Dreambox to "
+"After a reboot or power outage, StartupToStandby will bring your Cuberevo to "
 "standby-mode."
 msgstr ""
 
@@ -734,7 +718,7 @@ msgstr "Po dogodku"
 #
 msgid ""
 "After the start wizard is completed, you need to protect single services. "
-"Refer to your dreambox's manual on how to do that."
+"Refer to your cuberevo's manual on how to do that."
 msgstr ""
 "Ko se čarovnik zaključi, zaščitite posamezne storitve. Prosimo preverite "
 "uporabniška navodila za podrobno razlago postopka."
@@ -879,9 +863,6 @@ msgstr "Vprašajte uporabnika"
 msgid "Aspect Ratio"
 msgstr "Način prikaza"
 
-msgid "Aspect ratio"
-msgstr ""
-
 msgid "Assigning providers/services/caids to a CI module"
 msgstr ""
 
@@ -895,9 +876,6 @@ msgstr "Zvok"
 #
 msgid "Audio Options..."
 msgstr "Zvočne nastavitve..."
-
-msgid "Audio PID"
-msgstr ""
 
 #
 msgid "Audio Sync"
@@ -965,15 +943,6 @@ msgid ""
 "criteria."
 msgstr ""
 
-msgid "AutoTimer was added successfully"
-msgstr ""
-
-msgid "AutoTimer was changed successfully"
-msgstr ""
-
-msgid "AutoTimer was removed"
-msgstr ""
-
 #
 msgid "Automatic"
 msgstr "Samodejno"
@@ -1008,24 +977,6 @@ msgstr ""
 msgid "Automatically send crashlogs to Dream Multimedia"
 msgstr ""
 
-#, python-format
-msgid ""
-"Autoresolution Plugin Testmode:\n"
-"Is %s ok?"
-msgstr ""
-
-msgid "Autoresolution Switch"
-msgstr ""
-
-msgid "Autoresolution is not working in Scart/DVI-PC Mode"
-msgstr ""
-
-msgid "Autoresolution settings"
-msgstr ""
-
-msgid "Autoresolution videomode setup"
-msgstr ""
-
 #
 msgid "Autos & Vehicles"
 msgstr ""
@@ -1049,7 +1000,7 @@ msgstr "BA"
 msgid "BASIC-HD Skin by Ismail Demir"
 msgstr ""
 
-msgid "BASIC-HD Skin for Dreambox Images created from Ismail Demir"
+msgid "BASIC-HD Skin for Cuberevo Images created from Ismail Demir"
 msgstr ""
 
 #
@@ -1067,12 +1018,6 @@ msgstr "BER:"
 #
 msgid "Back"
 msgstr "Nazaj"
-
-msgid "Back, lower USB Slot"
-msgstr ""
-
-msgid "Back, upper USB Slot"
-msgstr ""
 
 #
 msgid "Background"
@@ -1168,11 +1113,6 @@ msgstr ""
 msgid "Brightness"
 msgstr "Svetlost"
 
-msgid ""
-"Browse ORF and SAT1 Teletext independent from channel. This need I-net "
-"conection."
-msgstr ""
-
 msgid "Browse for and connect to network shares"
 msgstr ""
 
@@ -1202,17 +1142,6 @@ msgstr ""
 #
 msgid "Bus: "
 msgstr "Bus:"
-
-msgid ""
-"By enabling this events will not be matched if they don't occur on certain "
-"dates."
-msgstr ""
-
-msgid ""
-"By enabling this you will be notified about timer conflicts found during "
-"automated polling. There is no intelligence involved, so it might bother you "
-"about the same conflict over and over."
-msgstr ""
 
 #
 msgid ""
@@ -1329,7 +1258,7 @@ msgid "Change step size"
 msgstr ""
 
 #
-msgid "Change the hostname of your Dreambox."
+msgid "Change the hostname of your Cuberevo."
 msgstr ""
 
 msgid "Changelog"
@@ -1478,12 +1407,6 @@ msgstr ""
 
 #
 msgid "Close title selection"
-msgstr ""
-
-msgid "Code rate HP"
-msgstr ""
-
-msgid "Code rate LP"
 msgstr ""
 
 #
@@ -1643,16 +1566,16 @@ msgstr "Nadaljuj predvajanje"
 msgid "Contrast"
 msgstr "Kontrast"
 
-msgid "Control your Dreambox with your Web browser."
+msgid "Control your Cuberevo with your Web browser."
 msgstr ""
 
-msgid "Control your Dreambox with your browser"
+msgid "Control your Cuberevo with your browser"
 msgstr ""
 
-msgid "Control your dreambox with only the MUTE button"
+msgid "Control your cuberevo with only the MUTE button"
 msgstr ""
 
-msgid "Control your dreambox with only the MUTE button."
+msgid "Control your cuberevo with only the MUTE button."
 msgstr ""
 
 msgid "Control your internal system fan."
@@ -1664,12 +1587,12 @@ msgstr ""
 msgid "Control your system fan"
 msgstr ""
 
-msgid "Copy, rename, delete, move local files on your Dreambox."
+msgid "Copy, rename, delete, move local files on your Cuberevo."
 msgstr ""
 
 #
-msgid "Could not connect to Dreambox .NFI Image Feed Server:"
-msgstr "Povezava z Dreambox .NFI izvornim strežnikom ni uspela:"
+msgid "Could not connect to Cuberevo .NFI Image Feed Server:"
+msgstr "Povezava z Cuberevo .NFI izvornim strežnikom ni uspela:"
 
 #
 msgid "Could not load Medium! No disc inserted?"
@@ -1682,10 +1605,6 @@ msgstr ""
 #
 #, python-format
 msgid "Couldn't record due to conflicting timer %s"
-msgstr ""
-
-#, python-format
-msgid "Couldn't record due to invalid service %s"
 msgstr ""
 
 #
@@ -1714,7 +1633,7 @@ msgstr ""
 msgid "Create DVD-ISO"
 msgstr "Kreiraj DVD-ISO"
 
-msgid "Create a backup of your Video DVD on your DreamBox hard drive."
+msgid "Create a backup of your Video DVD on your Cuberevo hard drive."
 msgstr ""
 
 msgid "Create a backup of your Video-DVD"
@@ -1742,7 +1661,7 @@ msgstr ""
 msgid "Create remote timers"
 msgstr ""
 
-msgid "Create timers on remote Dreamboxes."
+msgid "Create timers on remote Cuberevoes."
 msgstr ""
 
 #
@@ -1867,9 +1786,6 @@ msgstr "DVB-S"
 msgid "DVB-S2"
 msgstr "DVB-S2"
 
-msgid "DVD Drive"
-msgstr ""
-
 #
 msgid "DVD File Browser"
 msgstr ""
@@ -1886,12 +1802,12 @@ msgstr ""
 msgid "DVD media toolbox"
 msgstr "DVD medijska orodja"
 
-msgid "DVDPlayer plays your DVDs on your Dreambox"
+msgid "DVDPlayer plays your DVDs on your Cuberevo"
 msgstr ""
 
 msgid ""
-"DVDPlayer plays your DVDs on your Dreambox.\n"
-"With the DVDPlayer you can play your DVDs on your Dreambox from a DVD or "
+"DVDPlayer plays your DVDs on your Cuberevo.\n"
+"With the DVDPlayer you can play your DVDs on your Cuberevo from a DVD or "
 "even from an iso file or video_ts folder on your harddisc or network."
 msgstr ""
 
@@ -1952,21 +1868,12 @@ msgstr "Tvorni?ko"
 msgid "Define a startup service"
 msgstr ""
 
-msgid "Define a startup service for your Dreambox."
-msgstr ""
-
-msgid "Deinterlacer mode for interlaced content"
-msgstr ""
-
-msgid "Deinterlacer mode for progressive content"
+msgid "Define a startup service for your Cuberevo."
 msgstr ""
 
 #
 msgid "Delay"
 msgstr "Zamik"
-
-msgid "Delay x seconds after service started"
-msgstr ""
 
 #
 msgid "Delete"
@@ -2155,12 +2062,6 @@ msgstr ""
 "Ali res želite preveriti datotečni sistem?\n"
 "Opravilo lahko traja zelo dolgo! "
 
-#, python-format
-msgid ""
-"Do you really want to delete %s\n"
-"%s?"
-msgstr ""
-
 #
 #, python-format
 msgid "Do you really want to delete %s?"
@@ -2214,8 +2115,8 @@ msgid "Do you want to download the image to %s ?"
 msgstr ""
 
 #
-msgid "Do you want to enable the parental control feature on your dreambox?"
-msgstr "Želite omogočiti funkcijo starševski nadzor na vašem dreambox-u?"
+msgid "Do you want to enable the parental control feature on your cuberevo?"
+msgstr "Želite omogočiti funkcijo starševski nadzor na vašem cuberevo-u?"
 
 #
 msgid "Do you want to enter a username and password for this host?\n"
@@ -2238,7 +2139,7 @@ msgid "Do you want to preview this DVD before burning?"
 msgstr "Ali želite predogled zbirke pred zapisom na DVD?"
 
 #
-msgid "Do you want to reboot your Dreambox?"
+msgid "Do you want to reboot your Cuberevo?"
 msgstr ""
 
 #
@@ -2264,15 +2165,15 @@ msgid ""
 msgstr ""
 
 #
-msgid "Do you want to update your Dreambox?"
+msgid "Do you want to update your Cuberevo?"
 msgstr ""
 
 #
 msgid ""
-"Do you want to update your Dreambox?\n"
+"Do you want to update your Cuberevo?\n"
 "After pressing OK, please wait!"
 msgstr ""
-"Želite nadgraditi vaš Dreambox?\n"
+"Želite nadgraditi vaš Cuberevo?\n"
 "Prosim počakajte po pritisku tipke OK!"
 
 #
@@ -2349,11 +2250,11 @@ msgid "Downloading screenshots. Please wait..."
 msgstr ""
 
 #
-msgid "Dreambox format data DVD (HDTV compatible)"
-msgstr "Dreambox oblika podatkov DVD (HDTV združljiva)"
+msgid "Cuberevo format data DVD (HDTV compatible)"
+msgstr "Cuberevo oblika podatkov DVD (HDTV združljiva)"
 
 #
-msgid "Dreambox software because updates are available."
+msgid "Cuberevo software because updates are available."
 msgstr ""
 
 #
@@ -2455,12 +2356,12 @@ msgid "Edit tags of recorded movies."
 msgstr ""
 
 #
-msgid "Edit the Nameserver configuration of your Dreambox.\n"
-msgstr "Spremeni nastavitve Imenskega strežnika Dreambox-a.\n"
+msgid "Edit the Nameserver configuration of your Cuberevo.\n"
+msgstr "Spremeni nastavitve Imenskega strežnika Cuberevo-a.\n"
 
 #
-msgid "Edit the network configuration of your Dreambox.\n"
-msgstr "Spremeni nastavitve omrežja Dreambox.\n"
+msgid "Edit the network configuration of your Cuberevo.\n"
+msgstr "Spremeni nastavitve omrežja Cuberevo.\n"
 
 #
 msgid "Edit title"
@@ -2486,7 +2387,7 @@ msgstr ""
 msgid "Electronic Program Guide"
 msgstr "Elektronski spored programov"
 
-msgid "Emailclient is an IMAP4 e-mail viewer for the Dreambox."
+msgid "Emailclient is an IMAP4 e-mail viewer for the Cuberevo."
 msgstr ""
 
 #
@@ -2497,24 +2398,9 @@ msgstr "Omogoči"
 msgid "Enable /media"
 msgstr ""
 
-msgid "Enable 1080p24 Mode"
-msgstr ""
-
-msgid "Enable 1080p25 Mode"
-msgstr ""
-
-msgid "Enable 1080p30 Mode"
-msgstr ""
-
 #
 msgid "Enable 5V for active antenna"
 msgstr "Vklopi 5V za aktivno anteno"
-
-msgid "Enable 720p24 Mode"
-msgstr ""
-
-msgid "Enable Autoresolution"
-msgstr ""
 
 #
 msgid "Enable Cleanup Wizard?"
@@ -2621,7 +2507,7 @@ msgid "English"
 msgstr "Angleško"
 
 msgid ""
-"Enigma2 Plugin to play AVI/DIVX/WMV/etc. videos from PC on your Dreambox. "
+"Enigma2 Plugin to play AVI/DIVX/WMV/etc. videos from PC on your Cuberevo. "
 "Needs a running VLC from www.videolan.org on your pc."
 msgstr ""
 
@@ -2636,15 +2522,23 @@ msgid ""
 msgstr ""
 
 #
+msgid "Enter Fast Forward at speed"
+msgstr "Previjanje naprej s hitrostjo"
+
+#
 msgid "Enter IP to scan..."
 msgstr ""
+
+#
+msgid "Enter Rewind at speed"
+msgstr "Previjanje nazaj s hitrostjo"
 
 #
 msgid "Enter main menu..."
 msgstr "Vstop v glavni meni..."
 
 #
-msgid "Enter new hostname for your Dreambox"
+msgid "Enter new hostname for your Cuberevo"
 msgstr ""
 
 #
@@ -2812,7 +2706,7 @@ msgid "FEC"
 msgstr "FEC"
 
 msgid ""
-"FTPBrowser allows uploading and downloading files between your Dreambox and "
+"FTPBrowser allows uploading and downloading files between your Cuberevo and "
 "a server using the file transfer protocol."
 msgstr ""
 
@@ -2911,11 +2805,6 @@ msgstr "Končan ponovni zagon omrežja"
 msgid "Finnish"
 msgstr "Finsko"
 
-msgid ""
-"First day to match events. No event that begins before this date will be "
-"matched."
-msgstr ""
-
 msgid "First generate your skin-style with the Ai.HD-Control plugin."
 msgstr ""
 
@@ -2935,18 +2824,16 @@ msgstr ""
 msgid "Format"
 msgstr "Formatiraj"
 
-#, python-format
-msgid ""
-"Found a total of %d matching Events.\n"
-"%d Timer were added and %d modified, %d conflicts encountered."
-msgstr ""
-
 #
 #, python-format
 msgid ""
 "Found a total of %d matching Events.\n"
 "%d Timer were added and %d modified."
 msgstr ""
+
+#
+msgid "Frame repeat count during non-smooth winding"
+msgstr "Ponavljanje posamezne slike med neenakomernim premotavanjem"
 
 #
 msgid "Frame size in full view"
@@ -2988,10 +2875,7 @@ msgstr "Petek"
 msgid "Frisian"
 msgstr "Frisian"
 
-msgid "FritzCall shows incoming calls to your Fritz!Box on your Dreambox."
-msgstr ""
-
-msgid "Front USB Slot"
+msgid "FritzCall shows incoming calls to your Fritz!Box on your Cuberevo."
 msgstr ""
 
 msgid "Frontend for /tmp/mmi.socket"
@@ -3018,7 +2902,7 @@ msgid "GUI that allows user to change the ftp- / telnet password."
 msgstr ""
 
 msgid ""
-"GUI that allows user to change the ftp-/telnet-password of the Dreambox."
+"GUI that allows user to change the ftp-/telnet-password of the Cuberevo."
 msgstr ""
 
 msgid "GUI to change the ftp and telnet-password"
@@ -3048,21 +2932,18 @@ msgstr ""
 msgid "General PCM delay (ms)"
 msgstr ""
 
-msgid "Generates and Shows TV Charts of all users having this plugin installed"
-msgstr ""
-
 #
 msgid "Genre"
 msgstr "Žanr"
 
 #
-msgid "Genuine Dreambox"
+msgid "Genuine Cuberevo"
 msgstr ""
 
-msgid "Genuine Dreambox validation failed!"
+msgid "Genuine Cuberevo validation failed!"
 msgstr ""
 
-msgid "Genuine Dreambox verification"
+msgid "Genuine Cuberevo verification"
 msgstr ""
 
 #
@@ -3129,17 +3010,14 @@ msgid "Green boost"
 msgstr ""
 
 msgid ""
-"Growlee allows your Dreambox to forward notifications like 'Record started' "
-"to a PC running a growl, snarl or syslog compatible client or directly to an "
-"iPhone using prowl."
+"Growlee allows your Cuberevo to send short messages using the growl "
+"protocol\n"
+"like Recording started notifications to a PC running a growl client"
 msgstr ""
 
 #
 msgid "Guard Interval"
 msgstr "Interval zaščite"
-
-msgid "Guard interval"
-msgstr ""
 
 #
 msgid "Guard interval mode"
@@ -3147,12 +3025,6 @@ msgstr "Način zaštitnega intervala"
 
 #
 msgid "Guess existing timer based on begin/end"
-msgstr ""
-
-msgid "HD Interlace Mode"
-msgstr ""
-
-msgid "HD Progressive Mode"
 msgstr ""
 
 #
@@ -3194,9 +3066,6 @@ msgstr ""
 #
 msgid "Hierarchy Information"
 msgstr "Informacije stopnje"
-
-msgid "Hierarchy info"
-msgstr ""
 
 #
 msgid "Hierarchy mode"
@@ -3245,7 +3114,7 @@ msgstr ""
 msgid "Hungarian"
 msgstr "Madžarsko"
 
-msgid "IMAP4 e-mail viewer for the Dreambox"
+msgid "IMAP4 e-mail viewer for the Cuberevo"
 msgstr ""
 
 #
@@ -3380,12 +3249,6 @@ msgstr "Informacije"
 msgid "Init"
 msgstr "Inicializacija"
 
-msgid "Initial Fast Forward speed"
-msgstr ""
-
-msgid "Initial Rewind speed"
-msgstr ""
-
 #
 msgid "Initial location in new timers"
 msgstr ""
@@ -3487,9 +3350,6 @@ msgstr "Notranji pomnilnik"
 msgid "Internal LAN adapter."
 msgstr ""
 
-msgid "Internal USB Slot"
-msgstr ""
-
 msgid "Internal firmware updater"
 msgstr ""
 
@@ -3503,17 +3363,17 @@ msgid "Invalid directory selected: %s"
 msgstr "Izbrana neveljavna mapa: %s"
 
 #
-# File: tmp/enigma2_plugins/genuinedreambox/src/plugin.py, line: 304
+# File: tmp/enigma2_plugins/genuinecuberevo/src/plugin.py, line: 304
 msgid "Invalid response from Security service pls restart again"
 msgstr ""
 
 #
-# File: tmp/enigma2_plugins/genuinedreambox/src/plugin.py, line: 132
+# File: tmp/enigma2_plugins/genuinecuberevo/src/plugin.py, line: 132
 msgid "Invalid response from server."
 msgstr ""
 
 #
-# File: tmp/enigma2_plugins/genuinedreambox/src/plugin.py, line: 177
+# File: tmp/enigma2_plugins/genuinecuberevo/src/plugin.py, line: 177
 #, python-format
 msgid "Invalid response from server. Please report: %s"
 msgstr ""
@@ -3555,10 +3415,10 @@ msgstr ""
 msgid "Italian"
 msgstr "Italjansko"
 
-msgid "Italian Weather forecast on Dreambox"
+msgid "Italian Weather forecast on Cuberevo"
 msgstr ""
 
-msgid "Italian Weather forecast on Dreambox from www.google.it."
+msgid "Italian Weather forecast on Cuberevo from www.google.it."
 msgstr ""
 
 #
@@ -3687,11 +3547,6 @@ msgstr "Izberite jezik"
 msgid "Last config"
 msgstr ""
 
-msgid ""
-"Last day to match events. Events have to begin before this date to be "
-"matched."
-msgstr ""
-
 #
 msgid "Last speed"
 msgstr "Zadnja hitrost"
@@ -3756,7 +3611,7 @@ msgstr "Seznam naprav za shranjevanje"
 msgid "Listen and record internet radio"
 msgstr ""
 
-msgid "Listen and record shoutcast internet radio on your Dreambox."
+msgid "Listen and record shoutcast internet radio on your Cuberevo."
 msgstr ""
 
 #
@@ -4172,9 +4027,6 @@ msgstr "Seznam filmov"
 msgid "Multi EPG"
 msgstr "Multi EPG"
 
-msgid "Multi-EPG bouquet selection"
-msgstr ""
-
 #
 msgid "Multimedia"
 msgstr ""
@@ -4182,9 +4034,6 @@ msgstr ""
 #
 msgid "Multiple service support"
 msgstr "Podpora več storitvam"
-
-msgid "Multiplex"
-msgstr ""
 
 #
 msgid "Multisat"
@@ -4236,7 +4085,7 @@ msgstr "N/A"
 
 msgid ""
 "NCID Client shows incoming voice calls promoted by any NCID server (e.g. "
-"Vodafone Easybox) on your Dreambox."
+"Vodafone Easybox) on your Cuberevo."
 msgstr ""
 
 #
@@ -4255,9 +4104,6 @@ msgstr ""
 
 #
 msgid "NFS share"
-msgstr ""
-
-msgid "NIM"
 msgstr ""
 
 #
@@ -4289,103 +4135,100 @@ msgstr "Nastavljanje Imenskega strežnika"
 msgid "Nameserver settings"
 msgstr "Nast. Imenskega strežnika"
 
-msgid "Namespace"
-msgstr ""
-
 msgid "Nemesis BlackBox Skin"
 msgstr ""
 
-msgid "Nemesis BlackBox Skin for the Dreambox"
+msgid "Nemesis BlackBox Skin for the Cuberevo"
 msgstr ""
 
 msgid "Nemesis Blueline Single Skin"
 msgstr ""
 
-msgid "Nemesis Blueline Single Skin for the Dreambox"
+msgid "Nemesis Blueline Single Skin for the Cuberevo"
 msgstr ""
 
 msgid "Nemesis Blueline Skin"
 msgstr ""
 
-msgid "Nemesis Blueline Skin for the Dreambox"
+msgid "Nemesis Blueline Skin for the Cuberevo"
 msgstr ""
 
 msgid "Nemesis Blueline.Extended Skin"
 msgstr ""
 
-msgid "Nemesis Blueline.Extended Skin for the Dreambox"
+msgid "Nemesis Blueline.Extended Skin for the Cuberevo"
 msgstr ""
 
 msgid "Nemesis ChromeLine Cobolt Skin"
 msgstr ""
 
-msgid "Nemesis ChromeLine Cobolt Skin for the Dreambox"
+msgid "Nemesis ChromeLine Cobolt Skin for the Cuberevo"
 msgstr ""
 
 msgid "Nemesis ChromeLine Skin"
 msgstr ""
 
-msgid "Nemesis ChromeLine Skin for the Dreambox"
+msgid "Nemesis ChromeLine Skin for the Cuberevo"
 msgstr ""
 
 msgid "Nemesis Flatline Blue Skin"
 msgstr ""
 
-msgid "Nemesis Flatline Blue Skin for the Dreambox"
+msgid "Nemesis Flatline Blue Skin for the Cuberevo"
 msgstr ""
 
 msgid "Nemesis Flatline Skin"
 msgstr ""
 
-msgid "Nemesis Flatline Skin for the Dreambox"
+msgid "Nemesis Flatline Skin for the Cuberevo"
 msgstr ""
 
 msgid "Nemesis GlassLine Skin"
 msgstr ""
 
-msgid "Nemesis GlassLine Skin for the Dreambox"
+msgid "Nemesis GlassLine Skin for the Cuberevo"
 msgstr ""
 
 msgid "Nemesis Greenline Extended Skin"
 msgstr ""
 
-msgid "Nemesis Greenline Extended Skin for the Dreambox"
+msgid "Nemesis Greenline Extended Skin for the Cuberevo"
 msgstr ""
 
 msgid "Nemesis Greenline Single Skin"
 msgstr ""
 
-msgid "Nemesis Greenline Single Skin for the Dreambox"
+msgid "Nemesis Greenline Single Skin for the Cuberevo"
 msgstr ""
 
 msgid "Nemesis Greenline Skin"
 msgstr ""
 
-msgid "Nemesis Greenline Skin for the Dreambox"
+msgid "Nemesis Greenline Skin for the Cuberevo"
 msgstr ""
 
 msgid "Nemesis Greyline Extended Skin"
 msgstr ""
 
-msgid "Nemesis Greyline Extended Skin for the Dreambox"
+msgid "Nemesis Greyline Extended Skin for the Cuberevo"
 msgstr ""
 
 msgid "Nemesis Greyline Single Skin"
 msgstr ""
 
-msgid "Nemesis Greyline Single Skin for the Dreambox"
+msgid "Nemesis Greyline Single Skin for the Cuberevo"
 msgstr ""
 
 msgid "Nemesis Greyline Skin"
 msgstr ""
 
-msgid "Nemesis Greyline Skin for the Dreambox"
+msgid "Nemesis Greyline Skin for the Cuberevo"
 msgstr ""
 
 msgid "Nemesis ShadowLine Skin"
 msgstr ""
 
-msgid "Nemesis ShadowLine Skin for the Dreambox"
+msgid "Nemesis ShadowLine Skin for the Cuberevo"
 msgstr ""
 
 #
@@ -4667,8 +4510,8 @@ msgid "No, do nothing."
 msgstr "Ne stori ničesar."
 
 #
-msgid "No, just start my dreambox"
-msgstr "Ne, samo zaženi moj dreambox"
+msgid "No, just start my cuberevo"
+msgstr "Ne, samo zaženi moj cuberevo"
 
 msgid "No, never"
 msgstr ""
@@ -4709,12 +4552,6 @@ msgstr "Sever"
 #
 msgid "Norwegian"
 msgstr "Norveški"
-
-msgid "Not after"
-msgstr ""
-
-msgid "Not before"
-msgstr ""
 
 #
 #, python-format
@@ -4769,9 +4606,6 @@ msgstr ""
 
 #
 msgid "OK, remove some extensions"
-msgstr ""
-
-msgid "ONID"
 msgstr ""
 
 #
@@ -4847,9 +4681,6 @@ msgstr ""
 msgid "Orbital Position"
 msgstr "Orbitalna Pozicija"
 
-msgid "Orbital position"
-msgstr ""
-
 #
 msgid "Outer Bound (+/-)"
 msgstr ""
@@ -4871,15 +4702,9 @@ msgstr ""
 msgid "PAL"
 msgstr "PAL"
 
-msgid "PCR PID"
-msgstr ""
-
 #
 msgid "PIDs"
 msgstr "PIDs"
-
-msgid "PMT PID"
-msgstr ""
 
 #
 msgid "Package list update"
@@ -4927,7 +4752,7 @@ msgid "Parental control type"
 msgstr "Tip starševske zaščite"
 
 msgid ""
-"Partnerbox allows editing a remote Dreambox's record timers and stream its "
+"Partnerbox allows editing a remote Cuberevo's record timers and stream its "
 "TV  program."
 msgstr ""
 
@@ -5016,7 +4841,7 @@ msgstr "Predvajaj posnete filme..."
 msgid "Play video again"
 msgstr ""
 
-msgid "Play videos from PC on your Dreambox"
+msgid "Play videos from PC on your Cuberevo"
 msgstr ""
 
 msgid "Playback of Youtube through a PC"
@@ -5315,7 +5140,7 @@ msgstr ""
 msgid "Plugins"
 msgstr "Vtičniki"
 
-msgid "PodCast streams podcasts to your Dreambox."
+msgid "PodCast streams podcasts to your Cuberevo."
 msgstr ""
 
 #
@@ -5361,9 +5186,6 @@ msgstr "Vrata D"
 #
 msgid "Portuguese"
 msgstr "Portugalsko"
-
-msgid "Position of finished Timers in Timerlist"
-msgstr ""
 
 #
 msgid "Positioner"
@@ -5690,9 +5512,6 @@ msgstr ""
 msgid "Recordings always have priority"
 msgstr "Snemanje ima vedno višjo prioriteto"
 
-msgid "Redirect notifications to Growl, Snarl, Prowl or Syslog"
-msgstr ""
-
 msgid "Reenter new PIN"
 msgstr ""
 
@@ -5907,14 +5726,11 @@ msgstr ""
 msgid "Restore system settings"
 msgstr ""
 
-msgid "Restore your Dreambox with a USB stick"
+msgid "Restore your Cuberevo with a USB stick"
 msgstr ""
 
 #
 msgid "Restrict \"after event\" to a certain timespan?"
-msgstr ""
-
-msgid "Restrict to events on certain dates"
 msgstr ""
 
 #
@@ -5957,9 +5773,6 @@ msgstr "Hitrosti previjanja"
 msgid "Right"
 msgstr "Desno"
 
-msgid "Roll-off"
-msgstr ""
-
 #
 msgid "Rolloff"
 msgstr "Odvrti"
@@ -5972,9 +5785,6 @@ msgstr "Hitrost vrtenja rotorja"
 msgid "Running"
 msgstr "V teku"
 
-msgid "Running in testmode"
-msgstr ""
-
 #
 msgid "Russia"
 msgstr ""
@@ -5986,21 +5796,6 @@ msgstr "Rusko"
 #
 msgid "S-Video"
 msgstr "S-Video"
-
-msgid "SD 25/50HZ Interlace Mode"
-msgstr ""
-
-msgid "SD 25/50HZ Progressive Mode"
-msgstr ""
-
-msgid "SD 30/60HZ Interlace Mode"
-msgstr ""
-
-msgid "SD 30/60HZ Progressive Mode"
-msgstr ""
-
-msgid "SID"
-msgstr ""
 
 #
 msgid "SINGLE LAYER DVD"
@@ -6016,19 +5811,6 @@ msgstr "SNR:"
 
 #
 msgid "SSID:"
-msgstr ""
-
-msgid ""
-"SVDRP is a protocol developed for the VDR software to control a set-top box "
-"remotely.\n"
-"This plugin only supports a subset of SVDRP and starts automatically using "
-"default settings.\n"
-"\n"
-"You probably don't need this plugin and should use the regular Web Interface "
-"for Enigma2 instead."
-msgstr ""
-
-msgid "SVDRP server for Enigma2"
 msgstr ""
 
 #
@@ -6291,7 +6073,7 @@ msgid "Secondary DNS"
 msgstr "Sekundarni DNS"
 
 #
-# File: tmp/enigma2_plugins/genuinedreambox/src/plugin.py, line: 160
+# File: tmp/enigma2_plugins/genuinecuberevo/src/plugin.py, line: 160
 msgid "Security service not running."
 msgstr ""
 
@@ -6493,9 +6275,6 @@ msgstr ""
 "Storitve ni moč najti!\n"
 "(SID ni v PAT)"
 
-msgid "Service reference"
-msgstr ""
-
 #
 msgid "Service scan"
 msgstr "Preverjanje storitev"
@@ -6552,7 +6331,7 @@ msgstr ""
 msgid "Set this NO to disable this AutoTimer."
 msgstr ""
 
-msgid "Sets your Dreambox into Deep-Standby"
+msgid "Sets your Cuberevo into Deep-Standby"
 msgstr ""
 
 #
@@ -6630,9 +6409,6 @@ msgstr ""
 msgid "Show in extension menu"
 msgstr ""
 
-msgid "Show info screen"
-msgstr ""
-
 #
 msgid "Show infobar on channel change"
 msgstr "Prikaži infobar med prehodom po kanalih"
@@ -6644,9 +6420,6 @@ msgstr "Prikaži infobar ob spremembi dogodka"
 #
 msgid "Show infobar on skip forward/backward"
 msgstr "Prikaži infobar med previjanjem naprej/nazaj"
-
-msgid "Show notification on conflicts"
-msgstr ""
 
 #
 msgid "Show positioner movement"
@@ -6693,8 +6466,8 @@ msgid "Shutdown"
 msgstr ""
 
 #
-msgid "Shutdown Dreambox after"
-msgstr "Izklopi Dreambox po"
+msgid "Shutdown Cuberevo after"
+msgstr "Izklopi Cuberevo po"
 
 #
 msgid "Signal Strength:"
@@ -6723,7 +6496,7 @@ msgstr ""
 msgid "Simple titleset (compatibility for legacy players)"
 msgstr "Enostavna oblika (kompatibilnost z starejšimi predvajalniki)"
 
-msgid "SimpleRSS allows reading RSS newsfeeds on your Dreambox."
+msgid "SimpleRSS allows reading RSS newsfeeds on your Cuberevo."
 msgstr ""
 
 #
@@ -6809,7 +6582,7 @@ msgstr ""
 msgid "Software update"
 msgstr ""
 
-msgid "SoftwareManager manages your Dreambox software"
+msgid "SoftwareManager manages your Cuberevo software"
 msgstr ""
 
 msgid "Softwaremanager information"
@@ -6914,9 +6687,6 @@ msgstr ""
 
 #
 msgid "Start Webinterface"
-msgstr ""
-
-msgid "Start easy your multimedia plugins with the PVR-button."
 msgstr ""
 
 #
@@ -7042,9 +6812,6 @@ msgstr "Ned"
 msgid "Sunday"
 msgstr "Nedelja"
 
-msgid "Support \"Fast Scan\"?"
-msgstr ""
-
 #
 msgid "Swap Services"
 msgstr "Zamenjaj storitve"
@@ -7073,9 +6840,6 @@ msgstr ""
 msgid "Symbol Rate"
 msgstr "Razmerje simbolov"
 
-msgid "Symbol rate"
-msgstr ""
-
 #
 msgid "Symbolrate"
 msgstr "Razmerje simbolov"
@@ -7093,18 +6857,9 @@ msgstr "TRANSLATOR_INFO"
 msgid "TS file is too large for ISO9660 level 1!"
 msgstr "TS datoteka prevelika za ISO9660 level1!"
 
-msgid "TSID"
-msgstr ""
-
-msgid "TV Charts of all users"
-msgstr ""
-
 #
 msgid "TV System"
 msgstr "TV Sistem"
-
-msgid "TXT PID"
-msgstr ""
 
 #
 msgid "Table of content for collection"
@@ -7138,9 +6893,6 @@ msgstr ""
 msgid "Temperature and Fan control"
 msgstr ""
 
-msgid "Temperature-dependent fan control."
-msgstr ""
-
 #
 msgid "Terrestrial"
 msgstr "Zemeljski"
@@ -7158,7 +6910,7 @@ msgid "Test Type"
 msgstr "Tip testa"
 
 #
-# File: tmp/enigma2_plugins/genuinedreambox/src/plugin.py, line: 80
+# File: tmp/enigma2_plugins/genuinecuberevo/src/plugin.py, line: 80
 msgid "Test again"
 msgstr ""
 
@@ -7167,8 +6919,8 @@ msgid "Test mode"
 msgstr "Testni način"
 
 #
-msgid "Test the network configuration of your Dreambox.\n"
-msgstr "Preverite omrežne nastavitve vašega Dreambox-a.\n"
+msgid "Test the network configuration of your Cuberevo.\n"
+msgstr "Preverite omrežne nastavitve vašega Cuberevo-a.\n"
 
 msgid "Test your DiSEqC equipment"
 msgstr ""
@@ -7186,7 +6938,7 @@ msgstr ""
 #
 msgid ""
 "Thank you for using the wizard. Your box is now ready to use.\n"
-"Please press OK to start using your Dreambox."
+"Please press OK to start using your Cuberevo."
 msgstr ""
 "Hvala, da ste uporabili čarovnika. Sistem je sedaj pripravljen na uporabo.\n"
 "Pritisnite OK za nadaljevanje."
@@ -7199,7 +6951,7 @@ msgid ""
 msgstr ""
 
 msgid ""
-"The CleanupWizard informs you when the internal free memory of your dreambox "
+"The CleanupWizard informs you when the internal free memory of your cuberevo "
 "has dropped below a definable threshold.You can use this wizard to remove "
 "some plugins."
 msgstr ""
@@ -7207,11 +6959,11 @@ msgstr ""
 #
 msgid ""
 "The DVD standard doesn't support H.264 (HDTV) video streams. Do you want to "
-"create a Dreambox format data DVD (which will not play in stand-alone DVD "
+"create a Cuberevo format data DVD (which will not play in stand-alone DVD "
 "players) instead?"
 msgstr ""
 "Standarden DVD ne podpira H.264 (HDTV) video zapisa. Ali želite namesto tega "
-"ustvariti Dreambox obliko podatkovnega DVD (le-tega ne boste mogli "
+"ustvariti Cuberevo obliko podatkovnega DVD (le-tega ne boste mogli "
 "predvajati v samostojnih DVD predvajalnikih)?"
 
 msgid ""
@@ -7251,11 +7003,11 @@ msgstr ""
 
 msgid ""
 "The SkinSelector shows a menu with selectable skins.\n"
-"It's now easy to change the look and feel of your Dreambox."
+"It's now easy to change the look and feel of your Cuberevo."
 msgstr ""
 
 msgid ""
-"The SoftwareManager manages your Dreambox software.\n"
+"The SoftwareManager manages your Cuberevo software.\n"
 "It's easy to update your receiver's software, install or remove plugins or "
 "even backup and restore your system settings."
 msgstr ""
@@ -7358,10 +7110,10 @@ msgstr "Namestitev privzetih seznamov storitev je končana."
 #
 msgid ""
 "The installation of the default settings is finished. You can now continue "
-"configuring your Dreambox by pressing the OK button on the remote control."
+"configuring your Cuberevo by pressing the OK button on the remote control."
 msgstr ""
 "Namestitev privzetih nastavitev je končana. Sedaj lahko nadaljujete "
-"spreminjanje nastavitev vašega Dreambox-a s pritiskom na tipko OK na vašem "
+"spreminjanje nastavitev vašega Cuberevo-a s pritiskom na tipko OK na vašem "
 "daljincu."
 
 #
@@ -7485,9 +7237,9 @@ msgid "There was an error. The package:"
 msgstr ""
 
 #
-# File: tmp/enigma2_plugins/genuinedreambox/src/plugin.py, line: 130
+# File: tmp/enigma2_plugins/genuinecuberevo/src/plugin.py, line: 130
 msgid ""
-"There's a certificate update available for your dreambox. Would you like to "
+"There's a certificate update available for your cuberevo. Would you like to "
 "apply this update now?"
 msgstr ""
 
@@ -7501,7 +7253,7 @@ msgstr ""
 
 #
 #, python-format
-msgid "This Dreambox can't decode %s streams!"
+msgid "This Cuberevo can't decode %s streams!"
 msgstr ""
 
 #
@@ -7541,7 +7293,7 @@ msgstr ""
 
 msgid ""
 "This plugin creates a USB stick which can be used to update the firmware of "
-"your Dreambox without the need for a network or WLAN connection.\n"
+"your Cuberevo without the need for a network or WLAN connection.\n"
 "First, a USB stick needs to be prepared so that it becomes bootable.\n"
 "In the next step, an NFI image file can be downloaded from the update server "
 "and saved on the USB stick.\n"
@@ -7762,7 +7514,7 @@ msgid "To be used as simple downloading application by other Plugins."
 msgstr ""
 
 msgid ""
-"To update your Dreambox firmware, please follow these steps:\n"
+"To update your Cuberevo firmware, please follow these steps:\n"
 "1) Turn off your box with the rear power switch and make sure the bootable "
 "USB stick is plugged in.\n"
 "2) Turn mains back on and hold the DOWN button on the front panel pressed "
@@ -8016,9 +7768,9 @@ msgid "Update done..."
 msgstr "Posodobi"
 
 #
-# File: tmp/enigma2_plugins/genuinedreambox/src/plugin.py, line: 170
+# File: tmp/enigma2_plugins/genuinecuberevo/src/plugin.py, line: 170
 msgid ""
-"Update done... The genuine dreambox test will now be rerun and should not "
+"Update done... The genuine cuberevo test will now be rerun and should not "
 "ask you to update again."
 msgstr ""
 
@@ -8027,7 +7779,7 @@ msgid "Updatefeed not available."
 msgstr ""
 
 #
-# File: tmp/enigma2_plugins/genuinedreambox/src/plugin.py, line: 150
+# File: tmp/enigma2_plugins/genuinecuberevo/src/plugin.py, line: 150
 msgid ""
 "Updating failed. Nothing is broken, just the update couldn't be applied."
 msgstr ""
@@ -8058,8 +7810,8 @@ msgid "Upgrading"
 msgstr "Nadgrajujem"
 
 #
-msgid "Upgrading Dreambox... Please wait"
-msgstr "Nadgrajujem Dreambox... Prosim počakajte"
+msgid "Upgrading Cuberevo... Please wait"
+msgstr "Nadgrajujem Cuberevo... Prosim počakajte"
 
 #
 msgid "Upper bound of timespan."
@@ -8095,8 +7847,12 @@ msgstr ""
 msgid "Use a gateway"
 msgstr "Uporabi prehod"
 
-msgid "Use and control multiple Dreamboxes with different RCs."
+msgid "Use and control multiple Cuberevoes with different RCs."
 msgstr ""
+
+#
+msgid "Use non-smooth winding at speeds above"
+msgstr "Uporabi negladko previjanje pri hitrostih nad"
 
 #
 msgid "Use power measurement"
@@ -8181,20 +7937,11 @@ msgstr "VMGM (v trailer)"
 msgid "Vali-XD skin"
 msgstr ""
 
-msgid "Vali.HD.atlantis skin"
-msgstr ""
-
 msgid "Vali.HD.nano skin"
 msgstr ""
 
-msgid "Vali.HD.warp skin"
-msgstr ""
-
 msgid ""
-"Verify your Dreambox authenticity by running the genuine dreambox plugin!"
-msgstr ""
-
-msgid "Verifying your internet connection..."
+"Verify your Cuberevo authenticity by running the genuine cuberevo plugin!"
 msgstr ""
 
 #
@@ -8212,9 +7959,6 @@ msgstr "Čarovnik za podrobne nastavitve videa"
 #
 msgid "Video Output"
 msgstr "Video izhod"
-
-msgid "Video PID"
-msgstr ""
 
 #
 msgid "Video Setup"
@@ -8287,7 +8031,7 @@ msgstr ""
 msgid "View Google maps"
 msgstr ""
 
-msgid "View Google maps with your Dreambox."
+msgid "View Google maps with your Cuberevo."
 msgstr ""
 
 #
@@ -8379,7 +8123,7 @@ msgid "View teletext..."
 msgstr "Pregled teleteksta..."
 
 #
-msgid "View, edit or delete mountpoints on your Dreambox."
+msgid "View, edit or delete mountpoints on your Cuberevo."
 msgstr ""
 
 #
@@ -8455,13 +8199,10 @@ msgstr ""
 msgid "Watch streams from ZDF Mediathek"
 msgstr ""
 
-msgid "WeatherPlugin shows weatherforecasts on your Dreambox."
+msgid "WeatherPlugin shows weatherforecasts on your Cuberevo."
 msgstr ""
 
-msgid "Weatherforecast on your Dreambox"
-msgstr ""
-
-msgid "Web-Bouquet-Editor for PC"
+msgid "Weatherforecast on your Cuberevo"
 msgstr ""
 
 #
@@ -8515,11 +8256,11 @@ msgstr ""
 #
 msgid ""
 "Welcome to the Image upgrade wizard. The wizard will assist you in upgrading "
-"the firmware of your Dreambox by providing a backup facility for your "
+"the firmware of your Cuberevo by providing a backup facility for your "
 "current settings and a short explanation of how to upgrade your firmware."
 msgstr ""
 "Dobrodošli v čarovniku za nadgradnjo. Čarovnik vam bo pomagal pri nadgradnji "
-"Dreambox-a in nudil varno hrambo vaših trenutnih nastavitev in kratko "
+"Cuberevo-a in nudil varno hrambo vaših trenutnih nastavitev in kratko "
 "razlago postopka nadgradnje vašega firmware-a."
 
 #
@@ -8556,7 +8297,7 @@ msgid ""
 "Welcome to the cleanup wizard.\n"
 "\n"
 "We have detected that your available internal memory has dropped below 2MB.\n"
-"To ensure stable operation of your Dreambox, the internal memory should be "
+"To ensure stable operation of your Cuberevo, the internal memory should be "
 "cleaned up.\n"
 "You can use this wizard to remove some extensions.\n"
 msgstr ""
@@ -8565,8 +8306,8 @@ msgstr ""
 msgid ""
 "Welcome.\n"
 "\n"
-"If you want to connect your Dreambox to the Internet, this wizard will guide "
-"you through the basic network setup of your Dreambox.\n"
+"If you want to connect your Cuberevo to the Internet, this wizard will guide "
+"you through the basic network setup of your Cuberevo.\n"
 "\n"
 "Press OK to start configuring your network"
 msgstr ""
@@ -8583,12 +8324,12 @@ msgstr ""
 msgid ""
 "Welcome.\n"
 "\n"
-"This start wizard will guide you through the basic setup of your Dreambox.\n"
+"This start wizard will guide you through the basic setup of your Cuberevo.\n"
 "Press the OK button on your remote control to move to the next step."
 msgstr ""
 "Dobrodošli.\n"
 "\n"
-"Začetni čarovnik vas bo vodil skozi osnovne nastavitve vašega Dreambox-a.\n"
+"Začetni čarovnik vas bo vodil skozi osnovne nastavitve vašega Cuberevo-a.\n"
 "Pritisnite tipko OK na upravljalcu za naslednji korak."
 
 #
@@ -8605,11 +8346,6 @@ msgstr "Kaj želite preveriti?"
 
 #
 msgid "What to do with submitted crashlogs?"
-msgstr ""
-
-msgid ""
-"When supporting \"Fast Scan\" the service type is ignored. You don't need to "
-"enable this unless your Image supports \"Fast Scan\" and you are using it."
 msgstr ""
 
 #
@@ -8654,17 +8390,17 @@ msgid ""
 msgstr ""
 
 msgid ""
-"With DVDBurn you can make compilations of records from your Dreambox hard "
+"With DVDBurn you can make compilations of records from your Cuberevo hard "
 "drive.\n"
 "Optionally you can add customizable menus. You can record the compilation to "
 "a standard-compliant DVD that can be played on conventinal DVD players.\n"
-"HDTV recordings can only be burned in proprietary dreambox format."
+"HDTV recordings can only be burned in proprietary cuberevo format."
 msgstr ""
 
 msgid "With EPGSearch you can search through the EPG and create timers."
 msgstr ""
 
-msgid "With Genuine Dreambox you can verify the authenticity of your Dreambox."
+msgid "With Genuine Cuberevo you can verify the authenticity of your Cuberevo."
 msgstr ""
 
 msgid ""
@@ -8689,13 +8425,13 @@ msgid ""
 msgstr ""
 
 msgid ""
-"With YouTubePlayer you can watch YouTube-Videos on the Dreambox.\n"
+"With YouTubePlayer you can watch YouTube-Videos on the Cuberevo.\n"
 "This plugin requires a PC with the VLC program running."
 msgstr ""
 
 msgid ""
 "With the CommonInterfaceAssignment plugin it is possible to use differentCI "
-"modules in your Dreambox and assign dedicated providers/services or caids to "
+"modules in your Cuberevo and assign dedicated providers/services or caids to "
 "each of them.\n"
 "This allows watching a scrambled service while recording another one."
 msgstr ""
@@ -8717,8 +8453,8 @@ msgstr ""
 
 msgid ""
 "With the NFIFlash plugin it is possible to prepare a USB stick with an "
-"Dreambox image.\n"
-"It is then possible to flash your Dreambox with the image on that stick."
+"Cuberevo image.\n"
+"It is then possible to flash your Cuberevo with the image on that stick."
 msgstr ""
 
 msgid ""
@@ -8855,7 +8591,7 @@ msgid "You can install this plugin."
 msgstr ""
 
 #
-msgid "You can only burn Dreambox recordings!"
+msgid "You can only burn Cuberevo recordings!"
 msgstr ""
 
 #
@@ -8867,12 +8603,6 @@ msgid ""
 "You can set the basic properties of an AutoTimer here.\n"
 "While 'Name' is just a human-readable name displayed in the Overview, 'Match "
 "in title' is what is looked for in the EPG."
-msgstr ""
-
-msgid ""
-"You can use the EasyInfo for manage your EPG plugins from info button. You "
-"have also a new now-next event viewer. Easy-PG, the own graphical EPG bowser "
-"is also included."
 msgstr ""
 
 #
@@ -8942,15 +8672,15 @@ msgstr "Počakati morate %s!"
 
 #
 msgid ""
-"You need a PC connected to your dreambox. If you need further instructions, "
+"You need a PC connected to your cuberevo. If you need further instructions, "
 "please visit the website http://www.dm7025.de.\n"
-"Your dreambox will now be halted. After you have performed the update "
+"Your cuberevo will now be halted. After you have performed the update "
 "instructions from the website, your new firmware will ask you to restore "
 "your settings."
 msgstr ""
-"Na vaš Dreamboxo morate povezati računalnik. Če potrebujete dodatna "
+"Na vaš Cuberevoo morate povezati računalnik. Če potrebujete dodatna "
 "navodila, prosim obiščite stran http://www.dm7025.de.\n"
-"Vaš Dreambox bo sedaj ustavljen. Ko končate nadgradnjo sistema po navodilih "
+"Vaš Cuberevo bo sedaj ustavljen. Ko končate nadgradnjo sistema po navodilih "
 "iz spletne strani bo vaša nova programska oprema zahtevala izdelavo varne "
 "kopije vaših nastavitev."
 
@@ -8976,7 +8706,7 @@ msgstr ""
 
 #
 msgid ""
-"Your Dreambox is now ready to use.\n"
+"Your Cuberevo is now ready to use.\n"
 "\n"
 "Your internet connection is working now.\n"
 "\n"
@@ -8984,7 +8714,7 @@ msgstr ""
 
 #
 msgid ""
-"Your Dreambox is now ready to use.\n"
+"Your Cuberevo is now ready to use.\n"
 "\n"
 "Your internet connection is working now.\n"
 "\n"
@@ -8992,9 +8722,9 @@ msgid ""
 msgstr ""
 
 #
-msgid "Your Dreambox will restart after pressing OK on your remote control."
+msgid "Your Cuberevo will restart after pressing OK on your remote control."
 msgstr ""
-"Vaš Dreambox se bo ponovno zagnal po pritisku OK tipke na vašem daljincu."
+"Vaš Cuberevo se bo ponovno zagnal po pritisku OK tipke na vašem daljincu."
 
 #
 msgid ""
@@ -9022,15 +8752,15 @@ msgid "Your current collection will get lost!"
 msgstr ""
 
 #
-msgid "Your dreambox is shutting down. Please stand by..."
-msgstr "Vaš dreambox se ugaša. Prosimo počakajte..."
+msgid "Your cuberevo is shutting down. Please stand by..."
+msgstr "Vaš cuberevo se ugaša. Prosimo počakajte..."
 
 #
 msgid ""
-"Your dreambox isn't connected to the internet properly. Please check it and "
+"Your cuberevo isn't connected to the internet properly. Please check it and "
 "try again."
 msgstr ""
-"Vaš dreambox ni pravilno povezan na omrežje. Prosim preverite omrežne "
+"Vaš cuberevo ni pravilno povezan na omrežje. Prosim preverite omrežne "
 "nastavitve in poskusite znova."
 
 #
@@ -9058,9 +8788,6 @@ msgstr ""
 #
 msgid "Your network configuration has been activated."
 msgstr "Vaša omrežna nastavitev je bila aktivirana."
-
-msgid "Your network is not working. Please try again."
-msgstr ""
 
 #
 msgid "Your network mount has been activated."
@@ -9279,12 +9006,6 @@ msgstr ""
 msgid "assigned Services/Provider:"
 msgstr ""
 
-msgid "at beginning"
-msgstr ""
-
-msgid "at end"
-msgstr ""
-
 #
 #, python-format
 msgid "audio track (%s) format"
@@ -9302,9 +9023,6 @@ msgstr "zvočni zapisi"
 #
 msgid "auto"
 msgstr "samodejno"
-
-msgid "autotimers need a match attribute"
-msgstr ""
 
 #
 msgid "available"
@@ -9337,9 +9055,6 @@ msgstr "Črni seznam"
 #
 msgid "blue"
 msgstr "modro"
-
-msgid "bob"
-msgstr ""
 
 #
 #, python-format
@@ -9382,9 +9097,6 @@ msgstr "počisti seznam za predvajanje"
 msgid "complex"
 msgstr "kompleksno"
 
-msgid "config changed."
-msgstr ""
-
 #
 msgid "config menu"
 msgstr "konfiguracijski meni"
@@ -9401,7 +9113,7 @@ msgstr "povezan"
 msgid "continue"
 msgstr "nadaljuj"
 
-msgid "control multiple Dreamboxes with different RCs"
+msgid "control multiple Cuberevoes with different RCs"
 msgstr ""
 
 #
@@ -9416,12 +9128,6 @@ msgstr ""
 msgid "create directory"
 msgstr "ustvari mapo"
 
-msgid "creates virtual series folders from episodes"
-msgstr ""
-
-msgid "creates virtual series folders from sets of recorded episodes"
-msgstr ""
-
 #, python-format
 msgid "currently installed image: %s"
 msgstr ""
@@ -9433,9 +9139,6 @@ msgstr "dnevno"
 #
 msgid "day"
 msgstr "dan"
-
-msgid "default"
-msgstr ""
 
 #
 msgid "delete"
@@ -9776,9 +9479,6 @@ msgstr "minuta"
 msgid "minutes"
 msgstr "minute"
 
-msgid "missing parameter \"id\""
-msgstr ""
-
 #
 msgid "month"
 msgstr "mesec"
@@ -9975,6 +9675,9 @@ msgid "red"
 msgstr "rdeče"
 
 msgid "redesigned Kerni-HD1 skin"
+msgstr ""
+
+msgid "redirect notifications to Growl"
 msgstr ""
 
 #
@@ -10313,10 +10016,6 @@ msgstr "izbiraj med prikazom časa, poglavja, zvoka in podnapisi"
 msgid "tuner is not supported"
 msgstr ""
 
-#, python-format
-msgid "unable to find timer with id %i"
-msgstr ""
-
 #
 msgid "unavailable"
 msgstr ""
@@ -10341,10 +10040,10 @@ msgstr ""
 msgid "use as HDD replacement"
 msgstr ""
 
-msgid "use your Dreambox as Web proxy"
+msgid "use your Cuberevo as Web proxy"
 msgstr ""
 
-msgid "use your Dreambox as Web proxy."
+msgid "use your Cuberevo as Web proxy."
 msgstr ""
 
 #
@@ -10405,11 +10104,11 @@ msgstr "Da ( zadrži feed-e)"
 
 #
 msgid ""
-"your dreambox might be unusable now. Please consult the manual for further "
-"assistance before rebooting your dreambox."
+"your cuberevo might be unusable now. Please consult the manual for further "
+"assistance before rebooting your cuberevo."
 msgstr ""
-"vaš dreambox je sedaj možno uporabljati. Prosim preverite uporabniška "
-"navodila za dodatne informacije pred ponovnim zagonom dreambox-a."
+"vaš cuberevo je sedaj možno uporabljati. Prosim preverite uporabniška "
+"navodila za dodatne informacije pred ponovnim zagonom cuberevo-a."
 
 #
 msgid "zap"
@@ -10485,18 +10184,18 @@ msgstr "prenesen"
 #
 #~ msgid ""
 #~ "A sleep timer want's to set your\n"
-#~ "Dreambox to standby. Do that now?"
+#~ "Cuberevo to standby. Do that now?"
 #~ msgstr ""
 #~ "Tajmer spavanja želi postaviti vaš\n"
-#~ "Dreambox u stanj.pripav. Učiniti sada?"
+#~ "Cuberevo u stanj.pripav. Učiniti sada?"
 
 #
 #~ msgid ""
 #~ "A sleep timer want's to shut down\n"
-#~ "your Dreambox. Shutdown now?"
+#~ "your Cuberevo. Shutdown now?"
 #~ msgstr ""
 #~ "Tajmer spavanja želi isključiti\n"
-#~ "vaš Dreambox. Isključiti sada?"
+#~ "vaš Cuberevo. Isključiti sada?"
 
 #
 #~ msgid "AGC"
@@ -10760,14 +10459,6 @@ msgstr "prenesen"
 #~ "© 2006 - Stephan Reichholf"
 
 #
-#~ msgid "Enter Fast Forward at speed"
-#~ msgstr "Previjanje naprej s hitrostjo"
-
-#
-#~ msgid "Enter Rewind at speed"
-#~ msgstr "Previjanje nazaj s hitrostjo"
-
-#
 #~ msgid "Enter WLAN network name/SSID:"
 #~ msgstr "Vnesi ime/SSID WLAN omrežja:"
 
@@ -10801,10 +10492,6 @@ msgstr "prenesen"
 #
 #~ msgid "Font size"
 #~ msgstr "Velikost pisave"
-
-#
-#~ msgid "Frame repeat count during non-smooth winding"
-#~ msgstr "Ponavljanje posamezne slike med neenakomernim premotavanjem"
 
 #
 #~ msgid "Fritz!Box FON IP address"
@@ -10974,10 +10661,10 @@ msgstr "prenesen"
 
 #
 #~ msgid ""
-#~ "Please disconnect all USB devices from your Dreambox and (re-)attach the "
+#~ "Please disconnect all USB devices from your Cuberevo and (re-)attach the "
 #~ "target USB stick (minimum size is 64 MB) now!"
 #~ msgstr ""
-#~ "Prosim izklopite vse USB naprave iz vašega Dreambox-a in ponovno povežite "
+#~ "Prosim izklopite vse USB naprave iz vašega Cuberevo-a in ponovno povežite "
 #~ "izbran USB ključ (minimalno 64MB)!"
 
 #
@@ -11209,11 +10896,11 @@ msgstr "prenesen"
 #
 #~ msgid ""
 #~ "Thank you for using the wizard. Your box is now ready to use.\n"
-#~ "Please press OK to start using you Dreambox."
+#~ "Please press OK to start using you Cuberevo."
 #~ msgstr ""
 #~ "Hvala za uporabo čarovnika. Vaš sprejemnik je sedaj pripravljen za "
 #~ "uporabo.\n"
-#~ "Prosim pritisnite tipko OK za pričetek uporabe vašega Dreambox-a."
+#~ "Prosim pritisnite tipko OK za pričetek uporabe vašega Cuberevo-a."
 
 #
 #~ msgid ""
@@ -11269,8 +10956,8 @@ msgstr "prenesen"
 #~ "opreme?"
 
 #
-#~ msgid "This Dreambox can't decode %s video streams!"
-#~ msgstr "Dreambox ne more odkodirati %s video tokov!"
+#~ msgid "This Cuberevo can't decode %s video streams!"
+#~ msgstr "Cuberevo ne more odkodirati %s video tokov!"
 
 #
 #~ msgid "This is unsupported at the moment."
@@ -11290,14 +10977,14 @@ msgstr "prenesen"
 
 #
 #~ msgid ""
-#~ "To update your Dreambox firmware, please follow these steps:\n"
+#~ "To update your Cuberevo firmware, please follow these steps:\n"
 #~ "1) Turn off your box with the rear power switch and plug in the bootable "
 #~ "USB stick.\n"
 #~ "2) Turn mains back on and hold the DOWN button on the front panel pressed "
 #~ "for 10 seconds.\n"
 #~ "3) Wait for bootup and follow instructions of the wizard."
 #~ msgstr ""
-#~ "Za posodobitev Dreambox programske opreme, prosimo sledite naslednjim "
+#~ "Za posodobitev Cuberevo programske opreme, prosimo sledite naslednjim "
 #~ "korakom:\n"
 #~ "1) Izklopite napravo s pomočjo stikala na zadnji strani ohišja in "
 #~ "priklopite zagonski USB ključ.\n"
@@ -11332,8 +11019,8 @@ msgstr "prenesen"
 #~ msgstr "Nadgradnja programske opreme vašega prejemnika"
 
 #
-#~ msgid "Upgrade finished. Do you want to reboot your Dreambox?"
-#~ msgstr "Nadgradnja uspešna. Želite ponovno zagnati Dreambox?"
+#~ msgid "Upgrade finished. Do you want to reboot your Cuberevo?"
+#~ msgstr "Nadgradnja uspešna. Želite ponovno zagnati Cuberevo?"
 
 #
 #~ msgid "Usage Settings"
@@ -11342,10 +11029,6 @@ msgstr "prenesen"
 #
 #~ msgid "Usage settings"
 #~ msgstr "Postavke koriA!tenja"
-
-#
-#~ msgid "Use non-smooth winding at speeds above"
-#~ msgstr "Uporabi negladko previjanje pri hitrostih nad"
 
 #
 #~ msgid "VCR Switch"
@@ -11380,10 +11063,10 @@ msgstr "prenesen"
 
 #
 #~ msgid ""
-#~ "You do not seem to have a harddisk in your Dreambox. So backing up to a "
+#~ "You do not seem to have a harddisk in your Cuberevo. So backing up to a "
 #~ "harddisk is not an option for you."
 #~ msgstr ""
-#~ "Na vašem Dreambox-u ni nameščenega trdega diska. Varne kopije tako ni "
+#~ "Na vašem Cuberevo-u ni nameščenega trdega diska. Varne kopije tako ni "
 #~ "možno izdelati na vašem sistemu."
 
 #

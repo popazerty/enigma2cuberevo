@@ -41,6 +41,7 @@
 				<item text="Automatic Scan" entryID="auto_scan"><screen module="ScanSetup" screen="ScanSimple" /></item>
 				<!--<item text="Automatic Scan"><screen module="ServiceScan" /></item>-->
 				<item text="Manual Scan" entryID="manual_scan"><screen module="ScanSetup" /></item>
+				<item text="Blind Scan" entryID="blind_scan"><screen module="ScanSetup" screen="ScanBlind" /></item>
 				<!--<item text="Rotor Control"></item>
 				<item text="Edit Transponder"></item>
 				<item text="Satfinder"></item>-->
@@ -97,7 +98,7 @@ self.session.openWithCallback(msgClosed, FactoryReset)
 			<item text="Sleep Timer" entryID="sleep"><screen module="SleepTimerEdit" screen="SleepTimerEdit" /></item>
 			<item text="Standby" entryID="standby"><screen module="Standby" screen="Standby"/></item>
 			<item text="Restart" entryID="restart"><screen module="Standby" screen="TryQuitMainloop">2</screen></item>
-			<item level="2" text="Restart GUI" entryID="restart_enigma"><screen module="Standby" screen="TryQuitMainloop">3</screen></item>
+			<item text="Restart GUI" entryID="restart_enigma"><screen module="Standby" screen="TryQuitMainloop">3</screen></item>
 			<item text="Deep Standby" requires="DeepstandbySupport" entryID="deep_standby"><screen module="Standby" screen="TryQuitMainloop">1</screen></item>
 			<item text="Shutdown" requires="!DeepstandbySupport" entryID="deep_standby"><screen module="Standby" screen="TryQuitMainloop">1</screen></item>
 		</menu>

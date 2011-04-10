@@ -42,6 +42,7 @@ class eDVBScan: public Object, public iObject
 
 		/* state handling */	
 	RESULT nextChannel();
+	RESULT nextChannelBlind();
 	
 	RESULT startFilter();	
 	enum { readyPAT=1, readySDT=2, readyNIT=4, readyBAT=8,
@@ -105,6 +106,7 @@ public:
 		clearToScanOnFirstNIT = 32, scanOnlyFree = 64 };
 
 	void start(const eSmartPtrList<iDVBFrontendParameters> &known_transponders, int flags);
+	void startBlind(const eSmartPtrList<iDVBFrontendParameters> &known_transponders, int flags);
 
 	enum { evtUpdate, evtNewService, evtFinish, evtFail };
 	RESULT connectEvent(const Slot1<void,int> &event, ePtr<eConnection> &connection);

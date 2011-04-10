@@ -349,6 +349,14 @@ class Network:
 						return _("Atheros")+ " " + str(os_path.basename(os_path.realpath(driverdir))) + " " + _("WLAN adapter.") 
 					elif os_path.realpath(driverdir).endswith('zd1211b'):
 						return _("Zydas")+ " " + str(os_path.basename(os_path.realpath(driverdir))) + " " + _("WLAN adapter.") 
+#+++>
+					elif os_path.realpath(driverdir).endswith('zd1211'):
+						return _("Zydas")+ " " + str(os_path.basename(os_path.realpath(driverdir))) + " " + _("WLAN adapter.") 
+					elif os_path.realpath(driverdir).endswith('rt28'):
+						return _("Ralink")+ " " + str(os_path.basename(os_path.realpath(driverdir))) + " " + _("WLAN adapter.") 
+					elif os_path.realpath(driverdir).endswith('rt30'):
+						return _("Ralink")+ " " + str(os_path.basename(os_path.realpath(driverdir))) + " " + _("WLAN adapter.") 
+#+++<
 					elif os_path.realpath(driverdir).endswith('rt73'):
 						return _("Ralink")+ " " + str(os_path.basename(os_path.realpath(driverdir))) + " " + _("WLAN adapter.") 
 					elif os_path.realpath(driverdir).endswith('rt73usb'):
@@ -639,6 +647,17 @@ class Network:
 					if os_path.realpath(driverdir).endswith('zd1211b'):
 						if len(driverfiles) == 1 or len(driverfiles) == 5:
 							self.wlanmodule = 'zydas'
+#+++>
+					if os_path.realpath(driverdir).endswith('rt28'):
+						if len(driverfiles) == 2 or len(driverfiles) == 5:
+							self.wlanmodule = 'ralink'
+					if os_path.realpath(driverdir).endswith('rt30'):
+						if len(driverfiles) == 2 or len(driverfiles) == 5:
+							self.wlanmodule = 'ralink'
+					if os_path.realpath(driverdir).endswith('zd1211'):
+						if len(driverfiles) == 1 or len(driverfiles) == 5:
+							self.wlanmodule = 'zydas'
+#+++<
 			if self.wlanmodule is None:
 				self.wlanmodule = "wext"
 			print 'Using "%s" as wpa-supplicant driver' % (self.wlanmodule)

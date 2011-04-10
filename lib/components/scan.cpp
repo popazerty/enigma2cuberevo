@@ -83,7 +83,6 @@ void eComponentScan::addInitial(const eDVBFrontendParametersTerrestrial &p)
 	m_initial.push_back(parm);
 }
 
-
 int eComponentScan::start(int feid, int flags)
 {
 	if (m_initial.empty())
@@ -147,6 +146,67 @@ int eComponentScan::start(int feid, int flags)
 		}
 	}
 	m_scan->start(m_initial, flags);
+
+	return 0;
+}
+
+int eComponentScan::startBlind(int feid, int flags)
+{
+	if (m_initial.empty())
+		return -2;
+
+	if (m_done != -1)
+		return -1;
+	
+	m_done = 0;
+	ePtr<eDVBResourceManager> mgr;
+	
+	eDVBResourceManager::getInstance(mgr);
+
+	eUsePtr<iDVBChannel> channel;
+
+	if (mgr->allocateRawChannel(channel, feid))
+	{
+		eDebug("scan: allocating raw channel (on frontend %d) failed!", feid);
+		return -1;
+	}
+
+	std::list<ePtr<iDVBFrontendParameters> > list;
+	m_scan = new eDVBScan(channel);
+	m_scan->connectEvent(slot(*this, &eComponentScan::scanEvent), m_scan_event_connection);
+
+	if (!(flags & scanRemoveServices))
+	{
+		ePtr<iDVBChannelList> db;
+		ePtr<eDVBResourceManager> res;
+		int err;
+		if ((err = eDVBResourceManager::getInstance(res)) != 0)
+			eDebug("no resource manager");
+		else if ((err = res->getChannelList(db)) != 0)
+			eDebug("no channel list");
+		else
+		{
+			if (m_initial.size() > 1)
+			{
+				ePtr<iDVBFrontendParameters> tp = m_initial.first();
+				int type;
+				if (tp && !tp->getSystem(type))
+				{
+					switch(type)
+					{
+						case iDVBFrontend::feSatellite:
+						{
+							eDVBFrontendParametersSatellite parm;
+							tp->getDVBS(parm);
+							db->removeFlags(eDVBService::dxNewFound, -1, -1, -1, parm.orbital_position);
+							break;
+						}
+					}
+				}
+			}
+		}
+	}
+	m_scan->startBlind(m_initial, flags);
 
 	return 0;
 }

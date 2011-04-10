@@ -47,6 +47,7 @@ public:
 	enum { scanNetworkSearch=1, scanRemoveServices=4, scanDontRemoveFeeds=8, scanDontRemoveUnscanned=16, clearToScanOnFirstNIT = 32, scanOnlyFree = 64 };
 
 	int start(int feid, int flags=0 );
+	int startBlind(int feid, int flags=0 );
 	SWIG_VOID(RESULT) getFrontend(ePtr<iDVBFrontend> &SWIG_OUTPUT);
 	SWIG_VOID(RESULT) getCurrentTransponder(ePtr<iDVBFrontendParameters> &SWIG_OUTPUT);
 };

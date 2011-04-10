@@ -165,7 +165,11 @@ eDVBLocalTimeHandler::eDVBLocalTimeHandler()
 	{
 		res_mgr->connectChannelAdded(slot(*this,&eDVBLocalTimeHandler::DVBChannelAdded), m_chanAddedConn);
 		time_t now = time(0);
+#if defined(__sh__)
+		if ( now < 1199232000 ) // 02.01.2008: usefull for cuberevo-250hd wich is without RTC
+#else
 		if ( now < 1072224000 ) // 01.01.2004
+#endif
 			eDebug("RTC not ready... wait for transponder time");
 		else // inform all who's waiting for valid system time..
 		{
@@ -248,6 +252,14 @@ void eDVBLocalTimeHandler::setUseDVBTime(bool b)
 		m_use_dvb_time = b;
 	}
 }
+
+#if defined(__sh__)
+void eDVBLocalTimeHandler::setTimeReady(bool b)
+{
+	m_timeOffsetMap.clear();
+	m_time_ready = b;
+}
+#endif
 
 void eDVBLocalTimeHandler::updateNonTuned()
 {

@@ -3,14 +3,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: tuxbox-enigma 0.0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-04-01 08:09+0000\n"
+"POT-Creation-Date: 2011-01-27 12:42+0000\n"
 "PO-Revision-Date: 2011-01-28 21:11+0200\n"
 "Last-Translator: Audronis <audrgrin@takas.lt>\n"
 "Language-Team: Adga / enigma2 (c) <audrgrin@takas.lt>\n"
+"Language: lt\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: lt\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && (n%"
 "100<10 || n%100>=20) ? 1 : 2);\n"
 "X-Generator: Pootle 2.0.3\n"
@@ -36,10 +36,10 @@ msgstr ""
 #
 msgid ""
 "\n"
-"Backup your Dreambox settings."
+"Backup your Cuberevo settings."
 msgstr ""
 "\n"
-"Jūsų Dreambox nustatymų atsarginė kopija."
+"Jūsų Cuberevo nustatymų atsarginė kopija."
 
 #
 msgid ""
@@ -52,18 +52,18 @@ msgstr ""
 #
 msgid ""
 "\n"
-"Manage extensions or plugins for your Dreambox"
+"Manage extensions or plugins for your Cuberevo"
 msgstr ""
 "\n"
-"Išplėtimų arba papildomų programų valdymas jūsų Dreambox'e"
+"Išplėtimų arba papildomų programų valdymas jūsų Cuberevo'e"
 
 #
 msgid ""
 "\n"
-"Online update of your Dreambox software."
+"Online update of your Cuberevo software."
 msgstr ""
 "\n"
-"Internetinis jūsų Dreambox programinės įrangos atnaujinimas."
+"Internetinis jūsų Cuberevo programinės įrangos atnaujinimas."
 
 #
 msgid ""
@@ -76,18 +76,18 @@ msgstr ""
 #
 msgid ""
 "\n"
-"Restore your Dreambox settings."
+"Restore your Cuberevo settings."
 msgstr ""
 "\n"
-"Atkurti jūsų Dreambox nustatymus."
+"Atkurti jūsų Cuberevo nustatymus."
 
 #
 msgid ""
 "\n"
-"Restore your Dreambox with a new firmware."
+"Restore your Cuberevo with a new firmware."
 msgstr ""
 "\n"
-"Atkurti jūsų Dreambox su nauja programine įranga."
+"Atkurti jūsų Cuberevo su nauja programine įranga."
 
 #
 msgid ""
@@ -187,12 +187,6 @@ msgid "%H:%M"
 msgstr "%H:%M"
 
 #, python-format
-msgid ""
-"%d conflict(s) encountered when trying to add new timers:\n"
-"%s"
-msgstr ""
-
-#, python-format
 msgid "%d jobs are running in the background!"
 msgstr "%d darbai, veikiantys fone!"
 
@@ -224,10 +218,6 @@ msgstr ""
 #, python-format
 msgid "%s (%s)\n"
 msgstr "%s (%s)\n"
-
-#, python-format
-msgid "%s: %s at %s"
-msgstr ""
 
 msgid "(ZAP)"
 msgstr "(JUNGTI)"
@@ -377,11 +367,11 @@ msgstr "??"
 msgid "A"
 msgstr "A"
 
-msgid "A BackToTheRoots-Skin .. but with Warp-8 speed."
-msgstr ""
-
 msgid "A BackToTheRoots-Skin .. or good old times."
 msgstr "Atgal į TheRoots-Temą .. arba kaip senais gerais laikais."
+
+msgid "A BackToTheRoots-Skin ... or good old times."
+msgstr "Atgal į TheRoots-Temą ... arba kaip senais gerais laikais."
 
 msgid "A basic ftp client"
 msgstr "Pagrindinis ftp klientas"
@@ -401,20 +391,17 @@ msgstr ""
 msgid "A demo plugin for TPM usage."
 msgstr "Demonstracinė papildoma programa TPM vartojimui"
 
-msgid "A dreambox simulation from SG-Atlantis displays."
-msgstr ""
-
 #
 msgid ""
 "A finished record timer wants to set your\n"
-"Dreambox to standby. Do that now?"
+"Cuberevo to standby. Do that now?"
 msgstr ""
 "Baigtas įrašymas pagal laikmatį nori nustatyti Jūsų\n"
 "imtuvą išjungimui. Padaryti tai dabar?"
 
 msgid ""
 "A finished record timer wants to shut down\n"
-"your Dreambox. Shutdown now?"
+"your Cuberevo. Shutdown now?"
 msgstr ""
 "Baigtas įrašymas pagal laikmatį nori išjungti Jūsų\n"
 "imtuvą. Išjungti dabar?"
@@ -425,9 +412,6 @@ msgstr "Grafinis EPG visiems kanalams iš specifinio paketo"
 
 msgid "A graphical EPG interface"
 msgstr "Grafinė EPG sąsaja"
-
-msgid "A graphical EPG interface and EPG tools manager"
-msgstr ""
 
 msgid "A graphical EPG interface."
 msgstr "Grafinė EPG sąsaja."
@@ -506,7 +490,7 @@ msgstr "Paprasta duomenų parsisiuntimo paraiška kitoms papildomoms programoms"
 #
 msgid ""
 "A sleep timer wants to set your\n"
-"Dreambox to standby. Do that now?"
+"Cuberevo to standby. Do that now?"
 msgstr ""
 "Budėjimo laikmatis nori nustatyti Jūsų\n"
 "imtuvą išjungimui. Padaryti tai dabar?"
@@ -514,7 +498,7 @@ msgstr ""
 #
 msgid ""
 "A sleep timer wants to shut down\n"
-"your Dreambox. Shutdown now?"
+"your Cuberevo. Shutdown now?"
 msgstr ""
 "Budėjimo laikmatis nori išjungti Jūsų\n"
 "imtuvą. Išjungti dabar?"
@@ -629,8 +613,8 @@ msgid "Add a mark"
 msgstr "Pridėti žymeklį"
 
 #
-msgid "Add a new NFS or CIFS mount point to your Dreambox."
-msgstr "Pridėti naują NFS arba CIFS pajungimo tašką jūsų Dreambox'ui."
+msgid "Add a new NFS or CIFS mount point to your Cuberevo."
+msgstr "Pridėti naują NFS arba CIFS pajungimo tašką jūsų Cuberevo'ui."
 
 msgid "Add a new title"
 msgstr "Pridėti naują pavadinimą"
@@ -672,10 +656,10 @@ msgstr "Pridėta:"
 
 #
 msgid ""
-"Adds enigma2 settings and dreambox model informations like SN, rev... if "
+"Adds enigma2 settings and cuberevo model informations like SN, rev... if "
 "enabled."
 msgstr ""
-"Pridėti enigma2 nustatymus ir dreambox modelio informacijas kaip SN, jei "
+"Pridėti enigma2 nustatymus ir cuberevo modelio informacijas kaip SN, jei "
 "įjungta."
 
 #
@@ -724,11 +708,11 @@ msgid "Advanced restore"
 msgstr "Išplėstinis atkūrimas"
 
 msgid ""
-"After a reboot or power outage, StartupToStandby will bring your Dreambox to "
+"After a reboot or power outage, StartupToStandby will bring your Cuberevo to "
 "standby-mode."
 msgstr ""
 "Po perkrovimo ar elektros energijos nutraukimo, StartupToStandby perkels "
-"jūsų Dreambox į budėjimo režimą."
+"jūsų Cuberevo į budėjimo režimą."
 
 msgid "After event"
 msgstr "Po užduoties"
@@ -736,7 +720,7 @@ msgstr "Po užduoties"
 #
 msgid ""
 "After the start wizard is completed, you need to protect single services. "
-"Refer to your dreambox's manual on how to do that."
+"Refer to your cuberevo's manual on how to do that."
 msgstr ""
 "Po nustatymų vedlio darbo baigimo Jūs galite nustatyti kai kurių kanalų "
 "apribojimus. Paskaitykite imtuvo instrukciją kaip tai padaryti."
@@ -885,9 +869,6 @@ msgstr "Klausti vartotojo"
 msgid "Aspect Ratio"
 msgstr "Vaizdo formatas"
 
-msgid "Aspect ratio"
-msgstr ""
-
 msgid "Assigning providers/services/caids to a CI module"
 msgstr "Priskirti tiekėjus/kanalus/caids CI moduliui"
 
@@ -901,9 +882,6 @@ msgstr "Garsas"
 #
 msgid "Audio Options..."
 msgstr "Garso nustatymai..."
-
-msgid "Audio PID"
-msgstr ""
 
 msgid "Audio Sync"
 msgstr "Garso sinchronizavimas"
@@ -973,15 +951,6 @@ msgstr ""
 "Autolaikmatis skanuoja EPG ir kuria Laikmačius priklausomai nuo vartotojo "
 "apibrėžtų paieškos kriterijų."
 
-msgid "AutoTimer was added successfully"
-msgstr ""
-
-msgid "AutoTimer was changed successfully"
-msgstr ""
-
-msgid "AutoTimer was removed"
-msgstr ""
-
 #
 msgid "Automatic"
 msgstr "Automatinis"
@@ -1018,30 +987,6 @@ msgstr "Automatiškai atnaujinti EPG"
 msgid "Automatically send crashlogs to Dream Multimedia"
 msgstr "Automatiškai siųsti crashlogs į Dream Multimediją"
 
-#
-#, python-format
-msgid ""
-"Autoresolution Plugin Testmode:\n"
-"Is %s ok?"
-msgstr ""
-"Auto rezoliucijos papildomos programos testavimas:\n"
-"Yra %s gerai?"
-
-#
-msgid "Autoresolution Switch"
-msgstr "Auto rezoliucijos perjungėjas"
-
-msgid "Autoresolution is not working in Scart/DVI-PC Mode"
-msgstr "Auto rezoliucija neveikia Scart/DVI-PC režime"
-
-#
-msgid "Autoresolution settings"
-msgstr "Autorezoliucijos nustatymai"
-
-#
-msgid "Autoresolution videomode setup"
-msgstr "Auto rezoliucijos vaizdo būdo valdymas"
-
 msgid "Autos & Vehicles"
 msgstr "Automobiliai ir transporto priemonės"
 
@@ -1060,8 +1005,8 @@ msgstr "BA"
 msgid "BASIC-HD Skin by Ismail Demir"
 msgstr "BASIC-HD Tema nuo Ismail Demir"
 
-msgid "BASIC-HD Skin for Dreambox Images created from Ismail Demir"
-msgstr "BASIC-HD tema dėl Dreambox atvaizdų sukurta Ismail Demir"
+msgid "BASIC-HD Skin for Cuberevo Images created from Ismail Demir"
+msgstr "BASIC-HD tema dėl Cuberevo atvaizdų sukurta Ismail Demir"
 
 msgid "BB"
 msgstr "BB"
@@ -1076,12 +1021,6 @@ msgstr "BER:"
 #
 msgid "Back"
 msgstr "Atgal"
-
-msgid "Back, lower USB Slot"
-msgstr ""
-
-msgid "Back, upper USB Slot"
-msgstr ""
 
 #
 msgid "Background"
@@ -1177,11 +1116,6 @@ msgstr "Brazilija"
 msgid "Brightness"
 msgstr "Šviesumas"
 
-msgid ""
-"Browse ORF and SAT1 Teletext independent from channel. This need I-net "
-"conection."
-msgstr ""
-
 msgid "Browse for and connect to network shares"
 msgstr "Ieškoti ir jungtis prie tinklo bendrinimo"
 
@@ -1208,17 +1142,6 @@ msgstr "Irašyti savo įrašus į DVD"
 
 msgid "Bus: "
 msgstr "Bus:"
-
-msgid ""
-"By enabling this events will not be matched if they don't occur on certain "
-"dates."
-msgstr ""
-
-msgid ""
-"By enabling this you will be notified about timer conflicts found during "
-"automated polling. There is no intelligence involved, so it might bother you "
-"about the same conflict over and over."
-msgstr ""
 
 #
 msgid ""
@@ -1322,8 +1245,8 @@ msgstr "Keisti valdymo PIN kodą"
 msgid "Change step size"
 msgstr "Keisti žingsnio dydį"
 
-msgid "Change the hostname of your Dreambox."
-msgstr "Keisti savo Dreambox'o pagrindinio kompiuterio vardą."
+msgid "Change the hostname of your Cuberevo."
+msgstr "Keisti savo Cuberevo'o pagrindinio kompiuterio vardą."
 
 msgid "Changelog"
 msgstr "Pakeitimų sąrašas"
@@ -1466,12 +1389,6 @@ msgstr "Uždaryti ir išsaugoti pakeitimus"
 #
 msgid "Close title selection"
 msgstr "Uždaryti pavadinimo pasirinkimą"
-
-msgid "Code rate HP"
-msgstr ""
-
-msgid "Code rate LP"
-msgstr ""
 
 msgid "Code rate high"
 msgstr "Aukšta kodavimo norma"
@@ -1624,17 +1541,17 @@ msgstr "Tęsti žiūrėjimą"
 msgid "Contrast"
 msgstr "Kontrastas"
 
-msgid "Control your Dreambox with your Web browser."
-msgstr "Kontroliuokite savo Dreambox su jūsų Tinklo naršykle."
+msgid "Control your Cuberevo with your Web browser."
+msgstr "Kontroliuokite savo Cuberevo su jūsų Tinklo naršykle."
 
-msgid "Control your Dreambox with your browser"
-msgstr "Kontroliuokite savo Dreambox su jūsų naršykle"
+msgid "Control your Cuberevo with your browser"
+msgstr "Kontroliuokite savo Cuberevo su jūsų naršykle"
 
-msgid "Control your dreambox with only the MUTE button"
-msgstr "Kontroliuokite savo Dreambox tiktai su MUTE mygtuku"
+msgid "Control your cuberevo with only the MUTE button"
+msgstr "Kontroliuokite savo Cuberevo tiktai su MUTE mygtuku"
 
-msgid "Control your dreambox with only the MUTE button."
-msgstr "Kontroliuokite savo Dreambox tiktai su MUTE mygtuku."
+msgid "Control your cuberevo with only the MUTE button."
+msgstr "Kontroliuokite savo Cuberevo tiktai su MUTE mygtuku."
 
 msgid "Control your internal system fan."
 msgstr "Kontroliuokite savo vidaus sistemą."
@@ -1645,13 +1562,13 @@ msgstr "Kontroliuokite savo vaikų televizijos naudojimą"
 msgid "Control your system fan"
 msgstr "Kontroliuokite savo sistemą"
 
-msgid "Copy, rename, delete, move local files on your Dreambox."
+msgid "Copy, rename, delete, move local files on your Cuberevo."
 msgstr ""
 "Nukopijuokite, pervadinkite, pašalinkite, perkelkite vietinius failus į savo "
-"Dreambox."
+"Cuberevo."
 
-msgid "Could not connect to Dreambox .NFI Image Feed Server:"
-msgstr "Negalima prisijungti prie Dreambox .NFI atvaizdo perdavimo serverio:"
+msgid "Could not connect to Cuberevo .NFI Image Feed Server:"
+msgstr "Negalima prisijungti prie Cuberevo .NFI atvaizdo perdavimo serverio:"
 
 msgid "Could not load Medium! No disc inserted?"
 msgstr "Negalima užkrauti! Joks diskas neįdėtas?"
@@ -1662,10 +1579,6 @@ msgstr "Negalima atidaryti paveikslėlio paveikslėlyje"
 #, python-format
 msgid "Couldn't record due to conflicting timer %s"
 msgstr "Neįrašyta dėl prieštaringo laikmačio %s"
-
-#, python-format
-msgid "Couldn't record due to invalid service %s"
-msgstr ""
 
 msgid "Crashlog settings"
 msgstr "Crashlog nustatymai"
@@ -1689,9 +1602,9 @@ msgstr ""
 msgid "Create DVD-ISO"
 msgstr "Sukurkite DVD-ISO"
 
-msgid "Create a backup of your Video DVD on your DreamBox hard drive."
+msgid "Create a backup of your Video DVD on your Cuberevo hard drive."
 msgstr ""
-"Kurkite atsarginę kopiją savo Vaizdo DVD į jūsų DreamBox kietąjį diską."
+"Kurkite atsarginę kopiją savo Vaizdo DVD į jūsų Cuberevo kietąjį diską."
 
 msgid "Create a backup of your Video-DVD"
 msgstr "Kurkite atsarginę kopiją į savo Vaizdo DVD"
@@ -1714,8 +1627,8 @@ msgstr "Sukurkite savo Kino filmų peržiūros paveikslėlius"
 msgid "Create remote timers"
 msgstr "Sukurkite tolimus laikmačius"
 
-msgid "Create timers on remote Dreamboxes."
-msgstr "Sukurkite laikmačius į tolimus Dreambox'us."
+msgid "Create timers on remote Cuberevoes."
+msgstr "Sukurkite laikmačius į tolimus Cuberevo'us."
 
 #, python-format
 msgid "Creating directory %s failed."
@@ -1831,9 +1744,6 @@ msgstr "DVB-S"
 msgid "DVB-S2"
 msgstr "DVB-S2"
 
-msgid "DVD Drive"
-msgstr ""
-
 #
 msgid "DVD File Browser"
 msgstr "DVD failų naršyklė"
@@ -1850,16 +1760,16 @@ msgstr "DVD pavadinimo sąrašas"
 msgid "DVD media toolbox"
 msgstr "DVD priemonių komplektas"
 
-msgid "DVDPlayer plays your DVDs on your Dreambox"
-msgstr "DVD grotuvas laidžia DVD su jūsų Dreambox"
+msgid "DVDPlayer plays your DVDs on your Cuberevo"
+msgstr "DVD grotuvas laidžia DVD su jūsų Cuberevo"
 
 msgid ""
-"DVDPlayer plays your DVDs on your Dreambox.\n"
-"With the DVDPlayer you can play your DVDs on your Dreambox from a DVD or "
+"DVDPlayer plays your DVDs on your Cuberevo.\n"
+"With the DVDPlayer you can play your DVDs on your Cuberevo from a DVD or "
 "even from an iso file or video_ts folder on your harddisc or network."
 msgstr ""
-"DVD gotuvas groja jūsų DVD su Dreambox.\n"
-"Su DVD grotuvu jūs galite žiūrėti savo DVD su Dreambox, arba net iš iso "
+"DVD gotuvas groja jūsų DVD su Cuberevo.\n"
+"Su DVD grotuvu jūs galite žiūrėti savo DVD su Cuberevo, arba net iš iso "
 "failo ar video_ts aplanko iš jūsų kieto disko ar tinklo."
 
 #
@@ -1916,24 +1826,12 @@ msgstr "Numatyti"
 msgid "Define a startup service"
 msgstr "Nustatykite paleidimo kanalą"
 
-msgid "Define a startup service for your Dreambox."
-msgstr "Nustatykite paleidimo kanalą jūsų Dreambox'e."
-
-#
-msgid "Deinterlacer mode for interlaced content"
-msgstr "Deinterlacer būdas besikeičiančiam turiniui"
-
-#
-msgid "Deinterlacer mode for progressive content"
-msgstr "Deinterlacer būdas progresyviam turiniui"
+msgid "Define a startup service for your Cuberevo."
+msgstr "Nustatykite paleidimo kanalą jūsų Cuberevo'e."
 
 #
 msgid "Delay"
 msgstr "Užlaikymas"
-
-#
-msgid "Delay x seconds after service started"
-msgstr "Užlaikyti x sekundžių po kanalo starto"
 
 #
 msgid "Delete"
@@ -2113,12 +2011,6 @@ msgstr ""
 "Tikrai norite atlikti failų sistemos tikrinimą?\n"
 "Tai gali trukti ilgą laiką!"
 
-#, python-format
-msgid ""
-"Do you really want to delete %s\n"
-"%s?"
-msgstr ""
-
 #
 #, python-format
 msgid "Do you really want to delete %s?"
@@ -2171,7 +2063,7 @@ msgstr "Jūs norite atlikti rankinį kanalų skanavimą?"
 msgid "Do you want to download the image to %s ?"
 msgstr "Jūs norite parsisiųsti atvaizdą į %s ?"
 
-msgid "Do you want to enable the parental control feature on your dreambox?"
+msgid "Do you want to enable the parental control feature on your cuberevo?"
 msgstr "Jūs norite įdiegti tėvų kontrolę Jūsų imtuvui?"
 
 #
@@ -2195,8 +2087,8 @@ msgid "Do you want to preview this DVD before burning?"
 msgstr "Jūs norite peržiūrėti šį DVD prieš įrašymą?"
 
 #
-msgid "Do you want to reboot your Dreambox?"
-msgstr "Jūs norite perjungti savo Dreambox?"
+msgid "Do you want to reboot your Cuberevo?"
+msgstr "Jūs norite perjungti savo Cuberevo?"
 
 #
 msgid "Do you want to remove the package:\n"
@@ -2223,12 +2115,12 @@ msgstr ""
 "galėtume susisiekti su jumis jei reikia?"
 
 #
-msgid "Do you want to update your Dreambox?"
-msgstr "Jūs norite atnaujinti savo Dreambox?"
+msgid "Do you want to update your Cuberevo?"
+msgstr "Jūs norite atnaujinti savo Cuberevo?"
 
 #
 msgid ""
-"Do you want to update your Dreambox?\n"
+"Do you want to update your Cuberevo?\n"
 "After pressing OK, please wait!"
 msgstr ""
 "Jūs tikrai norite atnaujinti Jūsų imtuvą?\n"
@@ -2309,12 +2201,12 @@ msgid "Downloading screenshots. Please wait..."
 msgstr "Momentinių ekrano kopijų parsisiuntimas. Prašome laukti..."
 
 #
-msgid "Dreambox format data DVD (HDTV compatible)"
-msgstr "Dreambox formatuoja DVD duomenis (suderinama su HDTV)"
+msgid "Cuberevo format data DVD (HDTV compatible)"
+msgstr "Cuberevo formatuoja DVD duomenis (suderinama su HDTV)"
 
 #
-msgid "Dreambox software because updates are available."
-msgstr "Dreambox programinės įrangos atnaujinimas, nes yra pasiekiamas."
+msgid "Cuberevo software because updates are available."
+msgstr "Cuberevo programinės įrangos atnaujinimas, nes yra pasiekiamas."
 
 #
 msgid "Duration: "
@@ -2418,11 +2310,11 @@ msgid "Edit tags of recorded movies."
 msgstr "Redaguoti žanrus įrašytiems filmams."
 
 #
-msgid "Edit the Nameserver configuration of your Dreambox.\n"
+msgid "Edit the Nameserver configuration of your Cuberevo.\n"
 msgstr "Redaguokite serverio pavadinimo konfigūraciją savo imtuve.\n"
 
 #
-msgid "Edit the network configuration of your Dreambox.\n"
+msgid "Edit the network configuration of your Cuberevo.\n"
 msgstr "Redaguokite tinklo konfigūraciją savo imtuve.\n"
 
 #
@@ -2449,8 +2341,8 @@ msgstr "Išsilavinimas"
 msgid "Electronic Program Guide"
 msgstr "Elektroninis programų gidas"
 
-msgid "Emailclient is an IMAP4 e-mail viewer for the Dreambox."
-msgstr "Emailclient yra IMAP4 e-pašto peržiūrėtojas Dreambox."
+msgid "Emailclient is an IMAP4 e-mail viewer for the Cuberevo."
+msgstr "Emailclient yra IMAP4 e-pašto peržiūrėtojas Cuberevo."
 
 #
 msgid "Enable"
@@ -2461,28 +2353,8 @@ msgid "Enable /media"
 msgstr "Įjungta /medija"
 
 #
-msgid "Enable 1080p24 Mode"
-msgstr "Įjungti 1080p24 būdą"
-
-#
-msgid "Enable 1080p25 Mode"
-msgstr "Įjungti 1080p25 būdą"
-
-#
-msgid "Enable 1080p30 Mode"
-msgstr "Įjungti 1080p30 būdą"
-
-#
 msgid "Enable 5V for active antenna"
 msgstr "Įjungti 5V aktyviai antenai"
-
-#
-msgid "Enable 720p24 Mode"
-msgstr "Įjungti 720p24 būdą"
-
-#
-msgid "Enable Autoresolution"
-msgstr "Įjungti autorezoliuciją"
 
 msgid "Enable Cleanup Wizard?"
 msgstr "Įjungti išvalymo vedlį?"
@@ -2568,11 +2440,11 @@ msgid "English"
 msgstr "Anglų"
 
 msgid ""
-"Enigma2 Plugin to play AVI/DIVX/WMV/etc. videos from PC on your Dreambox. "
+"Enigma2 Plugin to play AVI/DIVX/WMV/etc. videos from PC on your Cuberevo. "
 "Needs a running VLC from www.videolan.org on your pc."
 msgstr ""
 "Enigma2 papildoma programa, kad rodytų AVI/DIVX/WMV/etc. vaizdą iš asmeninio "
-"kompiuterio su jūsų Dreambox. Reikia veikiančio VLC iš www.videolan.org ant "
+"kompiuterio su jūsų Cuberevo. Reikia veikiančio VLC iš www.videolan.org ant "
 "jūsų Pc."
 
 msgid ""
@@ -2590,14 +2462,20 @@ msgstr ""
 "\n"
 "© 2006 - Stephan Reichholf"
 
+msgid "Enter Fast Forward at speed"
+msgstr "Eiti į greitą persukimą"
+
 msgid "Enter IP to scan..."
 msgstr "Įrašykite IP skanavimui..."
+
+msgid "Enter Rewind at speed"
+msgstr "Eiti į greitą atsukimą"
 
 msgid "Enter main menu..."
 msgstr "Eiti į pagrindinį meniu..."
 
-msgid "Enter new hostname for your Dreambox"
-msgstr "Įrašykite naują pagrindinio kompiuterio pavadinimą savo Dreambox'e"
+msgid "Enter new hostname for your Cuberevo"
+msgstr "Įrašykite naują pagrindinio kompiuterio pavadinimą savo Cuberevo'e"
 
 msgid "Enter options:"
 msgstr "Įrašykite pasirinkimus:"
@@ -2727,10 +2605,10 @@ msgid "FEC"
 msgstr "FEC"
 
 msgid ""
-"FTPBrowser allows uploading and downloading files between your Dreambox and "
+"FTPBrowser allows uploading and downloading files between your Cuberevo and "
 "a server using the file transfer protocol."
 msgstr ""
-"FTPBrowser leidžia įkelti ir atsisiųsti failus tarp jūsų Dreambox ir "
+"FTPBrowser leidžia įkelti ir atsisiųsti failus tarp jūsų Cuberevo ir "
 "serverio naudojant failų perdavimo protokolą."
 
 msgid "Factory reset"
@@ -2810,11 +2688,6 @@ msgstr "Baigtas jūsų tinklo paleidimas iš naujo"
 msgid "Finnish"
 msgstr "Suomių"
 
-msgid ""
-"First day to match events. No event that begins before this date will be "
-"matched."
-msgstr ""
-
 msgid "First generate your skin-style with the Ai.HD-Control plugin."
 msgstr "Pirma savo temos stiliaus generacija su Ai.HD-Control priedu."
 
@@ -2834,16 +2707,13 @@ msgstr "Formatas"
 #, python-format
 msgid ""
 "Found a total of %d matching Events.\n"
-"%d Timer were added and %d modified, %d conflicts encountered."
-msgstr ""
-
-#, python-format
-msgid ""
-"Found a total of %d matching Events.\n"
 "%d Timer were added and %d modified."
 msgstr ""
 "Surasta iš viso %d atitikimo įvykių.\n"
 "%d Laikmatis buvo pridėtas ir %d pakeistas."
+
+msgid "Frame repeat count during non-smooth winding"
+msgstr "Rėmo pakartojimo skaičiavimas per nelygų vingiavimą"
 
 msgid "Frame size in full view"
 msgstr "Kadro dydis pilname vaizde"
@@ -2875,11 +2745,8 @@ msgstr "Penktadienis"
 msgid "Frisian"
 msgstr "Frizų"
 
-msgid "FritzCall shows incoming calls to your Fritz!Box on your Dreambox."
-msgstr "FritzCall rodo gaunamus skambučius į jūsų Fritz! Box jūsų Dreambox'e."
-
-msgid "Front USB Slot"
-msgstr ""
+msgid "FritzCall shows incoming calls to your Fritz!Box on your Cuberevo."
+msgstr "FritzCall rodo gaunamus skambučius į jūsų Fritz! Box jūsų Cuberevo'e."
 
 msgid "Frontend for /tmp/mmi.socket"
 msgstr "Priekinės ir /tmp/mmi.socket"
@@ -2902,8 +2769,8 @@ msgid "GUI that allows user to change the ftp- / telnet password."
 msgstr "GUI, kuri leidžia vartotojui keisti ftp-/ Telnet slaptažodį."
 
 msgid ""
-"GUI that allows user to change the ftp-/telnet-password of the Dreambox."
-msgstr "GUI, kuri leidžia vartotojui keisti Dreambox ftp-/telnet-slaptažodį."
+"GUI that allows user to change the ftp-/telnet-password of the Cuberevo."
+msgstr "GUI, kuri leidžia vartotojui keisti Cuberevo ftp-/telnet-slaptažodį."
 
 msgid "GUI to change the ftp and telnet-password"
 msgstr "GUI pakeisti ftp ir telnet ir slaptažodį"
@@ -2926,20 +2793,17 @@ msgstr "Bendras PCM užlaikymas"
 msgid "General PCM delay (ms)"
 msgstr "Bendras PCM užlaikymas (ms)"
 
-msgid "Generates and Shows TV Charts of all users having this plugin installed"
-msgstr ""
-
 msgid "Genre"
 msgstr "Žanras"
 
-msgid "Genuine Dreambox"
-msgstr "Originalus Dreambox"
+msgid "Genuine Cuberevo"
+msgstr "Originalus Cuberevo"
 
-msgid "Genuine Dreambox validation failed!"
-msgstr "Tikro Dreambox patvirtinimas nepasisekė!"
+msgid "Genuine Cuberevo validation failed!"
+msgstr "Tikro Cuberevo patvirtinimas nepasisekė!"
 
-msgid "Genuine Dreambox verification"
-msgstr "Dreambox originalumo tikrinimas"
+msgid "Genuine Cuberevo verification"
+msgstr "Cuberevo originalumo tikrinimas"
 
 msgid "German"
 msgstr "Vokiečių"
@@ -2997,28 +2861,22 @@ msgid "Green boost"
 msgstr "Žalio didėjimas"
 
 msgid ""
-"Growlee allows your Dreambox to forward notifications like 'Record started' "
-"to a PC running a growl, snarl or syslog compatible client or directly to an "
-"iPhone using prowl."
+"Growlee allows your Cuberevo to send short messages using the growl "
+"protocol\n"
+"like Recording started notifications to a PC running a growl client"
 msgstr ""
+"Growlee leidžia jūsų Cuberevo siųsti trumpąsias žinutes, naudojant growl "
+"protokolą\n"
+"Įrašas paleidžia pranešimus į PC, veikiant growl klientui"
 
 msgid "Guard Interval"
 msgstr "Apsaugos intervalas"
-
-msgid "Guard interval"
-msgstr ""
 
 msgid "Guard interval mode"
 msgstr "Apsaugos intervalo režimas"
 
 msgid "Guess existing timer based on begin/end"
 msgstr "Spėti esamą laikmatį remiantis pradžia/pabaiga"
-
-msgid "HD Interlace Mode"
-msgstr ""
-
-msgid "HD Progressive Mode"
-msgstr ""
 
 msgid "HD videos"
 msgstr "HD vaizdai"
@@ -3049,9 +2907,6 @@ msgstr "Paslėptas tinklo pavadinimas"
 
 msgid "Hierarchy Information"
 msgstr "Hierarchijos informacija"
-
-msgid "Hierarchy info"
-msgstr ""
 
 msgid "Hierarchy mode"
 msgstr "Hierarchijos režimas"
@@ -3089,8 +2944,8 @@ msgstr "Atspalvis"
 msgid "Hungarian"
 msgstr "Vengrų"
 
-msgid "IMAP4 e-mail viewer for the Dreambox"
-msgstr "IMAP4 e-pašto peržiūra dėl Dreambox"
+msgid "IMAP4 e-mail viewer for the Cuberevo"
+msgstr "IMAP4 e-pašto peržiūra dėl Cuberevo"
 
 msgid "IP Address"
 msgstr "IP adresas"
@@ -3203,12 +3058,6 @@ msgstr "Informacija"
 msgid "Init"
 msgstr "Inicializacija"
 
-msgid "Initial Fast Forward speed"
-msgstr ""
-
-msgid "Initial Rewind speed"
-msgstr ""
-
 msgid "Initial location in new timers"
 msgstr "Pradinė naujų laikmačių vieta"
 
@@ -3287,9 +3136,6 @@ msgstr "Vidinė atmintinė"
 msgid "Internal LAN adapter."
 msgstr "Vidinis LAN adapteris"
 
-msgid "Internal USB Slot"
-msgstr ""
-
 msgid "Internal firmware updater"
 msgstr "Vidinis programinės įrangos atnaujinimas"
 
@@ -3345,11 +3191,11 @@ msgstr ""
 msgid "Italian"
 msgstr "Italų"
 
-msgid "Italian Weather forecast on Dreambox"
-msgstr "Italų Orų prognozė Dreambox"
+msgid "Italian Weather forecast on Cuberevo"
+msgstr "Italų Orų prognozė Cuberevo"
 
-msgid "Italian Weather forecast on Dreambox from www.google.it."
-msgstr "Italų Orų prognozė Dreambox iš www.google.it."
+msgid "Italian Weather forecast on Cuberevo from www.google.it."
+msgstr "Italų Orų prognozė Cuberevo iš www.google.it."
 
 msgid "Italy"
 msgstr "Italija"
@@ -3460,11 +3306,6 @@ msgstr "Kalbos pasirinkimas"
 msgid "Last config"
 msgstr "Paskutinis config"
 
-msgid ""
-"Last day to match events. Events have to begin before this date to be "
-"matched."
-msgstr ""
-
 msgid "Last speed"
 msgstr "Paskutinis greitis"
 
@@ -3514,8 +3355,8 @@ msgstr "Išsaugotų įrenginių sąrašas"
 msgid "Listen and record internet radio"
 msgstr "Klausykite ir įrašykite interneto radiją"
 
-msgid "Listen and record shoutcast internet radio on your Dreambox."
-msgstr "Klausykite ir įrašykite shoutcast interneto radiją į savo Dreambox."
+msgid "Listen and record shoutcast internet radio on your Cuberevo."
+msgstr "Klausykite ir įrašykite shoutcast interneto radiją į savo Cuberevo."
 
 msgid "Lithuanian"
 msgstr "Lietuvių"
@@ -3858,17 +3699,11 @@ msgstr "Filmų sąrašo meniu"
 msgid "Multi EPG"
 msgstr "Kanalų EPG"
 
-msgid "Multi-EPG bouquet selection"
-msgstr ""
-
 msgid "Multimedia"
 msgstr "Multimedija"
 
 msgid "Multiple service support"
 msgstr "Kelių kanalų palaikymas"
-
-msgid "Multiplex"
-msgstr ""
 
 msgid "Multisat"
 msgstr "Daug palydovų"
@@ -3908,10 +3743,10 @@ msgstr "N/A"
 
 msgid ""
 "NCID Client shows incoming voice calls promoted by any NCID server (e.g. "
-"Vodafone Easybox) on your Dreambox."
+"Vodafone Easybox) on your Cuberevo."
 msgstr ""
 "NCID klientas rodo įeinančius balso skambučius iš bet kurio NCID serverio "
-"(pvz., \"Vodafone\" Easybox) į savo Dreambox."
+"(pvz., \"Vodafone\" Easybox) į savo Cuberevo."
 
 msgid "NEXT"
 msgstr "KITAS"
@@ -3926,9 +3761,6 @@ msgstr ""
 
 msgid "NFS share"
 msgstr "NFS bendrinimas"
-
-msgid "NIM"
-msgstr ""
 
 msgid "NOW"
 msgstr "DABAR"
@@ -3952,104 +3784,101 @@ msgstr "Serverio nustatymas"
 msgid "Nameserver settings"
 msgstr "Serverio pavadinimas"
 
-msgid "Namespace"
-msgstr ""
-
 msgid "Nemesis BlackBox Skin"
 msgstr "Nemesis BlackBox tema"
 
-msgid "Nemesis BlackBox Skin for the Dreambox"
-msgstr "Nemesis BlackBox tema dėl Dreambox"
+msgid "Nemesis BlackBox Skin for the Cuberevo"
+msgstr "Nemesis BlackBox tema dėl Cuberevo"
 
 msgid "Nemesis Blueline Single Skin"
 msgstr "Nemesis Blueline viena tema"
 
-msgid "Nemesis Blueline Single Skin for the Dreambox"
-msgstr "Nemesis Blueline viena tema dėl Dreambox"
+msgid "Nemesis Blueline Single Skin for the Cuberevo"
+msgstr "Nemesis Blueline viena tema dėl Cuberevo"
 
 msgid "Nemesis Blueline Skin"
 msgstr "Nemesis Blueline tema"
 
-msgid "Nemesis Blueline Skin for the Dreambox"
-msgstr "Nemesis Blueline tema dėl Dreambox"
+msgid "Nemesis Blueline Skin for the Cuberevo"
+msgstr "Nemesis Blueline tema dėl Cuberevo"
 
 msgid "Nemesis Blueline.Extended Skin"
 msgstr "Nemesis Blueline išplėsta tema"
 
-msgid "Nemesis Blueline.Extended Skin for the Dreambox"
-msgstr "Nemesis Blueline išplėsta tema dėl Dreambox"
+msgid "Nemesis Blueline.Extended Skin for the Cuberevo"
+msgstr "Nemesis Blueline išplėsta tema dėl Cuberevo"
 
 msgid "Nemesis ChromeLine Cobolt Skin"
 msgstr "Nemesis ChromeLine Cobolt tema"
 
-msgid "Nemesis ChromeLine Cobolt Skin for the Dreambox"
-msgstr "Nemesis ChromeLine Cobolt tema dėl Dreambox"
+msgid "Nemesis ChromeLine Cobolt Skin for the Cuberevo"
+msgstr "Nemesis ChromeLine Cobolt tema dėl Cuberevo"
 
 msgid "Nemesis ChromeLine Skin"
 msgstr "Nemesis ChromeLine tema"
 
-msgid "Nemesis ChromeLine Skin for the Dreambox"
-msgstr "Nemesis ChromeLine tema dėl Dreambox"
+msgid "Nemesis ChromeLine Skin for the Cuberevo"
+msgstr "Nemesis ChromeLine tema dėl Cuberevo"
 
 msgid "Nemesis Flatline Blue Skin"
 msgstr "Nemesis Flatline Blue tema"
 
-msgid "Nemesis Flatline Blue Skin for the Dreambox"
-msgstr "Nemesis Flatline Blue tema dėl Dreambox"
+msgid "Nemesis Flatline Blue Skin for the Cuberevo"
+msgstr "Nemesis Flatline Blue tema dėl Cuberevo"
 
 msgid "Nemesis Flatline Skin"
 msgstr "Nemesis Flatline tema"
 
-msgid "Nemesis Flatline Skin for the Dreambox"
-msgstr "Nemesis Flatline tema dėl Dreambox"
+msgid "Nemesis Flatline Skin for the Cuberevo"
+msgstr "Nemesis Flatline tema dėl Cuberevo"
 
 msgid "Nemesis GlassLine Skin"
 msgstr "Nemesis GlassLine tema"
 
-msgid "Nemesis GlassLine Skin for the Dreambox"
-msgstr "Nemesis GlassLine tema dėl Dreambox"
+msgid "Nemesis GlassLine Skin for the Cuberevo"
+msgstr "Nemesis GlassLine tema dėl Cuberevo"
 
 msgid "Nemesis Greenline Extended Skin"
 msgstr "Nemesis Greenline išplėsta tema"
 
-msgid "Nemesis Greenline Extended Skin for the Dreambox"
-msgstr "Nemesis Greenline išplėsta tema dėl Dreambox"
+msgid "Nemesis Greenline Extended Skin for the Cuberevo"
+msgstr "Nemesis Greenline išplėsta tema dėl Cuberevo"
 
 msgid "Nemesis Greenline Single Skin"
 msgstr "Nemesis Greenline viena tema"
 
-msgid "Nemesis Greenline Single Skin for the Dreambox"
-msgstr "Nemesis Greenline viena tema dėl Dreambox"
+msgid "Nemesis Greenline Single Skin for the Cuberevo"
+msgstr "Nemesis Greenline viena tema dėl Cuberevo"
 
 msgid "Nemesis Greenline Skin"
 msgstr "Nemesis Greenline tema"
 
-msgid "Nemesis Greenline Skin for the Dreambox"
-msgstr "Nemesis Greenline tema dėl Dreambox"
+msgid "Nemesis Greenline Skin for the Cuberevo"
+msgstr "Nemesis Greenline tema dėl Cuberevo"
 
 msgid "Nemesis Greyline Extended Skin"
 msgstr "Nemesis Greyline išplėsta tema"
 
-msgid "Nemesis Greyline Extended Skin for the Dreambox"
-msgstr "Nemesis Greyline išplėsta tema dėl Dreambox"
+msgid "Nemesis Greyline Extended Skin for the Cuberevo"
+msgstr "Nemesis Greyline išplėsta tema dėl Cuberevo"
 
 msgid "Nemesis Greyline Single Skin"
 msgstr "Nemesis Greyline viena tema"
 
-msgid "Nemesis Greyline Single Skin for the Dreambox"
-msgstr "Nemesis Greyline viena tema dėl Dreambox"
+msgid "Nemesis Greyline Single Skin for the Cuberevo"
+msgstr "Nemesis Greyline viena tema dėl Cuberevo"
 
 msgid "Nemesis Greyline Skin"
 msgstr "Nemesis Greyline tema"
 
-msgid "Nemesis Greyline Skin for the Dreambox"
-msgstr "Nemesis Greyline tema dėl Dreambox"
+msgid "Nemesis Greyline Skin for the Cuberevo"
+msgstr "Nemesis Greyline tema dėl Cuberevo"
 
 msgid "Nemesis ShadowLine Skin"
 msgstr "Nemesis ShadowLine tema"
 
-msgid "Nemesis ShadowLine Skin for the Dreambox"
-msgstr "Nemesis ShadowLine tema dėl Dreambox"
+msgid "Nemesis ShadowLine Skin for the Cuberevo"
+msgstr "Nemesis ShadowLine tema dėl Cuberevo"
 
 msgid "Netmask"
 msgstr "Potinklio kaukė"
@@ -4276,7 +4105,7 @@ msgstr "Ne, bet perjungti į vaizdo paiešką."
 msgid "No, do nothing."
 msgstr "Ne, nereikia"
 
-msgid "No, just start my dreambox"
+msgid "No, just start my cuberevo"
 msgstr "Ne, įjungti mano imtuvą"
 
 msgid "No, never"
@@ -4309,12 +4138,6 @@ msgstr "Šiaurė"
 
 msgid "Norwegian"
 msgstr "Norvegų"
-
-msgid "Not after"
-msgstr ""
-
-msgid "Not before"
-msgstr ""
 
 #, python-format
 msgid ""
@@ -4360,9 +4183,6 @@ msgstr "Gerai, pašalinkite kitus išplėtimus"
 
 msgid "OK, remove some extensions"
 msgstr "Gerai, pašalinkite bet kokius išplėtimus"
-
-msgid "ONID"
-msgstr ""
 
 msgid "OSD Settings"
 msgstr "OSD nustatymai"
@@ -4419,9 +4239,6 @@ msgstr "Pasirinktinai įrašykite savo vardą, jei jūs norite."
 msgid "Orbital Position"
 msgstr "Pozicija orbitoje"
 
-msgid "Orbital position"
-msgstr ""
-
 msgid "Outer Bound (+/-)"
 msgstr "Išorinis Susijęs (+/-)"
 
@@ -4440,14 +4257,8 @@ msgstr "Perrašyti konfigūracijos failus per programinės įrangos atnaujinimą
 msgid "PAL"
 msgstr "PAL"
 
-msgid "PCR PID"
-msgstr ""
-
 msgid "PIDs"
 msgstr "PIDs"
-
-msgid "PMT PID"
-msgstr ""
 
 msgid "Package list update"
 msgstr "Paketo sąrašo atnaujinimas"
@@ -4484,10 +4295,10 @@ msgid "Parental control type"
 msgstr "Tėvų kontrolės rūšis"
 
 msgid ""
-"Partnerbox allows editing a remote Dreambox's record timers and stream its "
+"Partnerbox allows editing a remote Cuberevo's record timers and stream its "
 "TV  program."
 msgstr ""
-"Partnerbox leidžia redaguoti nuotolinio Dreambox įrašų laikmačius ir srautus "
+"Partnerbox leidžia redaguoti nuotolinio Cuberevo įrašų laikmačius ir srautus "
 "jo televizijos programa."
 
 msgid "Password"
@@ -4557,8 +4368,8 @@ msgstr "Leisti įrašytus filmus..."
 msgid "Play video again"
 msgstr "Rodyti vaizdą vėl"
 
-msgid "Play videos from PC on your Dreambox"
-msgstr "Atkurti vaizdo įrašus iš kompiuterio į savo Dreambox"
+msgid "Play videos from PC on your Cuberevo"
+msgstr "Atkurti vaizdo įrašus iš kompiuterio į savo Cuberevo"
 
 msgid "Playback of Youtube through a PC"
 msgstr "Atkūrimas Youtube per kompiuterį"
@@ -4810,8 +4621,8 @@ msgstr "Papildoma programa: %(plugin)s , Versija: %(version)s"
 msgid "Plugins"
 msgstr "Papildomos programos"
 
-msgid "PodCast streams podcasts to your Dreambox."
-msgstr "Podcast srautų užsakomosios transliacijos į savo Dreambox"
+msgid "PodCast streams podcasts to your Cuberevo."
+msgstr "Podcast srautų užsakomosios transliacijos į savo Cuberevo"
 
 msgid "Poland"
 msgstr "Lenkija"
@@ -4845,9 +4656,6 @@ msgstr "Jungtis D"
 
 msgid "Portuguese"
 msgstr "Portugalų"
-
-msgid "Position of finished Timers in Timerlist"
-msgstr ""
 
 msgid "Positioner"
 msgstr "Pozicionierius"
@@ -5108,9 +4916,6 @@ msgstr "Įrašai"
 msgid "Recordings always have priority"
 msgstr "Įrašai visada turi pirmenybę"
 
-msgid "Redirect notifications to Growl, Snarl, Prowl or Syslog"
-msgstr ""
-
 msgid "Reenter new PIN"
 msgstr "Iš naujo įrašykite naują PIN"
 
@@ -5278,14 +5083,11 @@ msgstr "Vyksta atkūrimas"
 msgid "Restore system settings"
 msgstr "Atkurkite sisteminius nustatymus"
 
-msgid "Restore your Dreambox with a USB stick"
-msgstr "Atkurkite savo Dreambox su USB įrenginiu"
+msgid "Restore your Cuberevo with a USB stick"
+msgstr "Atkurkite savo Cuberevo su USB įrenginiu"
 
 msgid "Restrict \"after event\" to a certain timespan?"
 msgstr "Riboti \"po įvykio \" tam tikrą laiko atkarpą?"
-
-msgid "Restrict to events on certain dates"
-msgstr ""
 
 msgid "Resume from last position"
 msgstr "Tęsti nuo paskutinės pozicijos"
@@ -5319,9 +5121,6 @@ msgstr "Persukimo greitis"
 msgid "Right"
 msgstr "Dešinys"
 
-msgid "Roll-off"
-msgstr ""
-
 msgid "Rolloff"
 msgstr "Rolloff"
 
@@ -5331,9 +5130,6 @@ msgstr "Pozicionieriaus sukimosi greitis"
 msgid "Running"
 msgstr "Veikiantis"
 
-msgid "Running in testmode"
-msgstr ""
-
 msgid "Russia"
 msgstr "Rusija"
 
@@ -5342,21 +5138,6 @@ msgstr "Rusų"
 
 msgid "S-Video"
 msgstr "S-Video"
-
-msgid "SD 25/50HZ Interlace Mode"
-msgstr ""
-
-msgid "SD 25/50HZ Progressive Mode"
-msgstr ""
-
-msgid "SD 30/60HZ Interlace Mode"
-msgstr ""
-
-msgid "SD 30/60HZ Progressive Mode"
-msgstr ""
-
-msgid "SID"
-msgstr ""
 
 msgid "SINGLE LAYER DVD"
 msgstr "VIENO SLUOKSNIO DVD"
@@ -5369,19 +5150,6 @@ msgstr "SNR:"
 
 msgid "SSID:"
 msgstr "SSID:"
-
-msgid ""
-"SVDRP is a protocol developed for the VDR software to control a set-top box "
-"remotely.\n"
-"This plugin only supports a subset of SVDRP and starts automatically using "
-"default settings.\n"
-"\n"
-"You probably don't need this plugin and should use the regular Web Interface "
-"for Enigma2 instead."
-msgstr ""
-
-msgid "SVDRP server for Enigma2"
-msgstr ""
 
 msgid "Sat"
 msgstr "Šeš"
@@ -5746,9 +5514,6 @@ msgstr ""
 "Kanalas nerastas!\n"
 "(SID nėra PAT)"
 
-msgid "Service reference"
-msgstr ""
-
 msgid "Service scan"
 msgstr "Kanalo skanavimas"
 
@@ -5793,8 +5558,8 @@ msgstr "Nustatykite maksimalią trukmę"
 msgid "Set this NO to disable this AutoTimer."
 msgstr "Nustatykite NE, kad išjungti šį Auto Laikmatį."
 
-msgid "Sets your Dreambox into Deep-Standby"
-msgstr "Nustatykite jūsų Dreambox į gilų budėjimą"
+msgid "Sets your Cuberevo into Deep-Standby"
+msgstr "Nustatykite jūsų Cuberevo į gilų budėjimą"
 
 msgid "Setting key canceled"
 msgstr "Nustatymų mygtukas panaikintas"
@@ -5856,9 +5621,6 @@ msgstr "Rodyti atvejo eigą kanalo pasirinkime"
 msgid "Show in extension menu"
 msgstr "Rodyti išplėstame meniu"
 
-msgid "Show info screen"
-msgstr ""
-
 msgid "Show infobar on channel change"
 msgstr "Rodyti infojuostą perjungiant kanalą"
 
@@ -5867,9 +5629,6 @@ msgstr "Rodyti infojuostą pasikeičiant užduočiai"
 
 msgid "Show infobar on skip forward/backward"
 msgstr "Rodyti infojuostą praleidžiant į priekį/atgal"
-
-msgid "Show notification on conflicts"
-msgstr ""
 
 msgid "Show positioner movement"
 msgstr "Rodyti pozicionieriaus judėjimą"
@@ -5911,7 +5670,7 @@ msgstr "Rodo jūsų belaidžio tinklo prisijungimo ribas.\n"
 msgid "Shutdown"
 msgstr "Išjungti"
 
-msgid "Shutdown Dreambox after"
+msgid "Shutdown Cuberevo after"
 msgstr "Išjungti imtuvą po:"
 
 msgid "Signal Strength:"
@@ -5935,8 +5694,8 @@ msgstr "Paprastas IRC GroupChat klientas e2 # dm8000-vip kanalas"
 msgid "Simple titleset (compatibility for legacy players)"
 msgstr "Paprastas pavadinimo nustatymas (suderinamas žaidėjams)"
 
-msgid "SimpleRSS allows reading RSS newsfeeds on your Dreambox."
-msgstr "SimpleRSS leidžia skaityti RSS žinias jūsų Dreambox'e."
+msgid "SimpleRSS allows reading RSS newsfeeds on your Cuberevo."
+msgstr "SimpleRSS leidžia skaityti RSS žinias jūsų Cuberevo'e."
 
 msgid "Single"
 msgstr "Vienintelis"
@@ -6002,8 +5761,8 @@ msgstr "Programinės įrangos atkūrimas"
 msgid "Software update"
 msgstr "Programinės įrangos atnaujinimas"
 
-msgid "SoftwareManager manages your Dreambox software"
-msgstr "SoftwareManager valdo jūsų Dreambox programinę įrangą"
+msgid "SoftwareManager manages your Cuberevo software"
+msgstr "SoftwareManager valdo jūsų Cuberevo programinę įrangą"
 
 msgid "Softwaremanager information"
 msgstr "Programinės įrangos valdymo informacija"
@@ -6090,9 +5849,6 @@ msgstr "Aušintuvo budėjimo %d įtampa"
 
 msgid "Start Webinterface"
 msgstr "Paleisti Tinklo sąsają"
-
-msgid "Start easy your multimedia plugins with the PVR-button."
-msgstr ""
 
 msgid "Start from the beginning"
 msgstr "Pradėti nuo pradžios"
@@ -6189,9 +5945,6 @@ msgstr "Sek"
 msgid "Sunday"
 msgstr "Sekmadienis"
 
-msgid "Support \"Fast Scan\"?"
-msgstr ""
-
 msgid "Swap Services"
 msgstr "Keisti kanalus"
 
@@ -6213,9 +5966,6 @@ msgstr "Perjungiamų imtuvą tipai:"
 msgid "Symbol Rate"
 msgstr "Simbolių greitis"
 
-msgid "Symbol rate"
-msgstr ""
-
 msgid "Symbolrate"
 msgstr "Simbolių greitis"
 
@@ -6229,17 +5979,8 @@ msgstr "Audronis Grincevičius (ADGA) Pasvalys, Lietuva"
 msgid "TS file is too large for ISO9660 level 1!"
 msgstr "TS failas yra per didelis ISO9660 lygmeniui 1!"
 
-msgid "TSID"
-msgstr ""
-
-msgid "TV Charts of all users"
-msgstr ""
-
 msgid "TV System"
 msgstr "TV sistema"
-
-msgid "TXT PID"
-msgstr ""
 
 msgid "Table of content for collection"
 msgstr "Turinio lentelė dėl kolekcijos"
@@ -6265,9 +6006,6 @@ msgstr "Taivanis"
 msgid "Temperature and Fan control"
 msgstr "Temperatūros ir aušintuvo kontrolė"
 
-msgid "Temperature-dependent fan control."
-msgstr ""
-
 msgid "Terrestrial"
 msgstr "Antžeminė"
 
@@ -6286,7 +6024,7 @@ msgstr "Kartoti"
 msgid "Test mode"
 msgstr "Testuoti"
 
-msgid "Test the network configuration of your Dreambox.\n"
+msgid "Test the network configuration of your Cuberevo.\n"
 msgstr "Testuoti tinklo konfigūraciją savo imtuve.\n"
 
 msgid "Test your DiSEqC equipment"
@@ -6304,7 +6042,7 @@ msgstr ""
 
 msgid ""
 "Thank you for using the wizard. Your box is now ready to use.\n"
-"Please press OK to start using your Dreambox."
+"Please press OK to start using your Cuberevo."
 msgstr ""
 "Ačiū, kad naudojatės nustatymų vedliu. Jūsų imtuvas yra paruoštas "
 "naudojimui.\n"
@@ -6320,21 +6058,21 @@ msgstr ""
 "Prašome spausti OK, kad tęsti."
 
 msgid ""
-"The CleanupWizard informs you when the internal free memory of your dreambox "
+"The CleanupWizard informs you when the internal free memory of your cuberevo "
 "has dropped below a definable threshold.You can use this wizard to remove "
 "some plugins."
 msgstr ""
-"CleanupWizard jus informuoja, kai vidinė laisva atmintis jūsų Dreambox "
+"CleanupWizard jus informuoja, kai vidinė laisva atmintis jūsų Cuberevo "
 "nukrito žemiau apibrėžtos. Jūs galite naudoti šį vedlį, pašalinant kai "
 "kuriuos priedus."
 
 msgid ""
 "The DVD standard doesn't support H.264 (HDTV) video streams. Do you want to "
-"create a Dreambox format data DVD (which will not play in stand-alone DVD "
+"create a Cuberevo format data DVD (which will not play in stand-alone DVD "
 "players) instead?"
 msgstr ""
 "DVD standartas nepalaiko H.264 (HDTV) vaizdo srauto. Jūs norite sukurti "
-"Dreambox formato duomenų DVD (kuris nepasileis viena pozicija DVD "
+"Cuberevo formato duomenų DVD (kuris nepasileis viena pozicija DVD "
 "grotuvuose), vietoj to?"
 
 msgid ""
@@ -6387,17 +6125,17 @@ msgstr ""
 
 msgid ""
 "The SkinSelector shows a menu with selectable skins.\n"
-"It's now easy to change the look and feel of your Dreambox."
+"It's now easy to change the look and feel of your Cuberevo."
 msgstr ""
 "SkinSelector rodo meniu su pasirenkamomis temomis.\n"
-"Dabar lengva pakeisti išvaizdą ir savo Dreambox."
+"Dabar lengva pakeisti išvaizdą ir savo Cuberevo."
 
 msgid ""
-"The SoftwareManager manages your Dreambox software.\n"
+"The SoftwareManager manages your Cuberevo software.\n"
 "It's easy to update your receiver's software, install or remove plugins or "
 "even backup and restore your system settings."
 msgstr ""
-"SoftwareManager valdo jūsų Dreambox programinę įrangą.\n"
+"SoftwareManager valdo jūsų Cuberevo programinę įrangą.\n"
 "Tai lengva atnaujinti savo imtuvo programinę įrangą, įdiegti ar pašalinti "
 "priedus ar net atsarginę kopiją ir atkurti jūsų sistemos nustatymus."
 
@@ -6505,7 +6243,7 @@ msgstr "Numatytųjų kanalų sąrašų įdiegimas yra baigtas."
 
 msgid ""
 "The installation of the default settings is finished. You can now continue "
-"configuring your Dreambox by pressing the OK button on the remote control."
+"configuring your Cuberevo by pressing the OK button on the remote control."
 msgstr ""
 "Numatytųjų kanalų sąrašų įdiegimas yra baigtas. Jūs galite dabar tęsti savo "
 "imtuvo konfigūravimą, spausdami OK mygtuką ant distancinio valdymo pulto."
@@ -6612,10 +6350,10 @@ msgid "There was an error. The package:"
 msgstr "Buvo klaidos. Paketas:"
 
 msgid ""
-"There's a certificate update available for your dreambox. Would you like to "
+"There's a certificate update available for your cuberevo. Would you like to "
 "apply this update now?"
 msgstr ""
-"Yra pasiekiamas sertifikato atnaujinimas jūsų Dreambox. Ar norėtumėte "
+"Yra pasiekiamas sertifikato atnaujinimas jūsų Cuberevo. Ar norėtumėte "
 "taikyti šį naujinimą dabar?"
 
 msgid ""
@@ -6626,8 +6364,8 @@ msgstr ""
 "visą disko turinį."
 
 #, python-format
-msgid "This Dreambox can't decode %s streams!"
-msgstr "Šis Dreambox negali iššifruoti %s srautų!"
+msgid "This Cuberevo can't decode %s streams!"
+msgstr "Šis Cuberevo negali iššifruoti %s srautų!"
 
 msgid "This Month"
 msgstr "Šį mėnesį"
@@ -6665,7 +6403,7 @@ msgstr ""
 
 msgid ""
 "This plugin creates a USB stick which can be used to update the firmware of "
-"your Dreambox without the need for a network or WLAN connection.\n"
+"your Cuberevo without the need for a network or WLAN connection.\n"
 "First, a USB stick needs to be prepared so that it becomes bootable.\n"
 "In the next step, an NFI image file can be downloaded from the update server "
 "and saved on the USB stick.\n"
@@ -6673,7 +6411,7 @@ msgid ""
 "Otherwise plug in a USB stick with a minimum size of 64 MB!"
 msgstr ""
 "Ši papildoma programa kuria USB laikmeną, kuri gali būti panaudota, kad "
-"atnaujinti programinę įrangą jūsų Dreambox be tinklo ar WLAN ryšio.\n"
+"atnaujinti programinę įrangą jūsų Cuberevo be tinklo ar WLAN ryšio.\n"
 "Iš pradžių USB laikmena turi būti paruošta, kad tai taptų paleidžiama.\n"
 "Kitame žingsnyje NFI atvaizdo failas gali būti parsisiųstas iš atnaujinimo "
 "serverio ir išsaugotas USB laikmenoje.\n"
@@ -6864,14 +6602,14 @@ msgid "To be used as simple downloading application by other Plugins."
 msgstr "Tai naudojama kaip paprastam atsisiuntimui kitų priedų."
 
 msgid ""
-"To update your Dreambox firmware, please follow these steps:\n"
+"To update your Cuberevo firmware, please follow these steps:\n"
 "1) Turn off your box with the rear power switch and make sure the bootable "
 "USB stick is plugged in.\n"
 "2) Turn mains back on and hold the DOWN button on the front panel pressed "
 "for 10 seconds.\n"
 "3) Wait for bootup and follow instructions of the wizard."
 msgstr ""
-"Kad atnaujintumėte jūsų Dreambox programinę įrangą, prašome sekti šiuos "
+"Kad atnaujintumėte jūsų Cuberevo programinę įrangą, prašome sekti šiuos "
 "žingsnius:\n"
 "1) Išjunkite jūsų imtuvą su užpakaliniu įtampos išjungimo mygtuku ir "
 "įsitikinkite, kad paleidžiama USB laikmena yra pajungta.\n"
@@ -7072,10 +6810,10 @@ msgid "Update done..."
 msgstr "Atnaujinimas baigtas..."
 
 msgid ""
-"Update done... The genuine dreambox test will now be rerun and should not "
+"Update done... The genuine cuberevo test will now be rerun and should not "
 "ask you to update again."
 msgstr ""
-"Atnaujinimas baigtas... Tikro dreambox testas bus dabar paleistas iš naujo "
+"Atnaujinimas baigtas... Tikro cuberevo testas bus dabar paleistas iš naujo "
 "ir neturi prašyti jūsų atnaujinti dar kartą."
 
 msgid "Updatefeed not available."
@@ -7105,7 +6843,7 @@ msgstr "Atnaujinimas baigtas."
 msgid "Upgrading"
 msgstr "Atnaujinama"
 
-msgid "Upgrading Dreambox... Please wait"
+msgid "Upgrading Cuberevo... Please wait"
 msgstr "Atnaujinamas imtuvas... Prašome palaukti"
 
 msgid "Upper bound of timespan."
@@ -7136,8 +6874,11 @@ msgstr "Naudoti Išsirinktą vietą"
 msgid "Use a gateway"
 msgstr "Naudoti šliuzą"
 
-msgid "Use and control multiple Dreamboxes with different RCs."
-msgstr "Naudoti bei kontroliuoti kelis Dreambox su skirtingais RC."
+msgid "Use and control multiple Cuberevoes with different RCs."
+msgstr "Naudoti bei kontroliuoti kelis Cuberevo su skirtingais RC."
+
+msgid "Use non-smooth winding at speeds above"
+msgstr "Naudoti nelygų vingiavimą greičiais didesniais kaip"
 
 msgid "Use power measurement"
 msgstr "Naudoti įtampos išmatavimus"
@@ -7206,22 +6947,13 @@ msgstr "VMGM (įvadas)"
 msgid "Vali-XD skin"
 msgstr "Vali-XD tema"
 
-msgid "Vali.HD.atlantis skin"
-msgstr ""
-
 msgid "Vali.HD.nano skin"
 msgstr "Vali.HD.nano tema"
 
-msgid "Vali.HD.warp skin"
-msgstr ""
-
 msgid ""
-"Verify your Dreambox authenticity by running the genuine dreambox plugin!"
+"Verify your Cuberevo authenticity by running the genuine cuberevo plugin!"
 msgstr ""
-"Patvirtinkite savo Dreambox autentiškumą paleisdami tikro Dreambox priedą!"
-
-msgid "Verifying your internet connection..."
-msgstr ""
+"Patvirtinkite savo Cuberevo autentiškumą paleisdami tikro Cuberevo priedą!"
 
 msgid "Vertical"
 msgstr "Vertikalus"
@@ -7234,9 +6966,6 @@ msgstr "Tikslaus vaizdo suderinimo vedlys"
 
 msgid "Video Output"
 msgstr "Vaizdo išėjimas"
-
-msgid "Video PID"
-msgstr ""
 
 msgid "Video Setup"
 msgstr "Vaizdo valdymas"
@@ -7298,8 +7027,8 @@ msgstr "Vaizdo Skaičiavimas"
 msgid "View Google maps"
 msgstr "Žiūrėti Google žemėlapius"
 
-msgid "View Google maps with your Dreambox."
-msgstr "Žiūrėti Google žemėlapius su Dreambox"
+msgid "View Google maps with your Cuberevo."
+msgstr "Žiūrėti Google žemėlapius su Cuberevo"
 
 msgid "View Movies..."
 msgstr "Žiūrėti kino filmus..."
@@ -7367,8 +7096,8 @@ msgstr "Žiūrėti atsakytus vaizdus"
 msgid "View teletext..."
 msgstr "Peržiūrėti teletekstą..."
 
-msgid "View, edit or delete mountpoints on your Dreambox."
-msgstr "Žiūrėkite, redaguokite ar trinkite pajungimo taškus savo Dreambox'e."
+msgid "View, edit or delete mountpoints on your Cuberevo."
+msgstr "Žiūrėkite, redaguokite ar trinkite pajungimo taškus savo Cuberevo'e."
 
 msgid "View, edit or delete usernames and passwords for your network."
 msgstr ""
@@ -7434,14 +7163,11 @@ msgstr "Įspėti, jei laisva erdvė krinta žemiau (kb):"
 msgid "Watch streams from ZDF Mediathek"
 msgstr "Žiūrėti srautus iš ZDF Mediathek"
 
-msgid "WeatherPlugin shows weatherforecasts on your Dreambox."
-msgstr "WeatherPlugin rodo orų prognozes jūsų Dreambox."
+msgid "WeatherPlugin shows weatherforecasts on your Cuberevo."
+msgstr "WeatherPlugin rodo orų prognozes jūsų Cuberevo."
 
-msgid "Weatherforecast on your Dreambox"
-msgstr "Orų prognozė Jūsų Dreambox"
-
-msgid "Web-Bouquet-Editor for PC"
-msgstr ""
+msgid "Weatherforecast on your Cuberevo"
+msgstr "Orų prognozė Jūsų Cuberevo"
 
 msgid "Webinterface"
 msgstr "Web sąsaja"
@@ -7485,7 +7211,7 @@ msgstr ""
 
 msgid ""
 "Welcome to the Image upgrade wizard. The wizard will assist you in upgrading "
-"the firmware of your Dreambox by providing a backup facility for your "
+"the firmware of your Cuberevo by providing a backup facility for your "
 "current settings and a short explanation of how to upgrade your firmware."
 msgstr ""
 "Sveiki atvykę į atvaizdo atnaujinimo nustatymų vedlį. Nustatymų vedlys padės "
@@ -7544,7 +7270,7 @@ msgid ""
 "Welcome to the cleanup wizard.\n"
 "\n"
 "We have detected that your available internal memory has dropped below 2MB.\n"
-"To ensure stable operation of your Dreambox, the internal memory should be "
+"To ensure stable operation of your Cuberevo, the internal memory should be "
 "cleaned up.\n"
 "You can use this wizard to remove some extensions.\n"
 msgstr ""
@@ -7558,8 +7284,8 @@ msgstr ""
 msgid ""
 "Welcome.\n"
 "\n"
-"If you want to connect your Dreambox to the Internet, this wizard will guide "
-"you through the basic network setup of your Dreambox.\n"
+"If you want to connect your Cuberevo to the Internet, this wizard will guide "
+"you through the basic network setup of your Cuberevo.\n"
 "\n"
 "Press OK to start configuring your network"
 msgstr ""
@@ -7587,7 +7313,7 @@ msgstr ""
 msgid ""
 "Welcome.\n"
 "\n"
-"This start wizard will guide you through the basic setup of your Dreambox.\n"
+"This start wizard will guide you through the basic setup of your Cuberevo.\n"
 "Press the OK button on your remote control to move to the next step."
 msgstr ""
 "Sveiki atvykę.\n"
@@ -7607,11 +7333,6 @@ msgstr "Ką Jūs norite skanuoti?"
 
 msgid "What to do with submitted crashlogs?"
 msgstr "Ką daryti su pateiktu crashlogs?"
-
-msgid ""
-"When supporting \"Fast Scan\" the service type is ignored. You don't need to "
-"enable this unless your Image supports \"Fast Scan\" and you are using it."
-msgstr ""
 
 msgid ""
 "When this option is enabled the AutoTimer won't match events where another "
@@ -7659,22 +7380,22 @@ msgstr ""
 "naujienų kanalai)."
 
 msgid ""
-"With DVDBurn you can make compilations of records from your Dreambox hard "
+"With DVDBurn you can make compilations of records from your Cuberevo hard "
 "drive.\n"
 "Optionally you can add customizable menus. You can record the compilation to "
 "a standard-compliant DVD that can be played on conventinal DVD players.\n"
-"HDTV recordings can only be burned in proprietary dreambox format."
+"HDTV recordings can only be burned in proprietary cuberevo format."
 msgstr ""
-"Su DVDBurn galite padaryti įrašus iš jūsų Dreambox kietojo disko.\n"
+"Su DVDBurn galite padaryti įrašus iš jūsų Cuberevo kietojo disko.\n"
 "Pasirinktinai galite pridėti savo meniu. Galite įrašyti standartinių "
 "reikalavimų DVD, kuriuos galima žiūrėti ant DVD grotuvų.\n"
-"HDTV įrašus galima rašyti tik Dreambox formatu."
+"HDTV įrašus galima rašyti tik Cuberevo formatu."
 
 msgid "With EPGSearch you can search through the EPG and create timers."
 msgstr "Su EPGSearch galite ieškoti EPG ir sukurti laikmačius."
 
-msgid "With Genuine Dreambox you can verify the authenticity of your Dreambox."
-msgstr "Su Genuine Dreambox galite patikrinti savo Dreambox autentiškumą."
+msgid "With Genuine Cuberevo you can verify the authenticity of your Cuberevo."
+msgstr "Su Genuine Cuberevo galite patikrinti savo Cuberevo autentiškumą."
 
 msgid ""
 "With IMDb you can download and displays movie information (rating, poster, "
@@ -7705,20 +7426,20 @@ msgstr ""
 "kanalą po vykdymo."
 
 msgid ""
-"With YouTubePlayer you can watch YouTube-Videos on the Dreambox.\n"
+"With YouTubePlayer you can watch YouTube-Videos on the Cuberevo.\n"
 "This plugin requires a PC with the VLC program running."
 msgstr ""
-"Su YouTubePlayer galite žiūrėti YouTube vaizdus su Dreambox.\n"
+"Su YouTubePlayer galite žiūrėti YouTube vaizdus su Cuberevo.\n"
 "Šiam priedui įjungti reikia VLC programos veikiančios kompiuteryje."
 
 msgid ""
 "With the CommonInterfaceAssignment plugin it is possible to use differentCI "
-"modules in your Dreambox and assign dedicated providers/services or caids to "
+"modules in your Cuberevo and assign dedicated providers/services or caids to "
 "each of them.\n"
 "This allows watching a scrambled service while recording another one."
 msgstr ""
 "Su CommonInterfaceAssignment priedu galima naudoti įvairius CI modulius jūsų "
-"Dreambox ir priskirti specialius tiekėjus/kanalus arba caids kiekvienam iš "
+"Cuberevo ir priskirti specialius tiekėjus/kanalus arba caids kiekvienam iš "
 "jų.\n"
 "Tai leidžia žiūrėti užkoduotus kanalus."
 
@@ -7745,11 +7466,11 @@ msgstr ""
 
 msgid ""
 "With the NFIFlash plugin it is possible to prepare a USB stick with an "
-"Dreambox image.\n"
-"It is then possible to flash your Dreambox with the image on that stick."
+"Cuberevo image.\n"
+"It is then possible to flash your Cuberevo with the image on that stick."
 msgstr ""
-"Su NFIFlash priedu galima paruošti USB raktą su Dreambox vaizdu.\n"
-"Tada galima įrašyti atvaizdą į jūsų Dreambox su šiuo raktu."
+"Su NFIFlash priedu galima paruošti USB raktą su Cuberevo vaizdu.\n"
+"Tada galima įrašyti atvaizdą į jūsų Cuberevo su šiuo raktu."
 
 msgid ""
 "With the NetworkWizard you can easily configure your network step by step."
@@ -7865,8 +7586,8 @@ msgstr "Jūs galite išsirinkti, ką jūs norite įdiegti..."
 msgid "You can install this plugin."
 msgstr "Jūs galite įdiegti šią papildomą programą."
 
-msgid "You can only burn Dreambox recordings!"
-msgstr "Galite įrašyti tik Dreambox įrašus!"
+msgid "You can only burn Cuberevo recordings!"
+msgstr "Galite įrašyti tik Cuberevo įrašus!"
 
 msgid "You can remove this plugin."
 msgstr "Jūs galite pašalinti šią papildomą programą."
@@ -7879,12 +7600,6 @@ msgstr ""
 "Jūs galite nustatyti pagrindines Auto laikmačio ypatybes čia.\n"
 "Tuo metu, kai 'Vardas' yra tik žmogaus lengvai skaitomas vardas, rodytas "
 "Peržiūroje, 'Pavadinime' yra tai, kas ieškoma EPG."
-
-msgid ""
-"You can use the EasyInfo for manage your EPG plugins from info button. You "
-"have also a new now-next event viewer. Easy-PG, the own graphical EPG bowser "
-"is also included."
-msgstr ""
 
 msgid "You cannot delete this!"
 msgstr "Jūs negalite to ištrinti!"
@@ -7951,9 +7666,9 @@ msgid "You have to wait %s!"
 msgstr "Jūs turite laukti %s!"
 
 msgid ""
-"You need a PC connected to your dreambox. If you need further instructions, "
+"You need a PC connected to your cuberevo. If you need further instructions, "
 "please visit the website http://www.dm7025.de.\n"
-"Your dreambox will now be halted. After you have performed the update "
+"Your cuberevo will now be halted. After you have performed the update "
 "instructions from the website, your new firmware will ask you to restore "
 "your settings."
 msgstr ""
@@ -7990,7 +7705,7 @@ msgstr ""
 "Prašome patvirtinti, jei tai buvo padaryta tyčia, jei ne jie bus pašalinti."
 
 msgid ""
-"Your Dreambox is now ready to use.\n"
+"Your Cuberevo is now ready to use.\n"
 "\n"
 "Your internet connection is working now.\n"
 "\n"
@@ -8001,7 +7716,7 @@ msgstr ""
 "\n"
 
 msgid ""
-"Your Dreambox is now ready to use.\n"
+"Your Cuberevo is now ready to use.\n"
 "\n"
 "Your internet connection is working now.\n"
 "\n"
@@ -8013,7 +7728,7 @@ msgstr ""
 "\n"
 "Prašome spausti OK, kad tęsti."
 
-msgid "Your Dreambox will restart after pressing OK on your remote control."
+msgid "Your Cuberevo will restart after pressing OK on your remote control."
 msgstr ""
 "Jūsų imtuvas bus paleistas iš naujo paspaudus OK ant jūsų valdymo pulto."
 
@@ -8040,11 +7755,11 @@ msgstr ""
 msgid "Your current collection will get lost!"
 msgstr "Jūsų dabartinė kolekcija bus prarasta!"
 
-msgid "Your dreambox is shutting down. Please stand by..."
+msgid "Your cuberevo is shutting down. Please stand by..."
 msgstr "Jūsų imtuvas išsijungia. Būkite šalia..."
 
 msgid ""
-"Your dreambox isn't connected to the internet properly. Please check it and "
+"Your cuberevo isn't connected to the internet properly. Please check it and "
 "try again."
 msgstr ""
 "Jūsų imtuvas neteisingai prijungtas prie interneto. Prašome patikrinti tai "
@@ -8072,9 +7787,6 @@ msgstr "Jūsų (laisvai pasirenkamas) vardas:"
 
 msgid "Your network configuration has been activated."
 msgstr "Jūsų tinklo konfigūracija aktyvuota."
-
-msgid "Your network is not working. Please try again."
-msgstr ""
 
 msgid "Your network mount has been activated."
 msgstr "Jūsų tinklo pajungimas aktyvuotas."
@@ -8260,12 +7972,6 @@ msgstr "priskirti CAIds:"
 msgid "assigned Services/Provider:"
 msgstr "priskirti Kanalai/Tiekėjai:"
 
-msgid "at beginning"
-msgstr ""
-
-msgid "at end"
-msgstr ""
-
 #, python-format
 msgid "audio track (%s) format"
 msgstr "Garso takelio (%s) formatas"
@@ -8279,9 +7985,6 @@ msgstr "garso takeliai"
 
 msgid "auto"
 msgstr "auto"
-
-msgid "autotimers need a match attribute"
-msgstr ""
 
 msgid "available"
 msgstr "pasiekiamas"
@@ -8306,9 +8009,6 @@ msgstr "juodas sąrašas"
 
 msgid "blue"
 msgstr "mėlynas"
-
-msgid "bob"
-msgstr ""
 
 #, python-format
 msgid "burn audio track (%s)"
@@ -8341,9 +8041,6 @@ msgstr "išvalyti grojaraštį"
 msgid "complex"
 msgstr "sudėtinis"
 
-msgid "config changed."
-msgstr ""
-
 msgid "config menu"
 msgstr "konfigūracijos meniu"
 
@@ -8356,8 +8053,8 @@ msgstr "prisijungta"
 msgid "continue"
 msgstr "tęsti"
 
-msgid "control multiple Dreamboxes with different RCs"
-msgstr "valdyti daug Dreambox'ų su įvairiais RC"
+msgid "control multiple Cuberevoes with different RCs"
+msgstr "valdyti daug Cuberevo'ų su įvairiais RC"
 
 msgid "copy to bouquets"
 msgstr "kopijuoti į paketus"
@@ -8368,12 +8065,6 @@ msgstr "negalėjo būti pašalintas"
 msgid "create directory"
 msgstr "kurti direktoriją"
 
-msgid "creates virtual series folders from episodes"
-msgstr ""
-
-msgid "creates virtual series folders from sets of recorded episodes"
-msgstr ""
-
 #, python-format
 msgid "currently installed image: %s"
 msgstr "šiuo metu įdiegtas atvaizdas: %s"
@@ -8383,9 +8074,6 @@ msgstr "kasdien"
 
 msgid "day"
 msgstr "diena"
-
-msgid "default"
-msgstr ""
 
 msgid "delete"
 msgstr "trinti"
@@ -8642,9 +8330,6 @@ msgstr "minutė"
 msgid "minutes"
 msgstr "minučių"
 
-msgid "missing parameter \"id\""
-msgstr ""
-
 msgid "month"
 msgstr "mėnuo"
 
@@ -8794,6 +8479,9 @@ msgstr "raudonas"
 
 msgid "redesigned Kerni-HD1 skin"
 msgstr "pertvarkyta Kerni-HD1 tema"
+
+msgid "redirect notifications to Growl"
+msgstr "nukreipti pranešimai Growl"
 
 msgid "remove a nameserver entry"
 msgstr "pašalinkite serverio pavadinimo įrašą"
@@ -9051,10 +8739,6 @@ msgstr "laikas, skyrius, garsas, subtitrų informacija"
 msgid "tuner is not supported"
 msgstr "imtuvas nepalaikomas"
 
-#, python-format
-msgid "unable to find timer with id %i"
-msgstr ""
-
 msgid "unavailable"
 msgstr "nepasiekiamas"
 
@@ -9073,11 +8757,11 @@ msgstr "iki budėjimo/paleisti iš naujo"
 msgid "use as HDD replacement"
 msgstr "naudoti kaip HDD keitimui"
 
-msgid "use your Dreambox as Web proxy"
-msgstr "naudoti savo Dreambox kaip Web Proxy"
+msgid "use your Cuberevo as Web proxy"
+msgstr "naudoti savo Cuberevo kaip Web Proxy"
 
-msgid "use your Dreambox as Web proxy."
-msgstr "naudoti savo Dreambox kaip Web Proxy."
+msgid "use your Cuberevo as Web proxy."
+msgstr "naudoti savo Cuberevo kaip Web Proxy."
 
 msgid "user defined"
 msgstr "vartotojo nustatytas"
@@ -9122,8 +8806,8 @@ msgid "yes (keep feeds)"
 msgstr "taip (saugoti feeds)"
 
 msgid ""
-"your dreambox might be unusable now. Please consult the manual for further "
-"assistance before rebooting your dreambox."
+"your cuberevo might be unusable now. Please consult the manual for further "
+"assistance before rebooting your cuberevo."
 msgstr ""
 "jūsų imtuvas galėjo būti dabar nenaudojamas. Prašome vadovautis instrukcija "
 "dėl tolimesnės pagalbos prieš perkraunant imtuvą."
@@ -9161,15 +8845,35 @@ msgstr "įjungta"
 #~ msgid "50 Hz"
 #~ msgstr "50 Hz"
 
-#~ msgid "A BackToTheRoots-Skin ... or good old times."
-#~ msgstr "Atgal į TheRoots-Temą ... arba kaip senais gerais laikais."
-
 #
 #~ msgid "Advanced"
 #~ msgstr "Išplėstinis"
 
 #~ msgid "Ascanding"
 #~ msgstr "Ascanding"
+
+#
+#~ msgid ""
+#~ "Autoresolution Plugin Testmode:\n"
+#~ "Is %s ok?"
+#~ msgstr ""
+#~ "Auto rezoliucijos papildomos programos testavimas:\n"
+#~ "Yra %s gerai?"
+
+#
+#~ msgid "Autoresolution Switch"
+#~ msgstr "Auto rezoliucijos perjungėjas"
+
+#~ msgid "Autoresolution is not working in Scart/DVI-PC Mode"
+#~ msgstr "Auto rezoliucija neveikia Scart/DVI-PC režime"
+
+#
+#~ msgid "Autoresolution settings"
+#~ msgstr "Autorezoliucijos nustatymai"
+
+#
+#~ msgid "Autoresolution videomode setup"
+#~ msgstr "Auto rezoliucijos vaizdo būdo valdymas"
 
 #
 #~ msgid "Backup"
@@ -9257,6 +8961,18 @@ msgstr "įjungta"
 #~ msgstr "Numatyti nustatymai"
 
 #
+#~ msgid "Deinterlacer mode for interlaced content"
+#~ msgstr "Deinterlacer būdas besikeičiančiam turiniui"
+
+#
+#~ msgid "Deinterlacer mode for progressive content"
+#~ msgstr "Deinterlacer būdas progresyviam turiniui"
+
+#
+#~ msgid "Delay x seconds after service started"
+#~ msgstr "Užlaikyti x sekundžių po kanalo starto"
+
+#
 #~ msgid "Delete selected mount"
 #~ msgstr "Trinti pasirinktą pajungimą"
 
@@ -9298,11 +9014,25 @@ msgstr "įjungta"
 #~ msgid "Download of USB flasher boot image failed: "
 #~ msgstr "USB diegėjo atvaizdo parsisiuntimas klaidingas:"
 
-#~ msgid "Enter Fast Forward at speed"
-#~ msgstr "Eiti į greitą persukimą"
+#
+#~ msgid "Enable 1080p24 Mode"
+#~ msgstr "Įjungti 1080p24 būdą"
 
-#~ msgid "Enter Rewind at speed"
-#~ msgstr "Eiti į greitą atsukimą"
+#
+#~ msgid "Enable 1080p25 Mode"
+#~ msgstr "Įjungti 1080p25 būdą"
+
+#
+#~ msgid "Enable 1080p30 Mode"
+#~ msgstr "Įjungti 1080p30 būdą"
+
+#
+#~ msgid "Enable 720p24 Mode"
+#~ msgstr "Įjungti 720p24 būdą"
+
+#
+#~ msgid "Enable Autoresolution"
+#~ msgstr "Įjungti autorezoliuciją"
 
 #~ msgid ""
 #~ "First we need to download the latest boot environment for the USB flasher."
@@ -9312,18 +9042,6 @@ msgstr "įjungta"
 #
 #~ msgid "Following tasks will be done after you press continue!"
 #~ msgstr "Kitos užduotys bus padarytos po to, kai jūs paspausite tęsti!"
-
-#~ msgid "Frame repeat count during non-smooth winding"
-#~ msgstr "Rėmo pakartojimo skaičiavimas per nelygų vingiavimą"
-
-#~ msgid ""
-#~ "Growlee allows your Dreambox to send short messages using the growl "
-#~ "protocol\n"
-#~ "like Recording started notifications to a PC running a growl client"
-#~ msgstr ""
-#~ "Growlee leidžia jūsų Dreambox siųsti trumpąsias žinutes, naudojant growl "
-#~ "protokolą\n"
-#~ "Įrašas paleidžia pranešimus į PC, veikiant growl klientui"
 
 #~ msgid "Image flash utility"
 #~ msgstr "Atvaizdo diegimo programėlė"
@@ -9347,10 +9065,10 @@ msgstr "įjungta"
 #~ msgstr "Prašome pasirinkti.NFI atvaizdo failą iš parsisiuntimo serverio"
 
 #~ msgid ""
-#~ "Please disconnect all USB devices from your Dreambox and (re-)attach the "
+#~ "Please disconnect all USB devices from your Cuberevo and (re-)attach the "
 #~ "target USB stick (minimum size is 64 MB) now!"
 #~ msgstr ""
-#~ "Prašome atjungti visus USB raktus nuo savo Dreambox, ir (per-) įjungti "
+#~ "Prašome atjungti visus USB raktus nuo savo Cuberevo, ir (per-) įjungti "
 #~ "pasirinktą USB raktą (minimalus dydis yra 64 MB) dabar!"
 
 #~ msgid "Please enter the old pin code"
@@ -9449,7 +9167,7 @@ msgstr "įjungta"
 #~ "į vidinę atmintį?"
 
 #~ msgid ""
-#~ "To update your Dreambox firmware, please follow these steps:\n"
+#~ "To update your Cuberevo firmware, please follow these steps:\n"
 #~ "1) Turn off your box with the rear power switch and plug in the bootable "
 #~ "USB stick.\n"
 #~ "2) Turn mains back on and hold the DOWN button on the front panel pressed "
@@ -9464,14 +9182,11 @@ msgstr "įjungta"
 #~ "3) Laukite paleidimo ir sekite nustatymų vedlio instrukcijas."
 
 #~ msgid ""
-#~ "USB stick wizard finished. Your dreambox will now restart with your new "
+#~ "USB stick wizard finished. Your cuberevo will now restart with your new "
 #~ "image!"
 #~ msgstr ""
-#~ "USB vedlys baigė darbą. Jūsų Dreambox dabar bus iš naujo paleistas su "
+#~ "USB vedlys baigė darbą. Jūsų Cuberevo dabar bus iš naujo paleistas su "
 #~ "nauju atvaizdu!"
-
-#~ msgid "Use non-smooth winding at speeds above"
-#~ msgstr "Naudoti nelygų vingiavimą greičiais didesniais kaip"
 
 #
 #~ msgid "Webinterface: edit Interface"
@@ -9485,8 +9200,8 @@ msgstr "įjungta"
 #~ msgid ""
 #~ "Welcome.\n"
 #~ "\n"
-#~ "If you want to connect your Dreambox to the Internet, this wizard will "
-#~ "guide you through the basic network setup of your Dreambox.\n"
+#~ "If you want to connect your Cuberevo to the Internet, this wizard will "
+#~ "guide you through the basic network setup of your Cuberevo.\n"
 #~ "\n"
 #~ "Press the OK button on your remote control to move to the next step."
 #~ msgstr ""
@@ -9566,7 +9281,7 @@ msgstr "įjungta"
 #
 #~ msgid ""
 #~ "Your wired LAN Adapter could not be started.\n"
-#~ "Do you want to reboot your Dreambox to apply the new configuration?\n"
+#~ "Do you want to reboot your Cuberevo to apply the new configuration?\n"
 #~ msgstr ""
 #~ "Jūsų belaidžio tinklo adapteris nestartavo.\n"
 #~ "Jūs norite paleisti iš naujo savo imtuvą, kad pavtirtinti naują "
@@ -9575,7 +9290,7 @@ msgstr "įjungta"
 #
 #~ msgid ""
 #~ "Your wireless LAN Adapter could not be started.\n"
-#~ "Do you want to reboot your Dreambox to apply the new configuration?\n"
+#~ "Do you want to reboot your Cuberevo to apply the new configuration?\n"
 #~ msgstr ""
 #~ "Jūsų belaidžio tinklo adapteris nestartavo.\n"
 #~ "Jūs norite perjungti savo imtuvą, kad patvirtinti naują konfigūraciją?\n"
@@ -9677,9 +9392,6 @@ msgstr "įjungta"
 #
 #~ msgid "rebooting..."
 #~ msgstr "perleidžiama..."
-
-#~ msgid "redirect notifications to Growl"
-#~ msgstr "nukreipti pranešimai Growl"
 
 #
 #~ msgid "reindex..."

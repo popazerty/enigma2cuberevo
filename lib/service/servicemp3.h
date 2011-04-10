@@ -6,7 +6,17 @@
 #include <lib/dvb/pmt.h>
 #include <lib/dvb/subtitle.h>
 #include <lib/dvb/teletext.h>
+#if not defined(__sh__)
 #include <gst/gst.h>
+#else
+#include <common.h>
+#include <subtitle.h>
+#define gint int
+extern OutputHandler_t		OutputHandler;
+extern PlaybackHandler_t	PlaybackHandler;
+extern ContainerHandler_t	ContainerHandler;
+extern ManagerHandler_t		ManagerHandler;
+#endif
 /* for subtitles */
 #include <lib/gui/esubtitle.h>
 
@@ -43,7 +53,9 @@ public:
 	int getInfo(const eServiceReference &ref, int w);
 };
 
+#if not defined(__sh__)
 typedef struct _GstElement GstElement;
+#endif
 
 typedef enum { atUnknown, atMPEG, atMP3, atAC3, atDTS, atAAC, atPCM, atOGG, atFLAC } audiotype_t;
 typedef enum { stUnknown, stPlainText, stSSA, stASS, stSRT, stVOB, stPGS } subtype_t;
@@ -101,7 +113,9 @@ public:
 	RESULT getName(std::string &name);
 	int getInfo(int w);
 	std::string getInfoString(int w);
+#if not defined(__sh__)
 	PyObject *getInfoObject(int w);
+#endif
 
 		// iAudioTrackSelection	
 	int getNumberOfTracks();
@@ -130,6 +144,7 @@ public:
 	void setAC3Delay(int);
 	void setPCMDelay(int);
 
+#if not defined(__sh__)
 	struct audioStream
 	{
 		GstPad* pad;
@@ -162,6 +177,39 @@ public:
 		{
 		}
 	};
+#else
+	struct audioStream
+	{
+		audiotype_t type;
+		std::string language_code; /* iso-639, if available. */
+		std::string codec; /* clear text codec description */
+		audioStream()
+			:type(atUnknown)
+		{
+		}
+	};
+	struct subtitleStream
+	{
+		subtype_t type;
+		std::string language_code; /* iso-639, if available. */
+		int id;
+		subtitleStream()
+		{
+		}
+	};
+	struct sourceStream
+	{
+		audiotype_t audiotype;
+		containertype_t containertype;
+		bool is_video;
+		bool is_streaming;
+		sourceStream()
+			:audiotype(atUnknown), containertype(ctNone), is_video(false), is_streaming(false)
+		{
+		}
+	};
+#endif
+
 	struct bufferInfo
 	{
 		int bufferPercent;
@@ -203,8 +251,12 @@ private:
 		stIdle, stRunning, stStopped,
         };
         int m_state;
+#if not defined(__sh__)
         GstElement *m_gst_playbin;
         GstTagList *m_stream_tags;
+#else
+	Context_t * player;
+#endif
 
         struct Message
         {
@@ -228,6 +280,7 @@ private:
 
         eFixedMessagePump<Message> m_pump;
 
+#if not defined(__sh__)
         audiotype_t gstCheckAudioPad(GstStructure* structure);
         void gstBusCall(GstBus *bus, GstMessage *msg);
         static GstBusSyncReply gstBusSyncHandler(GstBus *bus, GstMessage *message, gpointer user_data);
@@ -237,6 +290,9 @@ private:
         GstPad* gstCreateSubtitleSink(eServiceMP3* _this, subtype_t type);
 	void gstPoll(const Message&);
         static void gstHTTPSourceSetAgent(GObject *source, GParamSpec *unused, gpointer user_data);
+#else
+	static void eplayerCBsubtitleAvail(long int duration_ns, size_t len, char * buffer, void* user_data);
+#endif
 
 	struct SubtitlePage
 	{
@@ -258,13 +314,17 @@ private:
         int m_subs_to_pull;
         sourceStream m_sourceinfo;
 	eSingleLock m_subs_to_pull_lock;
+#if not defined(__sh__)
 	gulong m_subs_to_pull_handler_id;
-
+#endif
 	RESULT seekToImpl(pts_t to);
 
 	gint m_aspect, m_width, m_height, m_framerate, m_progressive;
 	std::string m_useragent;
+#if not defined(__sh__)
 	RESULT trickSeek(gdouble ratio);
+#endif
 };
+  
 
 #endif

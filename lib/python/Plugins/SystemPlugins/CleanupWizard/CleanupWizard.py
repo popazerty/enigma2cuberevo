@@ -13,7 +13,7 @@ from os import system, statvfs, stat
 
 def checkFreeSpaceAvailable():
 	try:
-		stat = statvfs('/')
+		stat = statvfs('/var/')
 	except OSError:
 		return None
 	return (stat.f_bfree * stat.f_bsize)/1024 #return free space in kiloBytes

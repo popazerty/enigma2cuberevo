@@ -1,4 +1,4 @@
-from ChannelSelection import ChannelSelection, BouquetSelector, SilentBouquetSelector
+from ChannelSelection import ChannelSelection, BouquetSelector
 
 from Components.ActionMap import ActionMap, HelpableActionMap
 from Components.ActionMap import NumberActionMap
@@ -44,6 +44,10 @@ from RecordTimer import RecordTimerEntry, RecordTimer
 # hack alert!
 from Menu import MainMenu, mdom
 
+#+++>
+txtIsStarting = False
+#+++<
+
 class InfoBarDish:
 	def __init__(self):
 		self.dishDialog = self.session.instantiateDialog(Dish)
@@ -88,6 +92,9 @@ class InfoBarShowHide:
 	STATE_HIDING = 1
 	STATE_SHOWING = 2
 	STATE_SHOWN = 3
+#+++>
+	STATE_EPG = 4
+#+++<
 
 	def __init__(self):
 		self["ShowHideActions"] = ActionMap( ["InfobarShowHideActions"] ,
@@ -138,12 +145,34 @@ class InfoBarShowHide:
 		if self.__state == self.STATE_SHOWN:
 			self.hide()
 
+#+++>
+	def epg(self): 
+		self.__state = self.STATE_EPG 
+		self.hide() 
+		self.hideTimer.stop() 
+		self.openEventView() 
+#+++<
+
 	def toggleShow(self):
-		if self.__state == self.STATE_SHOWN:
-			self.hide()
-			self.hideTimer.stop()
-		elif self.__state == self.STATE_HIDDEN:
-			self.show()
+#--->
+#-		if self.__state == self.STATE_SHOWN:
+#-			self.hide()
+#-			self.hideTimer.stop()
+#-		elif self.__state == self.STATE_HIDDEN:
+#-			self.show()
+#---<
+#+++>
+		if self.__state == self.STATE_SHOWN: 
+			print "self.STATE_SHOWN" 
+			self.epg() 
+		elif self.__state == self.STATE_HIDDEN: 
+			print "self.STATE_HIDDEN" 
+			self.show() 
+		elif self.__state == self.STATE_EPG: 
+			print "self.STATE_EPG" 
+			self.hide() 
+			self.hideTimer.stop() 
+#+++<
 
 	def lockShow(self):
 		self.__locked = self.__locked + 1
@@ -300,7 +329,15 @@ class InfoBarChannelSelection:
 				"historyBack": (self.historyBack, _("previous channel in history")),
 				"historyNext": (self.historyNext, _("next channel in history")),
 				"openServiceList": (self.openServiceList, _("open servicelist")),
+#+++>
+				"subtitles":  (self.subtitleSelection, _("Subtitle selection")),
+#+++<
 			})
+#+++>
+	def subtitleSelection(self):
+		from Screens.Subtitles import Subtitles
+		self.session.open(Subtitles, self)
+#+++<
 
 	def showTvChannelList(self, zap=False):
 		self.servicelist.setModeTv()
@@ -559,12 +596,6 @@ class InfoBarEPG:
 			cnt = 0
 		else:
 			cnt = len(bouquets)
-		if config.usage.multiepg_ask_bouquet.value:
-			self.openMultiServiceEPGAskBouquet(bouquets, cnt, withCallback)
-		else:
-			self.openMultiServiceEPGSilent(bouquets, cnt, withCallback)
-
-	def openMultiServiceEPGAskBouquet(self, bouquets, cnt, withCallback):
 		if cnt > 1: # show bouquet list
 			if withCallback:
 				self.bouquetSel = self.session.openWithCallback(self.closed, BouquetSelector, bouquets, self.openBouquetEPG, enableWrapAround=True)
@@ -573,21 +604,6 @@ class InfoBarEPG:
 				self.bouquetSel = self.session.open(BouquetSelector, bouquets, self.openBouquetEPG, enableWrapAround=True)
 		elif cnt == 1:
 			self.openBouquetEPG(bouquets[0][1], withCallback)
-
-	def openMultiServiceEPGSilent(self, bouquets, cnt, withCallback):
-		root = self.servicelist.getRoot()
-		rootstr = root.toCompareString()
-		current = 0
-		for bouquet in bouquets:
-			if bouquet[1].toCompareString() == rootstr:
-				break
-			current += 1
-		if current >= cnt:
-			current = 0
-		if cnt > 1: # create bouquet list for bouq+/-
-			self.bouquetSel = SilentBouquetSelector(bouquets, True, self.servicelist.getBouquetNumOffset(root))
-		if cnt >= 1:
-			self.openBouquetEPG(root, withCallback)
 
 	def changeServiceCB(self, direction, epg):
 		if self.serviceSel:
@@ -956,7 +972,12 @@ class InfoBarSeek:
 
 	def seekFwd(self):
 		seek = self.getSeek()
-		if seek and not (seek.isCurrentlySeekable() & 2):
+#--->
+#-		if seek and not (seek.isCurrentlySeekable() & 2):
+#---<
+#+++>
+		if seek and not (seek.isCurrentlySeekable() & 1):
+#+++<
 			if not self.fast_winding_hint_message_showed and (seek.isCurrentlySeekable() & 1):
 				self.session.open(MessageBox, _("No fast winding possible yet.. but you can use the number buttons to skip forward/backward!"), MessageBox.TYPE_INFO, timeout=10)
 				self.fast_winding_hint_message_showed = True
@@ -992,7 +1013,12 @@ class InfoBarSeek:
 
 	def seekBack(self):
 		seek = self.getSeek()
-		if seek and not (seek.isCurrentlySeekable() & 2):
+#--->
+#-		if seek and not (seek.isCurrentlySeekable() & 2):
+#---<
+#+++>
+		if seek and not (seek.isCurrentlySeekable() & 1):
+#+++<
 			if not self.fast_winding_hint_message_showed and (seek.isCurrentlySeekable() & 1):
 				self.session.open(MessageBox, _("No fast winding possible yet.. but you can use the number buttons to skip forward/backward!"), MessageBox.TYPE_INFO, timeout=10)
 				self.fast_winding_hint_message_showed = True
@@ -1338,7 +1364,12 @@ class InfoBarExtensions:
 
 	def updateExtensions(self):
 		self.extensionsList = []
-		self.availableKeys = [ "1", "2", "3", "4", "5", "6", "7", "8", "9", "0", "red", "green", "yellow", "blue" ]
+#--->
+#-		self.availableKeys = [ "1", "2", "3", "4", "5", "6", "7", "8", "9", "0", "red", "green", "yellow", "blue" ]
+#---<
+#+++>
+		self.availableKeys = [ "red", "green", "yellow", "blue", "1", "2", "3", "4", "5", "6", "7", "8", "9", "0" ]
+#+++<
 		self.extensionKeys = {}
 		for x in self.list:
 			if x[0] == self.EXTENSION_SINGLE:
@@ -1697,6 +1728,153 @@ class InfoBarAudioSelection:
 	def audioSelected(self, ret=None):
 		print "[infobar::audioSelected]", ret
 
+#+++>
+class InfoBarExtendedAudioSelection:
+	STATE_HIDDEN = 0 
+	STATE_AUDIO = 1 
+	STATE_SUBSERVICE = 2 
+
+	def __init__(self):
+		self["ExtendedAudioSelectionAction"] = HelpableActionMap(self, "InfobarExtendedAudioSelectionActions",
+			{
+				"audioSelection": (self.EXtoggleYellow, _("Audio Options...")),
+			})
+		self.__state = self.STATE_HIDDEN 
+
+	def EXdoAudio(self): 
+		self.__state = self.STATE_AUDIO 
+		self.EXaudioSelection() 
+
+	def EXdoSubService(self): 
+		self.__state = self.STATE_SUBSERVICE 
+		self.subserviceSelection() 
+
+	def EXdoHide(self): 
+		self.__state = self.STATE_HIDDEN 
+
+	def EXtoggleYellow(self, arg=""): 
+		print self.__state 
+		if self.__state == self.STATE_HIDDEN: 
+			print "self.STATE_HIDDEN" 
+			self.EXdoAudio() 
+		elif self.__state == self.STATE_AUDIO: 
+			print "self.STATE_AUDIO" 
+			self.EXdoSubService() 
+		elif self.__state == self.STATE_SUBSERVICE: 
+			print "self.STATE_SUBSERVICE" 
+			self.EXdoHide() 
+
+	def EXaudioSelection(self):
+		service = self.session.nav.getCurrentService()
+		self.audioTracks = audio = service and service.audioTracks()
+		n = audio and audio.getNumberOfTracks() or 0
+		tlist = []
+		if n > 0:
+			self.audioChannel = service.audioChannel()
+
+			for x in range(n):
+				i = audio.getTrackInfo(x)
+				language = i.getLanguage()
+				description = i.getDescription()
+
+				if LanguageCodes.has_key(language):
+					language = LanguageCodes[language][0]
+
+				if len(description):
+					description += " (" + language + ")"
+				else:
+					description = language
+
+				tlist.append((description, x))
+
+			tlist.sort(key=lambda x: x[0])
+
+			selectedAudio = self.audioTracks.getCurrentTrack()
+
+			selection = 0
+
+			for x in tlist:
+				if x[1] != selectedAudio:
+					selection += 1
+				else:
+					break
+
+			if SystemInfo["CanDownmixAC3"]:
+				tlist = [(_("AC3 downmix") + " - " +[_("Off"), _("On")][config.av.downmix_ac3.value and 1 or 0], "CALLFUNC", self.EXchangeAC3Downmix),
+					([_("Left"), _("Stereo"), _("Right")][self.audioChannel.getCurrentChannel()], "mode"),
+					(_("Subservice"), "subservice"),#"CALLFUNC", self.toggleYellow), 
+					("--", "")] + tlist
+				keys = [ "red", "green", "yellow", "", "1", "2", "3", "4", "5", "6", "7", "8", "9", "0"] + [""]*n
+				selection += 4
+			else:
+				tlist = [([_("Left"), _("Stereo"), _("Right")][self.audioChannel.getCurrentChannel()], "mode"), (_("Subservice"), "subservice"), ("--", "")] + tlist
+				keys = [ "red", "yellow", "", "1", "2", "3", "4", "5", "6", "7", "8", "9", "0"] + [""]*n
+				selection += 3
+			self.session.openWithCallback(self.EXaudioSelected, ChoiceBox, title=_("Select audio track"), list = tlist, selection = selection, keys = keys)
+		else:
+			del self.audioTracks
+
+	def EXchangeAC3Downmix(self, arg):
+		choicelist = self.session.current_dialog["list"]
+		list = choicelist.list
+		t = list[0][1]
+		list[0][1]=(t[0], t[1], t[2], t[3], t[4], t[5], t[6],
+			_("AC3 downmix") + " - " +[_("On"), _("Off")][config.av.downmix_ac3.value and 1 or 0])
+		choicelist.setList(list)
+		if config.av.downmix_ac3.value:
+			config.av.downmix_ac3.value = False
+		else:
+			config.av.downmix_ac3.value = True
+		config.av.downmix_ac3.save()
+
+	def EXaudioSelected(self, audio):
+		if audio is not None:
+			if isinstance(audio[1], str):
+				if audio[1] == "subservice":
+					service = self.session.nav.getCurrentService()
+					#subservices = service and service.subServices()
+					try:
+						del self.audioChannel
+					except AttributeError:
+						print "no such Attribute"
+					try:
+						del self.audioTracks
+					except AttributeError:
+						print "no such Attribute"
+					if service.subServices().getNumberOfSubservices() > 0:
+						#del self.audioChannel
+						#del self.audioTracks
+						self.EXtoggleYellow()
+
+				elif audio[1] == "mode":
+					keys = ["red", "green", "yellow"]
+					selection = self.audioChannel.getCurrentChannel()
+					tlist = [(_("left"), 0), (_("stereo"), 1), (_("right"), 2)]
+					self.session.openWithCallback(self.EXmodeSelected, ChoiceBox, title=_("Select audio mode"), list = tlist, selection = selection, keys = keys)
+					
+			else: #if isinstance(audio[1], str):
+				del self.audioChannel
+				if self.session.nav.getCurrentService().audioTracks().getNumberOfTracks() > audio[1]:
+					self.audioTracks.selectTrack(audio[1])
+
+		else:
+			try:
+				del self.audioChannel
+			except AttributeError:
+				print "no such Attribute"
+		try:
+			del self.audioTracks
+		except AttributeError:
+			print "no such Attribute"
+			
+		self.EXdoHide() 
+
+	def EXmodeSelected(self, mode):
+		if mode is not None:
+			self.audioChannel.selectChannel(mode[1])
+		del self.audioChannel
+#+++<
+
 class InfoBarSubserviceSelection:
 	def __init__(self):
 		self["SubserviceSelectionAction"] = HelpableActionMap(self, "InfobarSubserviceSelectionActions",
@@ -1773,16 +1951,43 @@ class InfoBarSubserviceSelection:
 				idx += 1
 
 			if self.bouquets and len(self.bouquets):
-				keys = ["red", "blue", "",  "0", "1", "2", "3", "4", "5", "6", "7", "8", "9" ] + [""] * n
+#--->
+#-				keys = ["red", "blue", "",  "0", "1", "2", "3", "4", "5", "6", "7", "8", "9" ] + [""] * n
+#---<
+#+++>
+				keys = ["red", "blue", "yellow", "",  "0", "1", "2", "3", "4", "5", "6", "7", "8", "9" ] + [""] * n
+#+++<
 				if config.usage.multibouquet.value:
-					tlist = [(_("Quickzap"), "quickzap", service.subServices()), (_("Add to bouquet"), "CALLFUNC", self.addSubserviceToBouquetCallback), ("--", "")] + tlist
+#--->
+#-					tlist = [(_("Quickzap"), "quickzap", service.subServices()), (_("Add to bouquet"), "CALLFUNC", self.addSubserviceToBouquetCallback), ("--", "")] + tlist
+#---<
+#+++>
+					tlist = [(_("Quickzap"), "quickzap", service.subServices()), (_("Add to bouquet"), "CALLFUNC", self.addSubserviceToBouquetCallback), ("Exit", "exit"), ("--", "")] + tlist
+#+++<
 				else:
-					tlist = [(_("Quickzap"), "quickzap", service.subServices()), (_("Add to favourites"), "CALLFUNC", self.addSubserviceToBouquetCallback), ("--", "")] + tlist
-				selection += 3
+#--->
+#-					tlist = [(_("Quickzap"), "quickzap", service.subServices()), (_("Add to favourites"), "CALLFUNC", self.addSubserviceToBouquetCallback), ("--", "")] + tlist
+#---<
+#+++>
+					tlist = [(_("Quickzap"), "quickzap", service.subServices()), (_("Add to favourites"), "CALLFUNC", self.addSubserviceToBouquetCallback), ("Exit", "exit"), ("--", "")] + tlist
+#+++<
+#--->
+#-				selection += 3
+#---<
+#+++>
+				selection += 4
+#+++<
 			else:
-				tlist = [(_("Quickzap"), "quickzap", service.subServices()), ("--", "")] + tlist
-				keys = ["red", "",  "0", "1", "2", "3", "4", "5", "6", "7", "8", "9" ] + [""] * n
-				selection += 2
+#--->
+#-				tlist = [(_("Quickzap"), "quickzap", service.subServices()), ("--", "")] + tlist
+#-				keys = ["red", "",  "0", "1", "2", "3", "4", "5", "6", "7", "8", "9" ] + [""] * n
+#-				selection += 2
+#---<
+#+++>
+				tlist = [(_("Quickzap"), "quickzap", service.subServices()), ("Exit", "exit"), ("--", "")] + tlist
+				keys = ["red", "yellow", "",  "0", "1", "2", "3", "4", "5", "6", "7", "8", "9" ] + [""] * n
+				selection += 3
+#+++<
 
 			self.session.openWithCallback(self.subserviceSelected, ChoiceBox, title=_("Please select a subservice..."), list = tlist, selection = selection, keys = keys, skin_name = "SubserviceSelection")
 
@@ -1822,6 +2027,133 @@ class InfoBarSubserviceSelection:
 			self.bsel.close(True)
 		else:
 			del self.selectedSubservice
+
+#+++>
+class InfoBarAspectSelection: 
+	STATE_HIDDEN = 0 
+	STATE_ASPECT = 1 
+	STATE_RESOLUTION = 2 
+	def __init__(self): 
+		self["AspectSelectionAction"] = HelpableActionMap(self, "InfobarAspectSelectionActions", 
+			{ 
+				"aspectSelection": (self.ExGreen_toggleGreen, _("Aspect list...")), 
+			}) 
+
+		self.__ExGreen_state = self.STATE_HIDDEN 
+
+	def ExGreen_doAspect(self): 
+		self.__ExGreen_state = self.STATE_ASPECT 
+		self.aspectSelection() 
+
+	def ExGreen_doResolution(self): 
+		self.__ExGreen_state = self.STATE_RESOLUTION 
+		self.resolutionSelection() 
+
+	def ExGreen_doHide(self): 
+		self.__ExGreen_state = self.STATE_HIDDEN 
+
+	def ExGreen_toggleGreen(self, arg=""): 
+		print self.__ExGreen_state 
+		if self.__ExGreen_state == self.STATE_HIDDEN: 
+			print "self.STATE_HIDDEN" 
+			self.ExGreen_doAspect() 
+		elif self.__ExGreen_state == self.STATE_ASPECT: 
+			print "self.STATE_ASPECT" 
+			self.ExGreen_doResolution() 
+		elif self.__ExGreen_state == self.STATE_RESOLUTION: 
+			print "self.STATE_RESOLUTION" 
+			self.ExGreen_doHide() 
+
+	def aspectSelection(self): 
+		selection = 0 
+		tlist = [] 
+		tlist.append((_("Resolution"), "resolution")) 
+		tlist.append(("--", "")) 
+		tlist.append(("Letterbox", "letterbox")) 
+		tlist.append(("PanScan", "panscan")) 
+		tlist.append(("Non Linear", "nonlinear")) 
+		tlist.append(("Bestfit", "bestfit")) 
+
+		mode = open("/proc/stb/video/policy").read()[:-1] 
+		print mode 
+		for x in range(len(tlist)): 
+			if tlist[x][1] == mode: 
+				selection = x 
+
+		keys = ["green", "",  "0", "1", "2", "3", "4", "5", "6", "7", "8", "9" ] 
+
+
+		self.session.openWithCallback(self.aspectSelected, ChoiceBox, title=_("Please select an aspect ratio..."), list = tlist, selection = selection, keys = keys) 
+	def aspectSelected(self, aspect): 
+		if not aspect is None: 
+			if isinstance(aspect[1], str): 
+				if aspect[1] == "resolution":
+					self.ExGreen_toggleGreen()
+				else:
+					open("/proc/stb/video/policy", "w").write(aspect[1]) 
+					self.ExGreen_doHide()
+		return 
+
+class InfoBarResolutionSelection: 
+	def __init__(self): 
+		return
+
+	def resolutionSelection(self): 
+
+		xresString = open("/proc/stb/vmpeg/0/xres", "r").read()
+		yresString = open("/proc/stb/vmpeg/0/yres", "r").read()
+		fpsString = open("/proc/stb/vmpeg/0/framerate", "r").read()
+		xres = int(xresString, 16)
+		yres = int(yresString, 16)
+		fps = int(fpsString, 16)
+		fpsFloat = float(fps)
+		fpsFloat = fpsFloat/1000
+
+
+		selection = 0 
+		tlist = [] 
+		tlist.append((_("Exit"), "exit")) 
+		tlist.append((_("Auto(not available)"), "auto")) 
+		tlist.append(("Video: " + str(xres) + "x" + str(yres) + "@" + str(fpsFloat) + "hz", "")) 
+		tlist.append(("--", "")) 
+		tlist.append(("480i", "480i60")) 
+		tlist.append(("480p", "480p60")) 
+		tlist.append(("576i", "576i50")) 
+		tlist.append(("576p", "576p50")) 
+		tlist.append(("720p", "720p50")) 
+		tlist.append(("1080i", "1080i50")) 
+		tlist.append(("1080p@23.976hz", "1080p23")) 
+		tlist.append(("1080p@24hz", "1080p24")) 
+		tlist.append(("1080p@25hz", "1080p25")) 
+		tlist.append(("1080p@29hz", "1080p29")) 
+		tlist.append(("1080p@30hz", "1080p30")) 
+		
+
+		keys = ["green", "yellow", "blue", "", "0", "1", "2", "3", "4", "5", "6", "7", "8", "9" ] 
+
+		mode = open("/proc/stb/video/videomode").read()[:-1] 
+		print mode 
+		for x in range(len(tlist)): 
+			if tlist[x][1] == mode: 
+				selection = x 
+
+		self.session.openWithCallback(self.ResolutionSelected, ChoiceBox, title=_("Please select a resolution..."), list = tlist, selection = selection, keys = keys) 
+
+	def ResolutionSelected(self, Resolution): 
+		if not Resolution is None: 
+			if isinstance(Resolution[1], str): 
+				if Resolution[1] == "exit":
+					self.ExGreen_toggleGreen()
+				elif Resolution[1] != "auto":
+					open("/proc/stb/video/videomode", "w").write(Resolution[1]) 
+					from enigma import gMainDC
+					gMainDC.getInstance().setResolution(-1, -1)
+					self.ExGreen_toggleGreen()
+		return 
+
+
+
+#+++<
 
 class InfoBarAdditionalInfo:
 	def __init__(self):
@@ -2155,7 +2487,22 @@ class InfoBarTeletextPlugin:
 			print "no teletext plugin found!"
 
 	def startTeletext(self):
-		self.teletext_plugin(session=self.session, service=self.session.nav.getCurrentService())
+#--->
+#		self.teletext_plugin(session=self.session, service=self.session.nav.getCurrentService())
+#---<
+#+++>
+		global txtIsStarting
+		if txtIsStarting is False:
+			self.teletext_plugin(session=self.session, service=self.session.nav.getCurrentService())
+			txtIsStarting = True
+			self.txtIsStartingTimer = eTimer()
+			self.txtIsStartingTimer.callback.append(self.txtIsStartingEnd)
+			self.txtIsStartingTimer.start(10000, True)
+
+	def txtIsStartingEnd(self):
+		global txtIsStarting
+		txtIsStarting = False
+#+++<
 
 class InfoBarSubtitleSupport(object):
 	def __init__(self):

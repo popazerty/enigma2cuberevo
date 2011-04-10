@@ -643,19 +643,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<widget source="key_green" render="Label" position="140,0" zPosition="1" size="140,40" font="Regular;20" halign="center" valign="center" backgroundColor="#1f771f" transparent="1" />
 		<widget source="key_yellow" render="Label" position="280,0" zPosition="1" size="140,40" font="Regular;20" halign="center" valign="center" backgroundColor="#a08500" transparent="1" />
 		<widget source="key_blue" render="Label" position="420,0" zPosition="1" size="140,40" font="Regular;20" halign="center" valign="center" backgroundColor="#18188b" transparent="1" />
-		<widget source="list" render="Listbox" position="5,50" size="550,280" zPosition="10" scrollbarMode="showOnDemand">
-			<convert type="TemplatedMultiContent"> <!--  iface, name, description, interfacepng, defaultpng, activepng, divpng  -->
-				{"template": [
-						MultiContentEntryText(pos = (85, 6), size = (440, 28), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_TOP, text = 1), # index 1 is the interfacename
-						MultiContentEntryText(pos = (85, 43), size = (440, 20), font=1, flags = RT_HALIGN_LEFT|RT_VALIGN_BOTTOM, text = 2), # index 2 is the description
-						MultiContentEntryPixmapAlphaTest(pos = (2, 8), size = (54, 54), png = 3), # index 3 is the interface pixmap
-						MultiContentEntryPixmapAlphaTest(pos = (63, 46), size = (15, 16), png = 4), # index 4 is the default pixmap
-					],
-				"fonts": [gFont("Regular", 28),gFont("Regular", 20)],
-				"itemHeight": 70
-				}
-			</convert>
-		</widget>
+		<widget name="list" position="5,50" size="550,280" scrollbarMode="showOnDemand" zPosition="10"/>
 		<ePixmap pixmap="skin_default/div-h.png" position="0,340" zPosition="1" size="560,2" />
 		<widget source="introduction" render="Label" position="0,350" size="560,50" zPosition="10" font="Regular;21" halign="center" valign="center" backgroundColor="#25062748" transparent="1" />
 	</screen>
@@ -899,6 +887,11 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<widget name="config" position="10,55" size="400,250" scrollbarMode="showOnDemand" />
 		<widget name="footer" position="10,310" size="400,20" font="Regular;20" halign="center" />
 	</screen>
+	<!-- Scan blind -->
+	<screen name="ScanBlind" position="center,center" size="520,450" title="Service scan">
+		<widget name="config" position="10,10" size="500,350" scrollbarMode="showOnDemand" />
+		<widget name="introduction" position="10,365" size="500,75" font="Regular;20" halign="center" />
+	</screen>
 	<!-- Scart -->
 	<screen name="Scart" position="0,0" size="720,576" backgroundColor="transparent" />
 	<!-- Service info -->
@@ -915,6 +908,30 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 	</screen>
 	<!-- Service scan -->
 	<screen name="ServiceScan" position="center,center" size="420,390" title="Service Scan">
+		<widget source="FrontendInfo" render="Pixmap" pixmap="skin_default/icons/scan-s.png" position="5,5" size="64,64" transparent="1" alphatest="on">
+			<convert type="FrontendInfo">TYPE</convert>
+			<convert type="ValueRange">0,0</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="FrontendInfo" render="Pixmap" pixmap="skin_default/icons/scan-c.png" position="5,5" size="64,64" transparent="1" alphatest="on">
+			<convert type="FrontendInfo">TYPE</convert>
+			<convert type="ValueRange">1,1</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="FrontendInfo" render="Pixmap" pixmap="skin_default/icons/scan-t.png" position="5,5" size="64,64" transparent="1" alphatest="on">
+			<convert type="FrontendInfo">TYPE</convert>
+			<convert type="ValueRange">2,2</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget name="network" position="80,15" size="330,20" font="Regular;20" />
+		<widget name="transponder" position="80,40" size="330,20" font="Regular;20" />
+		<widget name="scan_state" position="10,80" zPosition="2" size="400,20" font="Regular;18" />
+		<widget name="pass" position="10,80" size="400,20" font="Regular;18" />
+		<widget name="scan_progress" position="10,105" size="400,15" pixmap="skin_default/progress_big.png" borderWidth="2" borderColor="#cccccc" />
+		<widget name="servicelist" position="10,135" size="400,265" selectionDisabled="1" />
+	</screen>
+	<!-- Service scan blind -->
+	<screen name="ServiceScanBlind" position="center,center" size="420,390" title="Service Scan Blind">
 		<widget source="FrontendInfo" render="Pixmap" pixmap="skin_default/icons/scan-s.png" position="5,5" size="64,64" transparent="1" alphatest="on">
 			<convert type="FrontendInfo">TYPE</convert>
 			<convert type="ValueRange">0,0</convert>

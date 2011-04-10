@@ -135,7 +135,11 @@ class eDVBResourceManager: public iObject, public Object
 	DECLARE_REF(eDVBResourceManager);
 	int avail, busy;
 
+#if defined(__sh__)
+	enum { DM7025, DM800, DM500HD, DM800SE, DM8000, DM7020HD, CUBEREVO, CUBEREVO_MINI, CUBEREVO_MINI2, CUBEREVO_MINI_FTA, CUBEREVO_250HD, CUBEREVO_9500HD, CUBEREVO_2000HD, CUBEREVO_100HD };
+#else
 	enum { DM7025, DM800, DM500HD, DM800SE, DM8000, DM7020HD };
+#endif
 
 	int m_boxtype;
 
@@ -245,6 +249,9 @@ public:
 		/* cannot be used for PVR channels. */
 	RESULT setChannel(const eDVBChannelID &id, ePtr<iDVBFrontendParameters> &feparam);
 	eDVBChannelID getChannelID() { return m_channel_id; }
+#if defined(__sh__) //see filepush.h
+	int getSkipMode() { return m_skipmode_m; }
+#endif
 
 	RESULT connectStateChange(const Slot1<void,iDVBChannel*> &stateChange, ePtr<eConnection> &connection);
 	RESULT connectEvent(const Slot2<void,iDVBChannel*,int> &eventChange, ePtr<eConnection> &connection);

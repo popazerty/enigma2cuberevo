@@ -1,9 +1,26 @@
-from os import system, listdir, statvfs, popen, makedirs, stat, major, minor, path, access
-from Tools.Directories import SCOPE_HDD, resolveFilename
+#--->
+#-from os import system, listdir, statvfs, popen, makedirs, stat, major, minor, path, access
+#-from Tools.Directories import SCOPE_HDD, resolveFilename
+#---<
+#+++>
+from os import system, listdir, statvfs, popen, makedirs, stat, major, minor, path, access, readlink, remove, path as os_path
+from Tools.Directories import SCOPE_HDD, resolveFilename, removeDir
+#+++<
 from Tools.CList import CList
 from SystemInfo import SystemInfo
 import time
 from Components.Console import Console
+#+++>
+from enigma import eConsoleAppContainer, evfd
+import os
+
+def tryOpen(filename):
+	try:
+		procFile = open(filename)
+	except IOError:
+		return ""
+	return procFile
+#+++<
 
 def MajorMinor(path):
 	rdev = stat(path).st_rdev
@@ -22,12 +39,16 @@ class Harddisk:
 	def __init__(self, device):
 		self.device = device
 
-		if access("/dev/.udev", 0):
-			self.type = DEVTYPE_UDEV
-		elif access("/dev/.devfsd", 0):
-			self.type = DEVTYPE_DEVFS
-		else:
-			print "Unable to determine structure of /dev"
+#--->
+#-		if access("/dev/.udev", 0):
+#-			self.type = self.DEVTYPE_UDEV
+#-		elif access("/dev/.devfsd", 0):
+#-			self.type = self.DEVTYPE_DEVFS
+#-		else:
+#-			print "Unable to determine structure of /dev"
+#+++>
+		self.type = DEVTYPE_UDEV
+#+++<
 
 		self.max_idle_time = 0
 		self.idle_running = False
@@ -181,7 +202,12 @@ class Harddisk:
                                 continue                                                                    
                         try:                                                                                
                                 if MajorMinor(real_path) == MajorMinor(self.partitionPath(real_path[-1])):
-					cmd = ' ' . join([cmd, parts[1]])
+#--->			
+#-					cmd = ' ' . join([cmd, parts[1]])
+#---<
+#+++>
+					cmd = ' -fl ' . join([cmd, parts[1]])
+#+++<
 					break
 			except OSError:
 				pass
@@ -190,7 +216,12 @@ class Harddisk:
 		return (res >> 8)
 
 	def createPartition(self):
-		cmd = 'printf "8,\n;0,0\n;0,0\n;0,0\ny\n" | sfdisk -f -uS ' + self.disk_path
+#--->
+#-		cmd = 'printf "8,\n;0,0\n;0,0\n;0,0\ny\n" | sfdisk -f -uS ' + self.disk_path
+#---<
+#+++>
+		cmd = 'echo "8,\n;0,0\n;0,0\n;0,0\ny\n" | sfdisk -f -uS ' + self.disk_path
+#+++<
 		res = system(cmd)
 		return (res >> 8)
 
@@ -199,7 +230,18 @@ class Harddisk:
 		if self.diskSize() > 4 * 1024:
 			cmd += "-T largefile "
 		cmd += "-m0 -O dir_index " + self.partitionPath("1")
-		res = system(cmd)
+#--->
+#-		res = system(cmd)
+#---<
+#+++>
+		print "[Harddisk] mkfs: ", cmd
+		if os.path.exists("/sbin/cmd") is True:
+			self.container = eConsoleAppContainer()
+			self.container.execute("/sbin/cmd " + cmd)
+			res = 0
+		else:	
+			res = system(cmd)
+#+++<
 		return (res >> 8)
 
 	def mount(self):
@@ -238,7 +280,18 @@ class Harddisk:
 		# We autocorrect any failures
 		# TODO: we could check if the fs is actually ext3
 		cmd = "fsck.ext3 -f -p " + self.partitionPath("1")
-		res = system(cmd)
+#--->
+#-		res = system(cmd)
+#---<
+#+++>		
+		print "[Harddisk] fsck: ", cmd
+		if os.path.exists("/sbin/cmd") is True:
+			self.container = eConsoleAppContainer()
+			self.container.execute("/sbin/cmd " + cmd)
+			res = 0
+		else:	
+			res = system(cmd)
+#+++<
 		return (res >> 8)
 
 	def killPartition(self, n):
@@ -430,7 +483,7 @@ DEVICEDB_SR = \
 
 DEVICEDB = \
 	{"dm8000":
-		{
+ 		{
 			"/devices/platform/brcm-ehci.0/usb1/1-1/1-1.1/1-1.1:1.0": _("Front USB Slot"),
 			"/devices/platform/brcm-ehci.0/usb1/1-1/1-1.2/1-1.2:1.0": _("Back, upper USB Slot"),
 			"/devices/platform/brcm-ehci.0/usb1/1-1/1-1.3/1-1.3:1.0": _("Back, lower USB Slot"),
@@ -489,7 +542,12 @@ class HarddiskManager:
 		try:
 			removable = bool(int(readFile(devpath + "/removable")))
 			dev = int(readFile(devpath + "/dev").split(':')[0])
-			if dev in (7, 31): # loop, mtdblock
+#--->
+#-			if dev in (7, 31): # loop, mtdblock
+#---<
+#+++>
+			if dev in [1, 7, 31, 253]: # ram, loop, mtdblock, ramzswap
+#+++<
 				blacklisted = True
 			if blockdev[0:2] == 'sr':
 				is_cdrom = True
@@ -548,6 +606,13 @@ class HarddiskManager:
 			except OSError:
 				physdev = dev
 				print "couldn't determine blockdev physdev for device", device
+#+++>		
+		else:
+			dev, part = self.splitDeviceName(device)
+		if part is not 0:
+			print "[Harddisk] start automount"
+			#Automount(device,"mount")
+#+++<		
 
 		error, blacklisted, removable, is_cdrom, partitions, medium_found = self.getBlockDevInfo(device)
 		print "found block device '%s':" % device,
@@ -594,6 +659,12 @@ class HarddiskManager:
 					self.hdd.remove(hdd)
 					break
 			SystemInfo["Harddisk"] = len(self.hdd) > 0
+#+++>
+		dev, part = self.splitDeviceName(device)
+		if part is not 0:
+			print "[Harddisk] start auto umount"
+			#Automount(device,"umount")
+#+++<
 
 	def HDDCount(self):
 		return len(self.hdd)

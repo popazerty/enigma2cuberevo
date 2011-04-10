@@ -1,3 +1,6 @@
+#if defined(__sh__) 
+#include <png.h>
+#endif 
 #include <stdio.h>
 #include <stdlib.h>
 #include <fcntl.h>
@@ -8,6 +11,10 @@
 #include <linux/kd.h>
 
 #include <lib/gdi/fb.h>
+
+#if defined(__sh__) 
+#include <linux/stmfb.h>
+#endif
 
 #ifndef FBIO_WAITFORVSYNC
 #define FBIO_WAITFORVSYNC _IOW('F', 0x20, __u32)
@@ -70,6 +77,15 @@ fbClass::fbClass(const char *fb)
 		perror("mmap");
 		goto nolfb;
 	}
+#if defined(__sh__) 
+	//we use 2MB at the end of the buffer, the rest does the blitter 
+	lfb_direct = lfb;     
+	lfb += 1920*1080*4;     
+	topDiff = 0;
+	leftDiff = 0;
+	rightDiff = 0;
+	bottomDiff = 0;
+#endif 
 
 	showConsole(0);
 
@@ -83,6 +99,9 @@ nolfb:
 
 int fbClass::showConsole(int state)
 {
+#if defined(__sh__) 
+	int fd=open("/dev/ttyAS1", O_RDWR); 
+#else 
 	int fd=open("/dev/tty0", O_RDWR);
 	if(fd>=0)
 	{
@@ -92,13 +111,18 @@ int fbClass::showConsole(int state)
 		}
 		close(fd);
 	}
+#endif
 	return 0;
 }
 
 int fbClass::SetMode(unsigned int nxRes, unsigned int nyRes, unsigned int nbpp)
 {
 	screeninfo.xres_virtual=screeninfo.xres=nxRes;
+#if defined(__sh__) 
+	screeninfo.yres_virtual=screeninfo.yres=nyRes; 
+#else 
 	screeninfo.yres_virtual=(screeninfo.yres=nyRes)*2;
+#endif
 	screeninfo.height=0;
 	screeninfo.width=0;
 	screeninfo.xoffset=screeninfo.yoffset=0;
@@ -129,6 +153,7 @@ int fbClass::SetMode(unsigned int nxRes, unsigned int nyRes, unsigned int nbpp)
 		break;
 	}
 
+#if not defined(__sh__) 
 	if (ioctl(fd, FBIOPUT_VSCREENINFO, &screeninfo)<0)
 	{
 		// try single buffering
@@ -143,6 +168,7 @@ int fbClass::SetMode(unsigned int nxRes, unsigned int nyRes, unsigned int nbpp)
 		eDebug(" - double buffering not available.");
 	} else
 		eDebug(" - double buffering available!");
+#endif
 	
 	m_number_of_pages = screeninfo.yres_virtual / nyRes;
 	
@@ -154,6 +180,10 @@ int fbClass::SetMode(unsigned int nxRes, unsigned int nyRes, unsigned int nbpp)
 			nxRes, nyRes, nbpp,
 			screeninfo.xres, screeninfo.yres, screeninfo.bits_per_pixel);
 	}
+#if defined(__sh__) 
+	xResFB=nxRes; 
+	yResFB=nyRes; 
+#endif 
 	xRes=screeninfo.xres;
 	yRes=screeninfo.yres;
 	bpp=screeninfo.bits_per_pixel;
@@ -164,7 +194,9 @@ int fbClass::SetMode(unsigned int nxRes, unsigned int nyRes, unsigned int nbpp)
 		printf("fb failed\n");
 	}
 	stride=fix.line_length;
+#if not defined(__sh__) 
 	memset(lfb, 0, stride*yRes);
+#endif
 	return 0;
 }
 
@@ -181,12 +213,41 @@ int fbClass::waitVSync()
 	return ioctl(fd, FBIO_WAITFORVSYNC, &c);
 }
 
+#if defined(__sh__)
+int fbClass::directBlit(STMFBIO_BLT_DATA &bltData)
+{
+	return ioctl(fd, STMFBIO_BLT, &bltData);
+}
+#endif
+
 void fbClass::blit()
 {
+#if defined(__sh__) 
+	STMFBIO_BLT_DATA  bltData; 
+	memset(&bltData, 0, sizeof(STMFBIO_BLT_DATA)); 
+	bltData.operation  = BLT_OP_COPY; 
+	bltData.srcOffset  = 1920*1080*4; 
+	bltData.srcPitch   = xResFB * 4; 
+	bltData.dstOffset  = 0; 
+	bltData.dstPitch   = xRes*4; 
+	bltData.src_top    = 0; bltData.src_left   = 0; 
+	bltData.src_right  = xResFB; bltData.src_bottom = yResFB; 
+	bltData.srcFormat = SURF_BGRA8888; bltData.dstFormat = SURF_BGRA8888;
+	bltData.srcMemBase = STMFBGP_FRAMEBUFFER; bltData.dstMemBase = STMFBGP_FRAMEBUFFER; 
+	bltData.dst_top    = 0 + topDiff; 
+	bltData.dst_left   = 0 + leftDiff; 
+	bltData.dst_right  = xRes + rightDiff; 
+	bltData.dst_bottom = yRes + bottomDiff; 
+	if (ioctl(fd, STMFBIO_BLT, &bltData ) < 0) 
+	{ 
+		perror("FBIO_BLIT"); 
+	} 
+#else 
 	if (m_manual_blit == 1) {
 		if (ioctl(fd, FBIO_BLIT) < 0)
 			perror("FBIO_BLIT");
 	}
+#endif
 }
 
 fbClass::~fbClass()
@@ -231,19 +292,62 @@ void fbClass::unlock()
 
 void fbClass::enableManualBlit()
 {
+#if not defined(__sh__) 
 	unsigned char tmp = 1;
 	if (ioctl(fd,FBIO_SET_MANUAL_BLIT, &tmp)<0)
 		perror("FBIO_SET_MANUAL_BLIT");
 	else
 		m_manual_blit = 1;
+#endif
 }
 
 void fbClass::disableManualBlit()
 {
+#if not defined(__sh__) 
 	unsigned char tmp = 0;
 	if (ioctl(fd,FBIO_SET_MANUAL_BLIT, &tmp)<0) 
 		perror("FBIO_SET_MANUAL_BLIT");
 	else
 		m_manual_blit = 0;
+#endif
 }
 
+#if defined(__sh__) 
+void fbClass::clearFBblit()
+{
+	//set real frambuffer transparent
+	memset(lfb_direct, 0x00, xRes * yRes * 4);
+	blit();
+}
+
+int fbClass::getFBdiff(int ret)
+{
+	if(ret == 0)
+		return topDiff;
+	else if(ret == 1)
+		return leftDiff;
+	else if(ret == 2)
+		return rightDiff;
+	else if(ret == 3)
+		return bottomDiff;
+	else
+		return -1;
+
+}
+
+void fbClass::setFBdiff(int top, int left, int right, int bottom)
+{
+	if(top < 0) top = 0;
+	if(top > yRes) top = yRes;
+	topDiff = top;
+	if(left < 0) left = 0;
+	if(left > xRes) left = xRes;
+	leftDiff = left;
+	if(right > 0) right = 0;
+	if(-right > xRes) right = -xRes;
+	rightDiff = right;
+	if(bottom > 0) bottom = 0;
+	if(-bottom > yRes) bottom = -yRes;
+	bottomDiff = bottom;
+}
+#endif

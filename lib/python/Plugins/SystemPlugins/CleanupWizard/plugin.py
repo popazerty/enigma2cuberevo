@@ -9,7 +9,7 @@ from CleanupWizard import checkFreeSpaceAvailable
 
 config.plugins.cleanupwizard = ConfigSubsection()
 config.plugins.cleanupwizard.enable = ConfigYesNo(default = True)
-config.plugins.cleanupwizard.threshold = ConfigNumber(default = 2048)
+config.plugins.cleanupwizard.threshold = ConfigNumber(default = 1024)
 
 freeSpace = checkFreeSpaceAvailable()
 print "[CleanupWizard] freeSpaceAvailable-->",freeSpace

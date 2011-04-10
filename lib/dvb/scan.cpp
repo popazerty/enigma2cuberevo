@@ -221,6 +221,59 @@ RESULT eDVBScan::nextChannel()
 	return 0;
 }
 
+RESULT eDVBScan::nextChannelBlind()
+{
+	ePtr<iDVBFrontend> fe;
+
+	m_SDT = 0; m_PAT = 0; m_BAT = 0; m_NIT = 0, m_PMT = 0;
+
+	m_ready = 0;
+
+	m_pat_tsid = eTransportStreamID();
+
+	/* check what we need */
+	m_ready_all = readySDT;
+	
+	if (m_flags & scanNetworkSearch)
+		m_ready_all |= readyNIT;
+	
+	if (m_flags & scanSearchBAT)
+		m_ready_all |= readyBAT;
+
+	if (m_usePAT)
+		m_ready_all |= readyPAT;
+
+	if (m_ch_toScan.empty())
+	{
+		SCAN_eDebug("no channels left to scan.");
+		SCAN_eDebug("%d channels scanned, %d were unavailable.", 
+				m_ch_scanned.size(), m_ch_unavailable.size());
+		SCAN_eDebug("%d channels in database.", m_new_channels.size());
+		m_event(evtFinish);
+		return -ENOENT;
+	}
+	
+	m_ch_current = m_ch_toScan.front();
+	
+	m_ch_toScan.pop_front();
+	
+	if (m_channel->getFrontend(fe))
+	{
+		m_event(evtFail);
+		return -ENOTSUP;
+	}
+
+	m_chid_current = eDVBChannelID();
+
+	m_channel_state = iDVBChannel::state_idle;
+
+	if (fe->tuneBlind(*m_ch_current))
+		return nextChannelBlind();
+
+	m_event(evtUpdate);
+	return 0;
+}
+
 RESULT eDVBScan::startFilter()
 {
 	bool startSDT=true;
@@ -961,6 +1014,35 @@ void eDVBScan::start(const eSmartPtrList<iDVBFrontendParameters> &known_transpon
 	}
 
 	nextChannel();
+}
+
+void eDVBScan::startBlind(const eSmartPtrList<iDVBFrontendParameters> &known_transponders, int flags)
+{
+	m_flags = flags;
+	m_ch_toScan.clear();
+	m_ch_scanned.clear();
+	m_ch_unavailable.clear();
+	m_new_channels.clear();
+	m_tuner_data.clear();
+	m_new_services.clear();
+	m_last_service = m_new_services.end();
+
+	for (eSmartPtrList<iDVBFrontendParameters>::const_iterator i(known_transponders.begin()); i != known_transponders.end(); ++i)
+	{
+		bool exist=false;
+		for (std::list<ePtr<iDVBFrontendParameters> >::const_iterator ii(m_ch_toScan.begin()); ii != m_ch_toScan.end(); ++ii)
+		{
+			if (sameChannel(*i, *ii, true))
+			{
+				exist=true;
+				break;
+			}
+		}
+		if (!exist)
+			m_ch_toScan.push_back(*i);
+	}
+
+	nextChannelBlind();
 }
 
 void eDVBScan::insertInto(iDVBChannelList *db, bool dontRemoveOldFlags)

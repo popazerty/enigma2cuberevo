@@ -453,8 +453,8 @@ DEFINE_REF(eDVBFrontend);
 
 int eDVBFrontend::PriorityOrder=0;
 
-eDVBFrontend::eDVBFrontend(int adap, int fe, int &ok, bool simulate, eDVBFrontend *simulate_fe)
-	:m_simulate(simulate), m_enabled(false), m_type(-1), m_simulate_fe(simulate_fe), m_dvbid(fe), m_slotid(fe)
+eDVBFrontend::eDVBFrontend(int adap, int fe, int &ok, bool simulate)
+	:m_simulate(simulate), m_enabled(false), m_type(-1), m_dvbid(fe), m_slotid(fe)
 	,m_fd(-1), m_rotor_mode(false), m_need_rotor_workaround(false), m_can_handle_dvbs2(false)
 	,m_state(stateClosed), m_timeout(0), m_tuneTimer(0)
 #if HAVE_DVB_API_VERSION < 3
@@ -503,10 +503,10 @@ int eDVBFrontend::openFrontend()
 #else
 	dvb_frontend_info fe_info;
 #endif
-	if (!m_simulate)
+	eDebugNoSimulate("opening frontend %d", m_dvbid);
+	if (m_fd < 0)
 	{
-		eDebug("opening frontend %d", m_dvbid);
-		if (m_fd < 0)
+		if (!m_simulate || m_type == -1)
 		{
 			m_fd = ::open(m_filename, O_RDWR|O_NONBLOCK);
 			if (m_fd < 0)
@@ -515,68 +515,69 @@ int eDVBFrontend::openFrontend()
 				return -1;
 			}
 		}
-		else
-			eWarning("frontend %d already opened", m_dvbid);
-		if (m_type == -1)
+	}
+	else
+		eWarning("frontend %d already opened", m_dvbid);
+	if (m_type == -1)
+	{
+		if (::ioctl(m_fd, FE_GET_INFO, &fe_info) < 0)
 		{
-			if (::ioctl(m_fd, FE_GET_INFO, &fe_info) < 0)
-			{
-				eWarning("ioctl FE_GET_INFO failed");
-				::close(m_fd);
-				m_fd = -1;
-				return -1;
-			}
-
-			switch (fe_info.type)
-			{
-			case FE_QPSK:
-				m_type = iDVBFrontend::feSatellite;
-				break;
-			case FE_QAM:
-				m_type = iDVBFrontend::feCable;
-				break;
-			case FE_OFDM:
-				m_type = iDVBFrontend::feTerrestrial;
-				break;
-			default:
-				eWarning("unknown frontend type.");
-				::close(m_fd);
-				m_fd = -1;
-				return -1;
-			}
-			if (m_simulate_fe)
-				m_simulate_fe->m_type = m_type;
-			eDebugNoSimulate("detected %s frontend", "satellite\0cable\0    terrestrial"+fe_info.type*10);
+			eWarning("ioctl FE_GET_INFO failed");
+			::close(m_fd);
+			m_fd = -1;
+			return -1;
 		}
+
+		switch (fe_info.type)
+		{
+		case FE_QPSK:
+			m_type = iDVBFrontend::feSatellite;
+			break;
+		case FE_QAM:
+			m_type = iDVBFrontend::feCable;
+			break;
+		case FE_OFDM:
+			m_type = iDVBFrontend::feTerrestrial;
+			break;
+		default:
+			eWarning("unknown frontend type.");
+			::close(m_fd);
+			m_fd = -1;
+			return -1;
+		}
+		eDebugNoSimulate("detected %s frontend", "satellite\0cable\0    terrestrial"+fe_info.type*10);
+	}
 
 #if HAVE_DVB_API_VERSION < 3
-		if (m_type == iDVBFrontend::feSatellite)
-		{
-				if (m_secfd < 0)
+	if (m_type == iDVBFrontend::feSatellite)
+	{
+			if (m_secfd < 0)
+			{
+				if (!m_simulate)
 				{
-					if (!m_simulate)
+					m_secfd = ::open(m_sec_filename, O_RDWR);
+					if (m_secfd < 0)
 					{
-						m_secfd = ::open(m_sec_filename, O_RDWR);
-						if (m_secfd < 0)
-						{
-							eWarning("failed! (%s) %m", m_sec_filename);
-							::close(m_fd);
-							m_fd=-1;
-							return -1;
-						}
+						eWarning("failed! (%s) %m", m_sec_filename);
+						::close(m_fd);
+						m_fd=-1;
+						return -1;
 					}
 				}
-				else
-					eWarning("sec %d already opened", m_dvbid);
-		}
-#endif
-
-		m_sn = eSocketNotifier::create(eApp, m_fd, eSocketNotifier::Read, false);
-		CONNECT(m_sn->activated, eDVBFrontend::feEvent);
+			}
+			else
+				eWarning("sec %d already opened", m_dvbid);
 	}
+#endif
 
 	setTone(iDVBFrontend::toneOff);
 	setVoltage(iDVBFrontend::voltageOff);
+
+	if (!m_simulate)
+	{
+		m_sn = eSocketNotifier::create(eApp, m_fd, eSocketNotifier::Read, false);
+		CONNECT(m_sn->activated, eDVBFrontend::feEvent);
+	}
 
 	return 0;
 }
@@ -2467,6 +2468,78 @@ RESULT eDVBFrontend::tune(const iDVBFrontendParameters &where)
 
 		break;
 	}
+	}
+
+	m_sec_sequence.current() = m_sec_sequence.begin();
+
+	if (!m_simulate)
+	{
+		m_tuneTimer->start(0,true);
+		m_tuning = 1;
+		if (m_state != stateTuning)
+		{
+			m_state = stateTuning;
+			m_stateChanged(this);
+		}
+	}
+	else
+		tuneLoop();
+
+	return res;
+
+tune_error:
+	m_tuneTimer->stop();
+	return res;
+}
+
+RESULT eDVBFrontend::tuneBlind(const iDVBFrontendParameters &where)
+{
+	unsigned int timeout = 5000;
+	eDebugNoSimulate("(%d)tune", m_dvbid);
+
+	m_timeout->stop();
+
+	int res=0;
+
+	if (!m_sn && !m_simulate)
+	{
+		eDebug("no frontend device opened... do not try to tune !!!");
+		res = -ENODEV;
+		goto tune_error;
+	}
+
+	if (m_type == -1)
+	{
+		res = -ENODEV;
+		goto tune_error;
+	}
+
+	if (!m_simulate)
+		m_sn->stop();
+
+	m_sec_sequence.clear();
+
+	where.calcLockTimeout(timeout);
+
+	switch (m_type)
+	{
+		case feSatellite:
+		{
+			eDVBFrontendParametersSatellite feparm;
+			if (where.getDVBS(feparm))
+			{
+				eDebug("no dvbs data!");
+				res = -EINVAL;
+				goto tune_error;
+			}
+			if (!m_simulate)
+				m_sec->setRotorMoving(m_slotid, false);
+			res=prepare_sat(feparm, timeout);
+			if (res)
+				goto tune_error;
+
+			break;
+		}
 	}
 
 	m_sec_sequence.current() = m_sec_sequence.begin();

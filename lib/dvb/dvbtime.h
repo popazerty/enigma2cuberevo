@@ -84,6 +84,9 @@ public:
 	PSignal0<void> m_timeUpdated;
 	bool ready() const { return m_time_ready; }
 	static eDVBLocalTimeHandler *getInstance() { return instance; }
+#if defined(__sh__)
+	void setTimeReady(bool b);
+#endif
 };
 
 #endif // __LIB_DVB_DVBTIME_H_

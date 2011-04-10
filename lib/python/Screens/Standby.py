@@ -4,13 +4,21 @@ from Components.config import config
 from Components.AVSwitch import AVSwitch
 from Components.SystemInfo import SystemInfo
 from GlobalActions import globalActionMap
-from enigma import eDVBVolumecontrol
+from enigma import eDVBVolumecontrol, evfd
 
 inStandby = None
 
 class Standby(Screen):
 	def Power(self):
 		print "leave standby"
+#+++>
+		import os
+		#os.system("/bin/vdstandby -d")
+		try:
+			os.popen("/bin/vdstandby -d")
+		except OSError:
+			print "no memory"
+#+++<
 		#set input to encoder
 		self.avswitch.setInput("ENCODER")
 		#restart last played service
@@ -36,6 +44,15 @@ class Standby(Screen):
 		self.avswitch = AVSwitch()
 
 		print "enter standby"
+#+++>
+		evfd.getInstance().vfd_stop_scroll_string()
+		import os
+		#os.system("/bin/vdstandby -a")
+		try:
+			os.popen("/bin/vdstandby -a")
+		except OSError:
+			print "no memory"
+#+++<
 
 		self["actions"] = ActionMap( [ "StandbyActions" ],
 		{

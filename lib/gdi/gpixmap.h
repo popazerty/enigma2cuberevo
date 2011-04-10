@@ -132,6 +132,10 @@ public:
 	void unlock();
 	inline bool needClut() const { return surface && surface->bpp <= 8; }
 #endif
+#if defined(__sh__)
+	// requires 24bit picture!
+	void FBblitAccel(const gPixmap &src, eRect &fbDst);
+#endif
 	virtual ~gPixmap();
 	eSize size() const { return eSize(surface->x, surface->y); }
 private:

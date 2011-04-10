@@ -188,6 +188,9 @@ void gPixmap::fill(const gRegion &region, const gColor &color)
 			else
 				col=0x10101*color;
 			
+#if defined(__sh__) 
+if((col&0xFF000000) == 0xFF000000) col = 0xFF000000;
+#endif
 			col^=0xFF000000;
 			
 			if (surface->data_phys && gAccel::getInstance())
@@ -220,6 +223,9 @@ void gPixmap::fill(const gRegion &region, const gRGB &color)
 			__u32 col;
 
 			col = color.argb();
+#if defined(__sh__) 
+if((col&0xFF000000) == 0xFF000000) col = 0xFF000000;
+#endif
 			col^=0xFF000000;
 
 			if (surface->data_phys && gAccel::getInstance())
@@ -321,6 +327,74 @@ static void blit_8i_to_32_ab(__u32 *dst, __u8 *src, __u32 *pal, int width)
 
 #define FIX 0x10000
 
+#if defined(__sh__)
+// requires 24bit picture!
+void gPixmap::FBblitAccel(const gPixmap &src, eRect &fbDst)
+{
+	fbClass *fb = fbClass::getInstance();
+	
+	unsigned char *tempSpace = fb->lfb + 1920 * 1080 * 4 + 1280 * 720 * 4;
+	
+	int lines = 602112 / (src.surface->x * 3); 
+	int linesMem = lines * src.surface->x * 3;
+	int startLine = 0;
+	
+	STMFBIO_BLT_DATA  bltData;
+	memset(&bltData, 0, sizeof(STMFBIO_BLT_DATA));
+    bltData.operation  = BLT_OP_COPY;
+    bltData.ulFlags    = BLT_OP_FLAGS_GLOBAL_ALPHA;
+	bltData.srcOffset  = 1920 * 1080 * 4 + 1280 * 720 * 4;
+	bltData.srcPitch   = src.surface->x * 3;
+	bltData.dstOffset  = 1920 * 1080 * 4;
+	bltData.dstPitch   = fbDst.width() * 4;
+	bltData.src_top    = 0;
+	bltData.src_left   = 0;
+	bltData.src_right  = src.surface->x;
+    bltData.src_bottom = src.surface->y;
+    bltData.dst_left   = fbDst.left();
+    bltData.dst_right  = fbDst.left() + fbDst.width();
+    bltData.srcFormat = SURF_BGR888;
+    bltData.dstFormat = SURF_ARGB8888;
+    bltData.globalAlpha = 255;
+	bool scaleWidth;
+	if((float)src.surface->y / src.surface->y > (float)fbDst.height() / fbDst.width())
+		scaleWidth = true;
+	else
+		scaleWidth = false;
+		
+	unsigned char *dataPt = (unsigned char *)src.surface->data;
+	while(startLine < src.surface->y)
+	{
+		if(src.surface->y - startLine < lines)
+		{
+			lines = src.surface->y - startLine;
+			bltData.src_bottom = lines;
+			linesMem = lines * src.surface->x * 3;
+		}
+		
+		memcpy(dataPt, tempSpace, linesMem);
+		dataPt += linesMem;
+		
+		if(scaleWidth)  
+		{  
+			bltData.dst_top    = (fbDst.width() * startLine) / src.surface->y + fbDst.top();  
+			bltData.dst_bottom = (fbDst.width() * (startLine + lines)) / src.surface->y + fbDst.top();  
+		}  
+		else  
+		{  
+			bltData.dst_top    = (src.surface->y * startLine) / fbDst.width()  + fbDst.top();  
+			bltData.dst_bottom = (src.surface->y * (startLine + lines)) / fbDst.width();  
+		}  
+		
+		fb->directBlit(bltData);
+		// In case of concurrency problems sync blitter here
+		
+		startLine += lines;
+	}
+	
+}
+#endif
+
 void gPixmap::blit(const gPixmap &src, const eRect &_pos, const gRegion &clip, int flag)
 {
 //	eDebug("blit: -> %d.%d %d:%d -> %d.%d %d:%d, flags=%d",
@@ -377,7 +451,9 @@ void gPixmap::blit(const gPixmap &src, const eRect &_pos, const gRegion &clip, i
 		if (flag & blitScale)
 		{
 			eWarning("unimplemented: scale on non-accel surfaces");
+#if not defined (__sh__) //if accel blit fails, do direkt blit
 			continue;
+#endif
 		}
 
 		if ((surface->bpp == 8) && (src.surface->bpp==8))
@@ -481,6 +557,9 @@ void gPixmap::blit(const gPixmap &src, const eRect &_pos, const gRegion &clip, i
 					pal[i]=(src.surface->clut.data[i].a<<24)|(src.surface->clut.data[i].r<<16)|(src.surface->clut.data[i].g<<8)|(src.surface->clut.data[i].b);
 				else
 					pal[i]=0x010101*i;
+#if defined(__sh__) 
+if((pal[i]&0xFF000000) >= 0xE0000000) pal[i] = 0xFF000000;
+#endif
 				pal[i]^=0xFF000000;
 			}
 

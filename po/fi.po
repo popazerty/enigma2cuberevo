@@ -3,8 +3,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: tuxbox-enigma 0.0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-04-01 08:09+0000\n"
-"PO-Revision-Date: 2011-03-07 14:39+0200\n"
+"POT-Creation-Date: 2011-01-27 12:42+0000\n"
+"PO-Revision-Date: 2010-12-19 14:53+0200\n"
 "Last-Translator: Timo <timojarvenpaa@hotmail.com>\n"
 "Language-Team: none\n"
 "MIME-Version: 1.0\n"
@@ -35,7 +35,7 @@ msgstr ""
 #
 msgid ""
 "\n"
-"Backup your Dreambox settings."
+"Backup your Cuberevo settings."
 msgstr ""
 "\n"
 "Varmuuskopioi asetukset."
@@ -51,7 +51,7 @@ msgstr ""
 #
 msgid ""
 "\n"
-"Manage extensions or plugins for your Dreambox"
+"Manage extensions or plugins for your Cuberevo"
 msgstr ""
 "\n"
 "Muokkaa laajennuksia ja lisäosia"
@@ -59,7 +59,7 @@ msgstr ""
 #
 msgid ""
 "\n"
-"Online update of your Dreambox software."
+"Online update of your Cuberevo software."
 msgstr ""
 "\n"
 "Päivitä ohjelmisto online-päivityksen kautta."
@@ -76,7 +76,7 @@ msgstr ""
 #
 msgid ""
 "\n"
-"Restore your Dreambox settings."
+"Restore your Cuberevo settings."
 msgstr ""
 "\n"
 "Palauta asetukset varmuuskopiosta."
@@ -84,7 +84,7 @@ msgstr ""
 #
 msgid ""
 "\n"
-"Restore your Dreambox with a new firmware."
+"Restore your Cuberevo with a new firmware."
 msgstr ""
 "\n"
 "Palauta ohjelmisto perustilaan."
@@ -188,12 +188,6 @@ msgstr "#ffffffff"
 msgid "%H:%M"
 msgstr "%H:%M"
 
-#, python-format
-msgid ""
-"%d conflict(s) encountered when trying to add new timers:\n"
-"%s"
-msgstr ""
-
 #
 #, python-format
 msgid "%d jobs are running in the background!"
@@ -229,10 +223,6 @@ msgstr ""
 #, python-format
 msgid "%s (%s)\n"
 msgstr "%s (%s)\n"
-
-#, python-format
-msgid "%s: %s at %s"
-msgstr ""
 
 #
 msgid "(ZAP)"
@@ -375,10 +365,10 @@ msgstr "??"
 msgid "A"
 msgstr "A"
 
-msgid "A BackToTheRoots-Skin .. but with Warp-8 speed."
+msgid "A BackToTheRoots-Skin .. or good old times."
 msgstr ""
 
-msgid "A BackToTheRoots-Skin .. or good old times."
+msgid "A BackToTheRoots-Skin ... or good old times."
 msgstr ""
 
 msgid "A basic ftp client"
@@ -399,24 +389,21 @@ msgstr ""
 msgid "A demo plugin for TPM usage."
 msgstr "Demo-lisäosa TPM:n käyttöön"
 
-msgid "A dreambox simulation from SG-Atlantis displays."
-msgstr ""
-
 #
 msgid ""
 "A finished record timer wants to set your\n"
-"Dreambox to standby. Do that now?"
+"Cuberevo to standby. Do that now?"
 msgstr ""
 "Juuri päättynyt ajastus haluaa sammuttaa\n"
-"Dreamboxin valmiustilaan. Sammutetaanko nyt?"
+"Cuberevoin valmiustilaan. Sammutetaanko nyt?"
 
 #
 msgid ""
 "A finished record timer wants to shut down\n"
-"your Dreambox. Shutdown now?"
+"your Cuberevo. Shutdown now?"
 msgstr ""
 "Juuri päättynyt ajastus haluaa sammuttaa\n"
-"Dreamboxin virransäästötilaan. Sammutetaanko nyt?"
+"Cuberevoin virransäästötilaan. Sammutetaanko nyt?"
 
 #
 msgid "A graphical EPG for all services of an specific bouquet"
@@ -424,9 +411,6 @@ msgstr "Graafinen EPG kaikille suosikkilistan kanaville"
 
 msgid "A graphical EPG interface"
 msgstr "Graafinen EPG"
-
-msgid "A graphical EPG interface and EPG tools manager"
-msgstr ""
 
 msgid "A graphical EPG interface."
 msgstr "Graafinen EPG"
@@ -505,7 +489,7 @@ msgstr "Apuohjelma lisäosien lataamiseen"
 #
 msgid ""
 "A sleep timer wants to set your\n"
-"Dreambox to standby. Do that now?"
+"Cuberevo to standby. Do that now?"
 msgstr ""
 "Uniajastimeen asetettu aika on kulunut umpeen.\n"
 "Siirrytäänkö valmiustilaan?"
@@ -513,10 +497,10 @@ msgstr ""
 #
 msgid ""
 "A sleep timer wants to shut down\n"
-"your Dreambox. Shutdown now?"
+"your Cuberevo. Shutdown now?"
 msgstr ""
 "Uniajastimeen asetettu aika on kulunut umpeen.\n"
-"Sammutetaanko Dreambox virransäästötilaa?"
+"Sammutetaanko Cuberevo virransäästötilaa?"
 
 msgid "A small overview of the available icon states and actions."
 msgstr "Kuvaus kuvakkeiden tiloista ja toiminnoista."
@@ -625,8 +609,8 @@ msgstr "Lisää tiedot WLAN-verkosta?"
 msgid "Add a mark"
 msgstr "Lisää merkki"
 
-msgid "Add a new NFS or CIFS mount point to your Dreambox."
-msgstr "Lisää Dreamboxiin uusi NFS tai CIFS jako."
+msgid "Add a new NFS or CIFS mount point to your Cuberevo."
+msgstr "Lisää Cuberevoiin uusi NFS tai CIFS jako."
 
 #
 msgid "Add a new title"
@@ -669,10 +653,10 @@ msgstr "Lisätty: "
 
 #
 msgid ""
-"Adds enigma2 settings and dreambox model informations like SN, rev... if "
+"Adds enigma2 settings and cuberevo model informations like SN, rev... if "
 "enabled."
 msgstr ""
-"Jos valinta on ei, lisätään Enigma2:n asetukset, Dreamboxin malli, "
+"Jos valinta on ei, lisätään Enigma2:n asetukset, Cuberevoin malli, "
 "sarjanumero yms."
 
 #
@@ -725,10 +709,10 @@ msgid "Advanced restore"
 msgstr "Laajennettu palautus"
 
 msgid ""
-"After a reboot or power outage, StartupToStandby will bring your Dreambox to "
+"After a reboot or power outage, StartupToStandby will bring your Cuberevo to "
 "standby-mode."
 msgstr ""
-"Kaatumisen tai virtakatkon jälkeen StartupToStandby palauttaa Dreamboxin "
+"Kaatumisen tai virtakatkon jälkeen StartupToStandby palauttaa Cuberevoin "
 "valmiustilaan."
 
 #
@@ -738,7 +722,7 @@ msgstr "Ajastuksen jälkeen"
 #
 msgid ""
 "After the start wizard is completed, you need to protect single services. "
-"Refer to your dreambox's manual on how to do that."
+"Refer to your cuberevo's manual on how to do that."
 msgstr ""
 "Kun alkuasennus on päättynyt, pitää sinun valita lapsilukolla suojattavat "
 "kanavat. Katso ohjekirjasta kuinka se tehdään."
@@ -884,9 +868,6 @@ msgstr "Kysy käyttäjältä"
 msgid "Aspect Ratio"
 msgstr "Kuvasuhde"
 
-msgid "Aspect ratio"
-msgstr ""
-
 msgid "Assigning providers/services/caids to a CI module"
 msgstr "Määritä palvelutarjoajat/kanavat/CAId:t haluamaasi CI-moduuliin"
 
@@ -900,9 +881,6 @@ msgstr "Ääni"
 #
 msgid "Audio Options..."
 msgstr "Äänivalinnat"
-
-msgid "Audio PID"
-msgstr ""
 
 msgid "Audio Sync"
 msgstr "Äänen synkronointi"
@@ -966,15 +944,6 @@ msgstr ""
 "Automaattiajastus hakee ohjelmatietoja ja luo ajastuksia käyttäjän "
 "määrittämien ehtojen mukaisesti."
 
-msgid "AutoTimer was added successfully"
-msgstr ""
-
-msgid "AutoTimer was changed successfully"
-msgstr ""
-
-msgid "AutoTimer was removed"
-msgstr ""
-
 #
 msgid "Automatic"
 msgstr "Automaattinen"
@@ -1011,27 +980,6 @@ msgstr "Päivittää ohjelmatiedot automaattisesti"
 msgid "Automatically send crashlogs to Dream Multimedia"
 msgstr "Lähettää kaatumislokit automaattisesti Dream Multimedialle"
 
-#
-#, python-format
-msgid ""
-"Autoresolution Plugin Testmode:\n"
-"Is %s ok?"
-msgstr ""
-"Autoresoluutio lisäosan testitila:\n"
-"Toimiiko %s ?"
-
-msgid "Autoresolution Switch"
-msgstr "Autoresoluution kytkentä"
-
-msgid "Autoresolution is not working in Scart/DVI-PC Mode"
-msgstr "Autoresoluutio ei toimi SCART/DVI-PC-tiloissa"
-
-msgid "Autoresolution settings"
-msgstr "Autoresoluution asetukset"
-
-msgid "Autoresolution videomode setup"
-msgstr "Autoresoluution kuvatilan asetukset"
-
 msgid "Autos & Vehicles"
 msgstr "Autot & kulkuvälineet"
 
@@ -1053,8 +1001,8 @@ msgstr "BA"
 msgid "BASIC-HD Skin by Ismail Demir"
 msgstr "Ismail Demirin BASIC-HD teema"
 
-msgid "BASIC-HD Skin for Dreambox Images created from Ismail Demir"
-msgstr "Ismail Demirin Dreambox BASIC-HD teema"
+msgid "BASIC-HD Skin for Cuberevo Images created from Ismail Demir"
+msgstr "Ismail Demirin Cuberevo BASIC-HD teema"
 
 #
 msgid "BB"
@@ -1070,12 +1018,6 @@ msgstr "BER:"
 #
 msgid "Back"
 msgstr "Takaisin"
-
-msgid "Back, lower USB Slot"
-msgstr ""
-
-msgid "Back, upper USB Slot"
-msgstr ""
 
 #
 msgid "Background"
@@ -1167,11 +1109,6 @@ msgstr "Brasilia"
 msgid "Brightness"
 msgstr "Kirkkaus"
 
-msgid ""
-"Browse ORF and SAT1 Teletext independent from channel. This need I-net "
-"conection."
-msgstr ""
-
 msgid "Browse for and connect to network shares"
 msgstr "Selaa ja yhdistä verkkojakoja"
 
@@ -1197,17 +1134,6 @@ msgstr "Polta tallenteet DVD:lle"
 #
 msgid "Bus: "
 msgstr "Väylä: "
-
-msgid ""
-"By enabling this events will not be matched if they don't occur on certain "
-"dates."
-msgstr ""
-
-msgid ""
-"By enabling this you will be notified about timer conflicts found during "
-"automated polling. There is no intelligence involved, so it might bother you "
-"about the same conflict over and over."
-msgstr ""
 
 #
 msgid ""
@@ -1315,8 +1241,8 @@ msgstr "Muuta asetuksien PIN"
 msgid "Change step size"
 msgstr "Muuta askelkokoa"
 
-msgid "Change the hostname of your Dreambox."
-msgstr "Muuta Dreamboxin nimeä (hostname)."
+msgid "Change the hostname of your Cuberevo."
+msgstr "Muuta Cuberevoin nimeä (hostname)."
 
 msgid "Changelog"
 msgstr "Muutosloki"
@@ -1462,12 +1388,6 @@ msgstr "Tallenna muutokset"
 
 msgid "Close title selection"
 msgstr "Sulje otsikon valinta"
-
-msgid "Code rate HP"
-msgstr ""
-
-msgid "Code rate LP"
-msgstr ""
 
 #
 msgid "Code rate high"
@@ -1620,17 +1540,17 @@ msgstr "Jatka toistoa"
 msgid "Contrast"
 msgstr "Kontrasti"
 
-msgid "Control your Dreambox with your Web browser."
-msgstr "Hallitse Dreamboxia www-selaimella."
+msgid "Control your Cuberevo with your Web browser."
+msgstr "Hallitse Cuberevoia www-selaimella."
 
-msgid "Control your Dreambox with your browser"
-msgstr "Hallitse Dreamboxia www-selaimella"
+msgid "Control your Cuberevo with your browser"
+msgstr "Hallitse Cuberevoia www-selaimella"
 
-msgid "Control your dreambox with only the MUTE button"
-msgstr "Hallitse Dreamboxia mykistä-painikkeella"
+msgid "Control your cuberevo with only the MUTE button"
+msgstr "Hallitse Cuberevoia mykistä-painikkeella"
 
-msgid "Control your dreambox with only the MUTE button."
-msgstr "Hallitse Dreamboxia mykistä-painikkeella."
+msgid "Control your cuberevo with only the MUTE button."
+msgstr "Hallitse Cuberevoia mykistä-painikkeella."
 
 msgid "Control your internal system fan."
 msgstr "Hallitse tuuletinta."
@@ -1641,11 +1561,11 @@ msgstr "Hallitse lastesi TV:n katselua"
 msgid "Control your system fan"
 msgstr "Hallitse tuuletinta"
 
-msgid "Copy, rename, delete, move local files on your Dreambox."
-msgstr "Kopioi, uudelleennimeä, poista ja siirrä Dreamboxin tiedostoja."
+msgid "Copy, rename, delete, move local files on your Cuberevo."
+msgstr "Kopioi, uudelleennimeä, poista ja siirrä Cuberevoin tiedostoja."
 
 #
-msgid "Could not connect to Dreambox .NFI Image Feed Server:"
+msgid "Could not connect to Cuberevo .NFI Image Feed Server:"
 msgstr "NFI-ohjelmistopäivityksien palvelimelle ei saatu yhteyttä:"
 
 #
@@ -1659,10 +1579,6 @@ msgstr "PIP-kuvaa ei voitu avata"
 #, python-format
 msgid "Couldn't record due to conflicting timer %s"
 msgstr "Ajastusristiriidan takia ei voitu tallentaa %s"
-
-#, python-format
-msgid "Couldn't record due to invalid service %s"
-msgstr ""
 
 #
 msgid "Crashlog settings"
@@ -1691,8 +1607,8 @@ msgstr ""
 msgid "Create DVD-ISO"
 msgstr "Luo DVD-ISO"
 
-msgid "Create a backup of your Video DVD on your DreamBox hard drive."
-msgstr "Kopioi DVD-elokuva Dreamboxin kiintolevylle."
+msgid "Create a backup of your Video DVD on your Cuberevo hard drive."
+msgstr "Kopioi DVD-elokuva Cuberevoin kiintolevylle."
 
 msgid "Create a backup of your Video-DVD"
 msgstr "Kopioi DVD-elokuvia"
@@ -1714,10 +1630,10 @@ msgid "Create preview pictures of your Movies"
 msgstr "Luo tallenteista esikatselukuvat"
 
 msgid "Create remote timers"
-msgstr "Luo ajastuksia muihin Dreamboxeihin"
+msgstr "Luo ajastuksia muihin Cuberevoeihin"
 
-msgid "Create timers on remote Dreamboxes."
-msgstr "Luo ajastuksia muihin Dreamboxeihin."
+msgid "Create timers on remote Cuberevoes."
+msgstr "Luo ajastuksia muihin Cuberevoeihin."
 
 #
 #, python-format
@@ -1838,9 +1754,6 @@ msgstr "DVB-S"
 msgid "DVB-S2"
 msgstr "DVB-S2"
 
-msgid "DVD Drive"
-msgstr ""
-
 #
 msgid "DVD File Browser"
 msgstr "DVD-tiedostoselain"
@@ -1857,15 +1770,15 @@ msgstr "DVD-otsikkoluettelo"
 msgid "DVD media toolbox"
 msgstr "DVD-levyn työkalut"
 
-msgid "DVDPlayer plays your DVDs on your Dreambox"
-msgstr "DVD-soitin toistaa DVD:t Dreamboxissa."
+msgid "DVDPlayer plays your DVDs on your Cuberevo"
+msgstr "DVD-soitin toistaa DVD:t Cuberevoissa."
 
 msgid ""
-"DVDPlayer plays your DVDs on your Dreambox.\n"
-"With the DVDPlayer you can play your DVDs on your Dreambox from a DVD or "
+"DVDPlayer plays your DVDs on your Cuberevo.\n"
+"With the DVDPlayer you can play your DVDs on your Cuberevo from a DVD or "
 "even from an iso file or video_ts folder on your harddisc or network."
 msgstr ""
-"DVD-soitin toistaa DVD:t Dreamboxissa.\n"
+"DVD-soitin toistaa DVD:t Cuberevoissa.\n"
 "DVD-soittimella voit toistaa DVD-levyn,  .iso-tiedoston tai video_ts "
 "hakemiston kiintolevyltä tai verkosta."
 
@@ -1921,21 +1834,12 @@ msgstr "Oletukset"
 msgid "Define a startup service"
 msgstr "Määritä aloituskanava"
 
-msgid "Define a startup service for your Dreambox."
-msgstr "Määritä Dreamboxin aloituskanava"
-
-msgid "Deinterlacer mode for interlaced content"
-msgstr "Lomitustila lomitellulle materiaalille"
-
-msgid "Deinterlacer mode for progressive content"
-msgstr "Lomitustila lomittamattomalle materiaalille"
+msgid "Define a startup service for your Cuberevo."
+msgstr "Määritä Cuberevoin aloituskanava"
 
 #
 msgid "Delay"
 msgstr "Viive"
-
-msgid "Delay x seconds after service started"
-msgstr "Viive x sekuntia palvelun käynnistämisen jälkeen"
 
 #
 msgid "Delete"
@@ -2116,12 +2020,6 @@ msgstr ""
 "Haluatko tarkistaa tiedostojärjetelmän?\n"
 "Tarkistus saattaa kestää kauan!"
 
-#, python-format
-msgid ""
-"Do you really want to delete %s\n"
-"%s?"
-msgstr ""
-
 #
 #, python-format
 msgid "Do you really want to delete %s?"
@@ -2177,9 +2075,9 @@ msgstr "Haluatko ladata ohjelmistopäivityksen %s :lle ?"
 
 #
 #  Ohjatun asennuksen (Start Wizard) lapsilukkoruutu
-msgid "Do you want to enable the parental control feature on your dreambox?"
+msgid "Do you want to enable the parental control feature on your cuberevo?"
 msgstr ""
-"Dreamboxissa on lapsilukko-\n"
+"Cuberevoissa on lapsilukko-\n"
 "ominaisuus: halutut kanavat\n"
 "voidaan asettaa erikseen\n"
 "määriteltävän tunnusluvun\n"
@@ -2208,8 +2106,8 @@ msgid "Do you want to preview this DVD before burning?"
 msgstr "Haluatko esikatsella tämän DVD:n ennen polttoa?"
 
 #
-msgid "Do you want to reboot your Dreambox?"
-msgstr "Haluatko käynnistää Dreamboxin uudelleen?"
+msgid "Do you want to reboot your Cuberevo?"
+msgstr "Haluatko käynnistää Cuberevoin uudelleen?"
 
 #
 msgid "Do you want to remove the package:\n"
@@ -2237,15 +2135,15 @@ msgstr ""
 "varten?"
 
 #
-msgid "Do you want to update your Dreambox?"
-msgstr "Haluatko päivittää Dreamboxisi?"
+msgid "Do you want to update your Cuberevo?"
+msgstr "Haluatko päivittää Cuberevoisi?"
 
 #
 msgid ""
-"Do you want to update your Dreambox?\n"
+"Do you want to update your Cuberevo?\n"
 "After pressing OK, please wait!"
 msgstr ""
-"Haluatko päivittää Dreamboxin?\n"
+"Haluatko päivittää Cuberevoin?\n"
 "Paina OK ja odota!"
 
 #
@@ -2319,11 +2217,11 @@ msgid "Downloading screenshots. Please wait..."
 msgstr "Ladataan ruudunkaappauksia. Odota..."
 
 #
-msgid "Dreambox format data DVD (HDTV compatible)"
+msgid "Cuberevo format data DVD (HDTV compatible)"
 msgstr "DB-tiedostomuotoinen DVD (HDTV-yht.sopiva)"
 
-msgid "Dreambox software because updates are available."
-msgstr "Dreamboxin ohjelmistoa koska päivityksiä on saatavilla."
+msgid "Cuberevo software because updates are available."
+msgstr "Cuberevoin ohjelmistoa koska päivityksiä on saatavilla."
 
 msgid "Duration: "
 msgstr "Kesto: "
@@ -2418,13 +2316,13 @@ msgid "Edit tags of recorded movies."
 msgstr "Muokkaa tallenteiden avainsanoja."
 
 #
-msgid "Edit the Nameserver configuration of your Dreambox.\n"
+msgid "Edit the Nameserver configuration of your Cuberevo.\n"
 msgstr ""
 "Muokkaan nimipalvelimen asetuksia.\n"
 "\n"
 
 #
-msgid "Edit the network configuration of your Dreambox.\n"
+msgid "Edit the network configuration of your Cuberevo.\n"
 msgstr ""
 "Muokkaa lähiverkon asetuksia.\n"
 "\n"
@@ -2450,8 +2348,8 @@ msgstr "Valistus"
 msgid "Electronic Program Guide"
 msgstr "Ohjelmaopas"
 
-msgid "Emailclient is an IMAP4 e-mail viewer for the Dreambox."
-msgstr "Emailclient on IMAP4-sähköpostien lukija Dreamboxille."
+msgid "Emailclient is an IMAP4 e-mail viewer for the Cuberevo."
+msgstr "Emailclient on IMAP4-sähköpostien lukija Cuberevoille."
 
 #
 msgid "Enable"
@@ -2460,24 +2358,9 @@ msgstr "Ota käyttöön"
 msgid "Enable /media"
 msgstr "Ota käyttöön /media"
 
-msgid "Enable 1080p24 Mode"
-msgstr "Ota käyttöön 1080p24-tila"
-
-msgid "Enable 1080p25 Mode"
-msgstr "Ota käyttöön 1080p25-tila"
-
-msgid "Enable 1080p30 Mode"
-msgstr "Ota käyttöön 1080p30-tila"
-
 #
 msgid "Enable 5V for active antenna"
 msgstr "Syötä 5 voltin käyttöjännite aktiiviantennille"
-
-msgid "Enable 720p24 Mode"
-msgstr "Ota käyttöön 720p24-tila"
-
-msgid "Enable Autoresolution"
-msgstr "Ota autoresoluutio käyttöön"
 
 #
 msgid "Enable Cleanup Wizard?"
@@ -2576,10 +2459,10 @@ msgid "English"
 msgstr "Englanti"
 
 msgid ""
-"Enigma2 Plugin to play AVI/DIVX/WMV/etc. videos from PC on your Dreambox. "
+"Enigma2 Plugin to play AVI/DIVX/WMV/etc. videos from PC on your Cuberevo. "
 "Needs a running VLC from www.videolan.org on your pc."
 msgstr ""
-"Lisäosa AVI/DIVX/WMV/yms. PC:llä olevien videoiden toistoon Dreamboxin "
+"Lisäosa AVI/DIVX/WMV/yms. PC:llä olevien videoiden toistoon Cuberevoin "
 "kautta. Tarvitsee www.videolan.org osoitteesta ladattavan VLC-ohjelman "
 "pyörimään PC:lle."
 
@@ -2598,15 +2481,23 @@ msgstr ""
 "\n"
 "© 2006 - Stephan Reichholf"
 
+#
+msgid "Enter Fast Forward at speed"
+msgstr "Aloita kelaus eteenpäin nopeudella"
+
 msgid "Enter IP to scan..."
 msgstr "Syötä IP-osoite josta haetaan..."
+
+#
+msgid "Enter Rewind at speed"
+msgstr "Aloita kelaus taaksepäin nopeudella"
 
 #
 msgid "Enter main menu..."
 msgstr "Mene päävalikkoon..."
 
-msgid "Enter new hostname for your Dreambox"
-msgstr "Syötä Dreamboxin uusi verkkonimi"
+msgid "Enter new hostname for your Cuberevo"
+msgstr "Syötä Cuberevoin uusi verkkonimi"
 
 msgid "Enter options:"
 msgstr "Syötä lisävalinnat:"
@@ -2757,10 +2648,10 @@ msgid "FEC"
 msgstr "FEC"
 
 msgid ""
-"FTPBrowser allows uploading and downloading files between your Dreambox and "
+"FTPBrowser allows uploading and downloading files between your Cuberevo and "
 "a server using the file transfer protocol."
 msgstr ""
-"FTPBrowser lisäosalla voit ladata ja lähettää tiedostoja Dreamboxin ja "
+"FTPBrowser lisäosalla voit ladata ja lähettää tiedostoja Cuberevoin ja "
 "palvelimen välillä FTP-protokollan avulla."
 
 #
@@ -2854,11 +2745,6 @@ msgstr "Verkko käynnistyi uudelleen"
 msgid "Finnish"
 msgstr "Suomi"
 
-msgid ""
-"First day to match events. No event that begins before this date will be "
-"matched."
-msgstr ""
-
 msgid "First generate your skin-style with the Ai.HD-Control plugin."
 msgstr "Luo ensin oma teema Ai.HD-control lisäosalla."
 
@@ -2879,16 +2765,14 @@ msgstr "Alusta"
 #, python-format
 msgid ""
 "Found a total of %d matching Events.\n"
-"%d Timer were added and %d modified, %d conflicts encountered."
-msgstr ""
-
-#, python-format
-msgid ""
-"Found a total of %d matching Events.\n"
 "%d Timer were added and %d modified."
 msgstr ""
 "Löytyi yhteensä %d hakuehtoa vastaavaa ohjelmaa.\n"
 "%d ajastusta lisättiin ja %d muokattiin."
+
+#
+msgid "Frame repeat count during non-smooth winding"
+msgstr "Ruudun toistomäärä hyppivällä kelauksella"
 
 #
 msgid "Frame size in full view"
@@ -2929,11 +2813,8 @@ msgstr "Perjantai"
 msgid "Frisian"
 msgstr "Friisi"
 
-msgid "FritzCall shows incoming calls to your Fritz!Box on your Dreambox."
-msgstr "FritzCall näyttää Fritz!Boxiin saapuvat puhelut Dreamboxissa."
-
-msgid "Front USB Slot"
-msgstr ""
+msgid "FritzCall shows incoming calls to your Fritz!Box on your Cuberevo."
+msgstr "FritzCall näyttää Fritz!Boxiin saapuvat puhelut Cuberevoissa."
 
 msgid "Frontend for /tmp/mmi.socket"
 msgstr "Käyttöliittymä /tmp/mmi.socketille"
@@ -2951,7 +2832,7 @@ msgid ""
 "GUI needs a restart to apply a new skin\n"
 "Do you want to Restart the GUI now?"
 msgstr ""
-"Teema vaihtuu vasta kun Dreamboxin\n"
+"Teema vaihtuu vasta kun Cuberevoin\n"
 "käyttöliittymä on käynnistetty uudelleen.\n"
 "Haluatko käynnistää käyttöliittymän\n"
 "uudelleen nyt?"
@@ -2960,8 +2841,8 @@ msgid "GUI that allows user to change the ftp- / telnet password."
 msgstr "Graafinen käyttöliittymä ftp- ja telnet-salasanan vaihtoon."
 
 msgid ""
-"GUI that allows user to change the ftp-/telnet-password of the Dreambox."
-msgstr "Graafinen käyttöliittymä Dreamboxin ftp- ja telnet-salasanan vaihtoon."
+"GUI that allows user to change the ftp-/telnet-password of the Cuberevo."
+msgstr "Graafinen käyttöliittymä Cuberevoin ftp- ja telnet-salasanan vaihtoon."
 
 msgid "GUI to change the ftp and telnet-password"
 msgstr "Graafinen käyttöliittymä ftp- ja telnet-salasanan vaihtoon"
@@ -2987,21 +2868,18 @@ msgstr "PCM-viive (ms)"
 msgid "General PCM delay (ms)"
 msgstr "PCM-viive (ms)"
 
-msgid "Generates and Shows TV Charts of all users having this plugin installed"
-msgstr ""
-
 #
 msgid "Genre"
 msgstr "Laji"
 
-msgid "Genuine Dreambox"
-msgstr "Aito Dreambox"
+msgid "Genuine Cuberevo"
+msgstr "Aito Cuberevo"
 
-msgid "Genuine Dreambox validation failed!"
-msgstr "Dreamboxin aitouden varmistus epäonnistui!"
+msgid "Genuine Cuberevo validation failed!"
+msgstr "Cuberevoin aitouden varmistus epäonnistui!"
 
-msgid "Genuine Dreambox verification"
-msgstr "Dreamboxin aitouden varmistaminen"
+msgid "Genuine Cuberevo verification"
+msgstr "Cuberevoin aitouden varmistaminen"
 
 #
 msgid "German"
@@ -3066,17 +2944,18 @@ msgid "Green boost"
 msgstr "Vihreän korostus"
 
 msgid ""
-"Growlee allows your Dreambox to forward notifications like 'Record started' "
-"to a PC running a growl, snarl or syslog compatible client or directly to an "
-"iPhone using prowl."
+"Growlee allows your Cuberevo to send short messages using the growl "
+"protocol\n"
+"like Recording started notifications to a PC running a growl client"
 msgstr ""
+"Growleen avulla Cuberevo voi lähettää lyhyitä Growl-protokollan mukaisia "
+"viestejä,\n"
+"esim. ilmoituksen tallennuksen aloittamisesta, PC:lle jossa pyörii Growl-"
+"asiakasohjelma"
 
 #
 msgid "Guard Interval"
 msgstr "Suojaväli"
-
-msgid "Guard interval"
-msgstr ""
 
 #
 msgid "Guard interval mode"
@@ -3084,12 +2963,6 @@ msgstr "Suojaväli-tila"
 
 msgid "Guess existing timer based on begin/end"
 msgstr "Arvaa olemassa oleva ajastus alku/loppuajan perusteella"
-
-msgid "HD Interlace Mode"
-msgstr "Lomitettu HD-tila"
-
-msgid "HD Progressive Mode"
-msgstr "Lomittamaton HD-tila"
 
 msgid "HD videos"
 msgstr "HD-videot"
@@ -3125,9 +2998,6 @@ msgstr "Piilotettu verkkonimi"
 #
 msgid "Hierarchy Information"
 msgstr "Hierarkia-tietoja"
-
-msgid "Hierarchy info"
-msgstr ""
 
 #
 msgid "Hierarchy mode"
@@ -3172,8 +3042,8 @@ msgstr "Sävy"
 msgid "Hungarian"
 msgstr "Unkari"
 
-msgid "IMAP4 e-mail viewer for the Dreambox"
-msgstr "IMAP4-sähköpostien lukija Dreamboxille."
+msgid "IMAP4 e-mail viewer for the Cuberevo"
+msgstr "IMAP4-sähköpostien lukija Cuberevoille."
 
 #
 msgid "IP Address"
@@ -3301,12 +3171,6 @@ msgstr "Tietoja"
 msgid "Init"
 msgstr "Palauta CA-moduulin alkuasetukset"
 
-msgid "Initial Fast Forward speed"
-msgstr ""
-
-msgid "Initial Rewind speed"
-msgstr ""
-
 msgid "Initial location in new timers"
 msgstr "Uusien ajastuksien oletustallennushakemisto"
 
@@ -3403,9 +3267,6 @@ msgstr "Sisäinen flash-muisti"
 msgid "Internal LAN adapter."
 msgstr "Sisäinen verkkokortti."
 
-msgid "Internal USB Slot"
-msgstr ""
-
 msgid "Internal firmware updater"
 msgstr "Edustaprosessorin ohjelmiston päivitysohjelma"
 
@@ -3418,15 +3279,15 @@ msgstr "Virheellinen sijainti"
 msgid "Invalid directory selected: %s"
 msgstr "Virheellinen hakemisto valittu: %s"
 
-# File: tmp/enigma2_plugins/genuinedreambox/src/plugin.py, line: 304
+# File: tmp/enigma2_plugins/genuinecuberevo/src/plugin.py, line: 304
 msgid "Invalid response from Security service pls restart again"
 msgstr "Virheellinen vastaus turvallisuuspalvelulta, käynnistä uudelleen"
 
-# File: tmp/enigma2_plugins/genuinedreambox/src/plugin.py, line: 132
+# File: tmp/enigma2_plugins/genuinecuberevo/src/plugin.py, line: 132
 msgid "Invalid response from server."
 msgstr "Virheellinen vastaus palvelimelta."
 
-# File: tmp/enigma2_plugins/genuinedreambox/src/plugin.py, line: 177
+# File: tmp/enigma2_plugins/genuinecuberevo/src/plugin.py, line: 177
 #, python-format
 msgid "Invalid response from server. Please report: %s"
 msgstr "Virheellinen vastaus palvelimelta. Raportoi: %s"
@@ -3470,10 +3331,10 @@ msgstr ""
 msgid "Italian"
 msgstr "Italia"
 
-msgid "Italian Weather forecast on Dreambox"
+msgid "Italian Weather forecast on Cuberevo"
 msgstr "Italian sääennuste"
 
-msgid "Italian Weather forecast on Dreambox from www.google.it."
+msgid "Italian Weather forecast on Cuberevo from www.google.it."
 msgstr "Italian sääennuste noudettuna www.google.it sivulta."
 
 msgid "Italy"
@@ -3597,11 +3458,6 @@ msgstr "Kielivalinta"
 msgid "Last config"
 msgstr "Aikais.arvot"
 
-msgid ""
-"Last day to match events. Events have to begin before this date to be "
-"matched."
-msgstr ""
-
 #
 msgid "Last speed"
 msgstr "Aikaisempi nopeus"
@@ -3665,7 +3521,7 @@ msgstr "Luettelo tallennusvälineistä"
 msgid "Listen and record internet radio"
 msgstr "Kuuntele ja tallenna Internet-radioita"
 
-msgid "Listen and record shoutcast internet radio on your Dreambox."
+msgid "Listen and record shoutcast internet radio on your Cuberevo."
 msgstr "Kuuntele ja tallenna SHOUTcast-radioita."
 
 #
@@ -4050,18 +3906,12 @@ msgstr "Tallenneluettelon valikko"
 msgid "Multi EPG"
 msgstr "Kanavaopas"
 
-msgid "Multi-EPG bouquet selection"
-msgstr ""
-
 msgid "Multimedia"
 msgstr "Multimedia"
 
 #
 msgid "Multiple service support"
 msgstr "Usean kanavan tuki"
-
-msgid "Multiplex"
-msgstr ""
 
 #
 msgid "Multisat"
@@ -4104,7 +3954,7 @@ msgstr "Ei saatavilla"
 
 msgid ""
 "NCID Client shows incoming voice calls promoted by any NCID server (e.g. "
-"Vodafone Easybox) on your Dreambox."
+"Vodafone Easybox) on your Cuberevo."
 msgstr ""
 
 #
@@ -4122,9 +3972,6 @@ msgstr ""
 
 msgid "NFS share"
 msgstr "NFS-jako"
-
-msgid "NIM"
-msgstr ""
 
 #
 msgid "NOW"
@@ -4155,104 +4002,101 @@ msgstr "Nimipalvelimen asetukset"
 msgid "Nameserver settings"
 msgstr "Nimipalvelimen asetukset"
 
-msgid "Namespace"
-msgstr ""
-
 msgid "Nemesis BlackBox Skin"
 msgstr "Nemesis BlackBox teema"
 
-msgid "Nemesis BlackBox Skin for the Dreambox"
-msgstr "Nemesis BlackBox teema Dreamboxille"
+msgid "Nemesis BlackBox Skin for the Cuberevo"
+msgstr "Nemesis BlackBox teema Cuberevoille"
 
 msgid "Nemesis Blueline Single Skin"
 msgstr "Nemesis Blueline Single teema"
 
-msgid "Nemesis Blueline Single Skin for the Dreambox"
-msgstr "Nemesis Blueline Single teema Dreamboxille"
+msgid "Nemesis Blueline Single Skin for the Cuberevo"
+msgstr "Nemesis Blueline Single teema Cuberevoille"
 
 msgid "Nemesis Blueline Skin"
 msgstr "Nemesis Blueline teema"
 
-msgid "Nemesis Blueline Skin for the Dreambox"
-msgstr "Nemesis Blueline teema Dreamboxille"
+msgid "Nemesis Blueline Skin for the Cuberevo"
+msgstr "Nemesis Blueline teema Cuberevoille"
 
 msgid "Nemesis Blueline.Extended Skin"
 msgstr "Nemesis Blueline.Extended teema"
 
-msgid "Nemesis Blueline.Extended Skin for the Dreambox"
-msgstr "Nemesis Blueline.Extended teema Dreamboxille"
+msgid "Nemesis Blueline.Extended Skin for the Cuberevo"
+msgstr "Nemesis Blueline.Extended teema Cuberevoille"
 
 msgid "Nemesis ChromeLine Cobolt Skin"
 msgstr "Nemesis ChromeLine Cobolt teema"
 
-msgid "Nemesis ChromeLine Cobolt Skin for the Dreambox"
-msgstr "Nemesis ChromeLine Cobolt teema Dreamboxille"
+msgid "Nemesis ChromeLine Cobolt Skin for the Cuberevo"
+msgstr "Nemesis ChromeLine Cobolt teema Cuberevoille"
 
 msgid "Nemesis ChromeLine Skin"
 msgstr "Nemesis ChromeLine teema"
 
-msgid "Nemesis ChromeLine Skin for the Dreambox"
-msgstr "Nemesis ChromeLine teema Dreamboxille"
+msgid "Nemesis ChromeLine Skin for the Cuberevo"
+msgstr "Nemesis ChromeLine teema Cuberevoille"
 
 msgid "Nemesis Flatline Blue Skin"
 msgstr "Nemesis Flatline Blue teema"
 
-msgid "Nemesis Flatline Blue Skin for the Dreambox"
-msgstr "Nemesis Flatline Blue teema Dreamboxille"
+msgid "Nemesis Flatline Blue Skin for the Cuberevo"
+msgstr "Nemesis Flatline Blue teema Cuberevoille"
 
 msgid "Nemesis Flatline Skin"
 msgstr "Nemesis Flatline teema"
 
-msgid "Nemesis Flatline Skin for the Dreambox"
-msgstr "Nemesis Flatline teema Dreamboxille"
+msgid "Nemesis Flatline Skin for the Cuberevo"
+msgstr "Nemesis Flatline teema Cuberevoille"
 
 msgid "Nemesis GlassLine Skin"
 msgstr "Nemesis GlassLine teema"
 
-msgid "Nemesis GlassLine Skin for the Dreambox"
-msgstr "Nemesis GlassLine teema Dreamboxille"
+msgid "Nemesis GlassLine Skin for the Cuberevo"
+msgstr "Nemesis GlassLine teema Cuberevoille"
 
 msgid "Nemesis Greenline Extended Skin"
 msgstr "Nemesis Greenline Extended teema"
 
-msgid "Nemesis Greenline Extended Skin for the Dreambox"
-msgstr "Nemesis Greenline Extended teema Dreamboxille"
+msgid "Nemesis Greenline Extended Skin for the Cuberevo"
+msgstr "Nemesis Greenline Extended teema Cuberevoille"
 
 msgid "Nemesis Greenline Single Skin"
 msgstr "Nemesis Greenline Single teema"
 
-msgid "Nemesis Greenline Single Skin for the Dreambox"
-msgstr "Nemesis Greenline Single teema Dreamboxille"
+msgid "Nemesis Greenline Single Skin for the Cuberevo"
+msgstr "Nemesis Greenline Single teema Cuberevoille"
 
 msgid "Nemesis Greenline Skin"
 msgstr "Nemesis Greenline teema"
 
-msgid "Nemesis Greenline Skin for the Dreambox"
-msgstr "Nemesis Greenline teema Dreamboxille"
+msgid "Nemesis Greenline Skin for the Cuberevo"
+msgstr "Nemesis Greenline teema Cuberevoille"
 
 msgid "Nemesis Greyline Extended Skin"
 msgstr "Nemesis Greyline Extended teema"
 
-msgid "Nemesis Greyline Extended Skin for the Dreambox"
-msgstr "Nemesis Greyline Extended teema Dreamboxille"
+msgid "Nemesis Greyline Extended Skin for the Cuberevo"
+msgstr "Nemesis Greyline Extended teema Cuberevoille"
 
 msgid "Nemesis Greyline Single Skin"
 msgstr "Nemesis Greyline Single teema"
 
-msgid "Nemesis Greyline Single Skin for the Dreambox"
-msgstr "Nemesis Greyline Single teema Dreamboxille"
+msgid "Nemesis Greyline Single Skin for the Cuberevo"
+msgstr "Nemesis Greyline Single teema Cuberevoille"
 
 msgid "Nemesis Greyline Skin"
 msgstr "Nemesis Greyline teema"
 
-msgid "Nemesis Greyline Skin for the Dreambox"
-msgstr "Nemesis Greyline teema Dreamboxille"
+msgid "Nemesis Greyline Skin for the Cuberevo"
+msgstr "Nemesis Greyline teema Cuberevoille"
 
 msgid "Nemesis ShadowLine Skin"
 msgstr "Nemesis ShadowLine teema"
 
-msgid "Nemesis ShadowLine Skin for the Dreambox"
-msgstr "Nemesis ShadowLine teema Dreamboxille"
+msgid "Nemesis ShadowLine Skin for the Cuberevo"
+msgstr "Nemesis ShadowLine teema Cuberevoille"
 
 #
 msgid "Netmask"
@@ -4427,12 +4271,12 @@ msgstr ""
 #
 msgid "No positioner capable frontend found."
 msgstr ""
-"Dreamboxissasi ei ole satelliittiviritintä,\n"
+"Cuberevoissasi ei ole satelliittiviritintä,\n"
 "joka hallitsisi kääntömoottorin ohjauksen."
 
 #
 msgid "No satellite frontend found!!"
-msgstr "Dreamboxissasi ei ole satelliittiviritintä."
+msgstr "Cuberevoissasi ei ole satelliittiviritintä."
 
 #
 msgid "No tags are set on these movies."
@@ -4529,8 +4373,8 @@ msgid "No, do nothing."
 msgstr "Ei, älä tee mitään."
 
 #
-msgid "No, just start my dreambox"
-msgstr "Ei, käynnistä vain Dreambox"
+msgid "No, just start my cuberevo"
+msgstr "Ei, käynnistä vain Cuberevo"
 
 msgid "No, never"
 msgstr "Ei koskaan"
@@ -4570,12 +4414,6 @@ msgstr "Pohjoinen"
 #
 msgid "Norwegian"
 msgstr "Norja"
-
-msgid "Not after"
-msgstr ""
-
-msgid "Not before"
-msgstr ""
 
 #
 #, python-format
@@ -4631,9 +4469,6 @@ msgstr "OK, poista toinen laajennus"
 #
 msgid "OK, remove some extensions"
 msgstr "OK, poista joitain laajennuksia"
-
-msgid "ONID"
-msgstr ""
 
 #
 msgid "OSD Settings"
@@ -4698,9 +4533,6 @@ msgstr "Jos haluat, lisää nimesi."
 msgid "Orbital Position"
 msgstr "Sijainti"
 
-msgid "Orbital position"
-msgstr ""
-
 msgid "Outer Bound (+/-)"
 msgstr "Ääriraja (+/-)"
 
@@ -4720,15 +4552,9 @@ msgstr "Korvaa asetustiedostot ohjelmistopäivityksen aikana?"
 msgid "PAL"
 msgstr "PAL"
 
-msgid "PCR PID"
-msgstr ""
-
 #
 msgid "PIDs"
 msgstr "PIDit"
-
-msgid "PMT PID"
-msgstr ""
 
 #
 msgid "Package list update"
@@ -4773,10 +4599,10 @@ msgid "Parental control type"
 msgstr "Lapsilukon tyyppi"
 
 msgid ""
-"Partnerbox allows editing a remote Dreambox's record timers and stream its "
+"Partnerbox allows editing a remote Cuberevo's record timers and stream its "
 "TV  program."
 msgstr ""
-"Partnerboxin avulla voit verkon kautta muokata toisen Dreamboxin ajastuksia "
+"Partnerboxin avulla voit verkon kautta muokata toisen Cuberevoin ajastuksia "
 "ja katsella sen kanavia."
 
 #
@@ -4794,7 +4620,7 @@ msgid "PermanentClock shows the clock permanently on the screen."
 msgstr "PermanentClock näyttää kellon pysyvästi kuvaruudulla."
 
 msgid "Persian"
-msgstr "Persia"
+msgstr ""
 
 msgid "Pets & Animals"
 msgstr "Lemmikit ja eläimet"
@@ -4856,8 +4682,8 @@ msgstr "Toista tallenteet..."
 msgid "Play video again"
 msgstr "Toista video uudestaan"
 
-msgid "Play videos from PC on your Dreambox"
-msgstr "Toista elokuvia PC:ltä Dreamboxin kautta"
+msgid "Play videos from PC on your Cuberevo"
+msgstr "Toista elokuvia PC:ltä Cuberevoin kautta"
 
 msgid "Playback of Youtube through a PC"
 msgstr ""
@@ -5154,7 +4980,7 @@ msgstr "Lisäosa: %(plugin)s , Versio: %(version)s"
 msgid "Plugins"
 msgstr "Plugin-lisäosat"
 
-msgid "PodCast streams podcasts to your Dreambox."
+msgid "PodCast streams podcasts to your Cuberevo."
 msgstr ""
 
 msgid "Poland"
@@ -5197,9 +5023,6 @@ msgstr "Portti D"
 #
 msgid "Portuguese"
 msgstr "Portugali"
-
-msgid "Position of finished Timers in Timerlist"
-msgstr ""
 
 #
 msgid "Positioner"
@@ -5510,9 +5333,6 @@ msgstr "Tallenteet"
 msgid "Recordings always have priority"
 msgstr "Tallennukset saavat keskeyttää suoran katselun"
 
-msgid "Redirect notifications to Growl, Snarl, Prowl or Syslog"
-msgstr ""
-
 msgid "Reenter new PIN"
 msgstr "Syötä uusi PIN uudelleen"
 
@@ -5719,14 +5539,11 @@ msgstr "Palautus käynnissä"
 msgid "Restore system settings"
 msgstr "Palauta asetukset"
 
-msgid "Restore your Dreambox with a USB stick"
-msgstr "Palauta Dreamboxin ohjelmisto USB-muistitikulta"
+msgid "Restore your Cuberevo with a USB stick"
+msgstr "Palauta Cuberevoin ohjelmisto USB-muistitikulta"
 
 msgid "Restrict \"after event\" to a certain timespan?"
 msgstr "Rajoita \"ohjelman jälkeen\" toiminto tiettyyn aikajaksoon."
-
-msgid "Restrict to events on certain dates"
-msgstr ""
 
 #
 msgid "Resume from last position"
@@ -5767,9 +5584,6 @@ msgstr "Kelausnopeudet taaksepäin"
 msgid "Right"
 msgstr "Oikea"
 
-msgid "Roll-off"
-msgstr ""
-
 msgid "Rolloff"
 msgstr "Rolloff"
 
@@ -5781,9 +5595,6 @@ msgstr "Moottorin kääntönopeus"
 msgid "Running"
 msgstr "Käytössä"
 
-msgid "Running in testmode"
-msgstr "Suoritetaan testitilassa"
-
 msgid "Russia"
 msgstr "Venäjä"
 
@@ -5794,21 +5605,6 @@ msgstr "Venäjä"
 #
 msgid "S-Video"
 msgstr "S-video (Y/C)"
-
-msgid "SD 25/50HZ Interlace Mode"
-msgstr "SD 25/50Hz lomitettu tila"
-
-msgid "SD 25/50HZ Progressive Mode"
-msgstr "SD 25/50Hz lomittamaton tila"
-
-msgid "SD 30/60HZ Interlace Mode"
-msgstr "SD 30/60Hz lomitettu tila"
-
-msgid "SD 30/60HZ Progressive Mode"
-msgstr "SD 30/60Hz lomittamaton tila"
-
-msgid "SID"
-msgstr ""
 
 msgid "SINGLE LAYER DVD"
 msgstr "SINGLE LAYER DVD"
@@ -5823,19 +5619,6 @@ msgstr "SNR:"
 
 msgid "SSID:"
 msgstr "SSID:"
-
-msgid ""
-"SVDRP is a protocol developed for the VDR software to control a set-top box "
-"remotely.\n"
-"This plugin only supports a subset of SVDRP and starts automatically using "
-"default settings.\n"
-"\n"
-"You probably don't need this plugin and should use the regular Web Interface "
-"for Enigma2 instead."
-msgstr ""
-
-msgid "SVDRP server for Enigma2"
-msgstr ""
 
 #
 msgid "Sat"
@@ -6289,9 +6072,6 @@ msgstr ""
 "(Kanavan Service ID:tä ei löydy\n"
 "Program Association Tablesta.)"
 
-msgid "Service reference"
-msgstr ""
-
 #
 msgid "Service scan"
 msgstr "Kanavahaku"
@@ -6346,8 +6126,8 @@ msgstr "Aseta maksimikesto"
 msgid "Set this NO to disable this AutoTimer."
 msgstr "Poista tämä automaattiajastus käytöstä laittamalla arvoksi Ei."
 
-msgid "Sets your Dreambox into Deep-Standby"
-msgstr "Sammuttaa Dreamboxin virransäästötilaan"
+msgid "Sets your Cuberevo into Deep-Standby"
+msgstr "Sammuttaa Cuberevoin virransäästötilaan"
 
 #
 msgid "Setting key canceled"
@@ -6418,9 +6198,6 @@ msgstr "Näytä ohjelman pituus kanavien valintalistassa"
 msgid "Show in extension menu"
 msgstr "Näytä laajennusvalikossa"
 
-msgid "Show info screen"
-msgstr "Näytä tietoruutu"
-
 #
 msgid "Show infobar on channel change"
 msgstr "Näytä tietopalkki kanavaa vaihdettaessa"
@@ -6432,9 +6209,6 @@ msgstr "Näytä tietopalkki ohjelman vaihtuessa"
 #
 msgid "Show infobar on skip forward/backward"
 msgstr "Näytä tietopalkki kelauksien/hyppyjen aikana"
-
-msgid "Show notification on conflicts"
-msgstr ""
 
 #
 msgid "Show positioner movement"
@@ -6481,8 +6255,8 @@ msgid "Shutdown"
 msgstr "Sammuta"
 
 #
-msgid "Shutdown Dreambox after"
-msgstr "Sammuta Dreambox jälkeenpäin"
+msgid "Shutdown Cuberevo after"
+msgstr "Sammuta Cuberevo jälkeenpäin"
 
 #
 msgid "Signal Strength:"
@@ -6511,8 +6285,8 @@ msgstr ""
 msgid "Simple titleset (compatibility for legacy players)"
 msgstr "Suppea (yhteensopiva vanhojen soittimien kanssa)"
 
-msgid "SimpleRSS allows reading RSS newsfeeds on your Dreambox."
-msgstr "SimpleRSS:llä voit lukea RSS-feedejä Dreamboxilla."
+msgid "SimpleRSS allows reading RSS newsfeeds on your Cuberevo."
+msgstr "SimpleRSS:llä voit lukea RSS-feedejä Cuberevoilla."
 
 #
 msgid "Single"
@@ -6595,8 +6369,8 @@ msgstr "Ohjelmiston palautus"
 msgid "Software update"
 msgstr "Ohjelmiston päivitys"
 
-msgid "SoftwareManager manages your Dreambox software"
-msgstr "Ohjelmiston hallinta hallitse Dreamboxin ohjelmistoja"
+msgid "SoftwareManager manages your Cuberevo software"
+msgstr "Ohjelmiston hallinta hallitse Cuberevoin ohjelmistoja"
 
 msgid "Softwaremanager information"
 msgstr "Ohjelmiston hallinnan tiedot"
@@ -6699,9 +6473,6 @@ msgstr "Valmiustila tuuletin %d jännite"
 
 msgid "Start Webinterface"
 msgstr "Käynnistä Web-liittymä"
-
-msgid "Start easy your multimedia plugins with the PVR-button."
-msgstr ""
 
 #
 msgid "Start from the beginning"
@@ -6822,9 +6593,6 @@ msgstr "su"
 msgid "Sunday"
 msgstr "Sunnuntai"
 
-msgid "Support \"Fast Scan\"?"
-msgstr ""
-
 #
 msgid "Swap Services"
 msgstr "Vaihda PiP- ja pääkuva keskenään"
@@ -6852,9 +6620,6 @@ msgstr "Vaihdettavat viritintyypit:"
 msgid "Symbol Rate"
 msgstr "Symbolinopeus"
 
-msgid "Symbol rate"
-msgstr ""
-
 #
 msgid "Symbolrate"
 msgstr "Symbolinopeus"
@@ -6874,18 +6639,9 @@ msgstr ""
 msgid "TS file is too large for ISO9660 level 1!"
 msgstr "TS-tiedosto on liian suuri ISO9660 1-tasolle!"
 
-msgid "TSID"
-msgstr ""
-
-msgid "TV Charts of all users"
-msgstr ""
-
 #
 msgid "TV System"
 msgstr "TV-järjestelmä"
-
-msgid "TXT PID"
-msgstr ""
 
 #
 msgid "Table of content for collection"
@@ -6916,9 +6672,6 @@ msgstr "Taiwan"
 msgid "Temperature and Fan control"
 msgstr "Lämpötila ja tuuletin"
 
-msgid "Temperature-dependent fan control."
-msgstr ""
-
 #
 msgid "Terrestrial"
 msgstr "Antennivastaanotto (DVB-T)"
@@ -6935,7 +6688,7 @@ msgstr "Testaa DiSEqC-asetukset"
 msgid "Test Type"
 msgstr "Testin tyyppi"
 
-# File: tmp/enigma2_plugins/genuinedreambox/src/plugin.py, line: 80
+# File: tmp/enigma2_plugins/genuinecuberevo/src/plugin.py, line: 80
 msgid "Test again"
 msgstr "Testaa uudestaan"
 
@@ -6944,7 +6697,7 @@ msgid "Test mode"
 msgstr "Virityskuvan lähetys"
 
 #
-msgid "Test the network configuration of your Dreambox.\n"
+msgid "Test the network configuration of your Cuberevo.\n"
 msgstr ""
 "Testaa lähiverkon toiminta.\n"
 "\n"
@@ -6971,7 +6724,7 @@ msgstr ""
 #  että teksti rivittyy tv-ruudulla oikein.
 msgid ""
 "Thank you for using the wizard. Your box is now ready to use.\n"
-"Please press OK to start using your Dreambox."
+"Please press OK to start using your Cuberevo."
 msgstr ""
 "Laitteesi on nyt käyttökunnossa.\n"
 "Ohjattu asennus päättyy tähän.\n"
@@ -6991,7 +6744,7 @@ msgstr ""
 "Jatka painamalla OK."
 
 msgid ""
-"The CleanupWizard informs you when the internal free memory of your dreambox "
+"The CleanupWizard informs you when the internal free memory of your cuberevo "
 "has dropped below a definable threshold.You can use this wizard to remove "
 "some plugins."
 msgstr ""
@@ -6999,10 +6752,10 @@ msgstr ""
 #
 msgid ""
 "The DVD standard doesn't support H.264 (HDTV) video streams. Do you want to "
-"create a Dreambox format data DVD (which will not play in stand-alone DVD "
+"create a Cuberevo format data DVD (which will not play in stand-alone DVD "
 "players) instead?"
 msgstr ""
-"DVD-standardi ei tue H.264 (HDTV) videota. Haluatko luoda Dreamboxin omassa "
+"DVD-standardi ei tue H.264 (HDTV) videota. Haluatko luoda Cuberevoin omassa "
 "formaatissa olevan data-DVD:n? Levy ei toistu normaaleissa DVD-soittimissa."
 
 msgid ""
@@ -7026,10 +6779,10 @@ msgstr ""
 "Asenna se."
 
 msgid "The PIN code has been changed successfully."
-msgstr "PIN-koodin vaihto onnistui."
+msgstr ""
 
 msgid "The PIN codes you entered are different."
-msgstr "Syöttämäsi PIN-koodit olivat erilaiset."
+msgstr ""
 
 msgid ""
 "The PicturePlayer displays your photos on the TV.\n"
@@ -7043,11 +6796,11 @@ msgstr ""
 
 msgid ""
 "The SkinSelector shows a menu with selectable skins.\n"
-"It's now easy to change the look and feel of your Dreambox."
+"It's now easy to change the look and feel of your Cuberevo."
 msgstr ""
 
 msgid ""
-"The SoftwareManager manages your Dreambox software.\n"
+"The SoftwareManager manages your Cuberevo software.\n"
 "It's easy to update your receiver's software, install or remove plugins or "
 "even backup and restore your system settings."
 msgstr ""
@@ -7156,9 +6909,9 @@ msgstr "Oletuskanavalistojen asennus on suoritettu."
 #
 msgid ""
 "The installation of the default settings is finished. You can now continue "
-"configuring your Dreambox by pressing the OK button on the remote control."
+"configuring your Cuberevo by pressing the OK button on the remote control."
 msgstr ""
-"Oletusarvojen asennus on suoritettu. Voit jatkaa Dreamboxin asetusten "
+"Oletusarvojen asennus on suoritettu. Voit jatkaa Cuberevoin asetusten "
 "muokkausta painamalla OK."
 
 msgid "The match attribute is mandatory."
@@ -7280,12 +7033,12 @@ msgstr "Virhe haettaessa feedien nimiä. Yritä uudestaan."
 msgid "There was an error. The package:"
 msgstr "Tapahtui virhe. Paketti:"
 
-# File: tmp/enigma2_plugins/genuinedreambox/src/plugin.py, line: 130
+# File: tmp/enigma2_plugins/genuinecuberevo/src/plugin.py, line: 130
 msgid ""
-"There's a certificate update available for your dreambox. Would you like to "
+"There's a certificate update available for your cuberevo. Would you like to "
 "apply this update now?"
 msgstr ""
-"Dreamboxiisi on saatavilla päivitetty sertifikaatti. Asennetaanko päivitys "
+"Cuberevoiisi on saatavilla päivitetty sertifikaatti. Asennetaanko päivitys "
 "nyt?"
 
 #
@@ -7298,8 +7051,8 @@ msgstr ""
 
 #
 #, python-format
-msgid "This Dreambox can't decode %s streams!"
-msgstr "Tämä Dreambox ei pysty purkamaan %s lähteitä!"
+msgid "This Cuberevo can't decode %s streams!"
+msgstr "Tämä Cuberevo ei pysty purkamaan %s lähteitä!"
 
 #
 msgid "This Month"
@@ -7340,14 +7093,14 @@ msgstr ""
 
 msgid ""
 "This plugin creates a USB stick which can be used to update the firmware of "
-"your Dreambox without the need for a network or WLAN connection.\n"
+"your Cuberevo without the need for a network or WLAN connection.\n"
 "First, a USB stick needs to be prepared so that it becomes bootable.\n"
 "In the next step, an NFI image file can be downloaded from the update server "
 "and saved on the USB stick.\n"
 "If you already have a prepared bootable USB stick, please insert it now. "
 "Otherwise plug in a USB stick with a minimum size of 64 MB!"
 msgstr ""
-"Tämä lisäosa luo USB-muistitikun jolla Dreamboxin ohjelmisto voidaan "
+"Tämä lisäosa luo USB-muistitikun jolla Cuberevoin ohjelmisto voidaan "
 "päivittää ilman verkkoyhteyttä. \n"
 "Aluksi USB-muistitikku pitää alustaa jotta siitä tulee automaattisesti "
 "käynnistyvä.\n"
@@ -7570,14 +7323,14 @@ msgid "To be used as simple downloading application by other Plugins."
 msgstr ""
 
 msgid ""
-"To update your Dreambox firmware, please follow these steps:\n"
+"To update your Cuberevo firmware, please follow these steps:\n"
 "1) Turn off your box with the rear power switch and make sure the bootable "
 "USB stick is plugged in.\n"
 "2) Turn mains back on and hold the DOWN button on the front panel pressed "
 "for 10 seconds.\n"
 "3) Wait for bootup and follow instructions of the wizard."
 msgstr ""
-"Päivitä Dreamboxin ohjelmisto näiden ohjeiden mukaisesti:\n"
+"Päivitä Cuberevoin ohjelmisto näiden ohjeiden mukaisesti:\n"
 "1) Kytke virta pois päältä takapaneelin kytkimestä ja liitä automaattisesti "
 "käynnistyvä USB-muistitikku.\n"
 "2) Kytke virta takaisin päälle ja pidä etupaneelin nuoli alas -näppäintä 10 "
@@ -7819,18 +7572,18 @@ msgstr "Päivitä"
 msgid "Update done..."
 msgstr "Päivitys tehty..."
 
-# File: tmp/enigma2_plugins/genuinedreambox/src/plugin.py, line: 170
+# File: tmp/enigma2_plugins/genuinecuberevo/src/plugin.py, line: 170
 msgid ""
-"Update done... The genuine dreambox test will now be rerun and should not "
+"Update done... The genuine cuberevo test will now be rerun and should not "
 "ask you to update again."
 msgstr ""
-"Päivitys valmis... Dreamboxin aitoustesti käynnistyy uudelleen eikä sen "
+"Päivitys valmis... Cuberevoin aitoustesti käynnistyy uudelleen eikä sen "
 "pitäisi kysyä päivitystä enää."
 
 msgid "Updatefeed not available."
 msgstr "Päivityslähde ei ole saatavilla."
 
-# File: tmp/enigma2_plugins/genuinedreambox/src/plugin.py, line: 150
+# File: tmp/enigma2_plugins/genuinecuberevo/src/plugin.py, line: 150
 msgid ""
 "Updating failed. Nothing is broken, just the update couldn't be applied."
 msgstr ""
@@ -7859,8 +7612,8 @@ msgid "Upgrading"
 msgstr "Päivitetään"
 
 #
-msgid "Upgrading Dreambox... Please wait"
-msgstr "Päivitetään Dreamboxia... Odota"
+msgid "Upgrading Cuberevo... Please wait"
+msgstr "Päivitetään Cuberevoia... Odota"
 
 msgid "Upper bound of timespan."
 msgstr "Aikajakson yläraja."
@@ -7895,8 +7648,12 @@ msgstr "Käytä muokattua tallennushakemistoa"
 msgid "Use a gateway"
 msgstr "Käytä yhdyskäytävää"
 
-msgid "Use and control multiple Dreamboxes with different RCs."
+msgid "Use and control multiple Cuberevoes with different RCs."
 msgstr ""
+
+#
+msgid "Use non-smooth winding at speeds above"
+msgstr "Hyppivä kelaus kun nopeus ylittää"
 
 #
 msgid "Use power measurement"
@@ -7994,21 +7751,12 @@ msgstr "VMGM (intro trailer)"
 msgid "Vali-XD skin"
 msgstr ""
 
-msgid "Vali.HD.atlantis skin"
-msgstr ""
-
 msgid "Vali.HD.nano skin"
 msgstr ""
 
-msgid "Vali.HD.warp skin"
-msgstr ""
-
 msgid ""
-"Verify your Dreambox authenticity by running the genuine dreambox plugin!"
-msgstr "Tarkista Dreamboxin aitous suorittamalla Aito Dreambox -lisäosa!"
-
-msgid "Verifying your internet connection..."
-msgstr ""
+"Verify your Cuberevo authenticity by running the genuine cuberevo plugin!"
+msgstr "Tarkista Cuberevoin aitous suorittamalla Aito Cuberevo -lisäosa!"
 
 #
 msgid "Vertical"
@@ -8024,9 +7772,6 @@ msgstr "TV-kuvan hienosäätöavustaja"
 #
 msgid "Video Output"
 msgstr "Video-ulostulo"
-
-msgid "Video PID"
-msgstr ""
 
 #
 msgid "Video Setup"
@@ -8095,8 +7840,8 @@ msgstr "Katselukerrat"
 msgid "View Google maps"
 msgstr "Katsele Googlen karttoja"
 
-msgid "View Google maps with your Dreambox."
-msgstr "Katsele Googlen karttoja Dreamboxin kautta."
+msgid "View Google maps with your Cuberevo."
+msgstr "Katsele Googlen karttoja Cuberevoin kautta."
 
 #
 msgid "View Movies..."
@@ -8180,8 +7925,8 @@ msgstr "Näytä vastausvideot"
 msgid "View teletext..."
 msgstr "Näytä teksti-tv..."
 
-msgid "View, edit or delete mountpoints on your Dreambox."
-msgstr "Näytä, muokkaa tai poista Dreamboxin liitoksia."
+msgid "View, edit or delete mountpoints on your Cuberevo."
+msgstr "Näytä, muokkaa tai poista Cuberevoin liitoksia."
 
 msgid "View, edit or delete usernames and passwords for your network."
 msgstr "Näytä, muokkaa tai poista verkon käyttäjänimiä ja salasanoja."
@@ -8255,13 +8000,10 @@ msgstr "Varoita jos tyhjä tila putoaa alle (kB):"
 msgid "Watch streams from ZDF Mediathek"
 msgstr ""
 
-msgid "WeatherPlugin shows weatherforecasts on your Dreambox."
+msgid "WeatherPlugin shows weatherforecasts on your Cuberevo."
 msgstr ""
 
-msgid "Weatherforecast on your Dreambox"
-msgstr ""
-
-msgid "Web-Bouquet-Editor for PC"
+msgid "Weatherforecast on your Cuberevo"
 msgstr ""
 
 msgid "Webinterface"
@@ -8314,7 +8056,7 @@ msgstr ""
 #
 msgid ""
 "Welcome to the Image upgrade wizard. The wizard will assist you in upgrading "
-"the firmware of your Dreambox by providing a backup facility for your "
+"the firmware of your Cuberevo by providing a backup facility for your "
 "current settings and a short explanation of how to upgrade your firmware."
 msgstr ""
 "Tervetuloa ohjelmiston päivitysavustajaan. Avustaja opastaa ohjelmiston "
@@ -8372,29 +8114,29 @@ msgid ""
 "Welcome to the cleanup wizard.\n"
 "\n"
 "We have detected that your available internal memory has dropped below 2MB.\n"
-"To ensure stable operation of your Dreambox, the internal memory should be "
+"To ensure stable operation of your Cuberevo, the internal memory should be "
 "cleaned up.\n"
 "You can use this wizard to remove some extensions.\n"
 msgstr ""
 "Tervetuloa puhdistusavustajaan.\n"
 "\n"
 "Tunnistimme, että vapaa sisäinen muisti putosi alle 2MB:n.\n"
-"Jotta Dreamboxin toiminta olisi vakaata, pitää sisäistä muistia vapauttaa.\n"
+"Jotta Cuberevoin toiminta olisi vakaata, pitää sisäistä muistia vapauttaa.\n"
 "Voit poistaa lisäosia tällä avustajalla.\n"
 
 #
 msgid ""
 "Welcome.\n"
 "\n"
-"If you want to connect your Dreambox to the Internet, this wizard will guide "
-"you through the basic network setup of your Dreambox.\n"
+"If you want to connect your Cuberevo to the Internet, this wizard will guide "
+"you through the basic network setup of your Cuberevo.\n"
 "\n"
 "Press OK to start configuring your network"
 msgstr ""
 "Tervetuloa.\n"
 "\n"
-"Jos haluat yhdistää Dreamboxin verkkoon, auttaa tämä avustaja määrittämään "
-"Dreamboxin lähiverhon perusasetukset.\n"
+"Jos haluat yhdistää Cuberevoin verkkoon, auttaa tämä avustaja määrittämään "
+"Cuberevoin lähiverhon perusasetukset.\n"
 "\n"
 "Siirry seuraavaan vaiheeseen painamalla OK-nappia."
 
@@ -8418,13 +8160,13 @@ msgstr ""
 msgid ""
 "Welcome.\n"
 "\n"
-"This start wizard will guide you through the basic setup of your Dreambox.\n"
+"This start wizard will guide you through the basic setup of your Cuberevo.\n"
 "Press the OK button on your remote control to move to the next step."
 msgstr ""
 "Tervetuloa.\n"
 "\n"
 "Tämä asennustoiminto neuvoo\n"
-"kuinka laitat Dreamboxin\n"
+"kuinka laitat Cuberevoin\n"
 "perusasetukset kuntoon.\n"
 "\n"
 "Aloita asennus painamalla\n"
@@ -8447,11 +8189,6 @@ msgstr "Kanavahaun lisäasetukset:"
 #
 msgid "What to do with submitted crashlogs?"
 msgstr "Mitä lähetetyille lokeille tehdään?"
-
-msgid ""
-"When supporting \"Fast Scan\" the service type is ignored. You don't need to "
-"enable this unless your Image supports \"Fast Scan\" and you are using it."
-msgstr ""
 
 msgid ""
 "When this option is enabled the AutoTimer won't match events where another "
@@ -8501,17 +8238,17 @@ msgid ""
 msgstr ""
 
 msgid ""
-"With DVDBurn you can make compilations of records from your Dreambox hard "
+"With DVDBurn you can make compilations of records from your Cuberevo hard "
 "drive.\n"
 "Optionally you can add customizable menus. You can record the compilation to "
 "a standard-compliant DVD that can be played on conventinal DVD players.\n"
-"HDTV recordings can only be burned in proprietary dreambox format."
+"HDTV recordings can only be burned in proprietary cuberevo format."
 msgstr ""
 
 msgid "With EPGSearch you can search through the EPG and create timers."
 msgstr ""
 
-msgid "With Genuine Dreambox you can verify the authenticity of your Dreambox."
+msgid "With Genuine Cuberevo you can verify the authenticity of your Cuberevo."
 msgstr ""
 
 msgid ""
@@ -8536,13 +8273,13 @@ msgid ""
 msgstr ""
 
 msgid ""
-"With YouTubePlayer you can watch YouTube-Videos on the Dreambox.\n"
+"With YouTubePlayer you can watch YouTube-Videos on the Cuberevo.\n"
 "This plugin requires a PC with the VLC program running."
 msgstr ""
 
 msgid ""
 "With the CommonInterfaceAssignment plugin it is possible to use differentCI "
-"modules in your Dreambox and assign dedicated providers/services or caids to "
+"modules in your Cuberevo and assign dedicated providers/services or caids to "
 "each of them.\n"
 "This allows watching a scrambled service while recording another one."
 msgstr ""
@@ -8564,8 +8301,8 @@ msgstr ""
 
 msgid ""
 "With the NFIFlash plugin it is possible to prepare a USB stick with an "
-"Dreambox image.\n"
-"It is then possible to flash your Dreambox with the image on that stick."
+"Cuberevo image.\n"
+"It is then possible to flash your Cuberevo with the image on that stick."
 msgstr ""
 
 msgid ""
@@ -8696,8 +8433,8 @@ msgstr "Voit valita, mitä haluat asentaa..."
 msgid "You can install this plugin."
 msgstr "Voit asentaa tämän lisäosan."
 
-msgid "You can only burn Dreambox recordings!"
-msgstr "Voit polttaa vain Dreamboxin tallenteita!"
+msgid "You can only burn Cuberevo recordings!"
+msgstr "Voit polttaa vain Cuberevoin tallenteita!"
 
 #
 msgid "You can remove this plugin."
@@ -8710,12 +8447,6 @@ msgid ""
 msgstr ""
 "Tässä voit muuttaa automaattiajastuksen ominaisuuksia.\\'Nimi' on käytössä "
 "vain yleisnäkymässä, 'Hae ohjelmanimi' on se mitä haetaan EPG:stä."
-
-msgid ""
-"You can use the EasyInfo for manage your EPG plugins from info button. You "
-"have also a new now-next event viewer. Easy-PG, the own graphical EPG bowser "
-"is also included."
-msgstr ""
 
 #
 msgid "You cannot delete this!"
@@ -8787,9 +8518,9 @@ msgstr "Sinun täytyy odottaa %s!"
 
 #
 msgid ""
-"You need a PC connected to your dreambox. If you need further instructions, "
+"You need a PC connected to your cuberevo. If you need further instructions, "
 "please visit the website http://www.dm7025.de.\n"
-"Your dreambox will now be halted. After you have performed the update "
+"Your cuberevo will now be halted. After you have performed the update "
 "instructions from the website, your new firmware will ask you to restore "
 "your settings."
 msgstr ""
@@ -8803,9 +8534,6 @@ msgid ""
 "\n"
 "Do you want to set the pin now?"
 msgstr ""
-"Sinun pitää asettaa PIN-koodi ja piilottaa se lapsilta.\n"
-"\n"
-"Haluatko tehdä sen nyt?"
 
 msgid ""
 "You successfully configured a new AutoTimer. Do you want to add it to the "
@@ -8825,33 +8553,33 @@ msgstr ""
 "Vahvista, että tämä on tahallista. Muussa tapauksessa välilyönti poistetaan."
 
 msgid ""
-"Your Dreambox is now ready to use.\n"
+"Your Cuberevo is now ready to use.\n"
 "\n"
 "Your internet connection is working now.\n"
 "\n"
 msgstr ""
-"Dreambox on nyt valmis käyttöön.\n"
+"Cuberevo on nyt valmis käyttöön.\n"
 "\n"
 "Verkkoyhteys toimii.\n"
 "\n"
 
 #
 msgid ""
-"Your Dreambox is now ready to use.\n"
+"Your Cuberevo is now ready to use.\n"
 "\n"
 "Your internet connection is working now.\n"
 "\n"
 "Please press OK to continue."
 msgstr ""
-"Dreambox on nyt valmis käyttöön.\n"
+"Cuberevo on nyt valmis käyttöön.\n"
 "\n"
 "Lähiverkkoyhteys toimii.\n"
 "\n"
 "Jatka painamalla OK-näppäintä."
 
 #
-msgid "Your Dreambox will restart after pressing OK on your remote control."
-msgstr "Dreambox käynnistyy uudelleen kun painat OK."
+msgid "Your Cuberevo will restart after pressing OK on your remote control."
+msgstr "Cuberevo käynnistyy uudelleen kun painat OK."
 
 #
 msgid ""
@@ -8878,12 +8606,12 @@ msgid "Your current collection will get lost!"
 msgstr "Nykyinen kokoelma häviää!"
 
 #
-msgid "Your dreambox is shutting down. Please stand by..."
+msgid "Your cuberevo is shutting down. Please stand by..."
 msgstr "Laite sammutetaan. Odota..."
 
 #
 msgid ""
-"Your dreambox isn't connected to the internet properly. Please check it and "
+"Your cuberevo isn't connected to the internet properly. Please check it and "
 "try again."
 msgstr ""
 "Yhteyttä Internetiin ei kyetty muodostamaan. Tarkista verkkoasetukset ja "
@@ -8915,9 +8643,6 @@ msgstr "Nimi (ei pakollinen):"
 #
 msgid "Your network configuration has been activated."
 msgstr "Verkkoasetukset on aktivoitu."
-
-msgid "Your network is not working. Please try again."
-msgstr ""
 
 msgid "Your network mount has been activated."
 msgstr "Verkkojako on aktivoitu."
@@ -9139,12 +8864,6 @@ msgstr "määritetyt CAId:t:"
 msgid "assigned Services/Provider:"
 msgstr "Määritetyt kanavat/palveluntarjoajat:"
 
-msgid "at beginning"
-msgstr ""
-
-msgid "at end"
-msgstr ""
-
 #
 #, python-format
 msgid "audio track (%s) format"
@@ -9162,9 +8881,6 @@ msgstr "ääniraidat"
 #
 msgid "auto"
 msgstr "autom."
-
-msgid "autotimers need a match attribute"
-msgstr ""
 
 #
 msgid "available"
@@ -9199,10 +8915,6 @@ msgstr "kielletyt"
 #
 msgid "blue"
 msgstr "sininen"
-
-#
-msgid "bob"
-msgstr "bob"
 
 #
 #, python-format
@@ -9243,9 +8955,6 @@ msgstr "tyhjennä soittolista"
 msgid "complex"
 msgstr "monipuolinen"
 
-msgid "config changed."
-msgstr ""
-
 #
 msgid "config menu"
 msgstr "Asetusvalikko"
@@ -9262,8 +8971,8 @@ msgstr "kytketty"
 msgid "continue"
 msgstr "jatka"
 
-msgid "control multiple Dreamboxes with different RCs"
-msgstr "Käytä Dreamboxeja eri kaukosäätimillä"
+msgid "control multiple Cuberevoes with different RCs"
+msgstr "Käytä Cuberevoeja eri kaukosäätimillä"
 
 #
 msgid "copy to bouquets"
@@ -9277,12 +8986,6 @@ msgstr "ei voitu poistaa"
 msgid "create directory"
 msgstr "luo hakemisto"
 
-msgid "creates virtual series folders from episodes"
-msgstr ""
-
-msgid "creates virtual series folders from sets of recorded episodes"
-msgstr ""
-
 #, python-format
 msgid "currently installed image: %s"
 msgstr "nykyinen ohjelmisto: %s"
@@ -9294,10 +8997,6 @@ msgstr "joka päivä"
 #
 msgid "day"
 msgstr "päivä"
-
-#
-msgid "default"
-msgstr "oletus"
 
 #
 msgid "delete"
@@ -9327,7 +9026,7 @@ msgid "delete..."
 msgstr "Poista tallenne"
 
 msgid "description"
-msgstr "kuvaus"
+msgstr ""
 
 #
 msgid "disable"
@@ -9640,9 +9339,6 @@ msgstr "minuutti"
 msgid "minutes"
 msgstr "minuuttia"
 
-msgid "missing parameter \"id\""
-msgstr ""
-
 #
 msgid "month"
 msgstr "kuukausi"
@@ -9732,7 +9428,7 @@ msgid "not locked"
 msgstr "ei lukittu"
 
 msgid "not supported"
-msgstr "ei tuettu"
+msgstr ""
 
 #
 msgid "not used"
@@ -9840,6 +9536,9 @@ msgstr "punainen"
 
 msgid "redesigned Kerni-HD1 skin"
 msgstr ""
+
+msgid "redirect notifications to Growl"
+msgstr "Näytä ilmoitusikkunat Growl:in kautta"
 
 #
 msgid "remove a nameserver entry"
@@ -9974,7 +9673,7 @@ msgid "select the movie path"
 msgstr "valitse tallennehakemisto"
 
 msgid "service PIN"
-msgstr "kanavan PIN"
+msgstr ""
 
 msgid "set enigma2 to standby-mode after startup"
 msgstr ""
@@ -9984,7 +9683,7 @@ msgid "sets the Audio Delay (LipSync)"
 msgstr "aseta ääniviive (lipsync)"
 
 msgid "setup PIN"
-msgstr "aseta PIN"
+msgstr ""
 
 #
 msgid "show DVD main menu"
@@ -10175,10 +9874,6 @@ msgid "toggle time, chapter, audio, subtitle info"
 msgstr "valitse aika, kappale, ääni, tekstitys"
 
 msgid "tuner is not supported"
-msgstr "viritin ei ole tuettu"
-
-#, python-format
-msgid "unable to find timer with id %i"
 msgstr ""
 
 #
@@ -10205,10 +9900,10 @@ msgstr "valmiustilaan/uudelleenkäynnistykseen asti"
 msgid "use as HDD replacement"
 msgstr "käytä kiintolevyn tilalla"
 
-msgid "use your Dreambox as Web proxy"
-msgstr "Käytä Dreamboxia WWW-proxyna"
+msgid "use your Cuberevo as Web proxy"
+msgstr "Käytä Cuberevoia WWW-proxyna"
 
-msgid "use your Dreambox as Web proxy."
+msgid "use your Cuberevo as Web proxy."
 msgstr ""
 
 #
@@ -10269,10 +9964,10 @@ msgstr "Kyllä (pidä feedit)"
 
 #
 msgid ""
-"your dreambox might be unusable now. Please consult the manual for further "
-"assistance before rebooting your dreambox."
+"your cuberevo might be unusable now. Please consult the manual for further "
+"assistance before rebooting your cuberevo."
 msgstr ""
-"Asennus ei onnistunut. Dreambox saattaa olla käyttökelvottomassa tilassa. "
+"Asennus ei onnistunut. Cuberevo saattaa olla käyttökelvottomassa tilassa. "
 "Joudut ehkä asentamaan ohjelmiston uudelleen tietokoneen avulla. Katso "
 "käyttöoppaasta lisäohjeita ennen kuin käynnistät laitteen uudelleen."
 
@@ -10342,6 +10037,26 @@ msgstr "vaihdettu"
 
 #~ msgid "Ascanding"
 #~ msgstr "Nouseva"
+
+#
+#~ msgid ""
+#~ "Autoresolution Plugin Testmode:\n"
+#~ "Is %s ok?"
+#~ msgstr ""
+#~ "Autoresoluutio lisäosan testitila:\n"
+#~ "Toimiiko %s ?"
+
+#~ msgid "Autoresolution Switch"
+#~ msgstr "Autoresoluution kytkentä"
+
+#~ msgid "Autoresolution is not working in Scart/DVI-PC Mode"
+#~ msgstr "Autoresoluutio ei toimi SCART/DVI-PC-tiloissa"
+
+#~ msgid "Autoresolution settings"
+#~ msgstr "Autoresoluution asetukset"
+
+#~ msgid "Autoresolution videomode setup"
+#~ msgstr "Autoresoluution kuvatilan asetukset"
 
 #
 #~ msgid "Backup"
@@ -10439,6 +10154,15 @@ msgstr "vaihdettu"
 #~ msgid "Default settings"
 #~ msgstr "Lataa oletusarvot"
 
+#~ msgid "Deinterlacer mode for interlaced content"
+#~ msgstr "Lomitustila lomitellulle materiaalille"
+
+#~ msgid "Deinterlacer mode for progressive content"
+#~ msgstr "Lomitustila lomittamattomalle materiaalille"
+
+#~ msgid "Delay x seconds after service started"
+#~ msgstr "Viive x sekuntia palvelun käynnistämisen jälkeen"
+
 #~ msgid "Delete selected mount"
 #~ msgstr "Poista valittu jako"
 
@@ -10482,6 +10206,21 @@ msgstr "vaihdettu"
 #~ msgid "Edit IPKG source URL..."
 #~ msgstr "Muokkaa IPKG-lähdeosoitetta..."
 
+#~ msgid "Enable 1080p24 Mode"
+#~ msgstr "Ota käyttöön 1080p24-tila"
+
+#~ msgid "Enable 1080p25 Mode"
+#~ msgstr "Ota käyttöön 1080p25-tila"
+
+#~ msgid "Enable 1080p30 Mode"
+#~ msgstr "Ota käyttöön 1080p30-tila"
+
+#~ msgid "Enable 720p24 Mode"
+#~ msgstr "Ota käyttöön 720p24-tila"
+
+#~ msgid "Enable Autoresolution"
+#~ msgstr "Ota autoresoluutio käyttöön"
+
 #
 #~ msgid "Encrypted: %s"
 #~ msgstr "Salattu: %s"
@@ -10500,14 +10239,6 @@ msgstr "vaihdettu"
 #~ "stephan@reichholf.net\n"
 #~ "\n"
 #~ "© 2006 - Stephan Reichholf"
-
-#
-#~ msgid "Enter Fast Forward at speed"
-#~ msgstr "Aloita kelaus eteenpäin nopeudella"
-
-#
-#~ msgid "Enter Rewind at speed"
-#~ msgstr "Aloita kelaus taaksepäin nopeudella"
 
 #
 #~ msgid "Enter WLAN network name/SSID:"
@@ -10535,10 +10266,6 @@ msgstr "vaihdettu"
 #~ msgid "Following tasks will be done after you press continue."
 #~ msgstr "Seuraavat tehtävät suoritetaan kun valitset jatka."
 
-#
-#~ msgid "Frame repeat count during non-smooth winding"
-#~ msgstr "Ruudun toistomäärä hyppivällä kelauksella"
-
 #~ msgid "Fritz!Box FON IP address"
 #~ msgstr "Fritz!Box FON IP-osoite"
 
@@ -10557,15 +10284,11 @@ msgstr "vaihdettu"
 #~ msgid "General PCM delay"
 #~ msgstr "PCM-viive (ms)"
 
-#~ msgid ""
-#~ "Growlee allows your Dreambox to send short messages using the growl "
-#~ "protocol\n"
-#~ "like Recording started notifications to a PC running a growl client"
-#~ msgstr ""
-#~ "Growleen avulla Dreambox voi lähettää lyhyitä Growl-protokollan mukaisia "
-#~ "viestejä,\n"
-#~ "esim. ilmoituksen tallennuksen aloittamisesta, PC:lle jossa pyörii Growl-"
-#~ "asiakasohjelma"
+#~ msgid "HD Interlace Mode"
+#~ msgstr "Lomitettu HD-tila"
+
+#~ msgid "HD Progressive Mode"
+#~ msgstr "Lomittamaton HD-tila"
 
 #
 #~ msgid "How to handle found crashlogs:"
@@ -10619,8 +10342,8 @@ msgstr "vaihdettu"
 #~ msgstr "Kielivalinta..."
 
 #
-#~ msgid "Lets you view/edit files in your Dreambox"
-#~ msgstr "Katsele/muokkaa Dreamboxin tiedostoja"
+#~ msgid "Lets you view/edit files in your Cuberevo"
+#~ msgstr "Katsele/muokkaa Cuberevoin tiedostoja"
 
 #
 #~ msgid "Max. Bitrate: %s"
@@ -10680,10 +10403,10 @@ msgstr "vaihdettu"
 #~ msgstr "Valitse päivityspalvelimelta NFI-päivitys latausta varten"
 
 #~ msgid ""
-#~ "Please disconnect all USB devices from your Dreambox and (re-)attach the "
+#~ "Please disconnect all USB devices from your Cuberevo and (re-)attach the "
 #~ "target USB stick (minimum size is 64 MB) now!"
 #~ msgstr ""
-#~ "Poista kaikki USB-laitteet Dreamboxista ja kytke/uudelleenkytke kohde USB-"
+#~ "Poista kaikki USB-laitteet Cuberevoista ja kytke/uudelleenkytke kohde USB-"
 #~ "muistitikku (minimikoko 64 MB) nyt!"
 
 #
@@ -10763,6 +10486,21 @@ msgstr "vaihdettu"
 
 #~ msgid "Retrieving network information. Please wait..."
 #~ msgstr "Noudetaan verkkotietoja. Odota..."
+
+#~ msgid "Running in testmode"
+#~ msgstr "Suoritetaan testitilassa"
+
+#~ msgid "SD 25/50HZ Interlace Mode"
+#~ msgstr "SD 25/50Hz lomitettu tila"
+
+#~ msgid "SD 25/50HZ Progressive Mode"
+#~ msgstr "SD 25/50Hz lomittamaton tila"
+
+#~ msgid "SD 30/60HZ Interlace Mode"
+#~ msgstr "SD 30/60Hz lomitettu tila"
+
+#~ msgid "SD 30/60HZ Progressive Mode"
+#~ msgstr "SD 30/60Hz lomittamaton tila"
 
 #
 #~ msgid "Satteliteequipment"
@@ -10848,6 +10586,9 @@ msgstr "vaihdettu"
 #
 #~ msgid "Setup for the AC3 Lip Sync Plugin"
 #~ msgstr "AC3 Lip Sync -lisäosan asetukset"
+
+#~ msgid "Show info screen"
+#~ msgstr "Näytä tietoruutu"
 
 #
 #~ msgid "Skin..."
@@ -10950,8 +10691,8 @@ msgstr "vaihdettu"
 #~ "ohjelmistopäivityksen asentamista?"
 
 #
-#~ msgid "This Dreambox can't decode %s video streams!"
-#~ msgstr "Dreambox ei voi purkaa %s video-raitoja!"
+#~ msgid "This Cuberevo can't decode %s video streams!"
+#~ msgstr "Cuberevo ei voi purkaa %s video-raitoja!"
 
 #
 #~ msgid "This is unsupported at the moment."
@@ -10962,14 +10703,14 @@ msgstr "vaihdettu"
 #~ msgstr "Ajansiirron hakemisto..."
 
 #~ msgid ""
-#~ "To update your Dreambox firmware, please follow these steps:\n"
+#~ "To update your Cuberevo firmware, please follow these steps:\n"
 #~ "1) Turn off your box with the rear power switch and plug in the bootable "
 #~ "USB stick.\n"
 #~ "2) Turn mains back on and hold the DOWN button on the front panel pressed "
 #~ "for 10 seconds.\n"
 #~ "3) Wait for bootup and follow instructions of the wizard."
 #~ msgstr ""
-#~ "Päivitä Dreamboxin ohjelmisto näiden ohjeiden mukaisesti:\n"
+#~ "Päivitä Cuberevoin ohjelmisto näiden ohjeiden mukaisesti:\n"
 #~ "1) Kytke virta pois päältä takapaneelin kytkimestä ja liitä "
 #~ "automaattisesti käynnistyvä USB-muistitikku.\n"
 #~ "2) Kytke virta takaisin päälle ja pidä etupaneelin nuoli alas -näppäintä "
@@ -10981,10 +10722,10 @@ msgstr "vaihdettu"
 #~ msgstr "USB"
 
 #~ msgid ""
-#~ "USB stick wizard finished. Your dreambox will now restart with your new "
+#~ "USB stick wizard finished. Your cuberevo will now restart with your new "
 #~ "image!"
 #~ msgstr ""
-#~ "USB-muistiavustaja on valmis. Dreambox käynnistyy nyt uudella "
+#~ "USB-muistiavustaja on valmis. Cuberevo käynnistyy nyt uudella "
 #~ "ohjelmistolla!"
 
 #
@@ -11012,16 +10753,12 @@ msgstr "vaihdettu"
 #~ msgstr "Päivitä"
 
 #
-#~ msgid "Upgrade finished. Do you want to reboot your Dreambox?"
-#~ msgstr "Päivitys suoritettu. Haluatko käynnistää Dreamboxin uudelleen?"
+#~ msgid "Upgrade finished. Do you want to reboot your Cuberevo?"
+#~ msgstr "Päivitys suoritettu. Haluatko käynnistää Cuberevoin uudelleen?"
 
 #
 #~ msgid "Use calc. delays"
 #~ msgstr "Vakiot pikaval."
-
-#
-#~ msgid "Use non-smooth winding at speeds above"
-#~ msgstr "Hyppivä kelaus kun nopeus ylittää"
 
 #
 #~ msgid "Use user delays"
@@ -11056,7 +10793,7 @@ msgstr "vaihdettu"
 
 #
 #~ msgid ""
-#~ "You do not seem to have a harddisk in your Dreambox. So backing up to a "
+#~ "You do not seem to have a harddisk in your Cuberevo. So backing up to a "
 #~ "harddisk is not an option for you."
 #~ msgstr ""
 #~ "Laitteessasi ei näytä olevan kiintolevyä, joten et voi varmuuskopioida "
@@ -11134,8 +10871,16 @@ msgstr "vaihdettu"
 #~ msgstr "Määritetyt kanavat/palveluntarjoajat"
 
 #
+#~ msgid "bob"
+#~ msgstr "bob"
+
+#
 #~ msgid "choose destination directory"
 #~ msgstr "valitse kohdehakemisto"
+
+#
+#~ msgid "default"
+#~ msgstr "oletus"
 
 #
 #~ msgid "enigma2 and network"
@@ -11176,9 +10921,6 @@ msgstr "vaihdettu"
 #
 #~ msgid "open virtual keyboard input help"
 #~ msgstr "avaa virtuaalinäppäimistön ohje"
-
-#~ msgid "redirect notifications to Growl"
-#~ msgstr "Näytä ilmoitusikkunat Growl:in kautta"
 
 #
 #~ msgid "required medium type:"

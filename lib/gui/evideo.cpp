@@ -12,7 +12,7 @@ void setFullsize()
 		{
 			for (int i=0; i<4; ++i)
 			{
-				const char *targets[]={"left", "top", "width", "height"};
+				const char *targets[]={"width", "height", "left", "top"};
 				char filename[128];
 				snprintf(filename, 128, "/proc/stb/vmpeg/%d/dst_%s", decoder, targets[i]);
 				FILE *f = fopen(filename, "w");
@@ -133,7 +133,7 @@ void eVideoWidget::updatePosition(int disable)
 	{
 		for (int i=0; i<4; ++i)
 		{
-			const char *targets[]={"left", "top", "width", "height"};
+			const char *targets[]={"width", "height", "left", "top"};
 			char filename[128];
 			snprintf(filename, 128, "/proc/stb/vmpeg/%d/dst_%s", m_decoder, targets[i]);
 			FILE *f = fopen(filename, "w");
@@ -146,10 +146,10 @@ void eVideoWidget::updatePosition(int disable)
 			{
 				switch (i)
 				{
-				case 0: val = left; break;
-				case 1: val = top; break;
-				case 2: val = width; break;
-				case 3: val = height; break;
+				case 0: val = width; break;
+				case 1: val = height; break;
+				case 2: val = left; break;
+				case 3: val = top; break;
 				}
 				fprintf(f, "%08x\n", val);
 				fclose(f);

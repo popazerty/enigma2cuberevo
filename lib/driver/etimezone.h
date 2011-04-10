@@ -3,5 +3,9 @@
 
 void e_tzset(void);
 
+#if defined(__sh__)
+bool e_daylight(void);
+#endif
+
 #endif
 

@@ -85,7 +85,16 @@ class VideoSetup(Screen, ConfigListScreen):
 		elif config.av.aspect.value == "4_3":
 			self.list.append(getConfigListEntry(_("Display 16:9 content as"), config.av.policy_169))
 
-#		if config.av.videoport.value == "DVI":
+#--->
+#-#		if config.av.videoport.value == "DVI":
+#---<
+#+++>
+		if config.av.videoport.value == "Component":
+			self.list.append(getConfigListEntry(_("Color Format"), config.av.colorformat_yuv))
+		if config.av.videoport.value == "HDMI":
+			self.list.append(getConfigListEntry(_("Color Format"), config.av.colorformat_hdmi))
+			self.list.append(getConfigListEntry(_("Audio Source"), config.av.hdmi_audio_source))
+#+++<
 #			self.list.append(getConfigListEntry(_("Allow Unsupported Modes"), config.av.edid_override))
 		if config.av.videoport.value == "Scart":
 			self.list.append(getConfigListEntry(_("Color Format"), config.av.colorformat))

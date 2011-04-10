@@ -50,6 +50,29 @@ class Timezones:
 		except:
 			from enigma import e_tzset
 			e_tzset()
+#+++>
+		import os
+		from enigma import e_daylight
+		if e_daylight() == False:
+			try:
+				os.popen("/bin/cubefpctl --setdaylight 0")
+			except OSError:
+				print "no memory"
+		else:
+			try:
+				os.popen("/bin/cubefpctl --setdaylight 1")
+			except OSError:
+				print "no memory"
+		time.sleep(1)
+		try:
+			os.popen("/bin/cubefpctl --setgmtoffset")
+		except OSError:
+			print "no memory"
+		try:
+			os.popen("/bin/cubefpctl --syncfptime")
+		except OSError:
+			print "no memory"
+#+++<
 		
 	def getTimezoneList(self):
 		return [ str(x[0]) for x in self.timezones ]

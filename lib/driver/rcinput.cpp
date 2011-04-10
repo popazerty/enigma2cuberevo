@@ -5,11 +5,117 @@
 #include <sys/ioctl.h>
 #include <linux/input.h>
 #include <sys/stat.h>
+#include <sys/socket.h>
+#include <sys/types.h>
+#include <sys/un.h>
+
+#include <stdio.h>
+#include <fcntl.h>
+#include <stdlib.h>
 
 #include <lib/base/ebase.h>
 #include <lib/base/init.h>
 #include <lib/base/init_num.h>
 #include <lib/driver/input_fake.h>
+
+static int sockethandle = -1;
+static bool isTuxTxt = false;
+static int tuxtxt_exit_count = 0;
+#define SocketName "/tmp/rc.socket"
+
+int checkTuxTxt(int code)
+{
+    int tmp_o;
+    bool prev=true;
+
+    if ( isTuxTxt==false )
+    {
+	if(code==371)//KEY_TEXT
+	{
+		tuxtxt_exit_count = 0;
+		isTuxTxt=true;
+		prev=false;
+	}
+    }
+    
+    if((tmp_o = open("/tmp/block.tmp", O_RDONLY)) >= 0)
+    {
+	close(tmp_o);
+	//workaround if tuxtxt hangs
+	if(code == 158) //EXIT
+	{
+		tuxtxt_exit_count++;
+		if(tuxtxt_exit_count > 1)
+		{
+			tuxtxt_exit_count = 0;
+			system("killall tuxtxt; sleep 3; killall -9 tuxtxt; rm -f /tmp/block.tmp");
+		}
+	}
+    }
+    if (( isTuxTxt ) && ((tmp_o = open("/tmp/block.tmp", O_RDONLY)) >= 0))
+    {
+	close(tmp_o);
+
+ 	fprintf(stderr, "Forwarding to Socket-> %u\n", sockethandle);
+	
+	if (sockethandle <= 0)
+	{
+		struct sockaddr_un addr;
+		int len;
+		addr.sun_family = AF_UNIX;
+		strcpy( addr.sun_path, SocketName );
+		len = strlen(addr.sun_path) + sizeof(addr.sun_family);
+		sockethandle = socket( AF_UNIX, SOCK_STREAM, 0 );
+		
+		if ( sockethandle <= 0 )  
+		{
+			fprintf(stderr, "No RemoteControlSocket attached!\n");
+			return 0;
+		};
+
+		if(connect(sockethandle,(struct sockaddr *)&addr,len)!=0)  
+		{
+			close(sockethandle);
+			fprintf(stderr, "connect failed!\n");
+			return 0;
+		}
+	}
+		
+	if ( sockethandle > 0 )
+	{
+		char * tmp_s = (char*) malloc(sizeof("00000000")+1);
+		sprintf(tmp_s, "%08d", code);
+
+		if(send(sockethandle,tmp_s,sizeof("00000000"),0)==-1)
+			fprintf(stderr, "Error while forwarding!\n");
+		free(tmp_s);
+	} else
+		fprintf(stderr, "Error while forwarding!\n");
+
+	switch(code)
+	{
+		/*case 371: //KEY_TEXT:
+			if(prev==true)
+				isTuxTxt=false;
+			break;*/
+		case 102: //KEY_HOME:
+		case 158: //KEY_EXIT:
+		case 116: //KEY_POWER:
+			isTuxTxt=false;
+			break;
+	}
+
+	return 1;
+    }
+
+    tuxtxt_exit_count = 0;
+    if (sockethandle != -1)
+    {
+	close (sockethandle);
+	sockethandle = -1;
+    }
+    return 0;
+}
 
 void eRCDeviceInputDev::handleCode(long rccode)
 {
@@ -18,6 +124,11 @@ void eRCDeviceInputDev::handleCode(long rccode)
 		return;
 
 //	eDebug("%x %x %x", ev->value, ev->code, ev->type);
+
+	if(checkTuxTxt(ev->code)==1)
+	{
+		return;
+	}
 
 	if (ev->type!=EV_KEY)
 		return;

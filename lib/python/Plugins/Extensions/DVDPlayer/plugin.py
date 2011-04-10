@@ -528,7 +528,12 @@ class DVDPlayer(Screen, InfoBarBase, InfoBarNotifications, InfoBarSeek, InfoBarP
 				self.doShow()
 		
 	def askLeavePlayer(self):
-		choices = [(_("Exit"), "exit"), (_("Continue playing"), "play")]
+#--->
+#- 		choices = [(_("Exit"), "exit"), (_("Continue playing"), "play")]
+#---<
+#+++>
+		choices = [(_("Exit"), "exit"), (_("Continue playing"), "play"),(_("LOAD DVD"), "loaddvd"),(_("EJECT DVD"), "ejectdvd")]
+#+++<
 		if True or not self.physicalDVD:
 			choices.insert(1,(_("Return to file browser"), "browser"))
 		if self.physicalDVD:
@@ -662,6 +667,18 @@ class DVDPlayer(Screen, InfoBarBase, InfoBarNotifications, InfoBarSeek, InfoBarP
 				if self.service:
 					self.service = None
 				self.session.openWithCallback(self.FileBrowserClosed, FileBrowser)
+#+++>
+			import os
+			if answer[1] == "loaddvd":
+				os.system('mount /dev/sr0 /media/dvd')
+				self.session.openWithCallback(self.FileBrowserClosed, FileBrowser)
+			if answer[1] == "ejectdvd":
+				self.session.nav.stopService()
+				os.system('umount /media/dvd')
+				os.system('eject /dev/sr0')
+				os.system('eject /dev/scd0')
+				self.session.openWithCallback(self.FileBrowserClosed, FileBrowser)
+#+++<
 			if answer[1] == "playPhysical":
 				if self.service:
 					self.service = None

@@ -23,6 +23,11 @@ extern "C" {
 
 // eServiceFactoryDVD
 
+#ifdef __sh__
+int xres = 720;
+int yres = 576;
+#endif
+
 eServiceFactoryDVD::eServiceFactoryDVD()
 {
 	ePtr<eServiceCenter> sc;
@@ -197,7 +202,11 @@ void eServiceDVD::gotMessage(int /*what*/)
 				int x1,x2,y1,y2;
 				ddvd_get_last_blit_area(m_ddvdconfig, &x1, &x2, &y1, &y2);
 				
+#ifdef __sh__
+				int x_offset = 0, y_offset = 0, width = xres, height = yres;
+#else
 				int x_offset = 0, y_offset = 0, width = 720, height = 576;
+#endif
 
 #ifdef DDVD_SUPPORTS_GET_BLIT_DESTINATION
 				ddvd_get_blit_destination(m_ddvdconfig, &x_offset, &y_offset, &width, &height);
@@ -681,7 +690,13 @@ PyObject *eServiceDVD::getInfoObject(int w)
 RESULT eServiceDVD::enableSubtitles(eWidget *parent, ePyObject tuple)
 {
 	delete m_subtitle_widget;
+#ifdef __sh__
+	eSize size = parent->size();
+	xres = size.width();
+	yres = size.height();
+#else
 	eSize size = eSize(720, 576);
+#endif
 
 	m_subtitle_widget = new eSubtitleWidget(parent);
 	m_subtitle_widget->resize(parent->size());
@@ -708,7 +723,11 @@ RESULT eServiceDVD::enableSubtitles(eWidget *parent, ePyObject tuple)
 
 	if (!m_pixmap)
 	{
+#ifdef __sh__
+		m_pixmap = new gPixmap(size, 32, 0); /* don't use accel with sh4 cpu */
+#else
 		m_pixmap = new gPixmap(size, 32, 1); /* allocate accel surface (if possible) */
+#endif
 #ifdef DDVD_SUPPORTS_GET_BLIT_DESTINATION
 		ddvd_set_lfb_ex(m_ddvdconfig, (unsigned char *)m_pixmap->surface->data, size.width(), size.height(), 4, size.width()*4, 1);
 #else
