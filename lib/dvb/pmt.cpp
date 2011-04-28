@@ -474,6 +474,12 @@ int eDVBServicePMTHandler::getProgramInfo(program &program)
 									isaudio = 1;
 									audio.type = audioStream::atAC3;
 									break;
+#ifdef __sh__
+								case ENHANCED_AC3_DESCRIPTOR:
+									isaudio = 1;
+									audio.type = audioStream::atDDP;
+									break;
+#endif
 								case REGISTRATION_DESCRIPTOR: /* some services don't have a separate AC3 descriptor */
 								{
 									RegistrationDescriptor *d = (RegistrationDescriptor*)(*desc);

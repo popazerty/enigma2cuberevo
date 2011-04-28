@@ -13,7 +13,11 @@ private:
 	ePtr<eDVBDemux> m_demux;
 	int m_fd, m_fd_demux, m_dev, m_is_freezed;
 public:
+#ifndef __sh__
 	enum { aMPEG, aAC3, aDTS, aAAC, aAACHE, aLPCM, aDTSHD };
+#else
+	enum { aMPEG, aAC3, aDTS, aAAC, aAACHE, aLPCM, aDTSHD, aDDP };
+#endif
 	eDVBAudio(eDVBDemux *demux, int dev);
 	enum { aMonoLeft, aStereo, aMonoRight };
 	void setChannel(int channel);

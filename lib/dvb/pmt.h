@@ -145,7 +145,11 @@ public:
 	{
 		int pid,
 		    rdsPid; // hack for some radio services which transmit radiotext on different pid (i.e. harmony fm, HIT RADIO FFH, ...)
+#ifndef __sh__
 		enum { atMPEG, atAC3, atDTS, atAAC, atAACHE, atLPCM, atDTSHD };
+#else
+		enum { atMPEG, atAC3, atDTS, atAAC, atAACHE, atLPCM, atDTSHD, atDDP };
+#endif
 		int type; // mpeg2, ac3, dts, ...
 		
 		int component_tag;
