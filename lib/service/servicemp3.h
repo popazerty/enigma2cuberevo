@@ -266,16 +266,20 @@ private:
                 Message(int type)
                         :type(type)
                 {}
+#if not defined(__sh__)
                 Message(int type, GstPad *pad)
                         :type(type)
                 {
                         d.pad=pad;
                 }
+#endif
 
                 int type;
+#if not defined(__sh__)
                 union {
                         GstPad *pad; // for msg type 3
                 } d;
+#endif
         };
 
         eFixedMessagePump<Message> m_pump;

@@ -1591,6 +1591,7 @@ RESULT eServiceMP3::getTrackInfo(struct iAudioTrackInfo &info, unsigned int i)
 	return 0;
 }
 
+#if not defined(__sh__)
 subtype_t getSubtitleType(GstPad* pad, gchar *g_codec=NULL)
 {
 	subtype_t type = stUnknown;
@@ -1633,7 +1634,6 @@ subtype_t getSubtitleType(GstPad* pad, gchar *g_codec=NULL)
 	return type;
 }
 
-#if not defined(__sh__)
 void eServiceMP3::gstBusCall(GstBus *bus, GstMessage *msg)
 {
 	if (!msg)
