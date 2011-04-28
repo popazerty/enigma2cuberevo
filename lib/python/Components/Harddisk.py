@@ -629,6 +629,13 @@ class HarddiskManager:
 
 			l = len(device)
 			if l:
+#+++>
+				# see if this is a usb stick
+				if not device[l-1].isdigit() and not removable and not is_cdrom and medium_found:
+					self.hdd.append(Harddisk(device))
+					self.hdd.sort()
+					SystemInfo["Harddisk"] = len(self.hdd) > 0
+#+++<
 				# see if this is a harddrive
 				if not device[l-1].isdigit() and not removable and not is_cdrom:
 					self.hdd.append(Harddisk(device))

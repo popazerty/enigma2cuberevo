@@ -221,6 +221,7 @@ RESULT eDVBScan::nextChannel()
 	return 0;
 }
 
+#ifdef __sh__
 RESULT eDVBScan::nextChannelBlind()
 {
 	ePtr<iDVBFrontend> fe;
@@ -273,6 +274,7 @@ RESULT eDVBScan::nextChannelBlind()
 	m_event(evtUpdate);
 	return 0;
 }
+#endif
 
 RESULT eDVBScan::startFilter()
 {
@@ -890,7 +892,7 @@ void eDVBScan::channelDone()
 							parm.frequency/1000,
 							parm.polarisation ? 'V' : 'H',
 							m_pmt_in_progress->first);
-					snprintf(pname, 255, "%s %s %d%c %d.%d°%c",
+					snprintf(pname, 255, "%s %s %d%c %d.%dï¿½%c",
 						parm.system ? "DVB-S2" : "DVB-S",
 						parm.modulation == 1 ? "QPSK" : "8PSK",
 						parm.frequency/1000,
@@ -1016,6 +1018,7 @@ void eDVBScan::start(const eSmartPtrList<iDVBFrontendParameters> &known_transpon
 	nextChannel();
 }
 
+#ifdef __sh__
 void eDVBScan::startBlind(const eSmartPtrList<iDVBFrontendParameters> &known_transponders, int flags)
 {
 	m_flags = flags;
@@ -1044,6 +1047,7 @@ void eDVBScan::startBlind(const eSmartPtrList<iDVBFrontendParameters> &known_tra
 
 	nextChannelBlind();
 }
+#endif
 
 void eDVBScan::insertInto(iDVBChannelList *db, bool dontRemoveOldFlags)
 {

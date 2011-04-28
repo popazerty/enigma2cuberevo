@@ -72,6 +72,7 @@ private:
 	bool m_simulate;
 	bool m_enabled;
 	int m_type;
+	eDVBFrontend *m_simulate_fe; // only used to set frontend type in dvb.cpp
 	int m_dvbid;
 	int m_slotid;
 	int m_fd;
@@ -115,13 +116,15 @@ private:
 	bool setSecSequencePos(int steps);
 	static int PriorityOrder;
 public:
-	eDVBFrontend(int adap, int fe, int &ok, bool simulate=false);
+	eDVBFrontend(int adap, int fe, int &ok, bool simulate=false, eDVBFrontend *simulate_fe=NULL);
 	virtual ~eDVBFrontend();
 
 	int readInputpower();
 	RESULT getFrontendType(int &type);
 	RESULT tune(const iDVBFrontendParameters &where);
+#ifdef __sh__
 	RESULT tuneBlind(const iDVBFrontendParameters &where);
+#endif
 	RESULT prepare_sat(const eDVBFrontendParametersSatellite &, unsigned int timeout);
 	RESULT prepare_cable(const eDVBFrontendParametersCable &);
 	RESULT prepare_terrestrial(const eDVBFrontendParametersTerrestrial &);

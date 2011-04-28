@@ -31,7 +31,7 @@
 #include <lib/driver/vfd.h>  
 
 #endif  
-#if defined(__sh__) // nits shm hack to behavior of e2 on the fly
+#if defined(__sh__) // shm hack to behavior of e2 on the fly
 #include "include/shmE2.h"
 char *shm = NULL;
 #endif 
@@ -134,7 +134,7 @@ int exit_code;
 
 int main(int argc, char **argv)
 {
-#if defined(__sh__) // nits shm hack to behavior of e2 on the fly
+#if defined(__sh__) // shm hack to behavior of e2 on the fly
         shm = findshm();
         if(shm == NULL)
             shm = createshm();

@@ -23,32 +23,6 @@ from enigma import eTimer, ePoint, eSize, RT_HALIGN_LEFT, eListboxPythonMultiCon
 from os import path as os_path, system as os_system, unlink
 from re import compile as re_compile, search as re_search
 
-#+++>
-class InterfaceList(MenuList):
-	def __init__(self, list, enableWrapAround=False):
-		MenuList.__init__(self, list, enableWrapAround, eListboxPythonMultiContent)
-		self.l.setFont(0, gFont("Regular", 20))
-		self.l.setItemHeight(30)
-
-def InterfaceEntryComponent(index,name,default,active ):
-	res = [
-		(index),
-		MultiContentEntryText(pos=(80, 5), size=(430, 25), font=0, text=name)
-	]
-	num_configured_if = len(iNetwork.getConfiguredAdapters())
-	if num_configured_if >= 2:
-		if default is True:
-			png = LoadPixmap(cached=True, path=resolveFilename(SCOPE_CURRENT_SKIN, "skin_default/buttons/button_blue.png"))
-		if default is False:
-			png = LoadPixmap(cached=True, path=resolveFilename(SCOPE_CURRENT_SKIN, "skin_default/buttons/button_blue_off.png"))
-		res.append(MultiContentEntryPixmapAlphaTest(pos=(10, 5), size=(25, 25), png = png))
-	if active is True:
-		png2 = LoadPixmap(cached=True, path=resolveFilename(SCOPE_CURRENT_SKIN, "skin_default/icons/lock_on.png"))
-	if active is False:
-		png2 = LoadPixmap(cached=True, path=resolveFilename(SCOPE_CURRENT_SKIN, "skin_default/icons/lock_error.png"))
-	res.append(MultiContentEntryPixmapAlphaTest(pos=(40, 1), size=(25, 25), png = png2))
-	return res
-#+++<
 
 class NetworkAdapterSelection(Screen,HelpableScreen):
 	def __init__(self, session):
@@ -92,12 +66,7 @@ class NetworkAdapterSelection(Screen,HelpableScreen):
 			})
 
 		self.list = []
-#--->
-#-		self["list"] = List(self.list)
-#---<
-#+++>
-		self["list"] = InterfaceList(self.list)
-#+++<
+		self["list"] = List(self.list)
 		self.updateList()
 
 		if len(self.adapters) == 1:

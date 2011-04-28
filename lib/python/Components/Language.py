@@ -16,7 +16,9 @@ class Language:
 		self.addLanguage(_("English"), "en", "EN")
 		self.addLanguage(_("German"), "de", "DE")
 		self.addLanguage(_("Arabic"), "ar", "AE")
+#+++>
 		self.addLanguage(_("Bulgarian"), "bg", "BU")
+#+++<
 		self.addLanguage(_("Catalan"), "ca", "AD")
 		self.addLanguage(_("Croatian"), "hr", "HR")
 		self.addLanguage(_("Czech"), "cs", "CZ")
@@ -32,10 +34,14 @@ class Language:
 		self.addLanguage(_("Icelandic"), "is", "IS")
 		self.addLanguage(_("Italian"), "it", "IT")
 		self.addLanguage(_("Norwegian"), "no", "NO")
+#+++>
 		self.addLanguage(_("Persian"), "fa", "FA")
+#+++<
 		self.addLanguage(_("Polish"), "pl", "PL")
 		self.addLanguage(_("Portuguese"), "pt", "PT")
+#+++>
 		self.addLanguage(_("Romanian"), "ro", "RO")
+#+++<
 		self.addLanguage(_("Russian"), "ru", "RU")
 		self.addLanguage(_("Serbian"), "sr", "YU")
 		self.addLanguage(_("Slovakian"), "sk", "SK")

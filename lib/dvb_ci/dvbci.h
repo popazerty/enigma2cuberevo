@@ -108,13 +108,11 @@ class eDVBCISlot: public iObject, public Object
 	void data(int);
 	bool plugged;
 #ifdef __sh__
-	//dagobert
 	char 		connection_id;
 	bool		mmi_active;	
 
     int            receivedLen;
 	unsigned char* receivedData;
-
 #endif
 public:
 	enum {stateRemoved, stateInserted, stateInvalid, stateResetted};

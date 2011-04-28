@@ -294,6 +294,9 @@ private:
 	int m_running;
 	char m_filename[1024];
 	void save();
+#ifndef __sh__
+	void load();
+#endif
 #ifdef ENABLE_PRIVATE_EPG
 	void privateSectionRead(const uniqueEPGKey &, const __u8 *);
 #endif
@@ -316,8 +319,10 @@ private:
 #endif // SWIG
 public:
 	static eEPGCache *getInstance() { return instance; }
+#ifdef __sh__
 	void load();
 	void crossepgImportEPGv21(std::string dbroot);
+#endif
 #ifndef SWIG
 	eEPGCache();
 	~eEPGCache();

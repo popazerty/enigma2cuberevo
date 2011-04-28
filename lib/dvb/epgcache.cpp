@@ -118,7 +118,7 @@ const eit_event_struct* eventData::get() const
 #ifndef __sh__
 	__u32 *p = (__u32*)(EITdata+10);
 #else
-/* Dagobert: fix not aligned access */
+/* fix not aligned access */
 		__u8 *p = (__u8*)(EITdata+10);
 #endif
 	while(tmp>3)
@@ -163,7 +163,7 @@ eventData::~eventData()
 #ifndef __sh__
 		__u32 *d = (__u32*)(EITdata+10);
 #else
-/* Dagobert: fix not aligned access */
+/* fix not aligned access */
 		__u8 *d = (__u8*)(EITdata+10);
 #endif
 		ByteSize -= 10;
@@ -194,7 +194,7 @@ eventData::~eventData()
 #ifndef __sh__
 				eFatal("LINE %d descriptor not found in descriptor cache %08x!!!!!!", __LINE__, *(d-1));
 #else
-//Dagobert: currently this happens sporadicly on ufs922 (with new skin). Not sure why
+//currently this happens sporadicly on few boxes (with new skin). Not sure why
 //we must observe this!
 				eDebug("LINE %d descriptor not found in descriptor cache %08x!!!!!!", __LINE__, *(d-4));
 #endif
@@ -543,6 +543,12 @@ void eEPGCache::sectionRead(const __u8 *data, int source, channel_data *channel)
 	// Cablecom HACK .. tsid / onid in eit data are incorrect.. so we use
 	// it from running channel (just for current transport stream eit data)
 	bool use_transponder_chid = source == SCHEDULE || (source == NOWNEXT && data[0] == 0x4E);
+	eDVBChannelID chid = channel->channel->getChannelID();
+#ifndef __sh__
+	uniqueEPGKey service( HILO(eit->service_id),
+			use_transponder_chid ? chid.original_network_id.get() : HILO(eit->original_network_id),
+			use_transponder_chid ? chid.transport_stream_id.get() : HILO(eit->transport_stream_id));
+#else
 	int onid = HILO(eit->original_network_id);
 	int tsid  = HILO(eit->transport_stream_id);
 	if (use_transponder_chid && channel)
@@ -553,6 +559,7 @@ void eEPGCache::sectionRead(const __u8 *data, int source, channel_data *channel)
 		tsid = chid.transport_stream_id.get();
 	}
 	uniqueEPGKey service( HILO(eit->service_id), onid, tsid);
+#endif
 
 	eit_event_struct* eit_event = (eit_event_struct*) (data+ptr);
 	int eit_event_size;
@@ -566,11 +573,15 @@ void eEPGCache::sectionRead(const __u8 *data, int source, channel_data *channel)
 			eit_event->start_time_5);
 	time_t now = ::time(0);
 
+#ifndef __sh__
+	if ( TM != 3599 && TM > -1)
+#else
 	if ( TM != 3599 && TM > -1 && channel)
+#endif
 		channel->haveData |= source;
 
 	singleLock s(cache_lock);
-	// hier wird immer eine eventMap zurück gegeben.. entweder eine vorhandene..
+	// hier wird immer eine eventMap zurï¿½ck gegeben.. entweder eine vorhandene..
 	// oder eine durch [] erzeugte
 	std::pair<eventMap,timeMap> &servicemap = eventDB[service];
 	eventMap::iterator prevEventIt = servicemap.first.end();
@@ -1491,7 +1502,7 @@ void eEPGCache::channel_data::readData( const __u8 *data)
 	int map;
 	iDVBSectionReader *reader=NULL;
 #ifdef __sh__
-/* Dagobert: this is still very hacky, but currently I cant find
+/* this is still very hacky, but currently I cant find
  * the origin of the readData call. I think the caller is 
  * responsible for the unaligned data pointer in this call.
  * So we malloc our own memory here which _should_ be aligned.
@@ -2352,7 +2363,7 @@ PyObject *eEPGCache::search(ePyObject arg)
 #ifndef __sh__
 							__u32 *p = (__u32*)(data+10);
 #else
-/* Dagobert: Alignment fix */
+/* Alignment fix */
 							__u8 *p = (__u8*)(data+10);
 #endif
 								// search short and extended event descriptors
@@ -2361,7 +2372,7 @@ PyObject *eEPGCache::search(ePyObject arg)
 #ifndef __sh__
 								__u32 crc = *p++;
 #else
-/* Dagobert: Alignment fix */
+/* Alignment fix */
 								__u32 crc = p[3] << 24 | p[2] << 16 | p[1] << 8 | p[0];
 								p += 4;
 #endif
@@ -2545,7 +2556,7 @@ PyObject *eEPGCache::search(ePyObject arg)
 #ifndef __sh__
 				__u32 *p = (__u32*)(data+10);
 #else
-/* Dagobert: Alignment fix */
+/* Alignment fix */
 				__u8 *p = (__u8*)(data+10);
 #endif
 				// check if any of our descriptor used by this event
@@ -2555,7 +2566,7 @@ PyObject *eEPGCache::search(ePyObject arg)
 #ifndef __sh__
 					__u32 crc32 = *p++;
 #else
-/* Dagobert: Alignment fix */
+/* Alignment fix */
 					__u32 crc32 = p[3] << 24 | p[2] << 16 | p[1] << 8 | p[0];
 					p += 4;
 #endif
@@ -3758,6 +3769,7 @@ abort:
 }
 #endif
 
+#ifdef __sh__
 typedef struct epgdb_title_s
 {
 	uint16_t	event_id;
@@ -4099,3 +4111,4 @@ void eEPGCache::crossepgImportEPGv21(std::string dbroot)
 	eDebug("[EPGC] imported %d events from crossepg db", events_count);
 	eDebug("[EPGC] %i bytes for cache used", eventData::CacheSize);
 }
+#endif

@@ -18,16 +18,6 @@
 
 #if defined(PLATFORM_CUBEREVO) || defined(PLATFORM_CUBEREVO_MINI) || defined(PLATFORM_CUBEREVO_MINI2) || defined(PLATFORM_CUBEREVO_MINI_FTA) || defined(PLATFORM_CUBEREVO_250HD) || defined(PLATFORM_CUBEREVO_2000HD) || defined(PLATFORM_CUBEREVO_9500HD) || defined(PLATFORM_CUBEREVO_100HD)
 #define VFD_DEVICE "/dev/dbox/fp0"
-#else
-#ifdef PLATFORM_TF7700
-#include "../../misc/tools/tffpctl/frontpanel.h"
-#endif
-#define VFD_DEVICE "/dev/vfd"
-#define VFDICONDISPLAYONOFF	0xc0425a0a
-#define	VFDDISPLAYCHARS 	0xc0425a00
-#define VFDBRIGHTNESS           0xc0425a03
-//light on off
-#define VFDDISPLAYWRITEONOFF    0xc0425a05
 #endif
 
 bool startloop_running = false;
@@ -75,110 +65,6 @@ void evfd::init()
 evfd::~evfd()
 {
 }
-
-#ifdef PLATFORM_TF7700
-char * getProgress()
-{
-	int n;
-	static char progress[20] = "0";
-	int fd = open ("/proc/progress", O_RDONLY);
-
-	if(fd < 0)
-		return 0;
-
-	n = read(fd, progress, sizeof(progress));
-	close(fd);
-
-	if(n < 0)
-		n = 0;
-	else if((n > 1) && (progress[n-1] == 0xa))
-		n--;
-
-	progress[n] = 0;
-
-	return progress;
-}
-
-#define MAX_CHARS 8
-
-void * start_loop (void *arg)
-{
-	int fplarge = open ("/dev/fplarge", O_WRONLY);
-	int fpsmall = open ("/dev/fpsmall", O_WRONLY);
-	int fpc = open ("/dev/fpc", O_WRONLY);
-
-	if((fplarge < 0) || (fpsmall < 0) || (fpc < 0))
-	{
-		printf("Failed opening devices (%d, %d, %d)\n",
-					fplarge, fpsmall, fpc);
-		return NULL;
-	}
-
-	blocked = true;
-
-	// set scroll mode
-	//frontpanel_ioctl_scrollmode scrollMode = {2, 10, 15};
-	//ioctl(fpc, FRONTPANELSCROLLMODE, &scrollMode);
-	
-	// display string
-	char str[] = " Tideglo ";
-	int length = strlen(str);
-	char dispData[MAX_CHARS + 1];
-	int offset = 0;
-	int i;
-
-	frontpanel_ioctl_icons icons = {0, 0, 0xf};
-
-	// start the display loop
-	char * progress = getProgress();
-	int index = 2;
-	while(!requested)
-	{
-		// display the CD segments
-		icons.Icons2 = (((1 << index) - 1)) & 0x1ffe;
-		ioctl(fpc, FRONTPANELICON, &icons);
-		index++;
-		if(index > 13)
-		{
-			index = 2;
-			icons.BlinkMode = (~icons.BlinkMode) & 0xf;
-		}
-
-		// display the visible part of the string
-		for(i = 0; i < MAX_CHARS; i++)
-		{
-			dispData[i] = str[(offset + i) % length];
-		}
-		offset++;
-		write(fplarge, dispData, sizeof(dispData));
-		usleep(200000);
-		if((index % 4) == 0)
-		{
-		  // display progress
-		  progress = getProgress();
-		  write(fpsmall, progress, strlen(progress) + 1);
-		  if(strncmp("100", progress, 3) == 0)
-		    break;
-		}
-	}
-
-	// clear all icons
-	frontpanel_ioctl_icons iconsOff = {0xffffffff, 0xffffffff, 0x0};
-	ioctl(fpc, FRONTPANELICON, &iconsOff);
-
-	// clear display
-	write(fpsmall, "    ", 5);
-	write(fplarge, "        ", MAX_CHARS);
-
-	close(fplarge);
-	close(fpsmall);
-	close(fpc);
-	blocked = false;
-
-	return NULL;
-}
-
-#else
 
 void * start_loop (void *arg)
 {
@@ -233,8 +119,6 @@ void * start_loop (void *arg)
 	blocked = false;
 	return NULL;
 }
-
-#endif
 
 //////////////////////////////////////////////////////////////////////////////////////
 

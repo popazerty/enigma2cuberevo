@@ -451,7 +451,7 @@ void gPixmap::blit(const gPixmap &src, const eRect &_pos, const gRegion &clip, i
 		if (flag & blitScale)
 		{
 			eWarning("unimplemented: scale on non-accel surfaces");
-#if not defined (__sh__) //if accel blit fails, do direkt blit
+#if not defined (__sh__) //if accel blit fails, do direct blit
 			continue;
 #endif
 		}

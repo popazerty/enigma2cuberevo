@@ -596,7 +596,6 @@ eServiceMP3::~eServiceMP3()
 		eDebug("eServiceMP3::destruct!");
 	}
 #else
-//Trick
 /*    if(player && player->output) {
         player->output->Command(player,OUTPUT_DEL, (void*)"audio");
         player->output->Command(player,OUTPUT_DEL, (void*)"video");
@@ -682,7 +681,6 @@ RESULT eServiceMP3::stop()
 		player->playback->Command(player, PLAYBACK_STOP, NULL);
 		player->output->Command(player, OUTPUT_CLOSE, NULL);
 	}
-	//Trick
 	if(player && player->output) {
 		player->output->Command(player,OUTPUT_DEL, (void*)"audio");
 		player->output->Command(player,OUTPUT_DEL, (void*)"video");
@@ -759,7 +757,7 @@ RESULT eServiceMP3::setSlowMotion(int ratio)
 	eDebug("eServiceMP3::setSlowMotion ratio=%f",1/(float)ratio);
 	return trickSeek(1/(float)ratio);
 #else
-/* konfetti: in libeplayer3 we changed this because
+/* in libeplayer3 we changed this because
  * I dont like application specific stuff in a library
  */
     int speed = getSpeed(ratio);
@@ -781,7 +779,7 @@ RESULT eServiceMP3::setFastForward(int ratio)
 	return trickSeek(ratio);
 #else
 
-/* konfetti: in libeplayer3 we changed this because
+/* in libeplayer3 we changed this because
  * I dont like application specific stuff in a library
  */
     int speed = getSpeed(ratio);
@@ -1060,7 +1058,7 @@ RESULT eServiceMP3::setTrickmode(int trick)
 RESULT eServiceMP3::isCurrentlySeekable()
 {
 #ifdef __sh__
-	return 3; /*Hellmaster1024: 1 for skipping 3 for skipping anf fast forward */
+	return 3; /*1 for skipping 3 for skipping anf fast forward */
 #else
 	int ret = 3; // seeking and fast/slow winding possible
 	GstElement *sink;
@@ -1372,13 +1370,13 @@ std::string eServiceMP3::getInfoString(int w)
 	}
 
 	if (player && player->playback) {
-		/*Hellmaster1024: we need to save the adress of tag to free the strduped mem 
+		/* we need to save the adress of tag to free the strduped mem 
 		  the command will retun a new adress for a new strduped string.
                   Both Strings need to be freed! */
 		res_str = tag;
         	player->playback->Command(player, PLAYBACK_INFO, &res_str);
 
-		/* Hellmaster1024: in case something went wrong maybe no new adress is returned */
+		/* in case something went wrong maybe no new adress is returned */
 		if(tag != res_str){		
 			std::string res = res_str;
         		free(tag);

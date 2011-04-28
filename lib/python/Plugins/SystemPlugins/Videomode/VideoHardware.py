@@ -47,11 +47,11 @@ class VideoHardware:
 
 
 	modes["Scart"] = ["PAL", "NTSC"]
-	modes["Component"] = ["480i", "480p", "576i", "576p", "720p", "1080i", "1080p"]
-	modes["HDMI"]  = ["480i", "480p", "576i", "576p", "720p", "1080i", "1080p"]
+	modes["Component"] = ["720p", "1080i", "1080p", "480i", "480p", "576i", "576p"]
+	modes["HDMI"]  = ["720p", "1080i", "1080p", "480i", "480p", "576i", "576p"]
 	modes["HDMI-PC"] = ["PC"]
 
-	widescreen_modes = set(["480i", "480p", "576i", "576p", "720p", "1080i", "1080p"])
+	widescreen_modes = set(["720p", "1080i", "1080p", "480i", "480p", "576i", "576p"])
 #+++<
 
 	def getOutputAspect(self):
@@ -128,6 +128,25 @@ class VideoHardware:
 #		self.timer.start(1000)
 
 		config.av.colorformat.addNotifier(self.updateFastblank)
+
+		config.av.colorformat.addNotifier(self.updateFastblank)
+#+++>
+		fp = open('/etc/fb.modes.supp', 'r')
+		result=fp.readline().strip()
+		fp.close()
+
+		names=result.split('@')
+
+		if len(names) > 2:
+			port = names[2]
+			#print "port:",port
+			mode = names[0]
+			#print "mode:",mode
+			rate = names[1]
+			#print "rates:",rate
+			#print ""
+			self.saveMode(port,mode,rate)
+#+++<
 
 	def AVSwitchSetInput(self, mode):
 		self.standby = mode == "SCART"

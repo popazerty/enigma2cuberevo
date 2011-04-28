@@ -5,6 +5,7 @@
 #include <sys/ioctl.h>
 #include <linux/input.h>
 #include <sys/stat.h>
+#if defined(__sh__)
 #include <sys/socket.h>
 #include <sys/types.h>
 #include <sys/un.h>
@@ -12,12 +13,14 @@
 #include <stdio.h>
 #include <fcntl.h>
 #include <stdlib.h>
+#endif
 
 #include <lib/base/ebase.h>
 #include <lib/base/init.h>
 #include <lib/base/init_num.h>
 #include <lib/driver/input_fake.h>
 
+#if defined(__sh__)
 static int sockethandle = -1;
 static bool isTuxTxt = false;
 static int tuxtxt_exit_count = 0;
@@ -116,6 +119,7 @@ int checkTuxTxt(int code)
     }
     return 0;
 }
+#endif
 
 void eRCDeviceInputDev::handleCode(long rccode)
 {
@@ -125,10 +129,12 @@ void eRCDeviceInputDev::handleCode(long rccode)
 
 //	eDebug("%x %x %x", ev->value, ev->code, ev->type);
 
+#if defined(__sh__)
 	if(checkTuxTxt(ev->code)==1)
 	{
 		return;
 	}
+#endif
 
 	if (ev->type!=EV_KEY)
 		return;

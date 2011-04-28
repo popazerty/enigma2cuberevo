@@ -14,7 +14,7 @@
 #define NFS_SUPER_MAGIC       0x6969 
 #define MSDOS_SUPER_MAGIC     0x4d44            /* MD */
 #endif
-#if defined(__sh__) // nits shm hack to behavior of e2 on the fly
+#if defined(__sh__) // shm hack to behavior of e2 on the fly
 #include "include/shmE2.h"
 extern char *shm;
 #endif
@@ -83,9 +83,11 @@ void eFilePushThread::thread()
 #endif
 		/* m_stop must be evaluated after each syscall. */
 		
-// vvv Fix to ensure that event evtEOF is called at end of playbackl part 1/3
+// vvv Fix to ensure that event evtEOF is called at end of playback part 1/3
+#if defined(__sh__)
 	bool already_empty=false;
-// ^^^ Fix to ensure that event evtEOF is called at end of playbackl part 1/3
+#endif
+// ^^^ Fix to ensure that event evtEOF is called at end of playback part 1/3
 
 	while (!m_stop)
 	{
@@ -270,7 +272,8 @@ void eFilePushThread::thread()
 				{
 					case 0:
 						eDebug("wait for driver eof timeout");
-// vvv Fix to ensure that event evtEOF is called at end of playbackl part 2/3
+// vvv Fix to ensure that event evtEOF is called at end of playback part 2/3
+#if defined(__sh__)
 						if(already_empty)
 						{
 							break;
@@ -280,7 +283,10 @@ void eFilePushThread::thread()
 							already_empty=true;
 							continue;
 						}
-// ^^^ Fix to ensure that event evtEOF is called at end of playbackl	part 2/3
+// ^^^ Fix to ensure that event evtEOF is called at end of playback	part 2/3
+#else
+						continue;
+#endif
 					case 1:
 						eDebug("wait for driver eof ok");
 						break;
@@ -305,9 +311,11 @@ void eFilePushThread::thread()
 			break;
 		} else
 		{
-// vvv Fix to ensure that event evtEOF is called at end of playbackl part 3/3
+// vvv Fix to ensure that event evtEOF is called at end of playback part 3/3
+#if defined(__sh__)
 			already_empty=false;
-// ^^^ Fix to ensure that event evtEOF is called at end of playbackl part 3/3
+#endif
+// ^^^ Fix to ensure that event evtEOF is called at end of playback part 3/3
 			m_current_position += m_buf_end;
 			bytes_read += m_buf_end;
 			if (m_sg)
@@ -315,6 +323,9 @@ void eFilePushThread::thread()
 		}
 //		printf("FILEPUSH: read %d bytes\n", m_buf_end);
 	}
+#if !defined(__sh__)
+	fdatasync(m_fd_dest);
+#endif
 	// Do NOT call "fdatasync(m_fd_dest);" here because on some systems it doesn't return
 	// and freezes the whole box.
 	// Calling this function here is not that important, anyway, because the initiator closes
@@ -341,7 +352,7 @@ void eFilePushThread::start(int fd, int fd_dest, const char *filename)
 	m_record_split_type = 0;
 	m_flags = O_WRONLY|O_CREAT|O_LARGEFILE;
 
-//FIXME: (schischu) This should be changed, 
+//FIXME: This should be changed, 
 //such values should come for e2 and not from an external source
 	char record_split_size[3] = "";
 	getshmentry(shm, "record_split_size=", record_split_size, 3);

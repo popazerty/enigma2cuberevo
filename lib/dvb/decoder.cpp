@@ -184,7 +184,7 @@ int eDVBAudio::startPid(int pid, int type)
 	}
 	eDebug("ok");
 
-#if not defined(__sh__) // already startet cause of DMX_IMMEDIATE_START
+#if not defined(__sh__) // already started cause of DMX_IMMEDIATE_START
 	eDebugNoNewLine("DEMUX_START - audio - ");
 	if (::ioctl(m_fd_demux, DMX_START) < 0)
 	{
@@ -481,7 +481,7 @@ int eDVBVideo::startPid(int pid, int type)
 		return -errno;
 	}
 	eDebug("ok");
-#if not defined(__sh__) // already startet cause of DMX_IMMEDIATE_START
+#if not defined(__sh__) // already started cause of DMX_IMMEDIATE_START
 	eDebugNoNewLine("DEMUX_START - video - ");
 	if (::ioctl(m_fd_demux, DMX_START) < 0)
 	{
@@ -801,7 +801,7 @@ int eDVBPCR::startPid(int pid)
 		return -errno;
 	}
 	eDebug("ok");
-#if not defined(__sh__) // already startet cause of DMX_IMMEDIATE_START
+#if not defined(__sh__) // already started cause of DMX_IMMEDIATE_START
 	eDebugNoNewLine("DEMUX_START - pcr - ");
 	if (::ioctl(m_fd_demux, DMX_START) < 0)
 	{
@@ -868,7 +868,7 @@ int eDVBTText::startPid(int pid)
 		return -errno;
 	}
 	eDebug("ok");
-#if not defined(__sh__) // already startet cause of DMX_IMMEDIATE_START
+#if not defined(__sh__) // already started cause of DMX_IMMEDIATE_START
 	eDebugNoNewLine("DEMUX_START - ttx - ");
 	if (::ioctl(m_fd_demux, DMX_START) < 0)
 	{
