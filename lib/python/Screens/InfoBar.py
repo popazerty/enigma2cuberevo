@@ -16,10 +16,16 @@ from enigma import iServiceInformation, iPlayableService
 profile("LOAD:InfoBarGenerics")
 #--->
 #-from Screens.InfoBarGenerics import InfoBarShowHide, \
+#-	InfoBarNumberZap, InfoBarChannelSelection, InfoBarMenu, InfoBarRdsDecoder, \
+#-	InfoBarEPG, InfoBarSeek, InfoBarInstantRecord, \
+#-	InfoBarAudioSelection, InfoBarAdditionalInfo, InfoBarNotifications, InfoBarDish, InfoBarUnhandledKey, \
+#-	InfoBarSubserviceSelection, InfoBarShowMovies, InfoBarTimeshift,  \
+#-	InfoBarServiceNotifications, InfoBarPVRState, InfoBarCueSheetSupport, InfoBarSimpleEventView, \
+#-	InfoBarSummarySupport, InfoBarMoviePlayerSummarySupport, InfoBarTimeshiftState, InfoBarTeletextPlugin, InfoBarExtensions, \
+#-	InfoBarSubtitleSupport, InfoBarPiP, InfoBarPlugins, InfoBarServiceErrorPopupSupport, InfoBarJobman
 #---<
 #+++>
 from Screens.InfoBarGenerics import InfoBarShowHide, InfoBarAspectSelection, InfoBarResolutionSelection, \
-#+++<
 	InfoBarNumberZap, InfoBarChannelSelection, InfoBarMenu, InfoBarRdsDecoder, \
 	InfoBarEPG, InfoBarSeek, InfoBarInstantRecord, \
 	InfoBarAudioSelection, InfoBarAdditionalInfo, InfoBarNotifications, InfoBarDish, InfoBarUnhandledKey, \
@@ -27,6 +33,7 @@ from Screens.InfoBarGenerics import InfoBarShowHide, InfoBarAspectSelection, Inf
 	InfoBarServiceNotifications, InfoBarPVRState, InfoBarCueSheetSupport, InfoBarSimpleEventView, \
 	InfoBarSummarySupport, InfoBarMoviePlayerSummarySupport, InfoBarTimeshiftState, InfoBarTeletextPlugin, InfoBarExtensions, \
 	InfoBarSubtitleSupport, InfoBarPiP, InfoBarPlugins, InfoBarServiceErrorPopupSupport, InfoBarJobman
+#+++<
 
 profile("LOAD:InitBar_Components")
 from Components.ActionMap import HelpableActionMap
@@ -71,10 +78,16 @@ class InfoBar(InfoBarBase, InfoBarShowHide, InfoBarAspectSelection, InfoBarResol
 		
 #--->
 #-		for x in HelpableScreen, \
+#-				InfoBarBase, InfoBarShowHide, \
+#-				InfoBarNumberZap, InfoBarChannelSelection, InfoBarMenu, InfoBarEPG, InfoBarRdsDecoder, \
+#-				InfoBarInstantRecord, InfoBarAudioSelection, InfoBarUnhandledKey, \
+#-				InfoBarAdditionalInfo, InfoBarNotifications, InfoBarDish, InfoBarSubserviceSelection, \
+#-				InfoBarTimeshift, InfoBarSeek, InfoBarSummarySupport, InfoBarTimeshiftState, \
+#-				InfoBarTeletextPlugin, InfoBarExtensions, InfoBarPiP, InfoBarSubtitleSupport, InfoBarJobman, \
+#-				InfoBarPlugins, InfoBarServiceErrorPopupSupport:
 #---<
 #+++>
 		for x in HelpableScreen, InfoBarAspectSelection, InfoBarResolutionSelection, \
-#+++<
 				InfoBarBase, InfoBarShowHide, \
 				InfoBarNumberZap, InfoBarChannelSelection, InfoBarMenu, InfoBarEPG, InfoBarRdsDecoder, \
 				InfoBarInstantRecord, InfoBarAudioSelection, InfoBarUnhandledKey, \
@@ -82,6 +95,7 @@ class InfoBar(InfoBarBase, InfoBarShowHide, InfoBarAspectSelection, InfoBarResol
 				InfoBarTimeshift, InfoBarSeek, InfoBarSummarySupport, InfoBarTimeshiftState, \
 				InfoBarTeletextPlugin, InfoBarExtensions, InfoBarPiP, InfoBarSubtitleSupport, InfoBarJobman, \
 				InfoBarPlugins, InfoBarServiceErrorPopupSupport:
+#+++<
 			x.__init__(self)
 
 		self.helpList.append((self["actions"], "InfobarActions", [("showMovies", _("view recordings..."))]))
