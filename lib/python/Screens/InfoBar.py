@@ -25,7 +25,7 @@ profile("LOAD:InfoBarGenerics")
 #-	InfoBarSubtitleSupport, InfoBarPiP, InfoBarPlugins, InfoBarServiceErrorPopupSupport, InfoBarJobman
 #---<
 #+++>
-from Screens.InfoBarGenerics import InfoBarShowHide, InfoBarAspectSelection, InfoBarResolutionSelection, \
+from Screens.InfoBarGenerics import InfoBarShowHide, InfoBarAspectSelection, InfoBarResolutionSelection, InfoBarExtendedAudioSelection, \
 	InfoBarNumberZap, InfoBarChannelSelection, InfoBarMenu, InfoBarRdsDecoder, \
 	InfoBarEPG, InfoBarSeek, InfoBarInstantRecord, \
 	InfoBarAudioSelection, InfoBarAdditionalInfo, InfoBarNotifications, InfoBarDish, InfoBarUnhandledKey, \
@@ -47,7 +47,7 @@ from Screens.HelpMenu import HelpableScreen
 #-class InfoBar(InfoBarBase, InfoBarShowHide,
 #---<
 #+++>
-class InfoBar(InfoBarBase, InfoBarShowHide, InfoBarAspectSelection, InfoBarResolutionSelection,
+class InfoBar(InfoBarBase, InfoBarShowHide, InfoBarAspectSelection, InfoBarResolutionSelection, InfoBarExtendedAudioSelection,
 #+++<
 	InfoBarNumberZap, InfoBarChannelSelection, InfoBarMenu, InfoBarEPG, InfoBarRdsDecoder,
 	InfoBarInstantRecord, InfoBarAudioSelection, 
@@ -87,7 +87,7 @@ class InfoBar(InfoBarBase, InfoBarShowHide, InfoBarAspectSelection, InfoBarResol
 #-				InfoBarPlugins, InfoBarServiceErrorPopupSupport:
 #---<
 #+++>
-		for x in HelpableScreen, InfoBarAspectSelection, InfoBarResolutionSelection, \
+		for x in HelpableScreen, InfoBarAspectSelection, InfoBarResolutionSelection, InfoBarExtendedAudioSelection, \
 				InfoBarBase, InfoBarShowHide, \
 				InfoBarNumberZap, InfoBarChannelSelection, InfoBarMenu, InfoBarEPG, InfoBarRdsDecoder, \
 				InfoBarInstantRecord, InfoBarAudioSelection, InfoBarUnhandledKey, \
