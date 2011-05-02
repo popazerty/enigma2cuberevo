@@ -1042,9 +1042,9 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		</widget>
 	</screen>
 	<!-- Subtitle selection -->
-<!--	<screen name="Subtitles" position="center,center" size="380,285" title="Subtitle selection">
+	<screen name="Subtitles" position="center,center" size="380,285" title="Subtitle selection">
 		<widget name="config" position="10,10" zPosition="1" size="360,275" scrollbarMode="showOnDemand" />
-	</screen>-->
+	</screen>
 	<!-- Subtitle area -->
 	<screen name="SubtitleDisplay" position="0,0" size="720,576" zPosition="-1" flags="wfNoBorder" backgroundColor="transparent" />
 	<!-- TextBox -->
