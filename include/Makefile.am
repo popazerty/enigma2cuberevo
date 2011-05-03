@@ -4,4 +4,10 @@ pkginclude_HEADERS = \
 	shmE2.h \
 	stmfb.h \
 	libmmeimage.h \
-	libmmeimg_error.h
+	libmmeimg_error.h \
+	common.h \
+	container.h \
+	manager.h \
+	output.h \
+	playback.h \
+	subtitle.h

@@ -9,8 +9,8 @@
 #if not defined(__sh__)
 #include <gst/gst.h>
 #else
-#include <common.h>
-#include <subtitle.h>
+#include "include/common.h"
+#include "include/subtitle.h"
 #define gint int
 extern OutputHandler_t		OutputHandler;
 extern PlaybackHandler_t	PlaybackHandler;
