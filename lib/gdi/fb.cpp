@@ -13,7 +13,7 @@
 #include <lib/gdi/fb.h>
 
 #if defined(__sh__) 
-#include "stmfb.h"
+#include "include/stmfb.h"
 #endif
 
 #ifndef FBIO_WAITFORVSYNC

@@ -5,7 +5,7 @@
 #include <linux/fb.h>
 
 #if defined(__sh__) 
-#include "stmfb.h" 
+#include "include/stmfb.h" 
 #endif
 class fbClass
 {
