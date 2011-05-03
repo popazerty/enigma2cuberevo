@@ -9,7 +9,7 @@
 #include <linux/fb.h>
 #include <sys/mman.h>
 #include <sys/ioctl.h>
-#include <linux/stmfb.h>
+#include "stmfb.h"
 
 
 #include <lib/base/ebase.h>
