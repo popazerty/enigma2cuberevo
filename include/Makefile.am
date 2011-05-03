@@ -3,4 +3,5 @@ pkginclude_HEADERS = \
 	libsig_comp.h \
 	shmE2.h \
 	stmfb.h \
-	libmmeimage.h
+	libmmeimage.h \
+	libmmeimg_error.h
