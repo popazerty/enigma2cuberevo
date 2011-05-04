@@ -13,7 +13,7 @@
 
 
 #include "tuxtxt.h"
-#include <linux/stmfb.h>
+#include "include/stmfb.h"
 #include <errno.h>
 #include <sys/socket.h>
 #include <sys/types.h>
@@ -2615,19 +2615,19 @@ skip_pid:
 
 					for (byte = 0; byte < pid_table[pid_test].service_name_len; byte++)
 					{
-						if (SDT[sdt_scan+10 + SDT[sdt_scan + 8] + byte] == (unsigned char)'Ä')
+						if (SDT[sdt_scan+10 + SDT[sdt_scan + 8] + byte] == (unsigned char)'ï¿½')
 							SDT[sdt_scan+10 + SDT[sdt_scan + 8] + byte] = 0x5B;
-						if (SDT[sdt_scan+10 + SDT[sdt_scan + 8] + byte] == (unsigned char)'ä')
+						if (SDT[sdt_scan+10 + SDT[sdt_scan + 8] + byte] == (unsigned char)'ï¿½')
 							SDT[sdt_scan+10 + SDT[sdt_scan + 8] + byte] = 0x7B;
-						if (SDT[sdt_scan+10 + SDT[sdt_scan + 8] + byte] == (unsigned char)'Ö')
+						if (SDT[sdt_scan+10 + SDT[sdt_scan + 8] + byte] == (unsigned char)'ï¿½')
 							SDT[sdt_scan+10 + SDT[sdt_scan + 8] + byte] = 0x5C;
-						if (SDT[sdt_scan+10 + SDT[sdt_scan + 8] + byte] == (unsigned char)'ö')
+						if (SDT[sdt_scan+10 + SDT[sdt_scan + 8] + byte] == (unsigned char)'ï¿½')
 							SDT[sdt_scan+10 + SDT[sdt_scan + 8] + byte] = 0x7C;
-						if (SDT[sdt_scan+10 + SDT[sdt_scan + 8] + byte] == (unsigned char)'Ü')
+						if (SDT[sdt_scan+10 + SDT[sdt_scan + 8] + byte] == (unsigned char)'ï¿½')
 							SDT[sdt_scan+10 + SDT[sdt_scan + 8] + byte] = 0x5D;
-						if (SDT[sdt_scan+10 + SDT[sdt_scan + 8] + byte] == (unsigned char)'ü')
+						if (SDT[sdt_scan+10 + SDT[sdt_scan + 8] + byte] == (unsigned char)'ï¿½')
 							SDT[sdt_scan+10 + SDT[sdt_scan + 8] + byte] = 0x7D;
-						if (SDT[sdt_scan+10 + SDT[sdt_scan + 8] + byte] == (unsigned char)'ß')
+						if (SDT[sdt_scan+10 + SDT[sdt_scan + 8] + byte] == (unsigned char)'ï¿½')
 							SDT[sdt_scan+10 + SDT[sdt_scan + 8] + byte] = 0x7E;
 						if (SDT[sdt_scan+10 + SDT[sdt_scan + 8] + byte] >= 0x80 && SDT[sdt_scan+10 + SDT[sdt_scan + 8] + byte] <= 0x9F)
 							diff--;
@@ -2924,13 +2924,13 @@ void Menu_Init(char *menu, int current_pid, int menuitem, int hotindex)
 	memcpy(&menu[Menu_Width*MenuLine[M_SC1] + Menu_Width - 5], &configonoff[menulanguage][screen_mode1  ? 3 : 0], 3);
 	memcpy(&menu[Menu_Width*MenuLine[M_SC2] + Menu_Width - 5], &configonoff[menulanguage][screen_mode2  ? 3 : 0], 3);
 
-	menu[MenuLine[M_COL]*Menu_Width +  1] = (color_mode == 1  ? ' ' : 'í');
-	menu[MenuLine[M_COL]*Menu_Width + 28] = (color_mode == 24 ? ' ' : 'î');
+	menu[MenuLine[M_COL]*Menu_Width +  1] = (color_mode == 1  ? ' ' : 'ï¿½');
+	menu[MenuLine[M_COL]*Menu_Width + 28] = (color_mode == 24 ? ' ' : 'ï¿½');
 	memset(&menu[Menu_Width*MenuLine[M_COL] + 3             ], 0x7f,color_mode);
 	memset(&menu[Menu_Width*MenuLine[M_COL] + 3+color_mode  ], 0x20,24-color_mode);
 //	memcpy(&menu[Menu_Width*MenuLine[M_COL] + Menu_Width - 5], &configonoff[menulanguage][color_mode    ? 3 : 0], 3);
-	menu[MenuLine[M_TRA]*Menu_Width +  1] = (trans_mode == 1  ? ' ' : 'í');
-	menu[MenuLine[M_TRA]*Menu_Width + 28] = (trans_mode == 24 ? ' ' : 'î');
+	menu[MenuLine[M_TRA]*Menu_Width +  1] = (trans_mode == 1  ? ' ' : 'ï¿½');
+	menu[MenuLine[M_TRA]*Menu_Width + 28] = (trans_mode == 24 ? ' ' : 'ï¿½');
 	memset(&menu[Menu_Width*MenuLine[M_TRA] + 3             ], 0x7f,trans_mode);
 	memset(&menu[Menu_Width*MenuLine[M_TRA] + 3+trans_mode  ], 0x20,24-trans_mode);
 
@@ -3065,8 +3065,8 @@ void ConfigMenu(int Init)
 					saveconfig = 1;
 					color_mode--;
 					if (color_mode < 1) color_mode = 1;
-					menu[MenuLine[M_COL]*Menu_Width +  1] = (color_mode == 1  ? ' ' : 'í');
-					menu[MenuLine[M_COL]*Menu_Width + 28] = (color_mode == 24 ? ' ' : 'î');
+					menu[MenuLine[M_COL]*Menu_Width +  1] = (color_mode == 1  ? ' ' : 'ï¿½');
+					menu[MenuLine[M_COL]*Menu_Width + 28] = (color_mode == 24 ? ' ' : 'ï¿½');
 					memset(&menu[Menu_Width*MenuLine[M_COL] + 3             ], 0x7f,color_mode);
 					memset(&menu[Menu_Width*MenuLine[M_COL] + 3+color_mode  ], 0x20,24-color_mode);
 					Menu_HighlightLine(menu, MenuLine[menuitem], 1);
@@ -3077,8 +3077,8 @@ void ConfigMenu(int Init)
 					saveconfig = 1;
 					trans_mode--;
 					if (trans_mode < 1) trans_mode = 1;
-					menu[MenuLine[M_TRA]*Menu_Width +  1] = (trans_mode == 1  ? ' ' : 'í');
-					menu[MenuLine[M_TRA]*Menu_Width + 28] = (trans_mode == 24 ? ' ' : 'î');
+					menu[MenuLine[M_TRA]*Menu_Width +  1] = (trans_mode == 1  ? ' ' : 'ï¿½');
+					menu[MenuLine[M_TRA]*Menu_Width + 28] = (trans_mode == 24 ? ' ' : 'ï¿½');
 					memset(&menu[Menu_Width*MenuLine[M_TRA] + 3             ], 0x7f,trans_mode);
 					memset(&menu[Menu_Width*MenuLine[M_TRA] + 3+trans_mode  ], 0x20,24-trans_mode);
 					Menu_HighlightLine(menu, MenuLine[menuitem], 1);
@@ -3119,12 +3119,12 @@ void ConfigMenu(int Init)
 							if (current_pid == 0)
 							{
 								menu[MenuLine[M_PID]*Menu_Width +  1] = ' ';
-								menu[MenuLine[M_PID]*Menu_Width + 28] = 'î';
+								menu[MenuLine[M_PID]*Menu_Width + 28] = 'ï¿½';
 							}
 							else
 							{
-								menu[MenuLine[M_PID]*Menu_Width +  1] = 'í';
-								menu[MenuLine[M_PID]*Menu_Width + 28] = 'î';
+								menu[MenuLine[M_PID]*Menu_Width +  1] = 'ï¿½';
+								menu[MenuLine[M_PID]*Menu_Width + 28] = 'ï¿½';
 							}
 						}
 
@@ -3150,12 +3150,12 @@ void ConfigMenu(int Init)
 						if (national_subset == 0)
 						{
 							menu[MenuLine[M_NAT]*Menu_Width +  1] = ' ';
-							menu[MenuLine[M_NAT]*Menu_Width + 28] = 'î';
+							menu[MenuLine[M_NAT]*Menu_Width + 28] = 'ï¿½';
 						}
 						else
 						{
-							menu[MenuLine[M_NAT]*Menu_Width +  1] = 'í';
-							menu[MenuLine[M_NAT]*Menu_Width + 28] = 'î';
+							menu[MenuLine[M_NAT]*Menu_Width +  1] = 'ï¿½';
+							menu[MenuLine[M_NAT]*Menu_Width + 28] = 'ï¿½';
 						}
 
 						Menu_Init(menu, current_pid, menuitem, hotindex);
@@ -3186,8 +3186,8 @@ void ConfigMenu(int Init)
 					saveconfig = 1;
 					color_mode++;
 					if (color_mode > 24) color_mode = 24;
-					menu[MenuLine[M_COL]*Menu_Width +  1] = (color_mode == 1  ? ' ' : 'í');
-					menu[MenuLine[M_COL]*Menu_Width + 28] = (color_mode == 24 ? ' ' : 'î');
+					menu[MenuLine[M_COL]*Menu_Width +  1] = (color_mode == 1  ? ' ' : 'ï¿½');
+					menu[MenuLine[M_COL]*Menu_Width + 28] = (color_mode == 24 ? ' ' : 'ï¿½');
 					memset(&menu[Menu_Width*MenuLine[M_COL] + 3             ], 0x7f,color_mode);
 					memset(&menu[Menu_Width*MenuLine[M_COL] + 3+color_mode  ], 0x20,24-color_mode);
 					Menu_HighlightLine(menu, MenuLine[menuitem], 1);
@@ -3198,8 +3198,8 @@ void ConfigMenu(int Init)
 					saveconfig = 1;
 					trans_mode++;
 					if (trans_mode > 24) trans_mode = 24;
-					menu[MenuLine[M_TRA]*Menu_Width +  1] = (trans_mode == 1  ? ' ' : 'í');
-					menu[MenuLine[M_TRA]*Menu_Width + 28] = (trans_mode == 24 ? ' ' : 'î');
+					menu[MenuLine[M_TRA]*Menu_Width +  1] = (trans_mode == 1  ? ' ' : 'ï¿½');
+					menu[MenuLine[M_TRA]*Menu_Width + 28] = (trans_mode == 24 ? ' ' : 'ï¿½');
 					memset(&menu[Menu_Width*MenuLine[M_TRA] + 3             ], 0x7f,trans_mode);
 					memset(&menu[Menu_Width*MenuLine[M_TRA] + 3+trans_mode  ], 0x20,24-trans_mode);
 					Menu_HighlightLine(menu, MenuLine[menuitem], 1);
@@ -3237,13 +3237,13 @@ void ConfigMenu(int Init)
 						{
 							if (current_pid == pids_found - 1)
 							{
-								menu[MenuLine[M_PID]*Menu_Width +  1] = 'í';
+								menu[MenuLine[M_PID]*Menu_Width +  1] = 'ï¿½';
 								menu[MenuLine[M_PID]*Menu_Width + 28] = ' ';
 							}
 							else
 							{
-								menu[MenuLine[M_PID]*Menu_Width +  1] = 'í';
-								menu[MenuLine[M_PID]*Menu_Width + 28] = 'î';
+								menu[MenuLine[M_PID]*Menu_Width +  1] = 'ï¿½';
+								menu[MenuLine[M_PID]*Menu_Width + 28] = 'ï¿½';
 							}
 						}
 
@@ -3267,13 +3267,13 @@ void ConfigMenu(int Init)
 
 						if (national_subset == MAX_NATIONAL_SUBSET)
 						{
-							menu[MenuLine[M_NAT]*Menu_Width +  1] = 'í';
+							menu[MenuLine[M_NAT]*Menu_Width +  1] = 'ï¿½';
 							menu[MenuLine[M_NAT]*Menu_Width + 28] = ' ';
 						}
 						else
 						{
-							menu[MenuLine[M_NAT]*Menu_Width +  1] = 'í';
-							menu[MenuLine[M_NAT]*Menu_Width + 28] = 'î';
+							menu[MenuLine[M_NAT]*Menu_Width +  1] = 'ï¿½';
+							menu[MenuLine[M_NAT]*Menu_Width + 28] = 'ï¿½';
 						}
 
 						Menu_Init(menu, current_pid, menuitem, hotindex);
@@ -4697,7 +4697,7 @@ void DrawShape(int x, int y, int shapenumber, int curfontwidth, int curfontheigh
  ******************************************************************************/
 
 /* Dagobert:
- * So in this function is the problem with "ÄÜ ...".
+ * So in this function is the problem with "ï¿½ï¿½ ...".
  * The tables in tuxtxt_def.h are of type unsigned int short int
  * which is propably more than a char. So getting chars out of this
  * array gives us values >=255 which are not what we want with our
@@ -4916,9 +4916,9 @@ debugf(1, "national_subset_local = %d\n", national_subset_local);
 	else if (national_subset_local == NAT_GR && Char >= 0x40 && Char <= 0x7E)	/* remap complete areas for greek */
 		Char += 0x390 - 0x40;
 	else if (national_subset_local == NAT_GR && Char == 0x3c)
-		Char = '«';
+		Char = 'ï¿½';
 	else if (national_subset_local == NAT_GR && Char == 0x3e)
-		Char = '»';
+		Char = 'ï¿½';
 	else if (national_subset_local == NAT_GR && Char >= 0x23 && Char <= 0x24)
 		Char = nationaltable23[NAT_DE][Char-0x23]; /* #$ as in german option */
 	else if (national_subset_local == NAT_RU && Char >= 0x40 && Char <= 0x7E) /* remap complete areas for cyrillic */
