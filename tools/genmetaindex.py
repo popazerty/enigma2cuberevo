@@ -12,7 +12,13 @@ for file in sys.argv[1:]:
 	package.set("details", os.path.basename(file))
 	
 	# we need all prerequisites
-	package.append(p.find("prerequisites"))
+#--->
+#-	package.append(p.find("prerequisites"))
+#---<
+#+++>
+	if p.find("prerequisites") is not None:
+		package.append(p.find("prerequisites"))
+#+++<
 	
 	info = None
 	# we need some of the info, but not all
