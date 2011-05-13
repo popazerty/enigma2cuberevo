@@ -130,23 +130,6 @@ class VideoHardware:
 		config.av.colorformat.addNotifier(self.updateFastblank)
 
 		config.av.colorformat.addNotifier(self.updateFastblank)
-#+++>
-		fp = open('/etc/fb.modes.supp', 'r')
-		result=fp.readline().strip()
-		fp.close()
-
-		names=result.split('@')
-
-		if len(names) > 2:
-			port = names[2]
-			#print "port:",port
-			mode = names[0]
-			#print "mode:",mode
-			rate = names[1]
-			#print "rates:",rate
-			#print ""
-			self.saveMode(port,mode,rate)
-#+++<
 
 	def AVSwitchSetInput(self, mode):
 		self.standby = mode == "SCART"
