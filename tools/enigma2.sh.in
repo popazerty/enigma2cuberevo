@@ -24,6 +24,9 @@ if [ -e @libdir@/libpassthrough.so ]; then
 	LIBS="$LIBS @libdir@/libpassthrough.so"
 fi
 
+stfbcontrol a 255
+/bin/cubefpctl --setledoff
+
 LD_PRELOAD=$LIBS @bindir@/enigma2
 
 # enigma2 exit codes:
@@ -37,18 +40,31 @@ LD_PRELOAD=$LIBS @bindir@/enigma2
 ret=$?
 case $ret in
 	1)
-		/sbin/halt
+		#/sbin/halt
+		echo "SHUTDOWN"
+		echo "SHUTDOWN" > /dev/dbox/fp0
+		init 0
 		;;
 	2)
-		/sbin/reboot
+		#/sbin/reboot
+		echo "REBOOT"
+		echo "REBOOT" > /dev/dbox/fp0
+		init 6
+		;;
+	3)
+		echo "E2 RESTART"
+		echo 0 > /proc/progress
 		;;
 	4)
-		/sbin/rmmod lcd
-		/usr/sbin/fpupgrade --upgrade 2>&1 | tee /home/root/fpupgrade.log
-		sleep 1;
-		/sbin/rmmod fp
-		/sbin/modprobe fp
-		/sbin/reboot
+		#/sbin/rmmod lcd
+		#/usr/sbin/fpupgrade --upgrade 2>&1 | tee /home/root/fpupgrade.log
+		#sleep 1;
+		#/sbin/rmmod fp
+		#/sbin/modprobe fp
+		#/sbin/reboot
+		echo "REBOOT"
+		echo "REBOOT" > /dev/dbox/fp0
+		init 6
 		;;
 	*)
 		;;
