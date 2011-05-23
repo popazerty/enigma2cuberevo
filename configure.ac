@@ -125,6 +125,10 @@ data/skin_default/menu/Makefile
 data/skin_default/icons/Makefile
 data/skin_default/buttons/Makefile
 data/skin_default/spinner/Makefile
+data/dreamTV-HD/Makefile
+data/dreamTV-HD/menu/Makefile
+data/dreamTV-HD/icons/Makefile
+data/dreamTV-HD/buttons/Makefile
 include/Makefile
 lib/Makefile
 lib/actions/Makefile
