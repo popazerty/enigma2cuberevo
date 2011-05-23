@@ -67,5 +67,7 @@ case $ret in
 		init 6
 		;;
 	*)
+		echo "ERROR"
+		echo 0 > /proc/progress
 		;;
 esac
