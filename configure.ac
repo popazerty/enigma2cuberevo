@@ -217,8 +217,8 @@ lib/python/Plugins/SystemPlugins/WirelessLan/meta/Makefile
 lib/python/Plugins/Extensions/CuberevoVFD/Makefile
 lib/python/Plugins/SystemPlugins/Tuxtxt/Makefile
 lib/python/Plugins/SystemPlugins/Tuxtxt/tuxtxt/Makefile
-lib/python/Plugins/SystemPlugins/VFD-Icons/Makefile 
-lib/python/Plugins/SystemPlugins/VFD-Icons/meta/Makefile
+lib/python/Plugins/SystemPlugins/VFDIcons/Makefile 
+lib/python/Plugins/SystemPlugins/VFDIcons/meta/Makefile
 lib/python/Tools/Makefile
 lib/service/Makefile
 lib/components/Makefile

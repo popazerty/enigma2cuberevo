@@ -1,4 +1,4 @@
-installdir = $(pkglibdir)/python/Plugins/SystemPlugins/VFD-Icons
+installdir = $(pkglibdir)/python/Plugins/SystemPlugins/VFDIcons
 
 SUBDIRS = meta
 
