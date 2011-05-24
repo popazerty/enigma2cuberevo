@@ -18,6 +18,11 @@ DEPENDS = "jpeg libungif libpng libsigc++-1.2 gettext-native \
         dreambox-dvbincludes freetype libdvbsi++ python swig-native \
         libfribidi libxmlccwrap libdreamdvd gstreamer gst-plugin-dvbmediasink \
         gst-plugins-bad gst-plugins-good gst-plugins-ugly python-wifi"
+        
+DEPENDS_opencuberevo = "jpeg libungif libmad libpng libsigc++-1.2 gettext-native \
+	cuberevo-dvbincludes freetype libdvbsi++ python swig-native \
+	libfribidi libxmlccwrap libdreamdvd gstreamer gst-plugin-dvbmediasink \
+	gst-plugins-bad gst-plugins-good gst-plugins-ugly python-wifi"
 
 RDEPENDS = "python-codecs python-core python-lang python-re python-threading \
         python-xml python-fcntl gst-plugin-decodebin gst-plugin-decodebin2 python-stringold \
@@ -41,12 +46,25 @@ RDEPENDS_append_dm8000 = " ${GST_BASE_RDEPENDS} ${GST_DVD_RDEPENDS} gst-plugin-a
 RDEPENDS_append_dm500hd = " ${GST_BASE_RDEPENDS} ${GST_DVD_RDEPENDS} gst-plugin-avi"
 RDEPENDS_append_dm800se = " ${GST_BASE_RDEPENDS} ${GST_DVD_RDEPENDS} gst-plugin-avi"
 
+DEPENDS_append_opencuberevo = " cuberevo-dvb-tools"
+RDEPENDS_append_opencuberevo = " cuberevo-dvb-tools"
+
+RDEPENDS_append_cuberevo = " ${GST_BASE_RDEPENDS} ${GST_DVD_RDEPENDS} gst-plugin-avi"
+RDEPENDS_append_cuberevo-mini = " ${GST_BASE_RDEPENDS} ${GST_DVD_RDEPENDS} gst-plugin-avi"
+RDEPENDS_append_cuberevo-mini2 = " ${GST_BASE_RDEPENDS} ${GST_DVD_RDEPENDS} gst-plugin-avi"
+RDEPENDS_append_cuberevo-mini-fta = " ${GST_BASE_RDEPENDS} ${GST_DVD_RDEPENDS} gst-plugin-avi"
+RDEPENDS_append_cuberevo-250hd = " ${GST_BASE_RDEPENDS} ${GST_DVD_RDEPENDS} gst-plugin-avi"
+RDEPENDS_append_cuberevo-2000hd = " ${GST_BASE_RDEPENDS} ${GST_DVD_RDEPENDS} gst-plugin-avi"
+RDEPENDS_append_cuberevo-9500hd = " ${GST_BASE_RDEPENDS} ${GST_DVD_RDEPENDS} gst-plugin-avi"
+RDEPENDS_append_cuberevo-100hd = " ${GST_BASE_RDEPENDS} ${GST_DVD_RDEPENDS} gst-plugin-avi"
+
 RDEPENDS_enigma2-plugin-extensions-cutlisteditor = "aio-grab"
 RDEPENDS_enigma2-plugin-extensions-dvdplayer = "libdreamdvd0"
 RDEPENDS_enigma2-plugin-systemplugins-nfiflash = "python-twisted-web"
 RDEPENDS_enigma2-plugin-systemplugins-softwaremanager = "python-twisted-web"
 RDEPENDS_enigma2-plugin-systemplugins-crashlogautosubmit = "twisted-mail twisted-names python-compression python-mime python-email"
 RDEPENDS_enigma2-plugin-extensions-modem = "dreambox-modem-ppp-scripts ppp"
+RDEPENDS_enigma2-plugin-extensions-modem_opencuberevo = "cuberevo-modem-ppp-scripts ppp"
 RDEPENDS_enigma2-plugin-systemplugins-wirelesslan = "wpa-supplicant wireless-tools python-wifi"
 
 RCONFLICTS_enigma2-plugin-systemplugins-softwaremanager = "enigma2-plugin-systemplugins-configurationbackup enigma2-plugin-systemplugins-softwareupdate"
@@ -68,6 +86,24 @@ PACKAGES += "${PN}-meta"
 
 FILES_${PN} += "${datadir}/fonts"
 FILES_${PN}-meta = "${datadir}/meta"
+
+PLATFORM_CUBEREVO_cuberevo = " -DPLATFORM_CUBEREVO "
+PLATFORM_CUBEREVO_cuberevo-250hd = " -DPLATFORM_CUBEREVO_250HD "
+PLATFORM_CUBEREVO_cuberevo-mini-fta = " -DPLATFORM_CUBEREVO_MINI_FTA "
+PLATFORM_CUBEREVO_cuberevo-mini = " -DPLATFORM_CUBEREVO_MINI "
+PLATFORM_CUBEREVO_cuberevo-mini2 = " -DPLATFORM_CUBEREVO_MINI2 "
+PLATFORM_CUBEREVO_cuberevo-2000hd = " -DPLATFORM_CUBEREVO_2000HD "
+PLATFORM_CUBEREVO_cuberevo-9500hd = " -DPLATFORM_CUBEREVO_9500HD "
+PLATFORM_CUBEREVO_cuberevo-100hd = " -DPLATFORM_CUBEREVO_100HD "
+
+# I know this sucks a bit, but it works and I need it in this way
+CPPFLAGS_opencuberevo += "${PLATFORM_CUBEREVO} -I${STAGING_INCDIR}/freetype2"
+
+export CPPFLAGS
+
+EXTRA_OECONF_append_opencuberevo = " \
+		--enable-cuberevo \
+"
 
 python populate_packages_prepend () {
         enigma2_plugindir = bb.data.expand('${libdir}/enigma2/python/Plugins', d)
