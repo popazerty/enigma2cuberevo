@@ -22,7 +22,7 @@ DEPENDS = "jpeg libungif libpng libsigc++-1.2 gettext-native \
 DEPENDS_opencuberevo = "jpeg libungif libmad libpng libsigc++-1.2 gettext-native \
 	cuberevo-dvbincludes freetype libdvbsi++ python swig-native \
 	libfribidi libxmlccwrap libdreamdvd gstreamer gst-plugin-dvbmediasink \
-	gst-plugins-bad gst-plugins-good gst-plugins-ugly python-wifi"
+	gst-plugins-bad gst-plugins-good gst-plugins-ugly python-wifi cuberevo-dvb-tools"
 
 RDEPENDS = "python-codecs python-core python-lang python-re python-threading \
         python-xml python-fcntl gst-plugin-decodebin gst-plugin-decodebin2 python-stringold \
@@ -46,17 +46,14 @@ RDEPENDS_append_dm8000 = " ${GST_BASE_RDEPENDS} ${GST_DVD_RDEPENDS} gst-plugin-a
 RDEPENDS_append_dm500hd = " ${GST_BASE_RDEPENDS} ${GST_DVD_RDEPENDS} gst-plugin-avi"
 RDEPENDS_append_dm800se = " ${GST_BASE_RDEPENDS} ${GST_DVD_RDEPENDS} gst-plugin-avi"
 
-DEPENDS_append_opencuberevo = " cuberevo-dvb-tools"
-RDEPENDS_append_opencuberevo = " cuberevo-dvb-tools"
-
-RDEPENDS_append_cuberevo = " ${GST_BASE_RDEPENDS} ${GST_DVD_RDEPENDS} gst-plugin-avi"
-RDEPENDS_append_cuberevo-mini = " ${GST_BASE_RDEPENDS} ${GST_DVD_RDEPENDS} gst-plugin-avi"
-RDEPENDS_append_cuberevo-mini2 = " ${GST_BASE_RDEPENDS} ${GST_DVD_RDEPENDS} gst-plugin-avi"
-RDEPENDS_append_cuberevo-mini-fta = " ${GST_BASE_RDEPENDS} ${GST_DVD_RDEPENDS} gst-plugin-avi"
-RDEPENDS_append_cuberevo-250hd = " ${GST_BASE_RDEPENDS} ${GST_DVD_RDEPENDS} gst-plugin-avi"
-RDEPENDS_append_cuberevo-2000hd = " ${GST_BASE_RDEPENDS} ${GST_DVD_RDEPENDS} gst-plugin-avi"
-RDEPENDS_append_cuberevo-9500hd = " ${GST_BASE_RDEPENDS} ${GST_DVD_RDEPENDS} gst-plugin-avi"
-RDEPENDS_append_cuberevo-100hd = " ${GST_BASE_RDEPENDS} ${GST_DVD_RDEPENDS} gst-plugin-avi"
+RDEPENDS_append_cuberevo = " ${GST_BASE_RDEPENDS} ${GST_DVD_RDEPENDS} gst-plugin-avi cuberevo-dvb-tools"
+RDEPENDS_append_cuberevo-mini = " ${GST_BASE_RDEPENDS} ${GST_DVD_RDEPENDS} gst-plugin-avi cuberevo-dvb-tools"
+RDEPENDS_append_cuberevo-mini2 = " ${GST_BASE_RDEPENDS} ${GST_DVD_RDEPENDS} gst-plugin-avi cuberevo-dvb-tools"
+RDEPENDS_append_cuberevo-mini-fta = " ${GST_BASE_RDEPENDS} ${GST_DVD_RDEPENDS} gst-plugin-avi cuberevo-dvb-tools"
+RDEPENDS_append_cuberevo-250hd = " ${GST_BASE_RDEPENDS} ${GST_DVD_RDEPENDS} gst-plugin-avi cuberevo-dvb-tools"
+RDEPENDS_append_cuberevo-2000hd = " ${GST_BASE_RDEPENDS} ${GST_DVD_RDEPENDS} gst-plugin-avi cuberevo-dvb-tools"
+RDEPENDS_append_cuberevo-9500hd = " ${GST_BASE_RDEPENDS} ${GST_DVD_RDEPENDS} gst-plugin-avi cuberevo-dvb-tools"
+RDEPENDS_append_cuberevo-100hd = " ${GST_BASE_RDEPENDS} ${GST_DVD_RDEPENDS} gst-plugin-avi cuberevo-dvb-tools"
 
 RDEPENDS_enigma2-plugin-extensions-cutlisteditor = "aio-grab"
 RDEPENDS_enigma2-plugin-extensions-dvdplayer = "libdreamdvd0"
